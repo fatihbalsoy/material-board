@@ -1,0 +1,164 @@
+@import url('assets/material-icons/material-icons.css');
+@import url('https://fatih.balsoy.com/styles/main/variables.css');
+:root{
+    --nd-color: #fff;
+    --nd-text-color: #777;
+    --nd-selected-color: #eee;
+}
+
+#wpadminbar{
+    background-color: #f5f5f5 !important;
+    padding: 3px 10% 0px 10%;
+    height: 32px;
+    transition: all 0.5s;
+}
+
+header#main-header{
+ box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.25) !important;
+transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+header#main-header:hover{
+ box-shadow: 0px 3px 14px 0px rgba(0,0,0,0.25) !important;
+}
+
+header#main-header.et-fixed-header{
+ box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.25) !important;
+transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#wp-admin-bar-et-use-visual-builder a:hover, #wp-admin-bar-et-use-visual-builder:hover a{
+  color: #0288d1 !important;
+  background: rgba(0,0,0,0.03) !important;
+}
+
+header#main-header.et-fixed-header:hover{
+ box-shadow: 0px 3px 14px 0px rgba(0,0,0,0.25) !important;
+}
+
+body.admin-bar.et_hide_nav #wpadminbar{
+    transition: all 0.3s ease;
+}
+body.admin-bar.et_fixed_nav #wpadminbar{
+    transform: translateY(0px) !important;
+    top: 0px !important;
+}
+
+body.admin-bar.et_fixed_nav #top-header{
+    top: 0px !important;
+    height: 32px;
+}
+body.admin-bar.et_fixed_nav #main-header{
+    top: 31.4px !important;
+}
+
+body.admin-bar.et_fixed_nav #page-container{
+    padding-top: 87px !important;   
+}
+body.admin-bar.et_hide_nav #page-container{
+    padding-top: 13px !important;
+}
+
+.page.et_pb_pagebuilder_layout #main-content{
+    margin-top: -12px !important;
+}
+
+#wpadminbar .quicklinks>ul>li>a{
+    transition: all 0.5s;
+    color: #0288d1 !important;
+    margin-top: -3px !important;
+}
+
+#wpadminbar .quicklinks .menupop ul li{
+	transition: all 0.5s;
+}
+#wpadminbar .quicklinks .menupop ul li:hover{
+	background-color: rgba(0,0,0,0.03);
+}
+
+#wpadminbar .menupop .ab-sub-wrapper, #wpadminbar .shortlink-input{
+    background-color: #fff;
+	border-radius: 0px 0px 3px 3px !important;
+	margin-top: 0px;
+}
+
+#wpadminbar .ab-submenu .ab-item, #wpadminbar .quicklinks .menupop ul li a, #wpadminbar .quicklinks .menupop ul li a strong, #wpadminbar .quicklinks .menupop.hover ul li a, #wpadminbar.nojs .quicklinks .menupop:hover ul li a{
+    color: var(--nd-text-color);
+}
+
+#wpadminbar .quicklinks .menupop ul.ab-sub-secondary, #wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu{
+	background-color: #f9f9f9;
+	border-radius: 0px 0px 3px 3px !important;
+}
+
+#wpadminbar #adminbarsearch{
+  margin-top: -3px;
+}
+
+#wpadminbar #adminbarsearch:before, #wpadminbar .ab-icon:before, #wpadminbar .ab-item:before{
+    color: #0288d1 !important;
+}
+
+#wpadminbar #wp-admin-bar-my-account.with-avatar>.ab-empty-item img, #wpadminbar #wp-admin-bar-my-account.with-avatar>a img,
+#wp-admin-bar-user-info .avatar{
+    border: none;
+    border-radius: 100% !important;
+}
+
+#wpadminbar>#wp-toolbar>#wp-admin-bar-top-secondary>#wp-admin-bar-search #adminbarsearch input.adminbar-input:focus{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #0288d1;
+    color: #0288d1 !important;
+    padding-left: 30px;
+}
+
+#wpadminbar .ab-empty-item, #wpadminbar a.ab-item, #wpadminbar>#wp-toolbar span.ab-label, #wpadminbar>#wp-toolbar span.noticon{
+    color: #0288d1!important;
+}
+
+#wpadminbar .ab-top-menu>li.hover>.ab-item, #wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus, #wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item, #wpadminbar:not(.mobile) .ab-top-menu>li>.ab-item:focus{
+    background-color: rgba(0,0,0,0.07);
+    border-radius: 3px;
+}
+#wpadminbar:not(.mobile)>#wp-toolbar a:focus span.ab-label, #wpadminbar:not(.mobile)>#wp-toolbar li:hover span.ab-label, #wpadminbar>#wp-toolbar li.hover span.ab-label{
+    color: #fff;
+}
+
+div#top-header {
+    height: 25px;
+}
+
+header#main-header {
+    top: 25px !important;
+}
+
+div#et-secondary-menu {
+    margin-top: -8px !important;
+    margin-right: 40px !important;
+}
+
+ul#et-secondary-nav {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 782px){
+	body.admin-bar.et_fixed_nav #main-header{
+		top: 45px !important;
+		height: 88px;
+	}
+	#wpadminbar .menupop .ab-sub-wrapper, #wpadminbar .shortlink-input{
+    	background-color: #fff;
+		border-radius: 0px 0px 3px 3px !important;
+		margin-top: -2px;
+		padding-left: 10%;
+		padding- right: 10%;
+	}
+	#wpadminbar #wp-admin-bar-user-info .display-name{
+		color: var(--nd-text-color);
+		margin-top: 10px;
+	}
+	body.admin-bar.et_fixed_nav #page-container{
+    		padding-top: 87px !important;   
+	}
+}

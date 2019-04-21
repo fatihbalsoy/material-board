@@ -1,0 +1,1046 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css);
+
+.dashicons,
+.dashicons-before:before,
+.mce-ico, .wp-media-buttons .add_media span.wp-media-buttons-icon:before,
+#post-body #visibility:before,
+#post-body .misc-pub-post-status:before,
+#post-body .misc-pub-revisions:before,
+.curtime #timestamp:before,
+.post-format-icon:before,
+#collapse-button .collapse-button-icon:after,
+#bulk-titles div a:before, .notice-dismiss:before, .tagchecklist .ntdelbutton .remove-tag-icon:before, .welcome-panel .welcome-panel-close:before,
+.bulk-action-notice .toggle-indicator:before, .js .meta-box-sortables .postbox .toggle-indicator:before, .js .sidebar-name .sidebar-name-arrow:before,
+th .comment-grey-bubble:before,
+.sorting-indicator:before,
+.qt-dfw,
+#wpadminbar .ab-icon,
+#wpadminbar>#wp-toolbar>#wp-admin-bar-root-default .ab-icon,
+#wpadminbar #adminbarsearch:before,
+#et_search_icon:before,
+.et-social-rss a.icon:before,
+.star-rating .star-full:before,
+.star-rating .star-half:before,
+.plugin-card .column-compatibility span:before,
+.star-rating .star-empty:before,
+.post-format-icon:before,
+.imgedit-menu .button:before,
+.customize-panel-back:before, 
+.customize-section-back:before,
+.button.updated-message:before, .installed p:before, .updated-message p:before,
+#dashboard_activity .no-activity .smiley:before,
+#dashboard_right_now li a:before, #dashboard_right_now li span:before, .welcome-panel .welcome-icon:before,
+.theme-browser .theme .notice-success p:before,
+#menu-posts-feedback .wp-menu-image:before{
+    font-family: 'Material Icons' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 140%;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga' !important;
+    -webkit-font-smoothing: antialiased;
+}
+.customize-panel-back:before, .customize-section-back:before{
+    font-size: 170% !important;
+}
+#wpadminbar .ab-item:before{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 140%;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+.post-format-icon:before{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 140%;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;    
+}
+.dashicons-editor-link:before,
+i.mce-i-link:before,
+.star-rating .star-full:before,
+.star-rating .star-half:before,
+.star-rating .star-empty:before{
+    display: block !important;
+    font-size: 110% !important;
+}
+.plugin-card .column-compatibility span:before{
+    top: -1px;
+    left: -4px;
+}
+#et_search_icon:before{
+    font-size: 160%;
+    top: -8px !important;
+}
+
+/**MATERIAL DESIGN ICONS COMMUNITY**/
+.dashicons-admin-post:before,
+.post-format-icon.post-format-standard:before{
+    font-family: 'Material Design Icons' !important;
+    content: '\f403 ';
+}
+
+.dashicons-editor-unlink:before,
+i.mce-i-unlink:before{
+    font-family: 'Material Design Icons' !important;
+    content: '\f338' !important;
+    display: block !important;
+    font-size: 103% !important;
+}
+
+/**NOT SET**/
+.dashicons-filter:before,
+.dashicons-editor-insertmore:before,
+.dashicons-editor-kitchensink:before,
+.dashicons-editor-paragraph:before,
+.dashicons-sticky:before,
+.dashicons-move:before,
+.dashicons-twitter:before,
+.dashicons-facebook:before,
+.dashicons-facebook-alt:before,
+.dashicons-googleplus:before,
+.dashicons-hammer:before,
+.dashicons-art:before,
+.dashicons-migrate:before,
+.dashicons-performance:before,
+.dashicons-universal-access:before,
+.dashicons-universal-access-alt:before,
+.dashicons-tickets:before,
+.dashicons-nametag:before,
+.dashicons-clipboard:before,
+.dashicons-heart:before,
+.dashicons-megaphone:before,
+.dashicons-schedule:before,
+.dashicons-wordpress:before,
+.dashicons-wordpress-alt:before,
+.dashicons-location:before,
+.dashicons-location-alt:before,
+.dashicons-vault:before,
+.dashicons-shield:before,
+.dashicons-shield-alt:before,
+.dashicons-sos:before,
+.dashicons-slides:before,
+.dashicons-analytics:before,
+.dashicons-chart-pie:before,
+.dashicons-chart-bar:before,
+.dashicons-chart-line:before,
+.dashicons-chart-area:before,
+.dashicons-groups:before,
+.dashicons-businessman:before,
+.dashicons-id:before,
+.dashicons-id-alt:before,
+.dashicons-products:before,
+.dashicons-awards:before,
+.dashicons-forms:before,
+.dashicons-testimonial:before,
+.dashicons-portfolio:before,
+.dashicons-book:before,
+.dashicons-book-alt:before,
+.dashicons-download:before,
+.dashicons-upload:before,
+.dashicons-backup:before,
+.dashicons-clock:before,
+.dashicons-lightbulb:before,
+.dashicons-microphone:before,
+.dashicons-desktop:before,
+.dashicons-laptop:before,
+.dashicons-tablet:before,
+.dashicons-smartphone:before,
+.dashicons-phone:before,
+.dashicons-index-card:before,
+.dashicons-carrot:before,
+.dashicons-building:before,
+.dashicons-store:before,
+.dashicons-album:before,
+.dashicons-palmtree:before,
+.dashicons-tickets-alt:before,
+.dashicons-money:before,
+.dashicons-smiley:before,
+.dashicons-thumbs-up:before,
+.dashicons-thumbs-down:before,
+.dashicons-layout:before,
+.dashicons-paperclip:before,
+.mce-i-wp_more,
+.mce-i-wp_adv,
+.post-state-format.post-format-standard:before,
+a.post-state-format.format-standard:before{
+    font-family: dashicons !important;
+}
+
+/*{
+    font-family: tinymce;
+}*/
+
+#wpadminbar #wp-admin-bar-wp-logo>.ab-item .ab-icon:before{
+    font-family: dashicons !important;
+}
+
+/**THIRD PARTY THEME FIXES**/
+li.toplevel_page_et_divi_options div.wp-menu-image:before,
+#wp-admin-bar-et-use-visual-builder a:before{
+    font-family: 'ETmodules' !important;
+}
+
+/********************************/
+/**********ADMIN MENU************/
+/********************************/
+
+#wpadminbar #adminbarsearch:before, 
+.dashicons-search:before,
+.press-this .add-cat-toggle.is-toggled .dashicons:before,
+#et_search_icon:before{
+    content: 'search';
+}
+
+.dashicons-menu:before{
+    content: 'menu';
+}
+
+.dashicons-admin-site:before{
+    content: 'public';
+}
+
+.dashicons-dashboard:before{
+    content: 'dashboard';
+}
+
+/**POSTS**/
+
+.dashicons-admin-media:before, .wp-media-buttons .add_media span.wp-media-buttons-icon:before{
+    content: 'collections' !important;
+}
+
+.dashicons-admin-links:before,
+.post-format-icon.post-format-link:before, .post-state-format.post-format-link:before, a.post-state-format.format-link:before{
+    content: 'link';
+}
+
+.dashicons-admin-page:before{
+    content: 'description';
+}
+
+.dashicons-admin-comments:before,
+#wpadminbar #wp-admin-bar-comments .ab-icon:before{
+    content: 'comment';
+}
+
+.dashicons-admin-appearance:before{
+    content: 'format_paint';
+}
+
+.dashicons-admin-plugins:before{
+    content: 'power';
+}
+
+.dashicons-admin-users:before{
+    content: 'person';
+}
+
+.dashicons-admin-tools:before{
+    content: 'build';
+}
+
+.dashicons-admin-settings:before{
+    content: 'settings'; /*OR tune*/
+}
+
+.dashicons-admin-network:before{
+    content: 'vpn_key';
+}
+
+.dashicons-admin-home:before,
+.wp-admin #wpadminbar #wp-admin-bar-site-name>.ab-item:before,
+#wpadminbar #wp-admin-bar-site-name>.ab-item:before{
+    content: 'home';
+}
+
+.dashicons-admin-generic:before{
+    content: 'settings_applications'; /*OR settings*/
+}
+
+.dashicons-admin-collapse:before,
+#collapse-button .collapse-button-icon:after{
+    content: 'chevron_left';
+}
+
+/**FILTER**/
+
+.dashicons-admin-customizer:before{
+    content: 'brush';
+}
+
+.dashicons-admin-multisite:before{
+    content: 'domain';
+}
+
+/********************************/
+/*********WELCOME SCREEN*********/
+/********************************/
+
+.dashicons-welcome-write-blog:before,
+#wpadminbar #wp-admin-bar-edit>.ab-item:before,
+.welcome-panel .welcome-edit-page:before, .welcome-panel .welcome-write-blog:before{
+    content: 'edit';
+}
+
+.dashicons-welcome-add-page:before{
+    content: 'add_box';
+}
+
+.dashicons-welcome-view-site:before{
+    content: 'visibility';
+}
+
+.dashicons-welcome-widgets-menus:before,
+.welcome-panel .welcome-widgets-menus:before{
+    content: 'web';
+}
+
+.dashicons-welcome-comments:before,
+th .comment-grey-bubble:before,
+.welcome-panel .welcome-comments:before{
+    font-size: 120%;
+    content: 'mode_comment';
+}
+
+.dashicons-welcome-learn-more:before,
+.welcome-panel .welcome-learn-more:before{
+    content: 'school';
+}
+
+#dashboard_activity .no-activity .smiley:before{
+    content: 'insert_emoticon';
+    font-size: 600% !important;
+}
+
+/********************************/
+/*********POST FORMATS***********/
+/********************************/
+
+#post-body .misc-pub-revisions:before,
+#wpadminbar #wp-admin-bar-updates .ab-icon:before{
+    content: 'update';
+}
+
+.dashicons-format-aside:before{
+    content: 'description';
+}
+
+.dashicons-format-image:before{
+    content: 'image';
+}
+
+.dashicons-format-gallery:before,
+.post-format-icon.post-format-gallery:before, .post-state-format.post-format-gallery:before, a.post-state-format.format-gallery:before{
+    content: 'collections';
+}
+
+.dashicons-format-video:before,
+.post-format-icon.post-format-video:before, .post-state-format.post-format-video:before, a.post-state-format.format-video:before{
+    content: 'movie';
+}
+
+.dashicons-format-status:before, #post-body .misc-pub-post-status:before{
+    content: 'new_releases'; /*OR text_sms*/
+}
+
+.dashicons-format-quote:before,
+.post-format-icon.post-format-quote:before, .post-state-format.post-format-quote:before, a.post-state-format.format-quote:before{
+    content: 'format_quote';
+}
+
+.dashicons-format-chat:before{
+    content: 'forum';
+}
+
+.dashicons-format-audio:before,
+.post-format-icon.post-format-audio:before, .post-state-format.post-format-audio:before, a.post-state-format.format-audio:before{
+    content: 'music_note';
+}
+
+.dashicons-camera:before{
+    content: 'camera_alt';
+}
+
+.dashicons-images-alt:before{
+    content: 'camera_roll';
+}
+
+.dashicons-images-alt2:before{
+    content: 'photo_album';
+}
+
+.dashicons-video-alt:before{
+    content: 'videocam';
+}
+
+.dashicons-video-alt2:before{
+    content: 'videocam';
+}
+
+.dashicons-video-alt3:before{
+    content: 'video_library';
+}
+
+/********************************/
+/*************MEDIA**************/
+/********************************/
+
+.dashicons-media-archive:before{
+    content: 'archive';
+}
+
+.dashicons-media-audio:before{
+    content: 'music_note';
+}
+
+.dashicons-media-code:before{
+    content: 'code';
+}
+
+.dashicons-media-default:before{
+    content: 'insert_drive_file';
+}
+
+.dashicons-media-document:before,
+#dashboard_right_now .page-count a:before, #dashboard_right_now .page-count span:before{
+    content: 'description';
+}
+
+.dashicons-media-interactive:before{
+    content: 'note';
+}
+
+.dashicons-media-spreadsheet:before{
+    content: 'insert_chart';
+}
+
+.dashicons-media-text:before{
+    content: 'subject';
+}
+
+.dashicons-media-video:before{
+    content: 'subscriptions';
+}
+
+.dashicons-playlist-audio:before{
+    content: 'library_music';
+}
+
+.dashicons-playlist-video:before{
+    content: 'video_library';
+}
+
+.dashicons-controls-play:before{
+    content: 'play_arrow';
+}
+
+.dashicons-controls-pause:before{
+    content: 'pause';
+}
+
+.dashicons-controls-forward:before{
+    content: 'fast_forward';
+}
+
+.dashicons-controls-skipforward:before{
+    content: 'skip_next';
+}
+
+.dashicons-controls-back:before{
+    content: 'fast_rewind';
+}
+
+.dashicons-controls-skipback:before{
+    content: 'skip_previous';
+}
+
+.dashicons-controls-repeat:before{
+    content: 'repeat';
+}
+
+.dashicons-controls-volumeon:before{
+    content: 'volume_up';
+}
+
+.dashicons-controls-volumeoff:before{
+    content: 'volume_off';
+}
+
+/********************************/
+/********IMAGE EDITING***********/
+/********************************/
+
+.dashicons-image-crop:before,
+.imgedit-crop:before{
+    content: 'crop';
+}
+
+.dashicons-image-rotate:before{
+    content: 'rotate_90_degrees_ccw';
+}
+
+.dashicons-image-rotate-left:before,
+.imgedit-rleft:before{
+    content: 'rotate_left';
+}
+
+.dashicons-image-rotate-right:before,
+.imgedit-rright:before{
+    content: 'rotate_right';
+}
+
+.dashicons-image-flip-vertical:before,
+.imgedit-flipv:before{
+    transform: rotate(90deg);
+    display: inline-block;
+    content: 'flip';
+}
+
+.dashicons-image-flip-horizontal:before,
+.imgedit-fliph:before{
+    content: 'flip';
+}
+
+.dashicons-image-filter:before{
+    content: 'photo_filter';
+}
+
+.dashicons-undo:before,
+i.mce-i-undo:before,
+.imgedit-undo:before{
+    content: 'undo' !important;
+}
+
+.dashicons-redo:before,
+i.mce-i-redo:before,
+.imgedit-redo:before{
+    content: 'redo' !important;
+}
+
+/********************************/
+/************TinyMCE*************/
+/********************************/
+
+.dashicons-editor-bold:before, .mce-i-bold:before{
+    content: 'format_bold' !important;
+}
+
+.dashicons-editor-italic:before, .mce-i-italic:before{
+    content: 'format_italic' !important;
+}
+
+.dashicons-editor-ul:before, .mce-i-bullist:before{
+    content: 'format_list_bulleted' !important;
+}
+
+.dashicons-editor-ol:before, .mce-i-numlist:before{
+    content: 'format_list_numbered' !important;
+}
+
+.dashicons-editor-quote:before, .mce-i-blockquote:before{
+    content: 'format_quote' !important;
+}
+
+.dashicons-editor-alignleft:before, .mce-i-alignleft:before{
+    content: 'format_align_left' !important;
+}
+
+.dashicons-editor-aligncenter:before, .mce-i-aligncenter:before{
+    content: 'format_align_center' !important;
+}
+
+.dashicons-editor-alignright:before, .mce-i-alignright:before{
+    content: 'format_align_right' !important;
+}
+
+/*INSERT-MORE*/
+
+.dashicons-editor-spellcheck:before{
+    content: 'spellcheck' !important;
+}
+
+.dashicons-editor-expand:before, 
+.mce-i-dfw:before, 
+.qt-dfw:before,
+.mce-i-fullscreen:before{
+    content: 'fullscreen' !important;
+}
+
+.dashicons-editor-contract:before{
+    content: 'fullscreen_exit' !important;
+}
+
+/*KITCHEN-SINK*/
+
+.dashicons-editor-underline:before,
+.mce-i-underline:before{
+    content: 'format_underline' !important;
+}
+
+.dashicons-editor-justify:before,
+.mce-i-alignjustify:before{
+    content: 'format_align_justify' !important;
+}
+
+.dashicons-editor-textcolor:before,
+.mce-i-forecolor:before{
+    content: 'format_color_text' !important;
+}
+
+.dashicons-editor-paste-word:before{
+    content: 'content_paste' !important;
+}
+
+.dashicons-editor-paste-text:before,
+.mce-i-pastetext:before{
+    content: 'content_paste' !important;
+}
+
+.dashicons-editor-removeformatting:before,
+.mce-i-removeformat:before{
+    content: 'format_clear' !important;
+}
+
+.dashicons-editor-video:before{
+    content: 'theaters' !important;
+}
+
+.dashicons-editor-customchar:before,
+.mce-i-charmap:before{
+    content: 'functions' !important;
+}
+
+.dashicons-editor-outdent:before,
+.mce-i-outdent:before{
+    content: 'format_indent_decrease' !important;
+}
+
+.dashicons-editor-indent:before,
+.mce-i-indent:before{
+    content: 'format_indent_increase' !important;
+}
+
+.dashicons-editor-help:before{
+    content: 'help' !important;
+}
+
+.dashicons-editor-strikethrough:before,
+.mce-i-strikethrough:before{
+    content: 'format_strikethrough' !important;
+}
+
+.dashicons-editor-link:before, .mce-i-link:before{
+    content: 'link' !important;
+}
+
+/*UNLINK .mce-i-unlink:before*/
+
+.dashicons-editor-rtl:before{
+    content: 'format_textdirection_l_to_r' !important;
+}
+
+.dashicons-editor-break:before{
+    content: 'keyboard_return' !important;
+}
+
+.dashicons-editor-code:before{
+    content: 'code' !important;
+}
+
+/*PARAGRAPH*/
+
+.dashicons-editor-table:before,
+.mce-i-table:before{
+    content: 'insert_chart' !important;
+}
+
+.mce-i-emoticons:before{
+    content: 'insert_emoticon' !important;
+}
+
+/********************************/
+/*********POSTS SCREEN***********/
+/********************************/
+
+.dashicons-align-left:before{
+    content: 'format_align_left';
+}
+
+.dashicons-align-right:before{
+    content: 'format_align_right';
+}
+
+.dashicons-align-center:before{
+    content: 'format_align_center';
+}
+
+.dashicons-align-none:before{
+    content: 'format_align_left';
+}
+
+.dashicons-lock:before{
+    content: 'lock';
+}
+
+.dashicons-unlock:before{
+    content: 'lock_open';
+}
+
+.dashicons-calendar:before, .curtime #timestamp:before{
+    content: 'event_note';
+}
+
+.dashicons-calendar-alt:before{
+    content: 'event';
+}
+
+.dashicons-visibility:before, #post-body #visibility:before,
+.welcome-panel .welcome-view-site:before{
+    content: 'visibility';
+}
+
+.dashicons-hidden:before{
+    content: 'visibility_off';
+}
+
+.dashicons-post-status:before{
+    content: 'offline_pin';
+}
+
+.dashicons-edit:before{
+    content: 'edit';
+}
+
+.dashicons-trash:before{
+    content: 'delete';
+}
+
+/*STICKY*/
+
+/********************************/
+/************SORTING*************/
+/********************************/
+
+.dashicons-external:before{
+    content: 'launch';
+}
+
+.dashicons-arrow-up:before,
+.bulk-action-notice .toggle-indicator:before, .js .meta-box-sortables .postbox .toggle-indicator:before, .js .sidebar-name .sidebar-name-arrow:before,
+th.desc a:focus span.sorting-indicator:before, th.desc:hover span.sorting-indicator:before, th.sorted.asc .sorting-indicator:before{
+    content: 'expand_less';
+}
+
+.dashicons-arrow-down:before,
+.bulk-action-notice .bulk-action-errors-collapsed .toggle-indicator:before, .js .meta-box-sortables .postbox.closed .handlediv .toggle-indicator:before, .js .widgets-holder-wrap.closed .sidebar-name-arrow:before,
+th.asc a:focus span.sorting-indicator:before, th.asc:hover span.sorting-indicator:before, th.sorted.desc .sorting-indicator:before{
+    content: 'expand_more';
+}
+th.asc a:focus span.sorting-indicator:before, th.asc:hover span.sorting-indicator:before, th.sorted.desc .sorting-indicator:before,
+th.desc a:focus span.sorting-indicator:before, th.desc:hover span.sorting-indicator:before, th.sorted.asc .sorting-indicator:before{
+    font-size: 120%;
+}
+
+.dashicons-arrow-right:before,
+.post-option-forward:before{
+    content: 'chevron_right';
+}
+
+.dashicons-arrow-left:before{
+    content: 'chevron_left';
+}
+
+.dashicons-arrow-up-alt:before{
+    content: 'arrow_upward';
+}
+
+.dashicons-arrow-down-alt:before{
+    content: 'arrow_downward';
+}
+
+.dashicons-arrow-right-alt:before{
+    content: 'arrow_forward';
+}
+
+.dashicons-arrow-left-alt:before,
+.post-option-back:before,
+.customize-panel-back:before, .customize-section-back:before{
+    content: 'arrow_back';
+}
+
+.dashicons-arrow-up-alt2:before{
+    content: 'expand_less';
+}
+
+.dashicons-arrow-down-alt2:before{
+    content: 'expand_more';
+}
+
+.dashicons-arrow-right-alt2:before{
+    content: 'chevron_right';
+}
+
+.dashicons-arrow-left-alt2:before{
+    content: 'chevron_left';
+}
+
+.dashicons-sort:before{
+    content: 'sort';
+}
+
+.dashicons-leftright:before{
+    content: 'swap_horiz';
+}
+
+.dashicons-randomize:before{
+    content: 'shuffle';
+}
+
+.dashicons-list-view:before{
+    content: 'list';
+}
+
+.dashicons-exerpt-view:before{
+    content: 'view_list';
+}
+
+.dashicons-grid-view:before{
+    content: 'border_all';
+}
+
+/*MOVE*/
+
+/********************************/
+/************SOCIAL**************/
+/********************************/
+
+.dashicons-share:before{
+    content: 'share';
+}
+
+.dashicons-share-alt:before{
+    content: 'send';
+}
+
+.dashicons-share-alt2:before{
+    content: 'forward';
+}
+
+/*TWITTER*/
+
+.dashicons-rss:before,
+.et-social-rss a.icon:before{
+    content: 'rss_feed';
+}
+.et-social-rss a.icon:before{
+    font-size: 150%;
+    padding-top: 0.5px !important;
+}
+
+.dashicons-email:before{
+    content: 'mail';
+}
+
+.dashicons-email-alt:before{
+    content: 'mail';
+}
+
+/*FACEBOOK, GOOGLE PLUS*/
+
+.dashicons-networking:before{
+    content: 'people';
+}
+
+/********************************/
+/*****WORDPRESS.ORG SPECIFIC*****/
+/********************************/
+
+/*SKIP*/
+
+/********************************/
+/************PRODUCTS************/
+/********************************/
+
+.dashicons-pressthis:before{
+    content: 'save';
+}
+
+.dashicons-update:before{
+    content: 'update';
+}
+
+.dashicons-screenoptions:before{
+    content: 'apps';
+}
+
+.dashicons-info:before{
+    content: 'info';
+}
+
+.dashicons-cart:before{
+    content: 'shopping_cart';
+}
+
+.dashicons-feedback:before{
+    content: 'comment';
+}
+
+.dashicons-cloud:before{
+    content: 'cloud';
+}
+
+.dashicons-translation:before{
+    content: 'translate';
+}
+
+/********************************/
+/**********TAXOMONIES************/
+/********************************/
+
+.dashicons-tag:before{
+    content: 'local_offer';
+}
+
+.dashicons-category:before{
+    content: 'folder';
+}
+
+/********************************/
+/************WIDGETS*************/
+/********************************/
+
+.dashicons-archive:before{
+    content: 'archive';
+}
+
+.dashicons-tagcloud:before{
+    content: 'line_style';
+}
+
+.dashicons-text:before{
+    content: 'subject';
+}
+
+/********************************/
+/*********NOTIFICATIONS**********/
+/********************************/
+
+.dashicons-yes:before,
+.plugin-card .column-compatibility span:before,
+.post-format-icon:before,
+.button.updated-message:before, .installed p:before, .updated-message p:before,
+.theme-browser .theme .notice-success p:before{
+    content: 'done' !important;
+}
+.button.updated-message:before, .installed p:before, .updated-message p:before{
+    margin-top: -2px !important;
+}
+
+.dashicons-no:before,
+#bulk-titles div a:before, .notice-dismiss:before, .tagchecklist .ntdelbutton .remove-tag-icon:before, .welcome-panel .welcome-panel-close:before{
+    content: 'close';
+}
+
+.dashicons-no-alt:before{
+    content: 'close';
+}
+
+.dashicons-plus:before,
+#wpadminbar #wp-admin-bar-new-content .ab-icon:before,
+.welcome-panel .welcome-add-page:before{
+    content: 'add';
+}
+
+.dashicons-plus-alt:before{
+    content: 'add_circle';
+}
+
+.dashicons-minus:before{
+    content: 'remove';
+}
+
+.dashicons-dismiss:before{
+    content: 'cancel';
+}
+
+.dashicons-marker:before{
+    content: 'radio_button_unchecked';
+}
+
+.dashicons-star-filled:before,
+.star-rating .star-full:before{
+    content: 'star';
+}
+
+.dashicons-star-half:before,
+.star-rating .star-half:before{
+    content: 'star_half';
+}
+
+.dashicons-star-empty:before,
+.star-rating .star-empty:before{
+    content: 'star_border';
+}
+
+.dashicons-flag:before{
+    content: 'flag';
+}
+
+.dashicons-warning:before{
+    content: 'error';
+}
+
+@media screen and (max-width: 782px){
+
+	#wpadminbar #wp-admin-bar-customize>.ab-item:before, #wpadminbar #wp-admin-bar-edit>.ab-item:before, #wpadminbar #wp-admin-bar-my-account>.ab-item:before, #wpadminbar #wp-admin-bar-my-sites>.ab-item:before, #wpadminbar #wp-admin-bar-site-name>.ab-item:before,
+	#wpadminbar #wp-admin-bar-comments .ab-icon:before,
+	#wpadminbar #wp-admin-bar-new-content .ab-icon:before,
+	#wpadminbar #wp-admin-bar-menu-toggle .ab-icon:before{
+        font-family: 'Material Icons' !important;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 30px !important;
+        line-height: 1;
+        top: 9px !important;
+        letter-spacing: normal;
+        text-transform: none;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+	}
+	#wpadminbar #wp-admin-bar-menu-toggle .ab-icon:before{
+	    content: 'menu' !important;
+	}
+	.wp-responsive-open #wpadminbar #wp-admin-bar-menu-toggle .ab-icon:before{
+	    content: 'close' !important;
+	}
+	#et_search_icon:before{
+	    top: 6px !important;
+	}
+}
