@@ -12,4 +12,4 @@ Google. Expanding upon the "card" motifs that debuted in Google Now, Material De
 more liberal use of grid-based layouts, responsive animations and transitions, padding, and 
 depth effects such as lighting and shadows. - Wikipedia
 
-Copyright (c) 2011-2017, Fatih Balsoy (https://www.fatih.balsoy.com/)
+Copyright (c) 2011-2019, Fatih Balsoy (https://www.fatih.balsoy.com/)

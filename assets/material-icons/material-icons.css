@@ -332,7 +332,7 @@ th .comment-grey-bubble:before,
 }
 
 #dashboard_activity .no-activity .smiley:before{
-    content: 'insert_emoticon';
+    content: 'done_all';
     font-size: 600% !important;
 }
 
