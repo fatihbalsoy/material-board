@@ -1,19 +1,23 @@
 @import url('/wp-content/plugins/bits-custom-admin-theme/wp-admin.css');
-body.wp-autoresize, body, #wpcontent, ul.cat-checklist, .wp-tab-active, ul.add-menu-item-tabs li.tabs, ul.category-tabs li.tabs,.attachments-browser .attachments, .attachments-browser .uploader-inline, .theme-browser .theme.active .theme-name,.wp-full-overlay-sidebar .wp-full-overlay-sidebar-content,.customize-control-checkbox,#phpinfo li:not(.local-override):hover .list-checkbox, #phpinfo li:not(.local-override):hover .list-key, #phpinfo li:not(.local-override):hover .list-value,#customize-theme-controls .customize-pane-child.accordion-section-content, #customize-theme-controls .customize-pane-child.accordion-sub-container {
+body.wp-autoresize, body, #wpcontent, ul.cat-checklist, .wp-tab-active, ul.add-menu-item-tabs li.tabs, ul.category-tabs li.tabs, .attachments-browser .attachments, .attachments-browser .uploader-inline, .theme-browser .theme.active .theme-name, .wp-full-overlay-sidebar .wp-full-overlay-sidebar-content, .customize-control-checkbox, #phpinfo li:not(.local-override):hover .list-checkbox, #phpinfo li:not(.local-override):hover .list-key, #phpinfo li:not(.local-override):hover .list-value, #customize-theme-controls .customize-pane-child.accordion-section-content, #customize-theme-controls .customize-pane-child.accordion-sub-container {
     background: var(--dark-background) !important;
     color: #fff !important;
     border: none;
 }
 
-.highlight, #adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap,#wpadminbar .menupop .ab-sub-wrapper, #wpadminbar .shortlink-input,.postbox, #post-status-info, .welcome-panel, .wpmm-wrapper #sidebar .sidebar_box, .plugin-banner, .tab, .tab-description,#screen-meta-links .screen-meta-toggle, #screen-meta-links .show-settings, #screen-meta, #contextual-help-wrap,.notice, div.error, div.updated,#titlediv #title,div.mce-toolbar-grp, .quicktags-toolbar,.mce-panel.mce-menu,.wp-editor-wrap .wp-editor-tools,.media-frame.mode-grid .attachments-browser .attachments,.categorydiv div.tabs-panel, .customlinkdiv div.tabs-panel, .posttypediv div.tabs-panel, .taxonomydiv div.tabs-panel, .wp-tab-panel,.media-toolbar,.nav-tab-wrapper, .wrap h2.nav-tab-wrapper, h1.nav-tab-wrapper, .wp-filter,#customize-theme-controls .accordion-section-title,#customize-controls .current-panel .control-section>h3.accordion-section-title,#customize-controls .customize-info .accordion-section-title,.filter-drawer, .wp-filter .favorites-form,.plugin-card,.plugin-card-bottom,.popular-tags,.customize-section-title, #customize-controls .customize-info.is-in-view, #customize-controls .customize-section-title.is-in-view, #customize-controls .customize-info,.customize-panel-back, .customize-section-back, .customize-section-title, #customize-controls .customize-info,.wp-full-overlay-sidebar .wp-full-overlay-header, .theme-install-overlay .close-full-overlay, .theme-install-overlay .next-theme, .theme-install-overlay .previous-theme, .expanded .wp-full-overlay-footer {
-    background: var(--dark-back-color) !important;
+.highlight, #wpadminbar .menupop .ab-sub-wrapper, #wpadminbar .shortlink-input, #post-status-info, .wpmm-wrapper #sidebar .sidebar_box, .plugin-banner, .tab, .tab-description, #titlediv #title, div.mce-toolbar-grp, .quicktags-toolbar, .mce-panel.mce-menu, .wp-editor-wrap .wp-editor-tools, .media-frame.mode-grid .attachments-browser .attachments, .categorydiv div.tabs-panel, .customlinkdiv div.tabs-panel, .posttypediv div.tabs-panel, .taxonomydiv div.tabs-panel, .wp-tab-panel, .media-toolbar, .nav-tab-wrapper, .wrap h2.nav-tab-wrapper, h1.nav-tab-wrapper, #customize-theme-controls .accordion-section-title, #customize-controls .current-panel .control-section>h3.accordion-section-title, #customize-controls .customize-info .accordion-section-title, .filter-drawer, .wp-filter .favorites-form, .popular-tags, .customize-section-title, #customize-controls .customize-info.is-in-view, #customize-controls .customize-section-title.is-in-view, #customize-controls .customize-info, .customize-panel-back, .customize-section-back, .customize-section-title, #customize-controls .customize-info, .wp-full-overlay-sidebar .wp-full-overlay-header, .theme-install-overlay .close-full-overlay, .theme-install-overlay .next-theme, .theme-install-overlay .previous-theme, .expanded .wp-full-overlay-footer, #et_pb_layout.postbox #et_pb_main_container_right_click_overlay, .et-bfb-optin-cta {
+    background: var(--dark-back-color-paper) !important;
+}
+
+.theme-overlay .theme-wrap{
+    background: r !important;
 }
 
 .theme-browser .theme .theme-name {
     background: var(--dark-back-color);
 }
 
-.wp-editor-container, .categorydiv div.tabs-panel, .customlinkdiv div.tabs-panel, .posttypediv div.tabs-panel, .taxonomydiv div.tabs-panel, .wp-tab-panel,#customize-controls .current-panel .control-section>h3.accordion-section-title,.customize-control-checkbox,#customize-theme-controls .accordion-section-title,#accordion-section-themes+.control-section,.filter-drawer, .wp-filter .favorites-form,#php-settings-page #editor-wrapper,#customize-theme-controls .control-panel-content .control-section:nth-child(2), #customize-theme-controls .control-panel-nav_menus .control-section:nth-child(3) {
+.wp-editor-container, .categorydiv div.tabs-panel, .customlinkdiv div.tabs-panel, .posttypediv div.tabs-panel, .taxonomydiv div.tabs-panel, .wp-tab-panel, #customize-controls .current-panel .control-section>h3.accordion-section-title, .customize-control-checkbox, #customize-theme-controls .accordion-section-title, #accordion-section-themes+.control-section, .filter-drawer, .wp-filter .favorites-form, #php-settings-page #editor-wrapper, #customize-theme-controls .control-panel-content .control-section:nth-child(2), #customize-theme-controls .control-panel-nav_menus .control-section:nth-child(3) {
     border: none !important;
 }
 
@@ -25,20 +29,20 @@ body.wp-autoresize, body, #wpcontent, ul.cat-checklist, .wp-tab-active, ul.add-m
     border-color: var(--dark-back-color-paper);
 }
 
-.plugins .active td, .plugins .active th, .wp-core-ui .attachment-preview, #contextual-help-back, .contextual-help-tabs .active a,.media-sidebar,.filter-count .count, .title-count,.filter-group, .filtered-by .tag,#template textarea,#phpinfo,.ace-kuroir,.ace-kuroir .ace_gutter,#phpinfo .list-checkbox,#phpinfo .list-key,#phpinfo .list-value,#phpinfo-wrapper {
+.plugins .active td, .plugins .active th, .wp-core-ui .attachment-preview, #contextual-help-back, .contextual-help-tabs .active a, .media-sidebar, .filter-count .count, .title-count, .filter-group, .filtered-by .tag, #template textarea, #phpinfo, .ace-kuroir, .ace-kuroir .ace_gutter, #phpinfo .list-checkbox, #phpinfo .list-key, #phpinfo .list-value, #phpinfo-wrapper {
     background: var(--dark-back-color-paper) !important;
     border: none;
 }
 
-#adminmenu .wp-has-current-submenu .wp-submenu, #adminmenu .wp-has-current-submenu .wp-submenu.sub-open, #adminmenu .wp-has-current-submenu.opensub .wp-submenu, #adminmenu a.wp-has-current-submenu:focus+.wp-submenu, .no-js li.wp-has-current-submenu:hover .wp-submenu,#wpadminbar .quicklinks .menupop ul.ab-sub-secondary, #wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu {
-    background: rgba(0,0,0,0.2) !important;
+#adminmenu .wp-has-current-submenu .wp-submenu, #adminmenu .wp-has-current-submenu .wp-submenu.sub-open, #adminmenu .wp-has-current-submenu.opensub .wp-submenu, #adminmenu a.wp-has-current-submenu:focus+.wp-submenu, .no-js li.wp-has-current-submenu:hover .wp-submenu, #wpadminbar .quicklinks .menupop ul.ab-sub-secondary, #wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu {
+    background: rgba(0, 0, 0, 0.2) !important;
 }
 
 #adminmenu div.wp-menu-name, #adminmenu div.wp-menu-image:before, #adminmenu .wp-submenu a, #adminmenu .wp-submenu a {
     color: #eee !important;
 }
 
-#adminmenu .current div.wp-menu-image:before, #adminmenu .wp-has-current-submenu div.wp-menu-image:before, #adminmenu a.current:hover div.wp-menu-image:before, #adminmenu a.wp-has-current-submenu:hover div.wp-menu-image:before, #adminmenu li.wp-has-current-submenu a:focus div.wp-menu-image:before, #adminmenu li.wp-has-current-submenu.opensub div.wp-menu-image:before, #adminmenu li.wp-has-current-submenu:hover div.wp-menu-image:before,#adminmenu .opensub .wp-submenu li.current a, #adminmenu .wp-submenu li.current, #adminmenu .wp-submenu li.current a, #adminmenu .wp-submenu li.current a:focus, #adminmenu .wp-submenu li.current a:hover, #adminmenu a.wp-has-current-submenu:focus+.wp-submenu li.current a,#wpadminbar .ab-submenu .ab-item, #wpadminbar .quicklinks .menupop ul li a, #wpadminbar .quicklinks .menupop ul li a strong, #wpadminbar .quicklinks .menupop.hover ul li a, #wpadminbar.nojs .quicklinks .menupop:hover ul li a,#wpcontent h1,.media-frame-title h1,th .comment-grey-bubble:before,.customize-panel-back, .customize-section-back, .customize-section-title, #customize-controls .customize-info,th.desc a:focus span.sorting-indicator:before, th.desc:hover span.sorting-indicator:before, th.sorted.asc .sorting-indicator:before {
+#adminmenu .current div.wp-menu-image:before, #adminmenu .wp-has-current-submenu div.wp-menu-image:before, #adminmenu a.current:hover div.wp-menu-image:before, #adminmenu a.wp-has-current-submenu:hover div.wp-menu-image:before, #adminmenu li.wp-has-current-submenu a:focus div.wp-menu-image:before, #adminmenu li.wp-has-current-submenu.opensub div.wp-menu-image:before, #adminmenu li.wp-has-current-submenu:hover div.wp-menu-image:before, #adminmenu .opensub .wp-submenu li.current a, #adminmenu .wp-submenu li.current, #adminmenu .wp-submenu li.current a, #adminmenu .wp-submenu li.current a:focus, #adminmenu .wp-submenu li.current a:hover, #adminmenu a.wp-has-current-submenu:focus+.wp-submenu li.current a, #wpadminbar .ab-submenu .ab-item, #wpadminbar .quicklinks .menupop ul li a, #wpadminbar .quicklinks .menupop ul li a strong, #wpadminbar .quicklinks .menupop.hover ul li a, #wpadminbar.nojs .quicklinks .menupop:hover ul li a, #wpcontent h1, .media-frame-title h1, th .comment-grey-bubble:before, .customize-panel-back, .customize-section-back, .customize-section-title, #customize-controls .customize-info, th.desc a:focus span.sorting-indicator:before, th.desc:hover span.sorting-indicator:before, th.sorted.asc .sorting-indicator:before {
     color: #fff !important;
 }
 
@@ -51,32 +55,32 @@ p, a {
 }
 
 #side-sortables #et_settings_meta_box label {
-    color: initial;
+    color: #fff;
 }
 
 .mce-toolbar .mce-btn-group .mce-btn.mce-active, .mce-toolbar .mce-btn-group .mce-btn:active, .qt-dfw.active {
-    background: rgba(255,255,255,0.2) !important;
+    background: rgba(255, 255, 255, 0.2) !important;
 }
 
 .mce-toolbar .mce-ico {
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 input[type=text], input[type=search], input[type=radio], input[type=tel], input[type=time], input[type=url], input[type=week], input[type=password], input[type=checkbox], input[type=color], input[type=date], input[type=datetime], input[type=datetime-local], input[type=email], input[type=month], input[type=number], select, textarea {
     color: #fff;
-    border-color: rgba(255,255,255,0.7);
+    border-color: rgba(255, 255, 255, 0.7);
 }
 
 input[type=text], input[type=search], input[type=radio], input[type=tel], input[type=time], input[type=url], input[type=week], input[type=password], input[type=color], input[type=date], input[type=datetime], input[type=datetime-local], input[type=email], input[type=month], input[type=number], select, textarea {
     color: #fff !important;
 }
 
-input[type=text]:hover, input[type=search]:hover, input[type=radio]:hover, input[type=tel]:hover, input[type=time]:hover, input[type=url]:hover, input[type=week]:hover, input[type=password]:hover, input[type=color]:hover, input[type=date]:hover, input[type=datetime]:hover, input[type=datetime-local]:hover, input[type=email]:hover, input[type=month]:hover, input[type=number]:hover, select:hover, textarea:hover,input[type=text]:focus, input[type=search]:focus, input[type=radio]:focus, input[type=tel]:focus, input[type=time]:focus, input[type=url]:focus, input[type=week]:focus, input[type=password]:focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, select:focus, textarea:focus {
+input[type=text]:hover, input[type=search]:hover, input[type=radio]:hover, input[type=tel]:hover, input[type=time]:hover, input[type=url]:hover, input[type=week]:hover, input[type=password]:hover, input[type=color]:hover, input[type=date]:hover, input[type=datetime]:hover, input[type=datetime-local]:hover, input[type=email]:hover, input[type=month]:hover, input[type=number]:hover, select:hover, textarea:hover, input[type=text]:focus, input[type=search]:focus, input[type=radio]:focus, input[type=tel]:focus, input[type=time]:focus, input[type=url]:focus, input[type=week]:focus, input[type=password]:focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, select:focus, textarea:focus {
     color: #fff;
-    border-color: rgba(255,255,255,1) !important;
+    border-color: rgba(255, 255, 255, 1) !important;
 }
 
-input[type="checkbox"],input[type="radio"] {
+input[type="checkbox"], input[type="radio"] {
     border-color: #fff !important;
 }
 
@@ -84,7 +88,7 @@ input[type="checkbox"]:checked:before {
     color: var(--dark-back-color) !important;
 }
 
-input[type="checkbox"]:checked,input[type="radio"]:checked,input[type="radio"]:checked:before {
+input[type="checkbox"]:checked, input[type="radio"]:checked, input[type="radio"]:checked:before {
     border-color: var(--accent-color-light) !important;
     background-color: var(--accent-color-light) !important;
 }
@@ -93,13 +97,13 @@ input[type="radio"]:checked {
     background-color: transparent !important;
 }
 
-input[type="checkbox"]:focus,input[type="radio"]:focus {
-    box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.2) !important;
-    background-color: rgba(255,255,255,0.2) !important;
+input[type="checkbox"]:focus, input[type="radio"]:focus {
+    box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.2) !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
-input[type="checkbox"]:checked:focus,input[type="radio"]:checked:focus {
-    box-shadow: 0px 0px 0px 5px rgba(239,83,80,0.3) !important;
+input[type="checkbox"]:checked:focus, input[type="radio"]:checked:focus {
+    box-shadow: 0px 0px 0px 5px rgba(239, 83, 80, 0.3) !important;
     background: var(--accent-color-light) !important;
 }
 
@@ -112,11 +116,11 @@ table, th, td, input, select {
 }
 
 input, select {
-    border-color: rgba(255,255,255,0.7) !important;
+    border-color: rgba(255, 255, 255, 0.7) !important;
 }
 
 table, th, td {
-    border-color: rgba(255,255,255,0.05);
+    border-color: rgba(255, 255, 255, 0.05);
 }
 
 .customize-control select, .customize-control-text input {
@@ -125,7 +129,7 @@ table, th, td {
     background: transparent !important;
 }
 
-input[type="checkbox"],input[type="radio"] {
+input[type="checkbox"], input[type="radio"] {
     border-color: #fff !important;
 }
 
@@ -133,7 +137,7 @@ input[type="checkbox"]:checked:before {
     color: var(--dark-back-color) !important;
 }
 
-input[type="checkbox"]:checked,input[type="radio"]:checked,input[type="radio"]:checked:before {
+input[type="checkbox"]:checked, input[type="radio"]:checked, input[type="radio"]:checked:before {
     border-color: var(--accent-color-light) !important;
     background-color: var(--accent-color-light) !important;
 }
@@ -142,13 +146,13 @@ input[type="radio"]:checked {
     background-color: transparent !important;
 }
 
-input[type="checkbox"]:focus,input[type="radio"]:focus {
-    box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.2) !important;
-    background-color: rgba(255,255,255,0.2) !important;
+input[type="checkbox"]:focus, input[type="radio"]:focus {
+    box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.2) !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
-input[type="checkbox"]:checked:focus,input[type="radio"]:checked:focus {
-    box-shadow: 0px 0px 0px 5px rgba(239,83,80,0.3) !important;
+input[type="checkbox"]:checked:focus, input[type="radio"]:checked:focus {
+    box-shadow: 0px 0px 0px 5px rgba(239, 83, 80, 0.3) !important;
     background: var(--accent-color-light) !important;
 }
 
@@ -157,8 +161,8 @@ input[type="radio"]:checked:focus {
 }
 
 table, td, th {
-    background: var(--dark-back-color);
-    border-color: rgba(255,255,255,0.1) !important;
+    background: transparent !important;
+    border-color: transparent !important;
     color: #eee !important;
 }
 
@@ -166,12 +170,12 @@ table, td, th {
     border: none !important;
 }
 
-.wp-core-ui .button, .wp-core-ui .button-secondary,.wrap .wp-heading-inline+.page-title-action,.wrap .page-title-action, .color-option, .wp-color-result {
-    background: var(--dark-back-color) !important;
-    color: #fff;
+.wp-core-ui .button, .wp-core-ui .button-secondary, .wrap .wp-heading-inline+.page-title-action, .wrap .page-title-action, .color-option, .wp-color-result {
+    background: var(--dark-button-color) !important;
+    color: #fff !important;
 }
 
-.wp-core-ui .button:hover, .wp-core-ui .button-secondary:hover,.wrap .page-title-action:hover, .color-option:hover, .wp-color-result:hover {
+.wp-core-ui .button:hover, .wp-core-ui .button-secondary:hover, .wrap .page-title-action:hover, .color-option:hover, .wp-color-result:hover {
     background: var(--dark-back-color-paper) !important;
     color: #fff;
 }
@@ -185,17 +189,71 @@ input[type=radio]:checked+label:before {
 }
 
 .post-format-icon:before, .post-state-format:before {
-    color: #;
+    color: #eee;
 }
 
 .mdwp-light-back {
     background: var(--dark-back-color) !important;
 }
 
-#wpadminbar .ab-empty-item, #wpadminbar a.ab-item, #wpadminbar>#wp-toolbar span.ab-label, #wpadminbar>#wp-toolbar span.noticon,.mdwp-header-title,.mdwp-card-header,.mdwp-primary-back a {
+#wpadminbar .ab-empty-item, #wpadminbar a.ab-item, #wpadminbar>#wp-toolbar span.ab-label, #wpadminbar>#wp-toolbar span.noticon, .mdwp-header-title, .mdwp-card-header, .mdwp-primary-back a {
     color: var(--primary-color-text) !important;
 }
 
-#wpadminbar .ab-submenu .ab-item, #wpadminbar .quicklinks .menupop ul li a, #wpadminbar .quicklinks .menupop ul li a strong, #wpadminbar .quicklinks .menupop.hover ul li a, #wpadminbar.nojs .quicklinks .menupop:hover ul li a{
+#wpadminbar .ab-submenu .ab-item, #wpadminbar .quicklinks .menupop ul li a, #wpadminbar .quicklinks .menupop ul li a strong, #wpadminbar .quicklinks .menupop.hover ul li a, #wpadminbar.nojs .quicklinks .menupop:hover ul li a {
     color: var(--nd-text-color) !important;
+}
+
+.theme-overlay .theme-actions, .media-frame.mode-grid .uploader-inline, #poststuff, form#createuser, form#your-profile, form#bulk-action-form, .menu-item-handle, #menu-management .menu-edit, #menu-settings-column .accordion-container, .comment-ays, .feature-filter, .imgedit-group, .manage-menus, .popular-tags, .stuffbox, .widget-inside, .widget-top, .widgets-holder-wrap, p.popular-tags, #et_pb_widget_area_create, div#widgets-right, div#widgets-left, .themes.wp-clearfix, .form-wrap.edit-term-notes, form#comments-form, .media-upload-form, form#posts-filter, div#col-left, #adminmenu, #adminmenu .wp-submenu, #adminmenuback, .notice, div.error, div.updated, #screen-meta-links .screen-meta-toggle, #screen-meta-links .show-settings, #screen-meta, #contextual-help-wrap, .welcome-panel, .jitm-card, .theme-overlay .theme-wrap, #adminmenuwrap, table, .plugin-card, .plugin-card-bottom, .wp-filter {
+    background: var(--dark-back-color) !important;
+}
+
+.theme-overlay .theme-backdrop{
+    background: var(--dark-background) !important;
+}
+
+legend {
+    background: var(--dark-back-color) !important;
+}
+
+.plugins tr {
+    background: transparent !important;
+}
+
+.postbox {
+    background: rgba(255, 255, 255, 0.06) !important;
+}
+
+.theme-browser .theme .theme-name {
+    background: var(--dark-back-color) !important;
+}
+
+.theme-browser .theme .theme-actions {
+    background: var(--dark-back-color) !important;
+}
+
+#plugin-information-content {
+    background: var(--dark-background) !important;
+}
+
+div#plugin-information-footer {
+    background: var(--dark-background) !important;
+}
+
+#plugin-information .fyi {
+    background: var(--dark-background) !important;
+    color: #fff !important;
+}
+
+#plugin-information .fyi strong {
+    color: #fff !important;
+}
+
+#section-holder {
+    background: var(--dark-back-color) !important;
+}
+
+.tablenav-pages-navspan, .tablenav .tablenav-pages a, .tablenav-pages-navspan {
+    background: transparent !important;
+    border: transparent !important;
 }

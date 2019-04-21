@@ -16,6 +16,7 @@
     --light-background: #F1F1F1;
     --dark-background: #333;
     --light-back-color: #fff;
+    --dark-button-color: rgba(0, 0, 0, 0.1);
     --dark-back-color: #424242;
     --dark-back-color-paper: #525252;
     --elevation1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -380,8 +381,6 @@ input[type=text], input[type=number], input[type=search], input[type=email], inp
     border-bottom: 2px solid #ddd !important;
     border-radius: 8px 8px 0px 0px;
     box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0) !important;
-    min-height: 30px !important;
-    min-width: 150px !important;
     transition: all 0.3s cubic-bezier(.64, .09, .08, 1);
 }
 
@@ -1261,7 +1260,7 @@ ul.subsubsub {
     margin: 15px;
 }
 
-div#message, .notice, .jitm-banner.jitm-card, .wrap div.updated {
+div#message, .notice, .jitm-banner.jitm-card, .wrap div.updated, .update-php div.error, .update-php div.updated {
     box-shadow: var(--elevation1);
     border-radius: 10px !important;
     border-width: 50px !important;
@@ -1285,7 +1284,7 @@ h1.wp-heading-inline, .postbox .inside h2, .wrap [class$=icon32]+h2, .wrap h1, .
 }
 
 .notice p:before, .notice-title:before {
-    content: 'notifications';
+    content: 'notifications' !important;
 }
 
 div.error p:before {
@@ -1314,7 +1313,7 @@ fieldset {
 legend {
     padding-left: 5px !important;
     padding-right: 5px !important;
-    background: white !important;
+    /* background: white !important; */
     margin-left: 5px !important;
 }
 
@@ -1340,7 +1339,7 @@ form.search-form.wp-clearfix {
 .media-frame.mode-grid .uploader-inline, #poststuff, form#createuser, form#your-profile, form#bulk-action-form, .menu-item-handle, #menu-management .menu-edit, #menu-settings-column .accordion-container, .comment-ays, .feature-filter, .imgedit-group, .manage-menus, .popular-tags, .stuffbox, .widget-inside, .widget-top, .widgets-holder-wrap, p.popular-tags, #et_pb_widget_area_create, div#widgets-right, div#widgets-left, .themes.wp-clearfix, .form-wrap.edit-term-notes, form#comments-form, .media-upload-form, form#posts-filter, div#col-left {
     border-radius: 10px !important;
     padding: 15px !important;
-    background: white !important;
+    background: var(--light-back-color);
     box-shadow: var(--elevation1) !important;
     transition: all 0.3s ease !important;
     border: none !important;
@@ -1494,7 +1493,8 @@ div#plugin-information-tabs {
 }
 
 #plugin-information-title.with-banner h2 {
-    background: transparent;
+    background: transparent !important;
+    font-size: 40px;
 }
 
 #plugin-information-title.with-banner div.vignette {
@@ -1713,4 +1713,57 @@ a.page-title-action.aria-button-if-js:before {
     position: relative;
     top: 3px;
     left: -4px;
+}
+
+.button.installed:before, .button.installing:before, .button.updated-message:before, .button.updating-message:before, .import-php .updating-message:before, .update-message p:before, .updated-message p:before, .updating-message p:before {
+    top: 15px !important;
+    display: inherit;
+}
+
+.plugins .notice p {
+    margin: 2px;
+    bottom: 9px;
+}
+
+.plugins .notice p:before {
+    top: 18px !important;
+}
+
+.theme-wrap.wp-clearfix {
+    border-radius: 10px;
+}
+
+.theme-header {
+    border: none !important;
+}
+
+.theme-overlay .theme-header .left, .theme-overlay .theme-header .right {
+    border: none;
+}
+
+.theme-overlay .theme-header .close {
+    border: none;
+}
+
+.theme-overlay .theme-actions {
+    border: none;
+    border-radius: 10px;
+}
+
+.theme-overlay .screenshot {
+    border: none;
+    border-radius: 10px;
+}
+
+#dashboard_right_now .sub, .community-events li:first-child, .community-events li~li, .community-events-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+#plugin-information .review {
+    border: none !important;
+    margin-top: 30px !important;
+}
+
+#plugin-information-title.with-banner div.vignette {
+    background: rgba(0, 0, 0, 0.2) !important;
 }
