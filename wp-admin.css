@@ -499,7 +499,7 @@ input[type=radio] {
 
 input[type=radio]:checked {
     box-shadow: none;
-    border: 2px solid var(--accent-color);
+    border: 2px solid var(--accent-color) !important;
 }
 
 input[type=radio]:focus {
@@ -510,8 +510,8 @@ input[type=radio]:focus {
 
 input[type=radio]:checked:focus {
     border-color: var(--accent-color);
-    box-shadow: 0px 0px 0px 5px rgba(198, 40, 40, 0.3) !important;
-    background-color: rgba(198, 40, 40, 0.3);
+    box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1) !important;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 input[type=radio]:checked:before, input[type=radio]:before {
@@ -1336,7 +1336,7 @@ form.search-form.wp-clearfix {
     margin-bottom: 10px;
 }
 
-.media-frame.mode-grid .uploader-inline, #poststuff, form#createuser, form#your-profile, form#bulk-action-form, .menu-item-handle, #menu-management .menu-edit, #menu-settings-column .accordion-container, .comment-ays, .feature-filter, .imgedit-group, .manage-menus, .popular-tags, .stuffbox, .widget-inside, .widget-top, .widgets-holder-wrap, p.popular-tags, #et_pb_widget_area_create, div#widgets-right, div#widgets-left, .themes.wp-clearfix, .form-wrap.edit-term-notes, form#comments-form, .media-upload-form, form#posts-filter, div#col-left {
+.about-wrap, .media-frame.mode-grid .uploader-inline, #poststuff, form#createuser, form#your-profile, form#bulk-action-form, .menu-item-handle, #menu-management .menu-edit, #menu-settings-column .accordion-container, .comment-ays, .feature-filter, .imgedit-group, .manage-menus, .popular-tags, .stuffbox, .widget-inside, .widget-top, .widgets-holder-wrap, p.popular-tags, #et_pb_widget_area_create, div#widgets-right, div#widgets-left, .themes.wp-clearfix, .form-wrap.edit-term-notes, form#comments-form, .media-upload-form, form#posts-filter, div#col-left {
     border-radius: 10px !important;
     padding: 15px !important;
     background: var(--light-back-color);
@@ -1766,4 +1766,16 @@ a.page-title-action.aria-button-if-js:before {
 
 #plugin-information-title.with-banner div.vignette {
     background: rgba(0, 0, 0, 0.2) !important;
+}
+
+tr.user-admin-color-wrap {
+    display: none !important;
+}
+
+.about-wrap .floating-header-section h2 {
+    margin: 15px;
+}
+
+.about-wrap .wp-person .gravatar {
+    border-radius: 100px;
 }

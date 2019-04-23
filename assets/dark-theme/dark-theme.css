@@ -9,12 +9,8 @@ body.wp-autoresize, body, #wpcontent, ul.cat-checklist, .wp-tab-active, ul.add-m
     background: var(--dark-back-color-paper) !important;
 }
 
-.theme-overlay .theme-wrap{
-    background: r !important;
-}
-
-.theme-browser .theme .theme-name {
-    background: var(--dark-back-color);
+legend, .theme-browser .theme .theme-name, .about-wrap, .theme-overlay .theme-actions, .media-frame.mode-grid .uploader-inline, #poststuff, form#createuser, form#your-profile, form#bulk-action-form, .menu-item-handle, #menu-management .menu-edit, #menu-settings-column .accordion-container, .comment-ays, .feature-filter, .imgedit-group, .manage-menus, .popular-tags, .stuffbox, .widget-inside, .widget-top, .widgets-holder-wrap, p.popular-tags, #et_pb_widget_area_create, div#widgets-right, div#widgets-left, .themes.wp-clearfix, .form-wrap.edit-term-notes, form#comments-form, .media-upload-form, form#posts-filter, div#col-left, #adminmenu, #adminmenu .wp-submenu, #adminmenuback, .notice, div.error, div.updated, #screen-meta-links .screen-meta-toggle, #screen-meta-links .show-settings, #screen-meta, #contextual-help-wrap, .welcome-panel, .jitm-card, .theme-overlay .theme-wrap, #adminmenuwrap, table, .plugin-card, .plugin-card-bottom, .wp-filter {
+    background: var(--dark-back-color) !important;
 }
 
 .wp-editor-container, .categorydiv div.tabs-panel, .customlinkdiv div.tabs-panel, .posttypediv div.tabs-panel, .taxonomydiv div.tabs-panel, .wp-tab-panel, #customize-controls .current-panel .control-section>h3.accordion-section-title, .customize-control-checkbox, #customize-theme-controls .accordion-section-title, #accordion-section-themes+.control-section, .filter-drawer, .wp-filter .favorites-form, #php-settings-page #editor-wrapper, #customize-theme-controls .control-panel-content .control-section:nth-child(2), #customize-theme-controls .control-panel-nav_menus .control-section:nth-child(3) {
@@ -89,12 +85,9 @@ input[type="checkbox"]:checked:before {
 }
 
 input[type="checkbox"]:checked, input[type="radio"]:checked, input[type="radio"]:checked:before {
-    border-color: var(--accent-color-light) !important;
-    background-color: var(--accent-color-light) !important;
 }
 
 input[type="radio"]:checked {
-    background-color: transparent !important;
 }
 
 input[type="checkbox"]:focus, input[type="radio"]:focus {
@@ -138,8 +131,6 @@ input[type="checkbox"]:checked:before {
 }
 
 input[type="checkbox"]:checked, input[type="radio"]:checked, input[type="radio"]:checked:before {
-    border-color: var(--accent-color-light) !important;
-    background-color: var(--accent-color-light) !important;
 }
 
 input[type="radio"]:checked {
@@ -160,10 +151,13 @@ input[type="radio"]:checked:focus {
     background-color: transparent !important;
 }
 
-table, td, th {
+table, th {
     background: transparent !important;
-    border-color: transparent !important;
     color: #eee !important;
+}
+
+table, th, td {
+    border-color: rgba(255, 255, 255, 0.1)!important;
 }
 
 .color-palette, .color-palette td {
@@ -204,16 +198,8 @@ input[type=radio]:checked+label:before {
     color: var(--nd-text-color) !important;
 }
 
-.theme-overlay .theme-actions, .media-frame.mode-grid .uploader-inline, #poststuff, form#createuser, form#your-profile, form#bulk-action-form, .menu-item-handle, #menu-management .menu-edit, #menu-settings-column .accordion-container, .comment-ays, .feature-filter, .imgedit-group, .manage-menus, .popular-tags, .stuffbox, .widget-inside, .widget-top, .widgets-holder-wrap, p.popular-tags, #et_pb_widget_area_create, div#widgets-right, div#widgets-left, .themes.wp-clearfix, .form-wrap.edit-term-notes, form#comments-form, .media-upload-form, form#posts-filter, div#col-left, #adminmenu, #adminmenu .wp-submenu, #adminmenuback, .notice, div.error, div.updated, #screen-meta-links .screen-meta-toggle, #screen-meta-links .show-settings, #screen-meta, #contextual-help-wrap, .welcome-panel, .jitm-card, .theme-overlay .theme-wrap, #adminmenuwrap, table, .plugin-card, .plugin-card-bottom, .wp-filter {
-    background: var(--dark-back-color) !important;
-}
-
-.theme-overlay .theme-backdrop{
+.theme-overlay .theme-backdrop {
     background: var(--dark-background) !important;
-}
-
-legend {
-    background: var(--dark-back-color) !important;
 }
 
 .plugins tr {
