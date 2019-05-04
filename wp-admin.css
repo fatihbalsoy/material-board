@@ -916,6 +916,10 @@ div.mce-toolbar-grp, .quicktags-toolbar {
 }
 
 @media screen and (max-width: 782px) {
+    #wpcontent {
+        margin-right: 0px !important;
+    }
+
     /*Scroll bar nav*/
     ::-webkit-scrollbar {
         width: 0px !important;
