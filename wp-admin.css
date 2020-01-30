@@ -82,6 +82,10 @@ select option {
     background-color: rgba(0, 0, 0, 0.15);
 }
 
+table.googlesitekit-table__wrapper.googlesitekit-table__wrapper--2-col {
+    box-shadow: none !important;
+}
+
 div {
     font-family: var(--font-type), sans-serif !important;
 }

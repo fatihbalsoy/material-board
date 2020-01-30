@@ -217,7 +217,7 @@ p#nav>a {
 	}
 }
 
-form#loginform p.galogin a {
+/* form#loginform p.galogin a {
 	background: transparent;
 	border-color: transparent;
 	text-decoration: none;
@@ -243,7 +243,7 @@ form#loginform p.galogin a:before {
 	position: relative;
 	top: 1.5px;
 	right: 10px;
-}
+} */
 
 p.galogin {
 	background: white !important;
