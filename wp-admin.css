@@ -20,11 +20,11 @@
 }
 
 :root {
-    --primary-color: #2962FF;
-    --primary-color-light: #2979FF;
+    --primary-color: #2979FF;
+    --primary-color-light: #448AFF;
     --primary-color-text: #fff;
     --secondary-color: #0277bd;
-    --accent-color: #D50000;
+    --accent-color: #FF1744;
     --accent-color-light: #FF5252;
     --accent-color-text: #fff;
     --nd-color: #fff;
