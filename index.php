@@ -8,8 +8,8 @@ Description: A theme for your website's dashboard that follows the Material Desi
 Author: BITS Lab
 Version: 1.0
 Author URI: https://fatih.balsoy.com
-License:           GPL-2.0+
-License URI:       https://www.gnu.org/licenses/gpl-2.0.txt
+License:           GPL-3.0+
+License URI:       https://www.gnu.org/licenses/gpl-3.0.txt
 */
 
 // If this file is called directly, abort.
