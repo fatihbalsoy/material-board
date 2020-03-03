@@ -5,7 +5,7 @@ Plugin Name: Material Design for Dashboard
 
 Plugin URI: https://fatih.balsoy.com/wp-content/plugins/bits-custom-admin-theme/
 Description: A theme for your website's dashboard that follows the Material Design guidelines written and developed by Google
-Author: BITS Lab
+Author: Fatih Balsoy
 Version: 1.0
 Author URI: https://fatih.balsoy.com
 License:           GPL-3.0+

@@ -1,3 +1,12 @@
+/*
+ *   wp-login.css
+ *   material-design-dashboard
+ * 
+ *   Created by Fatih Balsoy on 1/30/20
+ *   Last Modified by Fatih Balsoy on 3/2/20
+ *   Copyright © 2020 BITS Laboratory. All rights reserved.
+ */
+
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import url(https://fonts.googleapis.com/css?family=Product+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i);
@@ -21,7 +30,7 @@ body {
 }
 
 body {
-	background: url(https://fatih.balsoy.com/wp-content/uploads/2018/03/Lab.png) no-repeat left center fixed !important;
+	/*background: url(https://fatih.balsoy.com/wp-content/uploads/2018/03/Lab.png) no-repeat left center fixed !important;*/
 	background-size: 400px !important;
 	background-position-x: 30% !important;
 	background-color: #f7f7f7 !important;
@@ -128,7 +137,7 @@ input#wp-submit:hover {
 }
 
 form#loginform:hover p.galogin:hover {
-	box-shadow 0 2px 6px 0 rgba(0, 0, 0, 0.3) !important;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3) !important;
 }
 
 form#loginform p.galogin a {
@@ -172,6 +181,9 @@ form#loginform p.galogin a {
 	text-align: center;
 	margin-left: -15px !important;
 }
+.login #backtoblog a {
+    display: none;
+}
 
 form#loginform p.galogin:hover {
 	color: #2196F3 !important;
@@ -182,6 +194,7 @@ form#loginform p.galogin:hover {
 	margin: 0 auto;
 	margin-top: 5px;
 	vertical-align: middle !important;
+	box-shadow: none !important;
 }
 
 p#nav>a {

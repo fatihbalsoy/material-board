@@ -1,23 +1,16 @@
+/*
+ *   wp-admin.css
+ *   material-design-dashboard
+ * 
+ *   Created by Fatih Balsoy on 2/2/20
+ *   Last Modified by Fatih Balsoy on 3/2/20
+ *   Copyright © 2020 BITS Laboratory. All rights reserved.
+ */
+
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import url("assets/material-icons/material-icons.css");
 @import url(https://fonts.googleapis.com/css?family=Product+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i);
-
-@font-face {
-    font-family: Gilroy;
-    font-weight: 100;
-    src: url(https://fatih.balsoy.com/assets/fonts/gilroy-light.otf);
-}
-@font-face {
-    font-family: Gilroy;
-    font-weight: 500;
-    src: url(https://fatih.balsoy.com/assets/fonts/gilroy-medium.otf);
-}
-@font-face {
-    font-family: Gilroy;
-    font-weight: 900;
-    src: url(https://fatih.balsoy.com/assets/fonts/gilroy-extrabold.otf);
-}
 
 :root {
     --primary-color: #2979FF;

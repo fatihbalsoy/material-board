@@ -1,3 +1,12 @@
+/*
+ *   material-theme.css
+ *   material-design-dashboard
+ * 
+ *   Created by Fatih Balsoy on 2/2/20
+ *   Last Modified by Fatih Balsoy on 3/2/20
+ *   Copyright © 2020 BITS Laboratory. All rights reserved.
+ */
+
 @import url('assets/material-icons/material-icons.css');
 @import url('https://fatih.balsoy.com/styles/main/variables.css');
 :root{
