@@ -1,5 +1,7 @@
 ![Alt text](github/banner.png?raw=true  "Material Design Dashboard")
 
+Material Dashboard is a Wordpress plugin that replaces your site's dashboard design with a more modern look by using [Google's Material Design Guidelines](https://material.io/design). This plugin respects your dashboard layout, does not make any drastic changes, and does not add plugin branding, it is completely free and simple to use.
+
 ## Screenshots
 
 ![Alt text](github/screenshots.png?raw=true  "Screenshots")
