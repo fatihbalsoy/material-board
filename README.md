@@ -6,19 +6,19 @@
 
 ## Installation
 
-Clone this repository into `wp-content/plugins` and activate `Material Design Dashboard` on your site's plugin settings. 
+Clone this repository into `wp-content/plugins/material-design-dashboard` and activate `Material Design Dashboard` on your site's plugin settings. 
 
 ## Features
 
-- [ x ] Admin bar
-- [ x ] Side bar
-- [ x ] Menus
-- [ x ] Drop shadows 
-- [ x ] Buttons (Ripple Effect) 
-- [ x ] Inputs (Checkbox, Text Field,  Slider)
-- [ x ] Third-party plugin and theme support
-- [ x ] Dark mode
-- [    ] Settings
+- [x] Admin bar
+- [x] Side bar
+- [x] Menus
+- [x] Drop shadows 
+- [x] Buttons (Ripple Effect) 
+- [x] Inputs (Checkbox, Text Field,  Slider)
+- [x] Third-party plugin and theme support
+- [x] Dark mode
+- [ ] Settings
 
 ## Known Issues
 
