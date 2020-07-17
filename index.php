@@ -3,13 +3,13 @@
 /*
 Plugin Name: Material Design for Dashboard
 
-Plugin URI: https://fatih.balsoy.com/wp-content/plugins/bits-custom-admin-theme/
-Description: A theme for your website's dashboard that follows the Material Design guidelines written and developed by Google
-Author: Fatih Balsoy
-Version: 1.0
-Author URI: https://fatih.balsoy.com
-License:           GPL-3.0+
-License URI:       https://www.gnu.org/licenses/gpl-3.0.txt
+Plugin URI: 	https://fatihbalsoy.github.io/wp-material-design
+Description: 	A theme for your website's dashboard that follows the Material Design guidelines written and developed by Google
+Author: 	Fatih Balsoy
+Version: 	1.0
+Author URI: 	https://fatihbalsoy.github.io
+License:       	AGPL-3.0+
+License URI:   	https://www.gnu.org/licenses/agpl-3.0.txt
 */
 
 // If this file is called directly, abort.
