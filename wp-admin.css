@@ -1282,6 +1282,9 @@ div#message, .notice, .jitm-banner.jitm-card, .wrap div.updated, .update-php div
     box-shadow: var(--elevation1);
     border-radius: 10px !important;
     border-width: 50px !important;
+    border-bottom-width: 0px !important;
+    border-top-width: 0px !important;
+    border-right-width: 0px !important;
 }
 
 h1.wp-heading-inline, .postbox .inside h2, .wrap [class$=icon32]+h2, .wrap h1, .wrap>h2:first-child {
