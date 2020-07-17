@@ -36,7 +36,7 @@ Feel free to submit a pull request for one of the following:
 
 ## Licenses
 
-Material Design Dashboard, [AGPL License](https://github.com/fatihbalsoy/wp-material-design/blob/master/LICENSE).
+Material Design Dashboard, [AGPL License 3.0](https://github.com/fatihbalsoy/wp-material-design/blob/master/LICENSE).
 
 This project depends on the following third-parties:
 
