@@ -39,6 +39,10 @@
 
 /*TPF = Third-Party Fixes*/
 
+body {
+    background-color: var(--light-background);
+}
+
 a {
     transition: all 0.5s;
 }
