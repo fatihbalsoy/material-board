@@ -1,8 +1,17 @@
+/*
+ *   settings.js
+ *   settings
+ * 
+ *   Created by Fatih Balsoy on 4/21/19
+ *   Last Modified by Fatih Balsoy on 7/17/20
+ *   Copyright © 2020 Fatih Balsoy. All rights reserved.
+ */
+
 var rad = document.themeForm.theme;
 var prev = null;
 
-var blankDarkTheme = '../wp-content/plugins/bits-custom-admin-theme/assets/dark-theme/blank.css';
-var darkTheme = '../wp-content/plugins/bits-custom-admin-theme/assets/dark-theme/dark-theme.css';
+var blankDarkTheme = '../wp-content/plugins/material-design-dashboard/assets/dark-theme/blank.css';
+var darkTheme = '../wp-content/plugins/material-design-dashboard/assets/dark-theme/dark-theme.css';
 
 for (var i = 0; i < rad.length; i++) {
 	rad[i].onclick = function () {

@@ -3,8 +3,8 @@
  *   material-design-dashboard
  * 
  *   Created by Fatih Balsoy on 1/30/20
- *   Last Modified by Fatih Balsoy on 3/2/20
- *   Copyright © 2020 BITS Laboratory. All rights reserved.
+ *   Last Modified by Fatih Balsoy on 7/17/20
+ *   Copyright © 2020 Fatih Balsoy. All rights reserved.
  */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto);
@@ -30,7 +30,6 @@ body {
 }
 
 body {
-	/*background: url(https://fatih.balsoy.com/wp-content/uploads/2018/03/Lab.png) no-repeat left center fixed !important;*/
 	background-size: 400px !important;
 	background-position-x: 30% !important;
 	background-color: #f7f7f7 !important;

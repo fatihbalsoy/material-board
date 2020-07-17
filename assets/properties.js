@@ -1,9 +1,18 @@
-var blankDarkTheme = '../wp-content/plugins/bits-custom-admin-theme/assets/dark-theme/blank.css';
-var darkTheme = '../wp-content/plugins/bits-custom-admin-theme/assets/dark-theme/dark-theme.css';
+/*
+ *   properties.js
+ *   assets
+ * 
+ *   Created by Fatih Balsoy on 2/2/20
+ *   Last Modified by Fatih Balsoy on 7/17/20
+ *   Copyright © 2020 Fatih Balsoy. All rights reserved.
+ */
+
+var blankDarkTheme = '../wp-content/plugins/material-design-dashboard/assets/dark-theme/blank.css';
+var darkTheme = '../wp-content/plugins/material-design-dashboard/assets/dark-theme/dark-theme.css';
 var tinyColorGit = 'https://cdn.rawgit.com/bgrins/TinyColor/master/tinycolor.js';
 
 function preloadFunc() {
-	jQuery.getJSON("/wp-content/plugins/bits-custom-admin-theme/settings/options.json", function (json) {
+	jQuery.getJSON("/wp-content/plugins/material-design-dashboard/settings/options.json", function (json) {
 		console.log(json);  
 		function getValue(key, json) {
 			var value = json[key];

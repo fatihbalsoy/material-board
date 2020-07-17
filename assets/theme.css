@@ -1,0 +1,14 @@
+/*
+ *   theme.css
+ *   assets
+ * 
+ *   Created by Fatih Balsoy on 7/17/20
+ *   Last Modified by Fatih Balsoy on 7/17/20
+ *   Copyright © 2020 Fatih Balsoy. All rights reserved.
+ */
+
+:root{
+	--primary-color: #2979FF;
+	--secondary-color: #0277bd;
+	--accent-color: #FF1744;
+}

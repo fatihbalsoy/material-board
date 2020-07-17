@@ -3,12 +3,12 @@
  *   material-design-dashboard
  * 
  *   Created by Fatih Balsoy on 2/2/20
- *   Last Modified by Fatih Balsoy on 3/2/20
- *   Copyright © 2020 BITS Laboratory. All rights reserved.
+ *   Last Modified by Fatih Balsoy on 7/17/20
+ *   Copyright © 2020 Fatih Balsoy. All rights reserved.
  */
 
 @import url('assets/material-icons/material-icons.css');
-@import url('https://fatih.balsoy.com/styles/main/variables.css');
+@import url('assets/theme.css');
 :root{
     --nd-color: #fff;
     --nd-text-color: #777;
