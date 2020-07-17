@@ -22,8 +22,8 @@
     --accent-color-text: #fff;
     --nd-color: #fff;
     --nd-text-color: rgba(0, 0, 0, 0.5);
-    --nd-selected-color: #eee;
-    --light-background: #F1F1F1;
+    --nd-selected-color: #fafafa;
+    --light-background: #fbfbfb;
     --dark-background: #333;
     --light-back-color: #fff;
     --dark-button-color: rgba(0, 0, 0, 0.1);
@@ -190,7 +190,7 @@ div {
 }
 
 #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head, #adminmenu .wp-menu-arrow, #adminmenu .wp-menu-arrow div, #adminmenu li.current a.menu-top, #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, .folded #adminmenu li.current.menu-top, .folded #adminmenu li.wp-has-current-submenu {
-    background-color: rgba(0, 0, 0, 0.1) !important;
+    background-color: rgba(0, 0, 0, 0.05) !important;
 }
 
 #adminmenu .current div.wp-menu-image:before, #adminmenu .wp-has-current-submenu div.wp-menu-image:before, #adminmenu a.current:hover div.wp-menu-image:before, #adminmenu a.wp-has-current-submenu:hover div.wp-menu-image:before, #adminmenu li.wp-has-current-submenu a:focus div.wp-menu-image:before, #adminmenu li.wp-has-current-submenu.opensub div.wp-menu-image:before, #adminmenu li.wp-has-current-submenu:hover div.wp-menu-image:before {
