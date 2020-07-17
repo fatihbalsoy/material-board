@@ -1,4 +1,8 @@
-![Alt text](dashboard-github.png?raw=true  "Material Design Dashboard")
+![Alt text](github/banner.png?raw=true  "Material Design Dashboard")
+
+## Screenshots
+
+![Alt text](github/screenshots.png?raw=true  "Screenshots")
 
 ## Installation
 
