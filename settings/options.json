@@ -1,9 +1,9 @@
 {
   "theme":"light",
   "colors":{
-    "primary": "#0288D1",
-    "accent": "#C62828"
+    "primary": "#2196F3",
+    "accent": "#F44336"
   },
-  "font": "product-sans",
+  "font": "unset",
   "icons": "md-icons"
 }
