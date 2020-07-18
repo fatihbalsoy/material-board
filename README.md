@@ -8,24 +8,41 @@ Material Dashboard is a Wordpress plugin that replaces your site's dashboard des
 
 ## Installation
 
-Clone this repository into `wp-content/plugins/material-design-dashboard` and activate `Material Design Dashboard` on your site's plugin settings. 
+Clone this repository into `wp-content/plugins/material-design-dashboard` and activate `Material Design Dashboard` on your site's plugin settings.
+
+## Personalize
+
+Personalizing the theme's colors and style from your dashboard is not yet complete.
+For now, you will need make these changes inside of `settings/options.json`
+
+```json
+{
+  "theme":"light",
+  "colors":{
+    "primary": "#2196F3",
+    "accent": "#F44336"
+  },
+  "font": "unset",
+  "icons": "md-icons"
+}
+```
 
 ## Features
 
+- [x] Dark mode
+- [x] Third-party plugin and theme support
 - [x] Admin bar
 - [x] Side bar
 - [x] Menus
 - [x] Drop shadows 
 - [x] Buttons (Ripple Effect) 
 - [x] Inputs (Checkbox, Text Field,  Slider)
-- [x] Third-party plugin and theme support
-- [x] Dark mode
-- [ ] Settings
+- [ ] Plugin Settings
 
 ## Known Issues
 
-- Light mode and color pallete is hard coded
-- No implementation for saving settings
+- Color pallete is hard-coded in `settings/options.json`
+- Changes made in plugin settings will not save.
 
 ## Contribution
 
