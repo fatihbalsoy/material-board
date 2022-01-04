@@ -22,3 +22,6 @@ node_modules/
 *.sql
 *.sqlite
 error_log
+
+#ignore docker volumes
+volumes/

@@ -3,11 +3,11 @@
 /*
 Plugin Name: Material Design Dashboard
 
-Plugin URI: 	https://fatihbalsoy.github.io/wp-material-design
+Plugin URI: 	https://fatih.bal.soy/projects/wp-material-design
 Description: 	Material Dashboard is a WordPress plugin that replaces your site's dashboard design with a more modern look by using Google's Material Design Guidelines. This plugin respects your dashboard layout, does not make any drastic changes, and does not add plugin branding, it is completely free and simple to use.
 Author: 	    Fatih Balsoy
 Version: 	    1.0
-Author URI: 	https://fatihbalsoy.github.io
+Author URI: 	https://fatih.bal.soy
 License:       	AGPL-3.0+
 License URI:   	https://www.gnu.org/licenses/agpl-3.0.txt
 */

@@ -56,6 +56,9 @@ th .comment-grey-bubble:before,
     -webkit-font-feature-settings: 'liga' !important;
     -webkit-font-smoothing: antialiased;
 }
+.dashicons, .hidden {
+    display: none;
+}
 .customize-panel-back:before, .customize-section-back:before{
     font-size: 170% !important;
 }

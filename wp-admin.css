@@ -68,6 +68,7 @@ select option {
     color: var(--accent-color-text) !important;
 }
 
+/*
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -95,6 +96,7 @@ select option {
 ::-webkit-scrollbar-corner {
     background-color: rgba(0, 0, 0, 0.15);
 }
+*/
 
 table.googlesitekit-table__wrapper.googlesitekit-table__wrapper--2-col {
     box-shadow: none !important;
@@ -492,8 +494,8 @@ input[type=checkbox]:before {
 input[type=checkbox]:checked {
     background: var(--accent-color) !important;
     border: 2px solid var(--accent-color) !important;
-    padding-left: 3px !important;
-    padding-top: 2px !important;
+    padding-left: 0.5px !important;
+    padding-top: 1.5px !important;
 }
 
 input[type=checkbox]:focus {
@@ -548,7 +550,7 @@ input[type=radio]:checked:before, input[type=radio]:before {
 input[type=radio]:checked:before {
     background-color: var(--accent-color) !important;
     transform: scale(1, 1) !important;
-    content: "\2022";
+    /* content: "\2022"; */
 }
 
 input[type=radio]:before {
@@ -1020,11 +1022,11 @@ div.mce-toolbar-grp, .quicktags-toolbar {
 
 .mdwp-content-center {
     margin: 0 auto !important;
-    width: 70% !important;
+    /* width: 70% !important; */
     margin-bottom: 10px;
     margin-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
 }
 
 .mdwp-card-header {
