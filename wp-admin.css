@@ -510,6 +510,7 @@ input[type=checkbox]:checked:focus {
 
 /******** RADIO BUTTONS *********/
 
+/* file://components/images/radio_button_off.png */
 input[type=radio] {
     box-shadow: none;
     border: 2px solid #777;
@@ -517,23 +518,29 @@ input[type=radio] {
     transition: all 0.5s;
 }
 
+/* file://components/images/radio_button_on.png */
 input[type=radio]:checked {
     box-shadow: none;
     border: 2px solid var(--accent-color) !important;
 }
 
+/* file://components/images/radio_button_off.png */
 input[type=radio]:focus {
     border-color: #777;
     box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1) !important;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+/* file://components/images/radio_button_off_focus.png */
+/* file://components/images/radio_button_on_focus.png */
 input[type=radio]:checked:focus {
     border-color: var(--accent-color);
     box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1) !important;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+/* file://components/images/radio_button_center.png */
+/* file://components/images/radio_button_off.png */
 input[type=radio]:checked:before, input[type=radio]:before {
     -webkit-border-radius: 50px;
     border-radius: 50px;
@@ -547,12 +554,14 @@ input[type=radio]:checked:before, input[type=radio]:before {
     transform: scale(0, 0) !important;
 }
 
+/* file://components/images/radio_button_center.png */
 input[type=radio]:checked:before {
     background-color: var(--accent-color) !important;
     transform: scale(1, 1) !important;
     /* content: "\2022"; */
 }
 
+/* file://components/images/radio_button_off.png */
 input[type=radio]:before {
     content: "\2022";
     transform: scale(0, 0) !important;
@@ -905,6 +914,10 @@ div.mce-toolbar-grp, .quicktags-toolbar {
     float: right;
     margin: 0px;
     margin-right: 10px !important;
+}
+
+#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after, #adminmenu li.wp-has-submenu.wp-not-current-submenu:focus-within:after {
+    border-right-color: transparent !important;
 }
 
 .customize-panel-back, .customize-section-back, .customize-section-title, #customize-controls .customize-info {

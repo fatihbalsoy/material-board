@@ -348,6 +348,14 @@ th .comment-grey-bubble:before,
     font-size: 600% !important;
 }
 
+.welcome-panel .welcome-widgets:before {
+    content: 'widgets';
+}
+
+.welcome-panel .welcome-menus:before {
+    content: 'view_list'
+}
+
 /********************************/
 /*********POST FORMATS***********/
 /********************************/
