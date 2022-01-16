@@ -1,0 +1,48 @@
+/*
+ *   checkbox_login.css
+ *   components
+ * 
+ *   Created by Fatih Balsoy on 1/14/22
+ *   Last Modified by Fatih Balsoy on 1/14/22
+ *   Copyright © 2022 Fatih Balsoy. All rights reserved.
+ */
+
+
+input[type=checkbox]:checked:before {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 128%;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: "liga";
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    margin: -2.5px 0 0 -2.5px !important;
+    color: #fff !important;
+    font-size: 16px;
+    padding: 0px !important;
+    border-radius: 3px;
+    content: 'done';
+}
+
+.login form input[type=checkbox] {
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+.login form input[type=checkbox]:checked {
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-color) !important;
+}
+
+input[type=checkbox] {
+    border: 2px solid #777 !important;
+    box-shadow: none !important;
+    border-radius: 3px !important;
+}

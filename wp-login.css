@@ -7,263 +7,217 @@
  *   Copyright © 2020 Fatih Balsoy. All rights reserved.
  */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-@import url(https://fonts.googleapis.com/css?family=Product+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i);
-:root {
-	--primary-color: #2979FF;
-	--secondary-color: #1976D2;
-	--accent-color: #FF1744;
-	--elevation1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	--elevation2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-	--elevation3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-	--elevation4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	--elevation5: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-}
+ @import url(https://fonts.googleapis.com/css?family=Roboto);
+ @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+ @import url(https://fonts.googleapis.com/css?family=Product+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i);
+ @import url("components/checkbox.css");
+ @import url("components/checkbox_login.css");
 
-div {
-	font-family: 'Product Sans', sans-serif;
-}
-
-body {
-	overflow: hidden !important;
-}
-
-body {
-	background-size: 400px !important;
-	background-position-x: 30% !important;
-	background-color: #f7f7f7 !important;
-	position: fixed;
-	top: 0;
-	z-index: 10;
-	overflow: hidden;
-	width: 100%;
-	height: 100%;
-}
-
-#login {
-	z-index: 9999;
-	position: relative;
-}
-
-#login h1 a {
-	max-width: 290px !important;
-}
-
-#login {
-	float: right;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	background-color: #fff;
-	height: 100vh;
-	width: 400px;
-	padding: 100px 0 0 0;
-}
-
-.login form .input, .login input[type=text] {
-	padding-left: 0px;
-	border: none;
-	background-color: transparent;
-	border-bottom: 2px solid #ddd;
-	border-radius: 0px;
-	box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0) !important;
-	transition: all 0.3s cubic-bezier(.64, .09, .08, 1);
-	color: darken($color, 20%);
-	&:focus, &:valid {
-		box-shadow: none;
-		outline: none;
-		background-position: 0 0;
-		&::-webkit-input-placeholder {
-			color: var(--primary-color);
-			font-size: 11px;
-			transform: translateY(-20px);
-			visibility: visible !important;
-		}
-	}
-}
-
-input[type=checkbox]:checked:before {
-	font-family: 'Material Icons';
-	font-weight: normal;
-	font-style: normal;
-	font-size: 128%;
-	line-height: 1;
-	letter-spacing: normal;
-	text-transform: none;
-	display: inline-block;
-	white-space: nowrap;
-	word-wrap: normal;
-	direction: ltr;
-	font-feature-settings: "liga";
-	-webkit-font-feature-settings: 'liga';
-	-webkit-font-smoothing: antialiased;
-	margin: -2.5px 0 0 -2.5px !important;
-	color: #fff !important;
-	font-size: 16px;
-	padding: 0px !important;
-	border-radius: 3px;
-	content: 'done';
-}
-
-.login form input[type=checkbox] {
-	-webkit-transition: background-color 0.5s;
-	transition: background-color 0.5s;
-}
-
-.login form input[type=checkbox]:checked {
-	background-color: var(--primary-color);
-	border: 2px solid var(--primary-color) !important;
-}
-
-input[type=checkbox] {
-	border: 2px solid #777 !important;
-	box-shadow: none !important;
-	border-radius: 3px !important;
-}
-
-input#wp-submit {
-	transition: all 0.3s cubic-bezier(.25, .8, .25, 1) !important;
-	border: none !important;
-	text-shadow: none !important;
-	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3) !important;
-	width: 50%;
-	max-width: 200px;
-	background: var(--primary-color) !important;
-	border-radius: 10px;
-}
-
-input#wp-submit:hover {
-	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3) !important;
-}
-
-form#loginform:hover p.galogin:hover {
-	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3) !important;
-}
-
-form#loginform p.galogin a {
-	border: none !important;
-	color: #2196F3;
-	line-height: 27px;
-	text-decoration: none;
-}
-
-.login #login_error, .login .message {
-	box-shadow: var(--elevation1);
-	border-radius: 10px !important;
-	border-width: 50px !important;
-	width: 225px;
-	margin-top: 20px !important;
-	margin: 0 auto;
-	height: 40px;
-}
-
-.login #login_error:before, .login .message:before {
-	font-family: 'Material Icons';
-	margin-left: -48px;
-	margin-right: 30px !important;
-	color: white;
-	font-size: 150%;
-	position: relative;
-	top: 6px;
-}
-
-.login .message:before {
-	content: 'exit_to_app';
-}
-
-.login #login_error:before {
-	content: 'error';
-}
-
-.login #backtoblog, .login #nav {
-	padding: 0 !important;
-	margin-top: -25px;
-	text-align: center;
-	margin-left: -15px !important;
-}
-.login #backtoblog a {
-    display: none;
-}
-
-form#loginform p.galogin:hover {
-	color: #2196F3 !important;
-}
-
-.login form {
-	width: 300px;
-	margin: 0 auto;
-	margin-top: 5px;
-	vertical-align: middle !important;
-	box-shadow: none !important;
-}
-
-p#nav>a {
-	padding: 0 24px;
-}
-
-@media screen and (orientation:portrait) {}
-
-@media screen and (orientation:landscape) {}
-
-@media screen and (max-width: 782px) and (orientation:portrait) {}
-
-@media screen and (max-width: 782px) {
-	input[type=checkbox] {
-		margin-top: 3px !important;
-		height: 20px !important;
-		width: 20px !important;
-	}
-	input[type=checkbox]:checked:before {
-		font-size: 20px;
-		padding-left: 0.5px !important;
-		padding-top: 0px !important;
-	}
-	.background-cover {
-		background: none !important;
-	}
-	#login {
-		width: 100% !important;
-	}
-	#loginform, .login #backtoblog a, .login #nav a {
-		padding-left: 10% !important;
-		padding-right: 10% !important;
-	}
-}
-
-/* form#loginform p.galogin a {
-	background: transparent;
-	border-color: transparent;
-	text-decoration: none;
-	text-align: center;
-	vertical-align: middle;
-	border-radius: 10px;
-	padding: 10px 83px;
-	height: 27px;
-	font-size: 14px;
-	margin-bottom: 16px;
-	border: none !important;
-	text-shadow: none !important;
-	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3) !important;
-	transition: all 0.3s ease-in-out !important;
-	font-family: 'Product Sans';
-	font-weight: normal;
-}
-
-form#loginform p.galogin a:before {
-	content: 'google_G ' !important;
-	font-family: 'Product Sans' !important;
-	font-size: 120% !important;
-	position: relative;
-	top: 1.5px;
-	right: 10px;
-} */
-
-p.galogin {
-	background: white !important;
-	box-shadow: none !important;
-	padding: 0px 0px !important;
-}
-
-form#loginform p.galogin a:hover {
-	box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.25) !important;
-	color: #2196F3;
-}
+ :root {
+	 --primary-color: #2979FF;
+	 --secondary-color: #1976D2;
+	 --accent-color: #FF1744;
+	 --elevation1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	 --elevation2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	 --elevation3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	 --elevation4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	 --elevation5: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+ }
+ 
+ div {
+	 font-family: 'Product Sans', sans-serif;
+ }
+ 
+ body {
+	 overflow: hidden !important;
+ }
+ 
+ body {
+	 background-size: 400px !important;
+	 background-position-x: 30% !important;
+	 background-color: #f7f7f7 !important;
+	 position: fixed;
+	 top: 0;
+	 z-index: 10;
+	 overflow: hidden;
+	 width: 100%;
+	 height: 100%;
+ }
+ 
+ #login {
+	 z-index: 9999;
+	 /* position: relative; */
+ }
+ 
+ #login h1 a {
+	 max-width: 290px !important;
+ }
+ 
+ #login {
+	 float: right;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	 background-color: #fff;
+	 height: 100vh;
+	 width: 400px;
+	 padding: 100px 0 0 0;
+ }
+ 
+ .login form .input, .login input[type=text] {
+	 padding-left: 0px;
+	 border: none;
+	 background-color: transparent;
+	 border-bottom: 2px solid #ddd;
+	 border-radius: 0px;
+	 box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0) !important;
+	 transition: all 0.3s cubic-bezier(.64, .09, .08, 1);
+	 color: darken($color, 20%);
+	 &:focus, &:valid {
+		 box-shadow: none;
+		 outline: none;
+		 background-position: 0 0;
+		 &::-webkit-input-placeholder {
+			 color: var(--primary-color);
+			 font-size: 11px;
+			 transform: translateY(-20px);
+			 visibility: visible !important;
+		 }
+	 }
+ }
+ 
+ input#wp-submit {
+	 transition: all 0.3s cubic-bezier(.25, .8, .25, 1) !important;
+	 border: none !important;
+	 text-shadow: none !important;
+	 box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3) !important;
+	 width: 50%;
+	 max-width: 200px;
+	 background: var(--primary-color) !important;
+	 border-radius: 10px;
+ }
+ 
+ input#wp-submit:hover {
+	 box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3) !important;
+ }
+ 
+ form#loginform:hover p.galogin:hover {
+	 box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3) !important;
+ }
+ 
+ form#loginform p.galogin a {
+	 border: none !important;
+	 color: #2196F3;
+	 line-height: 27px;
+	 text-decoration: none;
+ }
+ 
+ .login #login_error, .login .message {
+	 box-shadow: var(--elevation1);
+	 border-radius: 10px !important;
+	 border-width: 50px !important;
+	 width: 225px;
+	 margin-top: 20px !important;
+	 margin: 0 auto;
+	 height: 40px;
+ }
+ 
+ .login #login_error:before, .login .message:before {
+	 font-family: 'Material Icons';
+	 margin-left: -48px;
+	 margin-right: 30px !important;
+	 color: white;
+	 font-size: 150%;
+	 position: relative;
+	 top: 6px;
+ }
+ 
+ .login .message:before {
+	 content: 'exit_to_app';
+ }
+ 
+ .login #login_error:before {
+	 content: 'error';
+ }
+ 
+ .login #backtoblog, .login #nav {
+	 padding: 0 !important;
+	 margin-top: -25px;
+	 text-align: center;
+	 margin-left: -15px !important;
+ }
+ .login #backtoblog a {
+	 display: none;
+ }
+ 
+ form#loginform p.galogin:hover {
+	 color: #2196F3 !important;
+ }
+ 
+ .login form {
+	 width: 300px;
+	 margin: 0 auto;
+	 margin-top: 5px;
+	 vertical-align: middle !important;
+	 box-shadow: none !important;border: none;
+ }
+ 
+ p#nav>a {
+	 padding: 0 24px;
+ }
+ 
+ @media screen and (orientation:portrait) {}
+ 
+ @media screen and (orientation:landscape) {}
+ 
+ @media screen and (max-width: 782px) and (orientation:portrait) {}
+ 
+ @media screen and (max-width: 782px) {
+	 .background-cover {
+		 background: none !important;
+	 }
+	 #login {
+		 width: 100% !important;
+	 }
+	 #loginform, .login #backtoblog a, .login #nav a {
+		 padding-left: 10% !important;
+		 padding-right: 10% !important;
+	 }
+ }
+ 
+ /* form#loginform p.galogin a {
+	 background: transparent;
+	 border-color: transparent;
+	 text-decoration: none;
+	 text-align: center;
+	 vertical-align: middle;
+	 border-radius: 10px;
+	 padding: 10px 83px;
+	 height: 27px;
+	 font-size: 14px;
+	 margin-bottom: 16px;
+	 border: none !important;
+	 text-shadow: none !important;
+	 box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3) !important;
+	 transition: all 0.3s ease-in-out !important;
+	 font-family: 'Product Sans';
+	 font-weight: normal;
+ }
+ 
+ form#loginform p.galogin a:before {
+	 content: 'google_G ' !important;
+	 font-family: 'Product Sans' !important;
+	 font-size: 120% !important;
+	 position: relative;
+	 top: 1.5px;
+	 right: 10px;
+ } */
+ 
+ p.galogin {
+	 background: white !important;
+	 box-shadow: none !important;
+	 padding: 0px 0px !important;
+ }
+ 
+ form#loginform p.galogin a:hover {
+	 box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.25) !important;
+	 color: #2196F3;
+ }
