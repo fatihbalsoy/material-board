@@ -39,8 +39,6 @@
     --font-type: 'Product Sans';
 }
 
-/*TPF = Third-Party Fixes*/
-
 body {
     background-color: var(--light-background);
 }
@@ -306,10 +304,12 @@ button:focus {
         transform: scale(0, 0);
         opacity: 1;
     }
+
     20% {
         transform: scale(25, 25);
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         transform: scale(40, 40);
@@ -619,8 +619,6 @@ input#Submit {
     box-shadow: var(--elevation1);
 }
 
-/*TPF: PHP Settings*/
-
 .tab {
     background-color: #f5f5f5;
 }
@@ -679,8 +677,6 @@ input#Submit {
     padding-left: 25px !important;
     padding-right: 25px !important;
 }
-
-/*TPF: PHP Settings*/
 
 .controls {
     border: none !important;
@@ -901,21 +897,25 @@ div.mce-toolbar-grp, .quicktags-toolbar {
     ::-webkit-scrollbar {
         width: 0px !important;
     }
+
     .wp-responsive-open #wpadminbar #wp-admin-bar-menu-toggle a {
         background-color: rgba(0, 0, 0, 0.05) !important;
     }
+
     .wp-core-ui .button, .wrap .page-title-action, .color-option, .wp-color-result {
         width: 100% !important;
         height: 40px;
         text-align: center !important;
         line-height: 25px;
     }
+
     .color-option {
         padding-top: 14px;
         padding-bottom: 10px;
         height: unset;
         text-align: left !important;
     }
+
     .form-table table.color-palette {
         margin-top: -28px;
         margin-left: 100%;
@@ -924,44 +924,54 @@ div.mce-toolbar-grp, .quicktags-toolbar {
         float: right;
         right: 0px !important;
     }
+
     .form-table .color-palette td {
         padding: unset !important;
     }
+
     th {
         border-bottom: none !important;
         padding: 20px !important;
     }
+
     td {
         padding-left: 20px !important;
         padding-right: 20px !important;
         padding-bottom: 20px !important;
     }
+
     input[type=radio] {
         height: 20px;
         width: 20px;
     }
+
     input[type=radio]:checked:before {
         height: 12px;
         width: 12px;
         margin-top: 2.4px;
         margin-left: 2.4px;
     }
+
     .misc-pub-section {
         padding: 10px;
         padding-left: 15px;
         padding-right: 15px;
     }
+
     #wpadminbar #wp-admin-bar-user-info .display-name {
         color: var(--nd-text-color);
         margin-top: 10px;
     }
+
     #adminmenu div.wp-menu-name:hover {
         background-color: transparent !important;
     }
+
     #profile-page .form-table textarea {
         max-width: 100% !important;
         width: 100%;
     }
+
     .auto-fold #adminmenu .selected .wp-submenu {
         margin-top: 0px !important;
         background-color: rgba(0, 0, 0, 0.05);
@@ -1175,10 +1185,12 @@ div.mce-toolbar-grp, .quicktags-toolbar {
         transform: scale(0, 0);
         opacity: 1;
     }
+
     20% {
         transform: scale(25, 25);
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         transform: scale(40, 40);
@@ -1239,6 +1251,23 @@ div#message, .notice, .jitm-banner.jitm-card, .wrap div.updated, .update-php div
     border-right-width: 0px !important;
 }
 
+/* file://components/images/notice_update.png */
+#update-nag::before, .update-nag::before {
+    content: 'update';
+    font-family: 'Material Icons';
+    margin-left: -48px;
+    margin-right: 30px !important;
+    color: white;
+    font-size: 150%;
+    position: relative;
+    top: 4px;
+}
+
+#update-nag, .update-nag {
+    line-height: 1 !important;
+    padding: 7px 15px 12px 15px !important;
+}
+
 h1.wp-heading-inline, .postbox .inside h2, .wrap [class$=icon32]+h2, .wrap h1, .wrap>h2:first-child {
     font-size: 48px;
     font-weight: bold;
@@ -1256,17 +1285,26 @@ h1.wp-heading-inline, .postbox .inside h2, .wrap [class$=icon32]+h2, .wrap h1, .
     top: 6px;
 }
 
+/* file://components/images/notice_bell.png */
 .notice p:before, .notice-title:before {
     content: 'notifications' !important;
+}
+
+/* file://components/images/notice_error.png */
+div.notice.inline.notice-error.notice-alt > p::before {
+    content: 'error' !important;
 }
 
 div.error p:before {
     content: 'error';
 }
 
+/* file://components/images/notice_updated.png */
 div.updated p:before {
-    content: 'update';
+    content: 'done';
 }
+
+
 
 .form-table td .notice p, .notice p, .notice-title, div.error p, div.updated p {
     position: relative;
@@ -1479,6 +1517,11 @@ div#plugin-information-tabs {
 
 #plugin-information .fyi {
     border: none;
+}
+
+/* file://components/images/plugins_install_button.png */
+a#plugin_install_from_iframe {
+    padding-top: 8px;
 }
 
 #section-holder {

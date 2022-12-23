@@ -73,6 +73,13 @@ input[type=checkbox]:checked:focus {
     font-size: 128%;
 }
 
+/** Fixes the checkbox in the new WordPress block editor
+    components/images/fixes/block_editor_checkbox.png
+*/
+.components-checkbox-control__input[type=checkbox]:checked:before {
+    content: none !important;
+}
+
 /* Mobile Settings */
 @media screen and (max-width: 782px) {
     input[type=checkbox] {
