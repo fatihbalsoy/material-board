@@ -16,9 +16,10 @@ version: '3'
 networks:
   wpsite:
 
-# persistent volumes
+    # persistent volumes
 volumes:
   db_data:
+
 
 services:
   # Database
@@ -27,7 +28,7 @@ services:
     volumes:
       - db_data:/var/lib/mysql
     restart: always
-    environment: 
+    environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wordpress
@@ -55,9 +56,9 @@ services:
     ports:
       - '8000:80'
     restart: always
-    volumes: 
+    volumes:
       # persistent local data
-      - .:/var/www/html/wp-content/plugins/testing:delegated
+      - .:/var/www/html/wp-content/plugins/material-design-dashboard:delegated
       # other data
       - ./volumes/wordpress:/var/www/html
       - ./volumes/plugins:/var/www/html/wp-content/plugins
