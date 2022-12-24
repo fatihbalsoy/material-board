@@ -37,12 +37,11 @@ For now, you will need make these changes inside of `settings/options.json`
 - [x] Drop shadows 
 - [x] Buttons (Ripple Effect) 
 - [x] Inputs (Checkbox, Text Field,  Slider)
-- [ ] Plugin Settings
+- [x] Plugin Settings
 
 ## Known Issues
 
 - Color pallete is hard-coded in `settings/options.json`
-- Changes made in plugin settings will not save.
 
 ## Contribution
 

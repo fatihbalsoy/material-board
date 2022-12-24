@@ -60,34 +60,24 @@ class MaterialDashboardPlugin
 
     function settings()
     {
-        add_settings_section('mdp_appearance', 'Appearance', null, $this->settings_slug);
-
         /** Theme **/
-        add_settings_field('mdp_theme', 'Theme', array($this, 'theme_HTML'), $this->settings_slug, 'mdp_appearance');
         register_setting('material_dashboard_plugin', 'mdp_theme', array('sanitize_callback' => 'sanitize_text_field', 'default' => 'light'));
 
         /** Colors **/
-        add_settings_section('mdp_colors', 'Colors', null, $this->settings_slug);
-
-        add_settings_field('mdp_colors_primary', 'Primary', array($this, 'primaryColor_HTML'), $this->settings_slug, 'mdp_colors');
+        // - Primary
         register_setting('material_dashboard_plugin', 'mdp_colors_primary', array('sanitize_callback' => 'sanitize_text_field', 'default' => '#0288D1'));
-
-        add_settings_field('mdp_colors_accent', 'Accent', array($this, 'accentColor_HTML'), $this->settings_slug, 'mdp_colors');
+        // - Accent
         register_setting('material_dashboard_plugin', 'mdp_colors_accent', array('sanitize_callback' => 'sanitize_text_field', 'default' => '#C62828'));
-    }
 
-    function theme_HTML()
-    {
-        echo $this->get_local_file_contents('settings/options/theme.php');
-    }
+        /** Font **/
+        register_setting('material_dashboard_plugin', 'mdp_font', array('sanitize_callback' => 'sanitize_text_field', 'default' => 'roboto'));
 
-    function primaryColor_HTML()
-    {
-        echo $this->get_local_file_contents('settings/options/color_primary.php');
-    }
-    function accentColor_HTML()
-    {
-        echo $this->get_local_file_contents('settings/options/color_accent.php');
+        /** Icons **/
+        register_setting('material_dashboard_plugin', 'mdp_icons', array('sanitize_callback' => 'sanitize_text_field', 'default' => 'md-icons'));
+
+        /** Toolbar **/
+        // - Divi Theme Fix
+        register_setting('material_dashboard_plugin', 'mdp_toolbar_divi_fix', array('sanitize_callback' => 'sanitize_text_field', 'default' => 'on'));
     }
 
     function get_local_file_contents($file_path)

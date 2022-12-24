@@ -13,6 +13,7 @@
 
 @import url("assets/material-icons/material-icons.css");
 @import url("components/checkbox.css");
+@import url("components/radio.css");
 
 :root {
     --primary-color: #2979FF;
@@ -452,65 +453,6 @@ select:hover {
     border-color: #C62828 !important;
 }
 
-/******** RADIO BUTTONS *********/
-
-/* file://components/images/radio_button_off.png */
-input[type=radio] {
-    box-shadow: none;
-    border: 2px solid #777;
-    background-color: transparent;
-    transition: all 0.5s;
-}
-
-/* file://components/images/radio_button_on.png */
-input[type=radio]:checked {
-    box-shadow: none;
-    border: 2px solid var(--accent-color) !important;
-}
-
-/* file://components/images/radio_button_off.png */
-input[type=radio]:focus {
-    border-color: #777;
-    box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1) !important;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-/* file://components/images/radio_button_off_focus.png */
-/* file://components/images/radio_button_on_focus.png */
-input[type=radio]:checked:focus {
-    border-color: var(--accent-color);
-    box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1) !important;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-/* file://components/images/radio_button_center.png */
-/* file://components/images/radio_button_off.png */
-input[type=radio]:checked:before, input[type=radio]:before {
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    font-size: 24px;
-    width: 8px;
-    height: 8px;
-    margin-top: 2px;
-    margin-left: 2px;
-    display: inline-block;
-    transition: transform 0.2s;
-    transform: scale(0, 0) !important;
-}
-
-/* file://components/images/radio_button_center.png */
-input[type=radio]:checked:before {
-    background-color: var(--accent-color) !important;
-    transform: scale(1, 1) !important;
-    /* content: "\2022"; */
-}
-
-/* file://components/images/radio_button_off.png */
-input[type=radio]:before {
-    content: "\2022";
-    transform: scale(0, 0) !important;
-}
-
 .wp-color-result {
     border: none;
     padding: 3px;
@@ -938,18 +880,6 @@ div.mce-toolbar-grp, .quicktags-toolbar {
         padding-left: 20px !important;
         padding-right: 20px !important;
         padding-bottom: 20px !important;
-    }
-
-    input[type=radio] {
-        height: 20px;
-        width: 20px;
-    }
-
-    input[type=radio]:checked:before {
-        height: 12px;
-        width: 12px;
-        margin-top: 2.4px;
-        margin-left: 2.4px;
     }
 
     .misc-pub-section {

@@ -95,6 +95,16 @@
     color: var(--primary-color-text);
 }
 
+/* ---------- RADIO BUTTONS ----------- */
+
+/** Fixes radio button on settings page if getmdl.io framework is imported **/
+/* input[type=radio]:checked:before, input[type=radio]:before {
+    height: .5rem !important;
+    width: .5rem !important;
+    margin-top: 1.6px !important;
+    margin-left: 1.85px !important;
+} */
+
 .mdwp-primary-back input[type="radio"], .mdwp-dark-back input[type="radio"] {
     border-color: #fff !important;
 }
@@ -134,6 +144,8 @@
     background-color: transparent !important;
 }
 
+/* ------------------ */
+
 .mdwp-dark-back input[type=text]:hover, .mdwp-dark-back input[type=number]:hover, .mdwp-dark-back input[type=search]:hover, .mdwp-dark-back input[type=email]:hover, .mdwp-dark-back input[type=password]:hover, .mdwp-dark-back input[type=url]:hover, .mdwp-dark-back select:hover, .mdwp-dark-back input[type=text]:focus, .mdwp-dark-back input[type=number]:focus, .mdwp-dark-back input[type=search]:focus, .mdwp-dark-back input[type=email]:focus, .mdwp-dark-back input[type=password]:focus, .mdwp-dark-back input[type=url]:focus, .mdwp-dark-back select:focus {
     border-color: #fff !important;
 }
@@ -155,6 +167,42 @@
 }
 
 .mdwp-card input[type=radio], .mdwp-card select {
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+}
+
+.mdwp-primary-back input[type="checkbox"], .mdwp-dark-back input[type="checkbox"] {
+    border-color: #fff !important;
+}
+
+.mdwp-primary-back input[type="checkbox"]:checked:before {
+    color: #fff !important;
+}
+
+.mdwp-dark-back input[type="checkbox"]:checked:before {
+    color: var(--dark-back-color) !important;
+}
+
+.mdwp-primary-back input[type="checkbox"]:checked {
+    border-color: var(--accent-color) !important;
+}
+
+.mdwp-dark-back input[type="checkbox"]:checked {
+    border-color: var(--accent-color-light) !important;
+    background-color: var(--accent-color-light) !important;
+}
+
+.mdwp-dark-back input[type="checkbox"]:focus {
+    box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.2) !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.mdwp-dark-back input[type="checkbox"]:checked:focus {
+    box-shadow: 0px 0px 0px 5px rgba(239, 83, 80, 0.3) !important;
+    background: var(--accent-color-light) !important;
+}
+
+.mdwp-card input[type=checkbox] {
     margin-bottom: 5px !important;
     margin-top: 5px !important;
 }
