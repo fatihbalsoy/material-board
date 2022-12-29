@@ -7,26 +7,41 @@
  *   Copyright © 2020 Fatih Balsoy. All rights reserved.
  */
 
-var rad = document.themeForm.theme;
+// var script = document.createElement('script');
+// script.src = 'https://code.jquery.com/jquery-3.6.3.min.js';
+// document.getElementsByTagName('head')[0].appendChild(script);
+// $(document).ready(function () {
+// 	$(window).keydown(function (event) {
+// 		if (event.keyCode == 13) {
+// 			event.preventDefault();
+// 			return false;
+// 		}
+// 	});
+// });
+
+// var rad = document.mdp_theme.theme;
 var prev = null;
 
 var blankDarkTheme = '../wp-content/plugins/material-design-dashboard/assets/dark-theme/blank.css';
 var darkTheme = '../wp-content/plugins/material-design-dashboard/assets/dark-theme/dark-theme.css';
 
-for (var i = 0; i < rad.length; i++) {
-	rad[i].onclick = function () {
-		(prev) ? console.log(prev.value) : null;
-		if (this !== prev) {
-			prev = this;
-		}
-		console.log(this.value);
-		if (this.value == 'dark') {
-			changeCSS(darkTheme, blankDarkTheme);
-		} else if (this.value == 'light') {
-			changeCSS(blankDarkTheme, darkTheme);
-		}
-	};
-}
+var blankMaterialIcons = '../wp-content/plugins/material-design-dashboard/assets/material-icons/blank.css';
+var materialIcons = '../wp-content/plugins/material-design-dashboard/assets/material-icons/material-icons.css';
+
+// for (var i = 0; i < rad.length; i++) {
+// 	rad[i].onclick = function () {
+// 		(prev) ? console.log(prev.value) : null;
+// 		if (this !== prev) {
+// 			prev = this;
+// 		}
+// 		console.log(this.value);
+// 		if (this.value == 'dark') {
+// 			changeCSS(darkTheme, blankDarkTheme);
+// 		} else if (this.value == 'light') {
+// 			changeCSS(blankDarkTheme, darkTheme);
+// 		}
+// 	};
+// }
 
 var html = document.getElementsByTagName('html')[0];
 function changePrimaryColor() {

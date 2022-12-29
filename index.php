@@ -23,34 +23,51 @@ class MaterialDashboardPlugin
     {
         $this->settings_slug = 'material-dashboard-settings';
 
-        add_action('admin_enqueue_scripts', array($this, 'my_admin_theme_style'));
-        add_action('login_enqueue_scripts', array($this, 'my_login_theme_style'));
-        add_action('admin_menu', array($this, 'my_plugin_menu'));
+        add_action('admin_enqueue_scripts', array($this, 'mdp_admin_theme_style'));
+        add_action('login_enqueue_scripts', array($this, 'mdp_login_theme_style'));
+        add_action('admin_menu', array($this, 'mdp_plugin_menu'));
         add_action('admin_init', array($this, 'settings'));
     }
 
     /** Admin Dashboard Theme **/
-    function my_admin_theme_style()
+    function mdp_admin_theme_style()
     {
-        wp_enqueue_style('my-admin-theme', plugins_url('wp-admin.css', __FILE__));
-        wp_enqueue_style('dark-admin-theme', plugins_url('assets/dark-theme/blank.css', __FILE__));
-        wp_enqueue_script('theme-script', plugins_url('assets/properties.js', __FILE__), array('jquery'));
+        wp_enqueue_script('theme-script', plugins_url('script.js', __FILE__), array('jquery'));
+
+        wp_enqueue_style('mdp-admin-theme', plugins_url('wp-admin.css', __FILE__));
+
+        function enqueue_dark_theme()
+        {
+            wp_enqueue_style('dark-admin-theme', plugins_url('assets/dark-theme/dark-theme.css', __FILE__));
+        }
+
+        // Explicit Dark Mode
+        if (get_option('mdp_theme') == 'dark') {
+            enqueue_dark_theme();
+        }
+        // Automatic Dark Mode
+        else if (get_option('mdp_theme') == 'auto') {
+            // print_r($_COOKIE);
+            if ($_COOKIE['system_theme'] == 'dark') {
+                enqueue_dark_theme();
+            }
+        }
     }
 
     /** Login Theme **/
-    function my_login_theme_style()
+    function mdp_login_theme_style()
     {
-        wp_enqueue_style('my-login-theme', plugins_url('wp-login.css', __FILE__));
+        wp_enqueue_style('mdp-login-theme', plugins_url('wp-login.css', __FILE__));
     }
 
     /** Plugin Menu **/
-    function my_plugin_menu()
+    function mdp_plugin_menu()
     {
-        add_theme_page('Material Design Dashboard', 'Material Design Dashboard', 'manage_options', $this->settings_slug, array($this, 'my_plugin_options'));
+        add_theme_page('Material Design Dashboard', 'Material Design Dashboard', 'manage_options', $this->settings_slug, array($this, 'mdp_plugin_options'));
     }
 
     /** Plugin Options **/
-    function my_plugin_options()
+    function mdp_plugin_options()
     {
         if (!current_user_can('manage_options')) {
             wp_die(__('You do not have sufficient permissions to access this page.'));
