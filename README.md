@@ -1,31 +1,22 @@
-![Alt text](github/banner.png?raw=true  "Material Design Dashboard")
+![Alt text](.readme/banner.png?raw=true  "Material Design Dashboard")
+
+![Prerelease](https://img.shields.io/badge/pre--release-red)
+![License](https://img.shields.io/badge/license-AGPL_v3-blue)
+![WordPress](https://img.shields.io/badge/WordPress-lightblue)
 
 Material Dashboard is a Wordpress plugin that replaces your site's dashboard design with a more modern look by using [Google's Material Design Guidelines](https://material.io/design). This plugin respects your dashboard layout, does not make any drastic changes, and does not add plugin branding, it is completely free and simple to use.
 
 ## Screenshots
 
-![Alt text](github/screenshots.png?raw=true  "Screenshots")
+![Alt text](.readme/screenshots.png?raw=true  "Screenshots")
 
 ## Installation
 
-Clone this repository into `wp-content/plugins/material-design-dashboard` and activate `Material Design Dashboard` on your site's plugin settings.
+Download the latest release of Material Dashboard [here](https://github.com/fatihbalsoy/wp-material-design/releases/), unzip the archive, drag the folder contents into `wp-content/plugins/material-design-dashboard` and activate `Material Design Dashboard` on your site's plugin settings.
 
-## Personalize
+### NOTE
 
-Personalizing the theme's colors and style from your dashboard is not yet complete.
-For now, you will need make these changes inside of `settings/options.json`
-
-```json
-{
-  "theme":"light",
-  "colors":{
-    "primary": "#2196F3",
-    "accent": "#F44336"
-  },
-  "font": "unset",
-  "icons": "md-icons"
-}
-```
+This plugin is still in its pre-release phase and is not yet available on the WordPress Plugin Directory.
 
 ## Features
 
@@ -41,7 +32,7 @@ For now, you will need make these changes inside of `settings/options.json`
 
 ## Known Issues
 
-- Color pallete is hard-coded in `settings/options.json`
+- Automatic system theme setting does not take effect until after two page refreshes.
 
 ## Contribution
 
