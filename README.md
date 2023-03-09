@@ -12,7 +12,11 @@ Material Dashboard is a Wordpress plugin that replaces your site's dashboard des
 
 ## Installation
 
-Download the latest release of Material Dashboard [here](https://github.com/fatihbalsoy/wp-material-design/releases/), unzip the archive, drag the folder contents into `wp-content/plugins/material-design-dashboard` and activate `Material Design Dashboard` on your site's plugin settings.
+- Download the latest release of Material Dashboard [here](https://github.com/fatihbalsoy/wp-material-design/releases/),
+- On your WordPress dashboard go to `Plugins` > `Add New`,
+- Click the `Upload Plugin` button near the header,
+- Select the downloaded zip archive,
+- Finally, activate Material Design Dashboard.
 
 ### NOTE
 
