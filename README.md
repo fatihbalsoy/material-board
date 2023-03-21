@@ -4,7 +4,7 @@
 ![License](https://img.shields.io/badge/license-AGPL_v3-blue)
 ![WordPress](https://img.shields.io/badge/WordPress-lightblue)
 
-Material Dashboard is a Wordpress plugin that replaces your site's dashboard design with a more modern look by using [Google's Material Design Guidelines](https://material.io/design). This plugin respects your dashboard layout, does not make any drastic changes, and does not add plugin branding, it is completely free and simple to use.
+The Material Dashboard plugin for WordPress updates the appearance of your site's dashboard to a sleeker, more contemporary design based on [Google's Material Design Guidelines](https://material.io/design). This plugin preserves your existing dashboard layout, avoids making any significant alterations, and doesn't include any branding or promotional content. It's straightforward to use and comes at no cost.
 
 ## Screenshots
 
@@ -44,8 +44,7 @@ Feel free to submit a pull request for one of the following:
 
 - New features
 - Support third-party plugins or themes
-- Fixing bugs caused by Wordpress updates
-- Fixing security vulnurabilities
+- Fixing bugs and security vulnurabilities
 
 ## Licenses
 
@@ -53,6 +52,8 @@ Material Design Dashboard, [AGPL License 3.0](https://github.com/fatihbalsoy/wp-
 
 This project depends on the following third-parties:
 
+- GitHub's Mona Sans Fonts, [SIL Open Font License 1.1](https://github.com/github/mona-sans/blob/main/LICENSE)
+- GitHub's Hubot Sans Fonts, [SIL Open Font License 1.1](https://github.com/github/hubot-sans/blob/main/LICENSE)
 - Google's Roboto Font, [Apache License 2.0](https://github.com/googlefonts/roboto/blob/master/LICENSE).
 - Google's Material Design Icons, [Apache License 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE).
 - Community Material Design Icons, [SIL Open Font License 1.1](https://github.com/Templarian/MaterialDesign/blob/master/LICENSE).

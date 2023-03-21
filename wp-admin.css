@@ -9,7 +9,9 @@
 
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-@import url(https://fonts.googleapis.com/css?family=Product+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i);
+@import url(assets/fonts/hubot-sans.woff2);
+@import url(assets/fonts/mona-sans.woff2);
+/* @import url(https://fonts.googleapis.com/css?family=Product+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i); */
 
 @import url("assets/material-icons/material-icons.css");
 @import url("components/checkbox.css");
@@ -37,7 +39,7 @@
     --elevation3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     --elevation4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     --elevation5: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-    --font-type: 'Product Sans';
+    --font-type: 'Mona Sans';
 }
 
 body {

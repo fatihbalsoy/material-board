@@ -69,8 +69,10 @@ function changeFontType() {
 	var selectedFont = document.getElementById("font-face").value;
 	if (selectedFont == 'roboto') {
 		html.style.setProperty("--font-type", "Roboto");
-	} else if (selectedFont == 'product-sans') {
-		html.style.setProperty("--font-type", "Product Sans");
+	} if (selectedFont == 'mona-sans') {
+		html.style.setProperty("--font-type", "Mona Sans");
+	} if (selectedFont == 'hubot-sans') {
+		html.style.setProperty("--font-type", "Hubot Sans");
 	} else {
 		html.style.setProperty("--font-type", "unset");
 	}
