@@ -7,7 +7,6 @@
  *   Copyright © 2020 Fatih Balsoy. All rights reserved.
  */
 
-@import url('/wp-content/plugins/material-design-dashboard/wp-admin.css');
 body.wp-autoresize, body, #wpcontent, ul.cat-checklist, .wp-tab-active, ul.add-menu-item-tabs li.tabs, ul.category-tabs li.tabs, .attachments-browser .attachments, .attachments-browser .uploader-inline, .theme-browser .theme.active .theme-name, .wp-full-overlay-sidebar .wp-full-overlay-sidebar-content, .customize-control-checkbox, #phpinfo li:not(.local-override):hover .list-checkbox, #phpinfo li:not(.local-override):hover .list-key, #phpinfo li:not(.local-override):hover .list-value, #customize-theme-controls .customize-pane-child.accordion-section-content, #customize-theme-controls .customize-pane-child.accordion-sub-container {
     background: var(--dark-background) !important;
     color: #fff !important;
@@ -251,4 +250,12 @@ div#plugin-information-footer {
 .tablenav-pages-navspan, .tablenav .tablenav-pages a, .tablenav-pages-navspan {
     background: transparent !important;
     border: transparent !important;
+}
+
+.welcome-panel .welcome-panel-column-container {
+    background-color: transparent !important;
+}
+
+#activity-widget #the-comment-list .comment-item {
+    background-color: transparent !important;
 }

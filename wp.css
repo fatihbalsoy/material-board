@@ -7,8 +7,10 @@
  *   Copyright © 2020 Fatih Balsoy. All rights reserved.
  */
 
+
 @import url('assets/material-icons/material-icons.css');
-@import url('assets/theme.css');
+@import url('assets/default_theme.css');
+
 :root{
     --nd-color: #fff;
     --nd-text-color: #777;
@@ -17,9 +19,9 @@
 
 #wpadminbar{
     background-color: #f5f5f5 !important;
-    padding: 3px 10% 0px 10%;
     height: 32px;
     transition: all 0.5s;
+    padding-top: 5px;
 }
 
 header#main-header{
