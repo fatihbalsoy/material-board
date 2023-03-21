@@ -7,6 +7,8 @@
  *   Copyright © 2020 Fatih Balsoy. All rights reserved.
  */
 
+/* TODO: Login Page */
+
 body.wp-autoresize, body, #wpcontent, ul.cat-checklist, .wp-tab-active, ul.add-menu-item-tabs li.tabs, ul.category-tabs li.tabs, .attachments-browser .attachments, .attachments-browser .uploader-inline, .theme-browser .theme.active .theme-name, .wp-full-overlay-sidebar .wp-full-overlay-sidebar-content, .customize-control-checkbox, #phpinfo li:not(.local-override):hover .list-checkbox, #phpinfo li:not(.local-override):hover .list-key, #phpinfo li:not(.local-override):hover .list-value, #customize-theme-controls .customize-pane-child.accordion-section-content, #customize-theme-controls .customize-pane-child.accordion-sub-container {
     background: var(--dark-background) !important;
     color: #fff !important;
