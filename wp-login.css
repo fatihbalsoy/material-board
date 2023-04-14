@@ -111,9 +111,9 @@ form#loginform p.galogin a {
 }
 
 /* With constrained height and width:
- 	components/images/fixes/login_error.png
+ 	docs/images/fixes/login_error.png
  * Without constrained height and width:
- 	components/images/fixes/login_error_fixed.png
+ 	docs/images/fixes/login_error_fixed.png
 */
 .login #login_error,
 .login .message {
