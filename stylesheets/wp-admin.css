@@ -86,7 +86,7 @@ div {
 }
 
 .spinner {
-    background: url('assets/spinner.gif') no-repeat !important;
+    background: url('../assets/spinner.gif') no-repeat !important;
     background-size: 210% !important;
     background-position: center !important;
 }
