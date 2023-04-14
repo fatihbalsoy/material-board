@@ -74,7 +74,7 @@ input[type=checkbox]:checked:focus {
 }
 
 /** Fixes the checkbox in the new WordPress block editor
-    components/images/fixes/block_editor_checkbox.png
+    docs/images/fixes/block_editor_checkbox.png
 */
 .components-checkbox-control__input[type=checkbox]:checked:before {
     content: none !important;
