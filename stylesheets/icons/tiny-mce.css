@@ -1,0 +1,146 @@
+/*
+ *   tiny-mce.css
+ *   icons
+ * 
+ *   Created by Fatih Balsoy on 4/14/23
+ *   Copyright © 2023 Fatih Balsoy. All rights reserved.
+ */
+
+/* https://developer.wordpress.org/resource/dashicons/#icons-tinymce */
+
+.dashicons-editor-bold:before, .mce-i-bold:before{
+    content: 'format_bold' !important;
+}
+
+.dashicons-editor-italic:before, .mce-i-italic:before{
+    content: 'format_italic' !important;
+}
+
+.dashicons-editor-ul:before, .mce-i-bullist:before{
+    content: 'format_list_bulleted' !important;
+}
+
+.dashicons-editor-ol:before, .mce-i-numlist:before{
+    content: 'format_list_numbered' !important;
+}
+
+.dashicons-editor-quote:before, .mce-i-blockquote:before{
+    content: 'format_quote' !important;
+}
+
+.dashicons-editor-alignleft:before, .mce-i-alignleft:before{
+    content: 'format_align_left' !important;
+}
+
+.dashicons-editor-aligncenter:before, .mce-i-aligncenter:before{
+    content: 'format_align_center' !important;
+}
+
+.dashicons-editor-alignright:before, .mce-i-alignright:before{
+    content: 'format_align_right' !important;
+}
+
+/*INSERT-MORE*/
+
+.dashicons-editor-spellcheck:before{
+    content: 'spellcheck' !important;
+}
+
+.dashicons-editor-expand:before, 
+.mce-i-dfw:before, 
+.qt-dfw:before,
+.mce-i-fullscreen:before{
+    content: 'fullscreen' !important;
+}
+
+.dashicons-editor-contract:before{
+    content: 'fullscreen_exit' !important;
+}
+
+/*KITCHEN-SINK*/
+
+.dashicons-editor-underline:before,
+.mce-i-underline:before{
+    content: 'format_underline' !important;
+}
+
+.dashicons-editor-justify:before,
+.mce-i-alignjustify:before{
+    content: 'format_align_justify' !important;
+}
+
+.dashicons-editor-textcolor:before,
+.mce-i-forecolor:before{
+    content: 'format_color_text' !important;
+}
+
+.dashicons-editor-paste-word:before{
+    content: 'content_paste' !important;
+}
+
+.dashicons-editor-paste-text:before,
+.mce-i-pastetext:before{
+    content: 'content_paste' !important;
+}
+
+.dashicons-editor-removeformatting:before,
+.mce-i-removeformat:before{
+    content: 'format_clear' !important;
+}
+
+.dashicons-editor-video:before{
+    content: 'theaters' !important;
+}
+
+.dashicons-editor-customchar:before,
+.mce-i-charmap:before{
+    content: 'functions' !important;
+}
+
+.dashicons-editor-outdent:before,
+.mce-i-outdent:before{
+    content: 'format_indent_decrease' !important;
+}
+
+.dashicons-editor-indent:before,
+.mce-i-indent:before{
+    content: 'format_indent_increase' !important;
+}
+
+.dashicons-editor-help:before{
+    content: 'help' !important;
+}
+
+.dashicons-editor-strikethrough:before,
+.mce-i-strikethrough:before{
+    content: 'format_strikethrough' !important;
+}
+
+.dashicons-editor-link:before, .mce-i-link:before{
+    content: 'link' !important;
+}
+
+/*UNLINK .mce-i-unlink:before*/
+
+.dashicons-editor-rtl:before{
+    content: 'format_textdirection_l_to_r' !important;
+}
+
+.dashicons-editor-break:before{
+    content: 'keyboard_return' !important;
+}
+
+.dashicons-editor-code:before{
+    content: 'code' !important;
+}
+
+/*PARAGRAPH*/
+
+.dashicons-editor-table:before,
+.mce-i-table:before{
+    content: 'insert_chart' !important;
+}
+
+.mce-i-emoticons:before{
+    content: 'insert_emoticon' !important;
+}

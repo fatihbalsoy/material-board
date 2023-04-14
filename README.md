@@ -2,7 +2,7 @@
 
 ![Prerelease](https://img.shields.io/badge/pre--release-red)
 ![License](https://img.shields.io/badge/license-AGPL_v3-blue)
-![WordPress](https://img.shields.io/badge/WordPress-lightblue)
+![WordPress](https://img.shields.io/badge/WordPress-6.2-lightblue)
 
 The Material Dashboard plugin for WordPress updates the appearance of your site's dashboard to a sleeker, more contemporary design based on [Google's Material Design Guidelines](https://material.io/design). This plugin preserves your existing dashboard layout, avoids making any significant alterations, and doesn't include any branding or promotional content. It's straightforward to use and comes at no cost.
 

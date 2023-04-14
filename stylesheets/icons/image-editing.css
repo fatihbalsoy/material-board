@@ -1,0 +1,56 @@
+/*
+ *   image-editing.css
+ *   icons
+ * 
+ *   Created by Fatih Balsoy on 4/14/23
+ *   Copyright © 2023 Fatih Balsoy. All rights reserved.
+ */
+
+/* https://developer.wordpress.org/resource/dashicons/#icons-image-editing */
+
+.dashicons-image-crop:before,
+.imgedit-crop:before{
+    content: 'crop';
+}
+
+.dashicons-image-rotate:before{
+    content: 'rotate_90_degrees_ccw';
+}
+
+.dashicons-image-rotate-left:before,
+.imgedit-rleft:before{
+    content: 'rotate_left';
+}
+
+.dashicons-image-rotate-right:before,
+.imgedit-rright:before{
+    content: 'rotate_right';
+}
+
+.dashicons-image-flip-vertical:before,
+.imgedit-flipv:before{
+    transform: rotate(90deg);
+    display: inline-block;
+    content: 'flip';
+}
+
+.dashicons-image-flip-horizontal:before,
+.imgedit-fliph:before{
+    content: 'flip';
+}
+
+.dashicons-image-filter:before{
+    content: 'photo_filter';
+}
+
+.dashicons-undo:before,
+i.mce-i-undo:before,
+.imgedit-undo:before{
+    content: 'undo' !important;
+}
+
+.dashicons-redo:before,
+i.mce-i-redo:before,
+.imgedit-redo:before{
+    content: 'redo' !important;
+}

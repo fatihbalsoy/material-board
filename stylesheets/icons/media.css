@@ -1,0 +1,90 @@
+/*
+ *   media.css
+ *   icons
+ * 
+ *   Created by Fatih Balsoy on 4/14/23
+ *   Copyright © 2023 Fatih Balsoy. All rights reserved.
+ */
+
+/* https://developer.wordpress.org/resource/dashicons/#icons-media */
+
+.dashicons-media-archive:before{
+    content: 'archive';
+}
+
+.dashicons-media-audio:before{
+    content: 'music_note';
+}
+
+.dashicons-media-code:before{
+    content: 'code';
+}
+
+.dashicons-media-default:before{
+    content: 'insert_drive_file';
+}
+
+.dashicons-media-document:before,
+#dashboard_right_now .page-count a:before, #dashboard_right_now .page-count span:before{
+    content: 'description';
+}
+
+.dashicons-media-interactive:before{
+    content: 'note';
+}
+
+.dashicons-media-spreadsheet:before{
+    content: 'insert_chart';
+}
+
+.dashicons-media-text:before{
+    content: 'subject';
+}
+
+.dashicons-media-video:before{
+    content: 'subscriptions';
+}
+
+.dashicons-playlist-audio:before{
+    content: 'library_music';
+}
+
+.dashicons-playlist-video:before{
+    content: 'video_library';
+}
+
+.dashicons-controls-play:before{
+    content: 'play_arrow';
+}
+
+.dashicons-controls-pause:before{
+    content: 'pause';
+}
+
+.dashicons-controls-forward:before{
+    content: 'fast_forward';
+}
+
+.dashicons-controls-skipforward:before{
+    content: 'skip_next';
+}
+
+.dashicons-controls-back:before{
+    content: 'fast_rewind';
+}
+
+.dashicons-controls-skipback:before{
+    content: 'skip_previous';
+}
+
+.dashicons-controls-repeat:before{
+    content: 'repeat';
+}
+
+.dashicons-controls-volumeon:before{
+    content: 'volume_up';
+}
+
+.dashicons-controls-volumeoff:before{
+    content: 'volume_off';
+}

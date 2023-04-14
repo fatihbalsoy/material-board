@@ -1,0 +1,21 @@
+/*
+ *   widgets.css
+ *   icons
+ * 
+ *   Created by Fatih Balsoy on 4/14/23
+ *   Copyright © 2023 Fatih Balsoy. All rights reserved.
+ */
+
+/* https://developer.wordpress.org/resource/dashicons/#icons-widgets */
+
+.dashicons-archive:before{
+    content: 'archive';
+}
+
+.dashicons-tagcloud:before{
+    content: 'line_style';
+}
+
+.dashicons-text:before{
+    content: 'subject';
+}

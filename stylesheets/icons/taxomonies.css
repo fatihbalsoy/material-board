@@ -1,0 +1,17 @@
+/*
+ *   taxomonies.css
+ *   icons
+ * 
+ *   Created by Fatih Balsoy on 4/14/23
+ *   Copyright © 2023 Fatih Balsoy. All rights reserved.
+ */
+
+/* https://developer.wordpress.org/resource/dashicons/#icons-taxonomies */
+
+.dashicons-tag:before{
+    content: 'local_offer';
+}
+
+.dashicons-category:before{
+    content: 'folder';
+}

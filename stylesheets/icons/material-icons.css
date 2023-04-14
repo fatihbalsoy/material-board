@@ -1,0 +1,269 @@
+/*
+ *   material-icons.css
+ *   material-icons
+ * 
+ *   Created by Fatih Balsoy on 1/30/20
+ *   Last Modified by Fatih Balsoy on 7/17/20
+ *   Copyright © 2020 Fatih Balsoy. All rights reserved.
+ */
+
+ /* Replaces Dashicons with Material Icons: 
+  * https://developer.wordpress.org/resource/dashicons/ 
+  * https://fonts.google.com/icons
+  */
+
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css);
+
+@import url(admin-menu.css);
+@import url(image-editing.css);
+@import url(media.css);
+@import url(miscellaneous.css);
+@import url(notifications.css);
+@import url(post-formats.css);
+@import url(posts-screen.css);
+@import url(products.css);
+@import url(social.css);
+@import url(sorting.css);
+@import url(taxomonies.css);
+@import url(tiny-mce.css);
+@import url(welcome-screen.css);
+@import url(widgets.css);
+@import url(wordpress-org.css);
+
+.dashicons,
+.dashicons-before:before,
+.mce-ico, .wp-media-buttons .add_media span.wp-media-buttons-icon:before,
+#post-body #visibility:before,
+#post-body .misc-pub-post-status:before,
+#post-body .misc-pub-revisions:before,
+.curtime #timestamp:before,
+.post-format-icon:before,
+#collapse-button .collapse-button-icon:after,
+#bulk-titles div a:before, .notice-dismiss:before, .tagchecklist .ntdelbutton .remove-tag-icon:before, .welcome-panel .welcome-panel-close:before,
+.bulk-action-notice .toggle-indicator:before, .js .meta-box-sortables .postbox .toggle-indicator:before, .js .sidebar-name .sidebar-name-arrow:before,
+th .comment-grey-bubble:before,
+.sorting-indicator:before,
+.qt-dfw,
+#wpadminbar .ab-icon,
+#wpadminbar>#wp-toolbar>#wp-admin-bar-root-default .ab-icon,
+#wpadminbar #adminbarsearch:before,
+#et_search_icon:before,
+.et-social-rss a.icon:before,
+.star-rating .star-full:before,
+.star-rating .star-half:before,
+.plugin-card .column-compatibility span:before,
+.star-rating .star-empty:before,
+.post-format-icon:before,
+.imgedit-menu .button:before,
+.customize-panel-back:before, 
+.customize-section-back:before,
+.button.updated-message:before, .installed p:before, .updated-message p:before,
+#dashboard_activity .no-activity .smiley:before,
+#dashboard_right_now li a:before, #dashboard_right_now li span:before, .welcome-panel .welcome-icon:before,
+.theme-browser .theme .notice-success p:before,
+#menu-posts-feedback .wp-menu-image:before{
+    font-family: 'Material Icons' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 140%;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga' !important;
+    -webkit-font-smoothing: antialiased;
+}
+.dashicons, .hidden {
+    display: none;
+}
+.customize-panel-back:before, .customize-section-back:before{
+    font-size: 170% !important;
+}
+#wpadminbar .ab-item:before{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 140%;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+.post-format-icon:before{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 140%;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;    
+}
+.dashicons-editor-link:before,
+i.mce-i-link:before,
+.star-rating .star-full:before,
+.star-rating .star-half:before,
+.star-rating .star-empty:before{
+    display: block !important;
+    font-size: 110% !important;
+}
+.plugin-card .column-compatibility span:before{
+    top: -1px;
+    left: -4px;
+}
+#et_search_icon:before{
+    font-size: 160%;
+    top: -8px !important;
+}
+
+/**MATERIAL DESIGN ICONS COMMUNITY**/
+.dashicons-admin-post:before,
+.post-format-icon.post-format-standard:before{
+    font-family: 'Material Design Icons' !important;
+    content: '\f403 ';
+}
+
+.dashicons-editor-unlink:before,
+i.mce-i-unlink:before{
+    font-family: 'Material Design Icons' !important;
+    content: '\f338' !important;
+    display: block !important;
+    font-size: 103% !important;
+}
+
+/**NOT SET**/
+.dashicons-filter:before,
+.dashicons-editor-insertmore:before,
+.dashicons-editor-kitchensink:before,
+.dashicons-editor-paragraph:before,
+.dashicons-sticky:before,
+.dashicons-move:before,
+.dashicons-twitter:before,
+.dashicons-facebook:before,
+.dashicons-facebook-alt:before,
+.dashicons-googleplus:before,
+.dashicons-hammer:before,
+.dashicons-art:before,
+.dashicons-migrate:before,
+.dashicons-performance:before,
+.dashicons-universal-access:before,
+.dashicons-universal-access-alt:before,
+.dashicons-tickets:before,
+.dashicons-nametag:before,
+.dashicons-clipboard:before,
+.dashicons-heart:before,
+.dashicons-megaphone:before,
+.dashicons-schedule:before,
+.dashicons-wordpress:before,
+.dashicons-wordpress-alt:before,
+.dashicons-location:before,
+.dashicons-location-alt:before,
+.dashicons-vault:before,
+.dashicons-shield:before,
+.dashicons-shield-alt:before,
+.dashicons-sos:before,
+.dashicons-slides:before,
+.dashicons-analytics:before,
+.dashicons-chart-pie:before,
+.dashicons-chart-bar:before,
+.dashicons-chart-line:before,
+.dashicons-chart-area:before,
+.dashicons-groups:before,
+.dashicons-businessman:before,
+.dashicons-id:before,
+.dashicons-id-alt:before,
+.dashicons-products:before,
+.dashicons-awards:before,
+.dashicons-forms:before,
+.dashicons-testimonial:before,
+.dashicons-portfolio:before,
+.dashicons-book:before,
+.dashicons-book-alt:before,
+.dashicons-download:before,
+.dashicons-upload:before,
+.dashicons-backup:before,
+.dashicons-clock:before,
+.dashicons-lightbulb:before,
+.dashicons-microphone:before,
+.dashicons-desktop:before,
+.dashicons-laptop:before,
+.dashicons-tablet:before,
+.dashicons-smartphone:before,
+.dashicons-phone:before,
+.dashicons-index-card:before,
+.dashicons-carrot:before,
+.dashicons-building:before,
+.dashicons-store:before,
+.dashicons-album:before,
+.dashicons-palmtree:before,
+.dashicons-tickets-alt:before,
+.dashicons-money:before,
+.dashicons-smiley:before,
+.dashicons-thumbs-up:before,
+.dashicons-thumbs-down:before,
+.dashicons-layout:before,
+.dashicons-paperclip:before,
+.mce-i-wp_more,
+.mce-i-wp_adv,
+.post-state-format.post-format-standard:before,
+a.post-state-format.format-standard:before{
+    font-family: dashicons !important;
+}
+
+/*{
+    font-family: tinymce;
+}*/
+
+#wpadminbar #wp-admin-bar-wp-logo>.ab-item .ab-icon:before{
+    font-family: dashicons !important;
+}
+
+/**THIRD PARTY THEME FIXES**/
+li.toplevel_page_et_divi_options div.wp-menu-image:before,
+#wp-admin-bar-et-use-visual-builder a:before{
+    font-family: 'ETmodules' !important;
+}
+
+@media screen and (max-width: 782px){
+
+	#wpadminbar #wp-admin-bar-customize>.ab-item:before, #wpadminbar #wp-admin-bar-edit>.ab-item:before, #wpadminbar #wp-admin-bar-my-account>.ab-item:before, #wpadminbar #wp-admin-bar-my-sites>.ab-item:before, #wpadminbar #wp-admin-bar-site-name>.ab-item:before,
+	#wpadminbar #wp-admin-bar-comments .ab-icon:before,
+	#wpadminbar #wp-admin-bar-new-content .ab-icon:before,
+	#wpadminbar #wp-admin-bar-menu-toggle .ab-icon:before{
+        font-family: 'Material Icons' !important;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 30px !important;
+        line-height: 1;
+        top: 9px !important;
+        letter-spacing: normal;
+        text-transform: none;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+	}
+	#wpadminbar #wp-admin-bar-menu-toggle .ab-icon:before{
+	    content: 'menu' !important;
+	}
+	.wp-responsive-open #wpadminbar #wp-admin-bar-menu-toggle .ab-icon:before{
+	    content: 'close' !important;
+	}
+	#et_search_icon:before{
+	    top: 6px !important;
+	}
+}
