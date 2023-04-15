@@ -8,6 +8,7 @@ The Material Dashboard plugin for WordPress updates the appearance of your site'
 
 ## Screenshots
 
+![Alt text](.readme/dashboard-welcome.png?raw=true  "Screenshots")
 ![Alt text](.readme/screenshots.png?raw=true  "Screenshots")
 
 ## Installation
@@ -25,18 +26,19 @@ This plugin is still in its pre-release phase and is not yet available on the Wo
 ## Features
 
 - [x] Dark mode
-- [x] Third-party plugin and theme support
 - [x] Admin bar
 - [x] Side bar
 - [x] Menus
 - [x] Drop shadows 
 - [x] Buttons (Ripple Effect) 
 - [x] Inputs (Checkbox, Text Field,  Slider)
-- [x] Plugin Settings
+- [x] Color Customization
+- [ ] Third-party plugin and theme support
 
 ## Known Issues
 
 - Automatic system theme setting does not take effect until after two page refreshes.
+- Dark mode is not fully implemented on the login screen
 
 ## Contribution
 
