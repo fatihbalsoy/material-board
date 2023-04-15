@@ -6,6 +6,8 @@
 
 The Material Dashboard plugin for WordPress updates the appearance of your site's dashboard to a sleeker, more contemporary design based on [Google's Material Design Guidelines](https://material.io/design). This plugin preserves your existing dashboard layout, avoids making any significant alterations, and doesn't include any branding or promotional content. It's straightforward to use and comes at no cost.
 
+[**Download <ins>↓</ins>**](https://github.com/fatihbalsoy/wp-material-design/releases/)
+
 ## Screenshots
 
 ![Alt text](.readme/dashboard-welcome.png?raw=true  "Screenshots")
