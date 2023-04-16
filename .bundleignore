@@ -3,6 +3,7 @@
 .git/
 .github/
 .vscode/
+assets/spinner/
 build/
 docs/
 volumes/
