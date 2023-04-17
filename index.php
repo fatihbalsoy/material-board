@@ -122,6 +122,20 @@ class MaterialDashboardPlugin
                 wp_enqueue_style('default-font', plugins_url('assets/fonts/default.css', __FILE__));
                 break;
         }
+
+        // Header Serif Font
+        if (get_option('mdp_header_serif_font') == 'on') {
+            wp_enqueue_style('header-serif-font', plugins_url('stylesheets/options/header_serif.css', __FILE__));
+        } else {
+            wp_dequeue_style('header-serif-font');
+        }
+
+        //? -- ROUNDED CORNERS -- ?//
+        if (get_option('mdp_rounded_corners') != 'on') {
+            wp_enqueue_style('rounded-corners', plugins_url('stylesheets/options/no_borders.css', __FILE__));
+        } else {
+            wp_dequeue_style('rounded-corners');
+        }
     }
 
     /** Plugin Options **/
@@ -137,6 +151,7 @@ class MaterialDashboardPlugin
     {
         /** Theme **/
         register_setting('material_dashboard_plugin', 'mdp_theme', array('sanitize_callback' => 'sanitize_text_field', 'default' => 'light'));
+        register_setting('material_dashboard_plugin', 'mdp_rounded_corners', array('sanitize_callback' => 'sanitize_text_field', 'default' => 'on'));
 
         /** Colors **/
         // - Primary
@@ -146,6 +161,7 @@ class MaterialDashboardPlugin
 
         /** Font **/
         register_setting('material_dashboard_plugin', 'mdp_font', array('sanitize_callback' => 'sanitize_text_field', 'default' => 'mona-sans'));
+        register_setting('material_dashboard_plugin', 'mdp_header_serif_font', array('sanitize_callback' => 'sanitize_text_field', 'default' => 'off'));
 
         /** Icons **/
         register_setting('material_dashboard_plugin', 'mdp_icons', array('sanitize_callback' => 'sanitize_text_field', 'default' => 'md-icons'));

@@ -25,7 +25,8 @@ function get_local_file_contents($file_path)
         <div class='mdwp-header-title'>
             <?php echo $GLOBALS["fb_mdp_plugin_settings_title"] ?>
         </div>
-        Developed by <a href="<?php echo $GLOBALS["fb_mdp_plugin_author_website"] ?>"><?php echo $GLOBALS["fb_mdp_plugin_author"] ?></a> | Version
+        Developed by <a href="<?php echo $GLOBALS["fb_mdp_plugin_author_website"] ?>"><?php echo $GLOBALS["fb_mdp_plugin_author"] ?></a>
+        | Version
         <?php echo $GLOBALS["fb_mdp_plugin_version"] ?> | <a href="<?php echo $GLOBALS["fb_mdp_plugin_report_bugs"] ?>">Request
             Features &
             Report Issues</a>
@@ -46,9 +47,11 @@ function get_local_file_contents($file_path)
                         <?php
                         echo get_local_file_contents('options/theme.php');
                         echo get_local_file_contents('options/colors.php');
+                        echo get_local_file_contents('options/corners.php');
                         echo get_local_file_contents('options/font.php');
+                        echo get_local_file_contents('options/header_serif.php');
                         echo get_local_file_contents('options/icons.php');
-                        echo get_local_file_contents('options/toolbar.php');
+                        // echo get_local_file_contents('options/toolbar.php');
                         ?>
                     </tbody>
                 </table>

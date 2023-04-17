@@ -83,7 +83,7 @@ body.admin-bar.et_hide_nav #page-container{
 
 #wpadminbar .menupop .ab-sub-wrapper, #wpadminbar .shortlink-input{
     background-color: #fff;
-	border-radius: 0px 0px 3px 3px !important;
+	border-radius: var(--br-3px-bottom) !important;
 	margin-top: 0px;
 }
 
@@ -93,7 +93,7 @@ body.admin-bar.et_hide_nav #page-container{
 
 #wpadminbar .quicklinks .menupop ul.ab-sub-secondary, #wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu{
 	background-color: #f9f9f9;
-	border-radius: 0px 0px 3px 3px !important;
+	border-radius: var(--br-3px) !important;
 }
 
 #wpadminbar #adminbarsearch{
@@ -107,7 +107,7 @@ body.admin-bar.et_hide_nav #page-container{
 #wpadminbar #wp-admin-bar-my-account.with-avatar>.ab-empty-item img, #wpadminbar #wp-admin-bar-my-account.with-avatar>a img,
 #wp-admin-bar-user-info .avatar{
     border: none;
-    border-radius: 100% !important;
+    border-radius: var(--br-100pc) !important;
 }
 
 #wpadminbar>#wp-toolbar>#wp-admin-bar-top-secondary>#wp-admin-bar-search #adminbarsearch input.adminbar-input:focus{
@@ -124,7 +124,7 @@ body.admin-bar.et_hide_nav #page-container{
 
 #wpadminbar .ab-top-menu>li.hover>.ab-item, #wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus, #wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item, #wpadminbar:not(.mobile) .ab-top-menu>li>.ab-item:focus{
     background-color: rgba(0,0,0,0.07);
-    border-radius: 3px;
+    border-radius: var(--br-3px);
 }
 #wpadminbar:not(.mobile)>#wp-toolbar a:focus span.ab-label, #wpadminbar:not(.mobile)>#wp-toolbar li:hover span.ab-label, #wpadminbar>#wp-toolbar li.hover span.ab-label{
     color: #fff;
@@ -154,7 +154,7 @@ ul#et-secondary-nav {
 	}
 	#wpadminbar .menupop .ab-sub-wrapper, #wpadminbar .shortlink-input{
     	background-color: #fff;
-		border-radius: 0px 0px 3px 3px !important;
+		border-radius: var(--br-3px-bottom) !important;
 		margin-top: -2px;
 		padding-left: 10%;
 		padding-right: 10%;

@@ -1,0 +1,11 @@
+/*
+ *   heading_serif.css
+ *   components
+ * 
+ *   Created by Fatih Balsoy on 4/17/23
+ *   Copyright © 2023 Fatih Balsoy. All rights reserved.
+ */
+
+h1.wp-heading-inline, .postbox .inside h2, .wrap [class$=icon32]+h2, .wrap h1, .wrap>h2:first-child {
+    font-family: serif !important;
+}

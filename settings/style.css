@@ -29,7 +29,7 @@
 }
 
 .mdwp-card {
-    border-radius: 10px;
+    border-radius: var(--br-10px);
     padding: 15px;
     border: none !important;
     transition: all 250ms;
@@ -215,7 +215,7 @@
     transition: all 0.3s ease;
     text-decoration: none !important;
     text-shadow: none !important;
-    border-radius: 3px !important;
+    border-radius: var(--br-3px) !important;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -250,7 +250,7 @@
     height: 5px;
     background: rgba(0, 0, 0, .25) !important;
     opacity: 0;
-    border-radius: 100%;
+    border-radius: var(--br-100pc);
     transform: scale(1, 1) translate(-50%);
     transform-origin: 50% 50%;
 }
