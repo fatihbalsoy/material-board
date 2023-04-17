@@ -17,7 +17,7 @@ input[type=checkbox] {
     border: 2px solid #777 !important;
     box-shadow: none !important;
     border-radius: 3px !important;
-    background-color: transparent;
+    background-color: transparent !important;
     -webkit-transition: all 0.5s;
     transition: all 0.5s !important;
 }

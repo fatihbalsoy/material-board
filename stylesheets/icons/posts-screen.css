@@ -41,7 +41,7 @@
 }
 
 .dashicons-visibility:before, #post-body #visibility:before,
-.welcome-panel .welcome-view-site:before{
+.welcome-panel .welcome-view-site:before {
     content: 'visibility';
 }
 

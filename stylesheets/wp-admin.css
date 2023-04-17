@@ -94,6 +94,11 @@ div {
 #wpadminbar .ab-empty-item, #wpadminbar a.ab-item, #wpadminbar>#wp-toolbar span.ab-label, #wpadminbar>#wp-toolbar span.noticon {
     color: var(--primary-color-text);
     transition: all 0.5s !important;
+    font-family: var(--font-type);
+}
+
+#wpadminbar #wp-admin-bar-new-content .ab-icon:before {
+    top: 2px !important;
 }
 
 #wpadminbar #adminbarsearch:before, #wpadminbar .ab-icon:before, #wpadminbar .ab-item:before {
@@ -345,11 +350,13 @@ button:focus {
 }
 
 .theme-browser .theme .theme-actions .button-primary {
-    color: var(--primary-color);
+    color: white;
+    background-color: var(--primary-color);
 }
 
 .theme-browser .theme .theme-actions .button-primary:hover {
-    background-color: rgba(2, 136, 209, 0.1);
+    color: white;
+    background-color: var(--primary-color);
 }
 
 .wp-full-overlay.collapsed, .wp-full-overlay.expanded .wp-full-overlay-sidebar {
@@ -692,7 +699,7 @@ div.mce-toolbar-grp, .quicktags-toolbar {
 
 .nav-tab-wrapper, .wrap h2.nav-tab-wrapper, h1.nav-tab-wrapper, .wp-filter {
     border: none;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color) !important;
     border-bottom: 1.4999999px solid var(--primary-color);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     border-radius: 3px;
@@ -799,6 +806,12 @@ div.mce-toolbar-grp, .quicktags-toolbar {
 @media screen and (max-width: 430px) {
     .form-table table.color-palette {
         margin-left: 110px !important;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    #wpcontent {
+        margin-right: inherit !important;
     }
 }
 
@@ -1299,9 +1312,15 @@ a:focus {
     outline: none !important;
 }
 
+/* docs/images/text_field_search_plugins.png */
 form.search-form.search-plugins {
     border-radius: 10px 10px 0px 0px !important;
     margin-bottom: 0px;
+}
+
+#wpbody-content > div.wrap > form.search-form > p {
+    margin-top: 15px;
+    margin-right: 15px;
 }
 
 h3.accordion-section-title {
@@ -1353,6 +1372,10 @@ h3.accordion-section-title {
     color: black !important;
     margin-right: 5px;
     margin-top: 2px;
+}
+
+#collapse-button:hover, #collapse-button:focus, #adminmenu .wp-submenu a:focus, #adminmenu .wp-submenu a:hover, #adminmenu a:hover, #adminmenu li.menu-top>a:focus, #adminmenu li a:focus div.wp-menu-image:before, #adminmenu li.opensub div.wp-menu-image:before, #adminmenu li:hover div.wp-menu-image:before {
+    color: var(--primary-color) !important;
 }
 
 .theme-browser .theme.add-new-theme a:after {

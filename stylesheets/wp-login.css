@@ -9,11 +9,11 @@
 
 @import url("../assets/fonts/fonts.css");
 @import url('shared.css');
+/* @import url('icons/material-icons.css'); */
 @import url("components/checkbox.css");
-@import url("components/checkbox_login.css");
 
 div {
-	font-family: 'Mona Sans', sans-serif;
+	font-family: var(--font-type), sans-serif;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 body {
 	background-size: 400px !important;
 	background-position-x: 30% !important;
-	background-color: #f7f7f7 !important;
+	background-color: var(--light-background) !important;
 	position: fixed;
 	top: 0;
 	z-index: 10;
@@ -32,22 +32,26 @@ body {
 	height: 100%;
 }
 
-#login {
-	z-index: 9999;
-	/* position: relative; */
-}
-
 #login h1 a {
 	max-width: 290px !important;
 }
 
+.login form {
+	background-color: transparent !important;
+}
+
 #login {
-	float: right;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	z-index: 9999;
+	box-shadow: var(--elevation1);
 	background-color: #fff;
-	height: 100vh;
+	padding: 100px 0 100px 0;
 	width: 400px;
-	padding: 100px 0 0 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	border-radius: 10px;
 }
 
 .login form .input,
@@ -91,6 +95,7 @@ input#wp-submit:hover {
 	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3) !important;
 }
 
+/* Third-party Google sign-in plugin */
 form#loginform:hover p.galogin:hover {
 	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3) !important;
 }
@@ -100,6 +105,11 @@ form#loginform p.galogin a {
 	color: #2196F3;
 	line-height: 27px;
 	text-decoration: none;
+}
+
+/* "Remember Me" Button */
+p.forgetmenot {
+    padding-top: 6px;
 }
 
 /* With constrained height and width:
@@ -112,21 +122,30 @@ form#loginform p.galogin a {
 	box-shadow: var(--elevation1);
 	border-radius: 10px !important;
 	border-left-width: 50px !important;
-	// width: 225px;
-	margin-top: 20px !important;
+	width: 225px;
+	padding-top: 10px !important;
+    padding-bottom: 18px !important;
 	margin: 0 auto;
-	// height: 40px;
+	/* height: 40px; */
+}
+
+/***  ICONS  ***/
+.login #login_error:before,
+.login .message:before,
+.login .button.wp-hide-pw:before,
+.dashicons-visibility:before,
+.dashicons-hidden:before {
+	font-family: 'Material Icons';
 }
 
 .login #login_error:before,
 .login .message:before {
-	font-family: 'Material Icons';
-	margin-left: -48px;
-	margin-right: 30px !important;
-	color: white;
+	margin-left: -47px;
+	margin-right: 23px !important;
 	font-size: 150%;
 	position: relative;
 	top: 6px;
+	color: white;
 }
 
 .login .message:before {
@@ -137,18 +156,33 @@ form#loginform p.galogin a {
 	content: 'error';
 }
 
+.dashicons-visibility:before {
+	content: 'visibility';
+}
+
+.dashicons-hidden:before {
+	content: 'visibility_off';
+}
+
+/* "Lost your password?" Button */
 .login #backtoblog,
 .login #nav {
 	padding: 0 !important;
 	margin-top: -25px;
-	text-align: center;
-	margin-left: -15px !important;
+	/* text-align: center; */
+	margin-left: 25px !important;
 }
 
 .login #backtoblog a {
 	display: none;
 }
 
+/* "Show password" Button */
+.login .button.wp-hide-pw, .login .button.wp-hide-pw:hover {
+	background-color: transparent !important;
+}
+
+/* Google Login Button */
 form#loginform p.galogin:hover {
 	color: #2196F3 !important;
 }

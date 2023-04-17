@@ -57,6 +57,8 @@
 	--elevation4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	--elevation5: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 
+    --elevation-login: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     /* 
         TODO: Implement dark mode overlays
         https://m2.material.io/design/color/dark-theme.html#properties
