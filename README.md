@@ -40,7 +40,6 @@ This plugin is still in its pre-release phase and is not yet available on the Wo
 ## Known Issues
 
 - Automatic system theme setting does not take effect until after two page refreshes.
-- Dark mode is not fully implemented on the login screen
 
 ## Contribution
 
