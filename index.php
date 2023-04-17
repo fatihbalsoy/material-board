@@ -5,13 +5,13 @@ Plugin Name:    Material Design Dashboard
 Plugin URI:     https://fatih.bal.soy/projects/wp-material-design
 Description:    The Material Dashboard plugin for WordPress updates the appearance of your site's dashboard to a sleeker, more contemporary design based on Google's Material Design Guidelines. This plugin preserves your existing dashboard layout, avoids making any significant alterations, and doesn't include any branding or promotional content. It's straightforward to use and comes at no cost.
 Author: 	    Fatih Balsoy
-Version: 	    0.2.1-alpha
+Version: 	    0.2.2-alpha
 Author URI:     https://fatih.bal.soy
 License:        AGPL-3.0+
 License URI:    https://www.gnu.org/licenses/agpl-3.0.txt
 */
 
-$fb_mdp_plugin_version = "0.2.1-alpha";
+$fb_mdp_plugin_version = "0.2.2-alpha";
 $fb_mdp_plugin_author = "Fatih Balsoy";
 $fb_mdp_plugin_author_website = "https://fatih.bal.soy";
 $fb_mdp_plugin_website = "https://fatih.bal.soy/projects/wp-material-design";
@@ -37,6 +37,7 @@ class MaterialDashboardPlugin
         add_action('login_enqueue_scripts', array($this, 'mdp_login_theme_style'));
         add_action('admin_menu', array($this, 'mdp_plugin_menu'));
         add_action('admin_init', array($this, 'settings'));
+        add_action('admin_head', array($this, 'change_theme_color_meta'));
     }
 
     /** User-facing Admin Theme (Admin Bar) **/
@@ -56,11 +57,20 @@ class MaterialDashboardPlugin
         $split_wp_version = explode(".", $GLOBALS['wp_version']);
         $wp_ver_major = intval($split_wp_version[0]);
         $wp_ver_minor = intval($split_wp_version[1]);
-        if ($wp_ver_major >= 6 || ($wp_ver_major == 6 && $wp_ver_minor >= 2)) {
-            wp_enqueue_style('mdp-admin-theme-6-2', plugins_url('stylesheets/compatibility/6.2/wp-admin.css', __FILE__));
+        if ($wp_ver_major >= 6 || ($wp_ver_major == 6 && $wp_ver_minor >= 1)) {
+            wp_enqueue_style('mdp-admin-theme-6-1', plugins_url('stylesheets/compatibility/6.1/wp-admin.css', __FILE__));
         }
 
         $this->load_plugin_options();
+    }
+
+    /** Safari and Chrome Browser Theme Color **/
+    function change_theme_color_meta()
+    {
+        if (is_admin()) {
+            $primary_color = get_option('mdp_colors_primary');
+            echo '<meta name="theme-color" content="' . $primary_color . '">';
+        }
     }
 
     /** Login Theme **/
