@@ -1369,7 +1369,7 @@ h3.accordion-section-title {
 }
 
 #adminmenu .wp-submenu .wp-submenu-head {
-    color: black !important;
+    color: var(--text-color) !important;
     margin-right: 5px;
     margin-top: 2px;
 }
