@@ -56,7 +56,7 @@ if (curl_exists()) {
 <meta name="theme-color" content="#fff">
 <div class='wrap'>
     <?php
-    if (curl_exists() and $github_latest_release != $GLOBALS["fb_mdp_plugin_version"]) {
+    if (curl_exists() and $github_latest_release != "v" . $GLOBALS["fb_mdp_plugin_version"]) {
         echo '
         <div class="update-nag notice notice-warning inline"><a href="' . $GLOBALS["fb_mdp_plugin_github"] . '/releases/tag/' . $github_latest_release . '">' . $GLOBALS["fb_mdp_plugin_settings_title"] . ' ' . $github_latest_release . '</a> is available! <a href="' . $GLOBALS["fb_mdp_plugin_github"] . '/releases" aria-label="Please update Material Design Dashboard now">Please update now</a>.</div>
         ';
