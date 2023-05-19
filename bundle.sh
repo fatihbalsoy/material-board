@@ -23,17 +23,17 @@ echo "$PLUGIN_ZIP_NAME"
 echo "Setting up build directory..."
 rm -rf $SCRIPTPATH/build/
 mkdir -p $SCRIPTPATH/build/
-mkdir -p $SCRIPTPATH/build/contents/
+mkdir -p $SCRIPTPATH/build/$PLUGIN_BUNDLE/
 mkdir -p $SCRIPTPATH/build/logs/
 
 #?#   Copy Files   #?#
 echo "Copying files..."
-rsync -avz --prune-empty-dirs --exclude-from=$SCRIPTPATH/.bundleignore $SCRIPTPATH/. $SCRIPTPATH/build/contents/ >> $SCRIPTPATH/build/logs/out.log 2>> $SCRIPTPATH/build/logs/err.log
+rsync -avz --prune-empty-dirs --exclude-from=$SCRIPTPATH/.bundleignore $SCRIPTPATH/. $SCRIPTPATH/build/$PLUGIN_BUNDLE/ >> $SCRIPTPATH/build/logs/out.log 2>> $SCRIPTPATH/build/logs/err.log
 
 #?#   Zip Files   #?#
 echo "Archiving..."
-cd $SCRIPTPATH/build/contents/
-zip -r ../$PLUGIN_ZIP_NAME.zip . >> $SCRIPTPATH/build/logs/out.log 2>> $SCRIPTPATH/build/logs/err.log
+cd $SCRIPTPATH/build/
+zip -r ./$PLUGIN_ZIP_NAME.zip $PLUGIN_BUNDLE/ >> $SCRIPTPATH/build/logs/out.log 2>> $SCRIPTPATH/build/logs/err.log
 cd - >> $SCRIPTPATH/build/logs/out.log 2>> $SCRIPTPATH/build/logs/err.log
 
 #?#   Unzip files to verify match   #?#

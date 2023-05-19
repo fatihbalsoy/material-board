@@ -1,3 +1,11 @@
+<!--
+* index.php
+* settings
+*
+* Created by Fatih Balsoy on 4/14/23
+* Copyright © 2023 Fatih Balsoy. All rights reserved.
+-->
+
 <?php
 
 function get_local_file_contents($file_path)
@@ -9,9 +17,35 @@ function get_local_file_contents($file_path)
     return $contents;
 }
 
+function curl_exists()
+{
+    return function_exists('curl_version');
+}
+
+/** CHECK FOR UPDATES (GITHUB) **/
+if (curl_exists()) {
+    // create curl resource
+    $ch = curl_init();
+
+    // set url
+    curl_setopt($ch, CURLOPT_URL, $GLOBALS["fb_mdp_plugin_github_releases"]);
+
+    //return the transfer as a string
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13');
+
+    // $output contains the output string
+    $output = curl_exec($ch);
+    $github_json_obj = json_decode($output);
+    $github_latest_release = $github_json_obj[0]->tag_name;
+
+    // close curl resource to free up system resources
+    curl_close($ch);
+}
+
 ?>
 
-<link rel="stylesheet" href="/wp-content/plugins/material-design-dashboard/settings/style.css" />
+<link rel="stylesheet" href="<?php echo ($GLOBALS["fb_mdp_plugin_directory"]) ?>/settings/style.css" />
 
 <!-- TODO: Implement instant preview -->
 <!-- <script defer src="script.js"></script> -->
@@ -21,6 +55,13 @@ function get_local_file_contents($file_path)
 
 <meta name="theme-color" content="#fff">
 <div class='wrap'>
+    <?php
+    if (curl_exists() and $github_latest_release != $GLOBALS["fb_mdp_plugin_version"]) {
+        echo '
+        <div class="update-nag notice notice-warning inline"><a href="' . $GLOBALS["fb_mdp_plugin_github"] . '/releases/tag/' . $github_latest_release . '">' . $GLOBALS["fb_mdp_plugin_settings_title"] . ' ' . $github_latest_release . '</a> is available! <a href="' . $GLOBALS["fb_mdp_plugin_github"] . '/releases" aria-label="Please update Material Design Dashboard now">Please update now</a>.</div>
+        ';
+    }
+    ?>
     <div class='mdwp-card mdwp-elevation1 mdwp-primary-back mdwp-card-header'>
         <div class='mdwp-header-title'>
             <?php echo $GLOBALS["fb_mdp_plugin_settings_title"] ?>

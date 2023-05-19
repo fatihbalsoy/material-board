@@ -185,6 +185,11 @@ div {
     color: #777;
 }
 
+/* docs/images/update_badge.png */
+#adminmenu .awaiting-mod, #adminmenu .menu-counter, #adminmenu .update-plugins {
+    background-color: var(--accent-color) !important;
+}
+
 #adminmenu .wp-submenu a:focus, #adminmenu .wp-submenu a:hover {
     background: transparent;
 }
@@ -388,6 +393,13 @@ input[type=text], input[type=number], input[type=search], input[type=email], inp
 
 .has-error input[type=text], .has-error input[type=number], .has-error input[type=url], .has-error input[type=email], .has-error input[type=password] {
     border-color: #C62828 !important;
+}
+
+/* docs/images/input_color.png */
+input[type=color], input[type=color]:focus, input[type=color]:focus-visible {
+    border: none !important;
+    padding: 0px !important;
+    cursor: pointer;
 }
 
 /** Material Design guideline recommends this

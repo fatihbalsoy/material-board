@@ -3,7 +3,6 @@
  *   settings
  * 
  *   Created by Fatih Balsoy on 4/21/19
- *   Last Modified by Fatih Balsoy on 7/17/20
  *   Copyright © 2020 Fatih Balsoy. All rights reserved.
  */
 
@@ -22,11 +21,11 @@
 // var rad = document.mdp_theme.theme;
 var prev = null;
 
-var blankDarkTheme = '/wp-content/plugins/material-design-dashboard/assets/dark-theme/blank.css';
-var darkTheme = '/wp-content/plugins/material-design-dashboard/assets/dark-theme/dark-theme.css';
+var blankDarkTheme = '/wp-content/plugins/wp-material-design/assets/dark-theme/blank.css';
+var darkTheme = '/wp-content/plugins/wp-material-design/assets/dark-theme/dark-theme.css';
 
-var blankMaterialIcons = '/wp-content/plugins/material-design-dashboard/assets/material-icons/blank.css';
-var materialIcons = '/wp-content/plugins/material-design-dashboard/assets/material-icons/material-icons.css';
+var blankMaterialIcons = '/wp-content/plugins/wp-material-design/assets/material-icons/blank.css';
+var materialIcons = '/wp-content/plugins/wp-material-design/assets/material-icons/material-icons.css';
 
 // for (var i = 0; i < rad.length; i++) {
 // 	rad[i].onclick = function () {

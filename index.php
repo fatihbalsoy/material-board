@@ -1,24 +1,32 @@
 <?php
 
-/*
-Plugin Name:    Material Design Dashboard
-Plugin URI:     https://fatih.bal.soy/projects/wp-material-design
-Description:    The Material Dashboard plugin for WordPress updates the appearance of your site's dashboard to a sleeker, more contemporary design based on Google's Material Design Guidelines. This plugin preserves your existing dashboard layout, avoids making any significant alterations, and doesn't include any branding or promotional content. It's straightforward to use and comes at no cost.
-Author: 	    Fatih Balsoy
-Version: 	    0.2.2-alpha
-Author URI:     https://fatih.bal.soy
-License:        AGPL-3.0+
-License URI:    https://www.gnu.org/licenses/agpl-3.0.txt
-*/
+/**
+ * Plugin Name:         Material Dashboard
+ * Plugin URI:          https://github.com/fatihbalsoy/wp-material-design
+ * Description:         The Material Dashboard plugin for WordPress updates the appearance of your site's dashboard to a sleeker, more contemporary design based on Google's Material Design Guidelines. This plugin preserves your existing dashboard layout, avoids making any significant alterations, and doesn't include any branding or promotional content. It's straightforward to use and comes at no cost.
+ * Author: 	            Fatih Balsoy
+ * Version: 	        0.2.2-alpha
+ * Text Domain:         wp-material-design
+ * Author URI:          https://fatih.bal.soy
+ * GitHub Plugin URI:   https://github.com/fatihbalsoy/wp-material-design
+ * License:             AGPL-3.0+
+ * License URI:         https://www.gnu.org/licenses/agpl-3.0.txt
+ */
 
 $fb_mdp_plugin_version = "0.2.2-alpha";
 $fb_mdp_plugin_author = "Fatih Balsoy";
 $fb_mdp_plugin_author_website = "https://fatih.bal.soy";
 $fb_mdp_plugin_website = "https://fatih.bal.soy/projects/wp-material-design";
-$fb_mdp_plugin_report_bugs = "https://github.com/fatihbalsoy/wp-material-design/issues/new";
-$fb_mdp_plugin_name = "Material Design Dashboard";
+
+$fb_mdp_plugin_github_slug = "fatihbalsoy/wp-material-design";
+$fb_mdp_plugin_github = "https://github.com/" . $fb_mdp_plugin_github_slug;
+$fb_mdp_plugin_github_releases = "https://api.github.com/repos/" . $fb_mdp_plugin_github_slug . "/releases";
+$fb_mdp_plugin_report_bugs = $fb_mdp_plugin_github . "/issues/new";
+
+$fb_mdp_plugin_name = "Material Dashboard";
 $fb_mdp_plugin_bundle = "wp-material-design";
 $fb_mdp_plugin_settings_title = $fb_mdp_plugin_name;
+$fb_mdp_plugin_directory = plugins_url('', dirname(__FILE__)) . "/" . $fb_mdp_plugin_bundle;
 
 // If this file is called directly, abort.
 if (!defined('ABSPATH'))
@@ -38,6 +46,7 @@ class MaterialDashboardPlugin
         add_action('admin_menu', array($this, 'mdp_plugin_menu'));
         add_action('admin_init', array($this, 'settings'));
         add_action('admin_head', array($this, 'change_theme_color_meta'));
+        // add_filter('plugin_action_links_' . plugin_basename(__FILE__), 'mdp_plugin_settings_link');
     }
 
     /** User-facing Admin Theme (Admin Bar) **/
@@ -57,8 +66,8 @@ class MaterialDashboardPlugin
         $split_wp_version = explode(".", $GLOBALS['wp_version']);
         $wp_ver_major = intval($split_wp_version[0]);
         $wp_ver_minor = intval($split_wp_version[1]);
-        if ($wp_ver_major >= 6 || ($wp_ver_major == 6 && $wp_ver_minor >= 1)) {
-            wp_enqueue_style('mdp-admin-theme-6-1', plugins_url('stylesheets/compatibility/6.1/wp-admin.css', __FILE__));
+        if ($wp_ver_major >= 6 || ($wp_ver_major == 5 && $wp_ver_minor >= 9)) {
+            wp_enqueue_style('mdp-admin-theme-5-9', plugins_url('stylesheets/compatibility/6.1/wp-admin.css', __FILE__));
         }
 
         $this->load_plugin_options();
@@ -85,6 +94,15 @@ class MaterialDashboardPlugin
     function mdp_plugin_menu()
     {
         add_theme_page($GLOBALS["fb_mdp_plugin_name"], $GLOBALS["fb_mdp_plugin_name"], 'manage_options', $this->settings_slug, array($this, 'mdp_plugin_options'));
+    }
+
+    /** Plugin Settings Menu **/
+    function mdp_plugin_settings_link($links)
+    {
+        $url = get_admin_url() . "themes.php?page=material-dashboard-settings";
+        $settings_link = '<a href="' . $url . '">' . __('Settings', 'wp-material-design') . '</a>';
+        $links[] = $settings_link;
+        return $links;
     }
 
     /** Load Plugin Options **/
@@ -165,9 +183,9 @@ class MaterialDashboardPlugin
 
         /** Colors **/
         // - Primary
-        register_setting('material_dashboard_plugin', 'mdp_colors_primary', array('sanitize_callback' => 'sanitize_text_field', 'default' => '#0288D1'));
+        register_setting('material_dashboard_plugin', 'mdp_colors_primary', array('sanitize_callback' => 'sanitize_text_field', 'default' => '#2246CC'));
         // - Accent
-        register_setting('material_dashboard_plugin', 'mdp_colors_accent', array('sanitize_callback' => 'sanitize_text_field', 'default' => '#C62828'));
+        register_setting('material_dashboard_plugin', 'mdp_colors_accent', array('sanitize_callback' => 'sanitize_text_field', 'default' => '#FF0085'));
 
         /** Font **/
         register_setting('material_dashboard_plugin', 'mdp_font', array('sanitize_callback' => 'sanitize_text_field', 'default' => 'mona-sans'));
