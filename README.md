@@ -14,11 +14,25 @@ The Material Dashboard plugin for WordPress updates the appearance of your site'
 
 ## Installation
 
+### Manually
+
 - Download the latest release of Material Dashboard [here](https://github.com/fatihbalsoy/wp-material-design/releases/),
 - On your WordPress dashboard go to `Plugins` > `Add New`,
 - Click the `Upload Plugin` button near the header,
 - Select the downloaded zip archive,
-- Finally, activate Material Design Dashboard.
+- Finally, activate the Material Dashboard plugin.
+
+### Git Updater (Automatic Updates)
+
+- Download the latest release of Git Updater [here](https://git-updater.com/git-updater/)
+- On your WordPress dashboard go to `Plugins` > `Add New`,
+- Click the `Upload Plugin` button near the header,
+- Select the downloaded zip archive,
+- Activate the Git Updater plugin,
+- Go to `Git Updater Settings` > `Install Plugin`,
+- Input this repository's [link](https://github.com/fatihbalsoy/wp-material-design) into `Plugin URI`,
+- Click `Install Plugin`,
+- Finally, activate the Material Dashboard plugin.
 
 ### NOTE
 
