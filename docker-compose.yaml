@@ -58,7 +58,7 @@ services:
     restart: always
     volumes:
       # persistent local data
-      - .:/var/www/html/wp-content/plugins/wp-material-design:delegated
+      - ./build/wp-material-design/:/var/www/html/wp-content/plugins/wp-material-design:delegated
       # other data
       - ./volumes/wordpress:/var/www/html
       - ./volumes/plugins:/var/www/html/wp-content/plugins

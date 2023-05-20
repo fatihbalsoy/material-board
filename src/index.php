@@ -5,7 +5,7 @@
  * Plugin URI:          https://github.com/fatihbalsoy/wp-material-design
  * Description:         The Material Dashboard plugin for WordPress updates the appearance of your site's dashboard to a sleeker, more contemporary design based on Google's Material Design Guidelines. This plugin preserves your existing dashboard layout, avoids making any significant alterations, and doesn't include any branding or promotional content. It's straightforward to use and comes at no cost.
  * Author: 	            Fatih Balsoy
- * Version: 	        0.2.2-alpha
+ * Version: 	        0.2.3-alpha
  * Text Domain:         wp-material-design
  * Author URI:          https://fatih.bal.soy
  * GitHub Plugin URI:   https://github.com/fatihbalsoy/wp-material-design
@@ -13,7 +13,7 @@
  * License URI:         https://www.gnu.org/licenses/agpl-3.0.txt
  */
 
-$fb_mdp_plugin_version = "0.2.2-alpha";
+$fb_mdp_plugin_version = "0.2.3-alpha";
 $fb_mdp_plugin_author = "Fatih Balsoy";
 $fb_mdp_plugin_author_website = "https://fatih.bal.soy";
 $fb_mdp_plugin_website = "https://fatih.bal.soy/projects/wp-material-design";
@@ -52,7 +52,7 @@ class MaterialDashboardPlugin
     /** User-facing Admin Theme (Admin Bar) **/
     function mdp_admin_user_theme_style()
     {
-        wp_enqueue_style('mdp-user-theme', plugins_url('stylesheets/wp.css', __FILE__));
+        wp_enqueue_style('mdp-user-theme', plugins_url('styles/wp.css', __FILE__));
 
         $this->load_plugin_options();
     }
@@ -60,14 +60,14 @@ class MaterialDashboardPlugin
     /** Admin Dashboard Theme **/
     function mdp_admin_theme_style()
     {
-        wp_enqueue_script('theme-script', plugins_url('stylesheets/script.js', __FILE__), array('jquery'));
-        wp_enqueue_style('mdp-admin-theme', plugins_url('stylesheets/wp-admin.css', __FILE__));
+        wp_enqueue_script('theme-script', plugins_url('app.js', __FILE__), array('jquery'));
+        wp_enqueue_style('mdp-admin-theme', plugins_url('styles/wp-admin.css', __FILE__));
 
         $split_wp_version = explode(".", $GLOBALS['wp_version']);
         $wp_ver_major = intval($split_wp_version[0]);
         $wp_ver_minor = intval($split_wp_version[1]);
         if ($wp_ver_major >= 6 || ($wp_ver_major == 5 && $wp_ver_minor >= 9)) {
-            wp_enqueue_style('mdp-admin-theme-5-9', plugins_url('stylesheets/compatibility/6.1/wp-admin.css', __FILE__));
+            wp_enqueue_style('mdp-admin-theme-5-9', plugins_url('styles/compat/5.9/wp-admin.css', __FILE__));
         }
 
         $this->load_plugin_options();
@@ -85,7 +85,7 @@ class MaterialDashboardPlugin
     /** Login Theme **/
     function mdp_login_theme_style()
     {
-        wp_enqueue_style('mdp-login-theme', plugins_url('stylesheets/wp-login.css', __FILE__));
+        wp_enqueue_style('mdp-login-theme', plugins_url('styles/wp-login.css', __FILE__));
 
         $this->load_plugin_options();
     }
@@ -110,7 +110,7 @@ class MaterialDashboardPlugin
     {
 
         //? -- COLORS -- ?//
-        $color_stylesheet = $this->get_local_file_contents("stylesheets/shared.dynamic.css");
+        $color_stylesheet = $this->get_local_file_contents("styles/shared.dynamic.css");
         $color_stylesheet_with_primary = str_replace("\"primary-color\"", get_option('mdp_colors_primary'), $color_stylesheet);
         $color_stylesheet_with_primary_and_accent = str_replace("\"accent-color\"", get_option('mdp_colors_accent'), $color_stylesheet_with_primary);
         wp_add_inline_style('mdp-admin-theme', $color_stylesheet_with_primary_and_accent);
@@ -120,7 +120,7 @@ class MaterialDashboardPlugin
         //? -- DARK MODE -- ?//
         function enqueue_dark_theme()
         {
-            wp_enqueue_style('dark-admin-theme', plugins_url('stylesheets/shared.dark.css', __FILE__));
+            wp_enqueue_style('dark-admin-theme', plugins_url('styles/shared.dark.css', __FILE__));
         }
 
         // Explicit Dark Mode
@@ -153,14 +153,14 @@ class MaterialDashboardPlugin
 
         // Header Serif Font
         if (get_option('mdp_header_serif_font') == 'on') {
-            wp_enqueue_style('header-serif-font', plugins_url('stylesheets/options/header_serif.css', __FILE__));
+            wp_enqueue_style('header-serif-font', plugins_url('styles/options/header_serif.css', __FILE__));
         } else {
             wp_dequeue_style('header-serif-font');
         }
 
         //? -- ROUNDED CORNERS -- ?//
         if (get_option('mdp_rounded_corners') != 'on') {
-            wp_enqueue_style('rounded-corners', plugins_url('stylesheets/options/no_borders.css', __FILE__));
+            wp_enqueue_style('rounded-corners', plugins_url('styles/options/no_rounded_corners.css', __FILE__));
         } else {
             wp_dequeue_style('rounded-corners');
         }

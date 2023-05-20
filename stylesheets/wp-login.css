@@ -7,7 +7,7 @@
  *   Copyright © 2020 Fatih Balsoy. All rights reserved.
  */
 
-@import url("../assets/fonts/fonts.css");
+@import url("./assets/fonts/fonts.css");
 @import url('shared.css');
 /* @import url('icons/material-icons.css'); */
 @import url("components/checkbox.css");

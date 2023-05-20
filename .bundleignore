@@ -11,3 +11,6 @@ volumes/
 .gitignore
 bundle.sh
 docker-compose.yaml
+*.css
+*.scss
+*.ts

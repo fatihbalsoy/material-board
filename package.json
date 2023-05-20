@@ -1,0 +1,30 @@
+{
+  "name": "material-design-dashboard",
+  "version": "0.2.3",
+  "description": "![Alt text](.readme/banner.png?raw=true  \"Material Design Dashboard\")",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.49",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.62.1",
+    "sass-loader": "^12.6.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4"
+  }
+}
