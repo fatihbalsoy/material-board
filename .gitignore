@@ -1,5 +1,6 @@
 build/
 dist/
+logs/
 
 # ignore everything in the root except the "wp-content" directory.
 !wp-content/

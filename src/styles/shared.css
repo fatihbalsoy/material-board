@@ -1,13 +1,12 @@
 /*
  *   shared.css
- *   assets
+ *   material-design-dashboard
  * 
  *   Created by Fatih Balsoy on 7/17/20
- *   Last Modified by Fatih Balsoy on 7/17/20
  *   Copyright © 2020 Fatih Balsoy. All rights reserved.
  */
 
-:root{
+ :root{
 	--primary-color: #2196F3;
 	--secondary-color: #1976D2;
 	--accent-color: #F44336;

@@ -1,16 +1,5 @@
 .DS_Store
-.readme/
-.git/
-.github/
-.vscode/
 assets/spinner/
-build/
-docs/
-volumes/
-.bundleignore
-.gitignore
-bundle.sh
-docker-compose.yaml
 *.css
 *.scss
 *.ts

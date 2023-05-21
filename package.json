@@ -1,27 +1,22 @@
 {
   "name": "material-design-dashboard",
   "version": "0.2.3",
-  "description": "![Alt text](.readme/banner.png?raw=true  \"Material Design Dashboard\")",
-  "main": "index.js",
+  "description": "The Material Dashboard plugin for WordPress updates the appearance of your site's dashboard to a sleeker, more contemporary design based on [Google's Material Design Guidelines](https://material.io/design). This plugin preserves your existing dashboard layout, avoids making any significant alterations, and doesn't include any branding or promotional content. It's straightforward to use and comes at no cost.",
+  "private": false,
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "dev": "npm run development",
-    "development": "mix",
-    "watch": "mix watch",
-    "watch-poll": "mix watch -- --watch-options-poll=1000",
-    "hot": "mix watch --hot",
-    "prod": "npm run production",
-    "production": "mix --production"
+    "build": "bash bundle.sh",
+    "dev": "bash bundle.sh && concurrently \"tsc --watch --outDir build/\" \"sass --watch src/:build/\"",
+    "dev:docker": "docker-compose up -d && npm run dev",
+    "stop": "docker-compose down"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Fatih Balsoy",
+  "license": "AGPL-3.0",
   "devDependencies": {
-    "cross-env": "^7.0.3",
-    "laravel-mix": "^6.0.49",
-    "resolve-url-loader": "^5.0.0",
+    "concurrently": "^8.0.1",
     "sass": "^1.62.1",
     "sass-loader": "^12.6.0",
     "ts-loader": "^9.4.2",

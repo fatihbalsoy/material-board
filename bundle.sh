@@ -23,26 +23,29 @@ echo "$PLUGIN_ZIP_NAME"
 echo "Setting up build directory..."
 rm -rf $SCRIPTPATH/build/
 mkdir -p $SCRIPTPATH/build/
-mkdir -p $SCRIPTPATH/build/$PLUGIN_BUNDLE/
-mkdir -p $SCRIPTPATH/build/logs/
+mkdir -p $SCRIPTPATH/logs/
 
 #?#   Copy Files   #?#
 echo "Copying files..."
-rsync -avz --prune-empty-dirs --exclude-from=$SCRIPTPATH/.bundleignore $SCRIPTPATH/src/ $SCRIPTPATH/build/$PLUGIN_BUNDLE/ >> $SCRIPTPATH/build/logs/out.log 2>> $SCRIPTPATH/build/logs/err.log
+cp $SCRIPTPATH/README.md build/
+cp $SCRIPTPATH/LICENSE build/
+rsync -avz --prune-empty-dirs --exclude-from=$SCRIPTPATH/.bundleignore $SCRIPTPATH/src/ $SCRIPTPATH/build/ >> $SCRIPTPATH/logs/out.log 2>> $SCRIPTPATH/logs/err.log
 
 #?#   Compiling Sass and Typescript Files   #?#
 echo "Compiling Sass Files..."
-sass src/:build/$PLUGIN_BUNDLE --no-source-map
+sass src/:build/ --no-source-map
 echo "Compiling Typescript Files..."
-tsc --outDir build/$PLUGIN_BUNDLE
+tsc
 
 #?#   Zip Files   #?#
 echo "Archiving..."
-cd $SCRIPTPATH/build/
-zip -r ./$PLUGIN_ZIP_NAME.zip $PLUGIN_BUNDLE/ >> $SCRIPTPATH/build/logs/out.log 2>> $SCRIPTPATH/build/logs/err.log
-cd - >> $SCRIPTPATH/build/logs/out.log 2>> $SCRIPTPATH/build/logs/err.log
+mkdir -p $SCRIPTPATH/build/_bundle/$PLUGIN_BUNDLE
+rsync -avz --prune-empty-dirs $SCRIPTPATH/build/. $SCRIPTPATH/build/_bundle/$PLUGIN_BUNDLE >> $SCRIPTPATH/logs/out.log 2>> $SCRIPTPATH/logs/err.log
+cd $SCRIPTPATH/build/_bundle
+zip -r ./$PLUGIN_ZIP_NAME.zip $PLUGIN_BUNDLE >> $SCRIPTPATH/logs/out.log 2>> $SCRIPTPATH/logs/err.log
+cd - >> $SCRIPTPATH/logs/out.log 2>> $SCRIPTPATH/logs/err.log
 
 #?#   Unzip files to verify match   #?#
-unzip $SCRIPTPATH/build/$PLUGIN_ZIP_NAME.zip -d $SCRIPTPATH/build/$PLUGIN_ZIP_NAME/ >> $SCRIPTPATH/build/logs/out.log 2>> $SCRIPTPATH/build/logs/err.log
+unzip $SCRIPTPATH/build/_bundle/$PLUGIN_ZIP_NAME.zip -d $SCRIPTPATH/build/_bundle/$PLUGIN_ZIP_NAME/ >> $SCRIPTPATH/logs/out.log 2>> $SCRIPTPATH/logs/err.log
 
 echo "Done."

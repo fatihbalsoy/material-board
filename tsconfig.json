@@ -8,7 +8,7 @@
         "preserveConstEnums": true,
         "sourceMap": false,
         "forceConsistentCasingInFileNames": true,
-        "outDir": "dist",
+        "outDir": "build",
         "declaration": true
     },
     "include": [
