@@ -38,6 +38,18 @@ The Material Dashboard plugin for WordPress updates the appearance of your site'
 
 This plugin is still in its pre-release phase and is not yet available on the WordPress Plugin Directory.
 
+## Customization 
+
+Head over to `Appearance` > `Material Dashboard` to customize the dashboard colors and looks. 
+Here are some of the available options:
+
+- Theme (Light, Dark, and System)
+- Colors (Primary and Accent colors)
+- Toggle Rounded Corners
+- Font (Mona, Hubot, Roboto, or WordPress)
+- Header Font (Serif or sans serif)
+- Icons (Material or WordPress)
+
 ## Features
 
 - [x] Dark mode
@@ -47,12 +59,34 @@ This plugin is still in its pre-release phase and is not yet available on the Wo
 - [x] Drop shadows 
 - [x] Buttons (Ripple Effect) 
 - [x] Inputs (Checkbox, Text Field,  Slider)
-- [x] Color Customization
+- [x] Customization
 - [ ] Third-party plugin and theme support
 
 ## Known Issues
 
 - Automatic system theme setting does not take effect until after two page refreshes.
+- Login screen looks janky because default values are not saved on initialization.
+
+## Setup & Build
+
+[![Build Status](https://img.shields.io/github/actions/workflow/status/fatihbalsoy/wp-material-design/build.yml)](https://github.com/fatihbalsoy/wp-material-design/actions/workflows/build.yml)
+
+Download [Node.js](https://nodejs.org/en/download/).
+Run the following commands:
+
+``` bash
+# Install dependencies (only the first time)
+npm install
+
+# Run the local server at localhost:8000 (WordPress) and localhost:8080 (phpMyAdmin)
+npm run dev:docker
+
+# Watch & compile source code without server
+npm run dev
+
+# Build for production in the build/ directory
+npm run build
+```
 
 ## Contribution
 
