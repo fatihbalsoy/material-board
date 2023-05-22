@@ -19,21 +19,24 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-      - uses: actions/checkout@v3
-      # Setup NPM
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
           cache-dependency-path: package-lock.json
-      - run: npm ci
 
-      # Build Project
-      - run: npm run build
+      - name: Install NPM Dependencies
+        run: npm ci
+
+      - name: Build Project
+        run: npm run build
       
-      # Upload Artifact
-      - uses: actions/upload-artifact@v3
+      - name: Upload Nightly Build
+        uses: actions/upload-artifact@v3
         with:
-          name: wp-material-design-nightly
+          name: wp-material-design-nightly-${{ github.event.repository.updated_at }}
           path: build/_bundle/wp-material-design-*.zip
