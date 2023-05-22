@@ -20,6 +20,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      # Setup NPM
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
@@ -27,4 +28,12 @@ jobs:
           cache: "npm"
           cache-dependency-path: package-lock.json
       - run: npm ci
+
+      # Build Project
       - run: npm run build
+      
+      # Upload Artifact
+      - uses: actions/upload-artifact@v3
+        with:
+          name: wp-material-design-nightly
+          path: build/_bundle/wp-material-design-*.zip
