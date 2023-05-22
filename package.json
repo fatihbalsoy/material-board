@@ -8,8 +8,9 @@
   },
   "scripts": {
     "build": "bash bundle.sh",
-    "dev": "bash bundle.sh && concurrently \"tsc --watch --outDir build/\" \"sass --watch src/:build/\"",
-    "dev:docker": "docker-compose up -d && npm run dev",
+    "watch": "concurrently \"tsc --watch --outDir build/\" \"sass --watch src/:build/\"",
+    "dev": "bash bundle.sh && npm run watch",
+    "dev:docker": "npm run build && docker-compose up -d && npm run watch",
     "stop": "docker-compose down"
   },
   "keywords": [],

@@ -1,0 +1,50 @@
+/*
+ *   base.scss
+ *   material-design-dashboard
+ * 
+ *   Created by codespace on 5/22/23
+ *   Copyright © 2023 Fatih Balsoy. All rights reserved.
+ */
+
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+body {
+    background-color: var(--light-background);
+}
+
+div {
+    font-family: var(--font-type), sans-serif !important;
+}
+
+a {
+    transition: all 0.5s;
+}
+
+a:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    box-shadow: none !important;
+}
+
+option {
+    color: #777;
+}
+
+select option {
+    border-radius: 3px !important;
+    border: none !important;
+    background-color: #f8f8f8;
+}
+
+::selection {
+    background: var(--accent-color) !important;
+    color: var(--accent-color-text) !important;
+}
+
+table {
+    background-color: #fff;
+    box-shadow: var(--elevation1);
+    border-radius: var(--br-10px) !important;
+}

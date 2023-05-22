@@ -1,0 +1,115 @@
+/*
+ *   variables.scss
+ *   material-design-dashboard
+ * 
+ *   Created by codespace on 5/22/23
+ *   Copyright © 2023 Fatih Balsoy. All rights reserved.
+ */
+
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+$primary-color: #2196F3;
+$secondary-color: #1976D2;
+$accent-color: #F44336;
+$text-color: #000;
+
+$nd-color: #fff;
+$nd-text-color: rgba(0, 0, 0, 0.5);
+$nd-selected-color: #fafafa;
+
+$light-background: #fbfbfb;
+$dark-background: #121212;
+
+$light-back-color: #fff;
+$dark-button-color: hsl(0, 0%, 16%);
+$dark-back-color: hsl(0, 0%, 12%);
+$dark-back-color-paper: hsl(0, 0%, 16%);
+
+/// Default Font
+/// @type String
+$font-type: 'Mona Sans';
+/// Mona Sans Post-Compilation Path
+/// @type String
+$mona-sans-path: '../assets/fonts/mona-sans.woff2';
+/// Hubot Sans Post-Compilation Path
+/// @type String
+$hubot-sans-path: '../assets/fonts/hubot-sans.woff2';
+
+/*  
+    TODO: Define by dp's
+    https://m2.material.io/design/environment/elevation.html#default-elevations
+
+    Component                                                   |   Default elevation values (dp)
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+    Dialog	                                                    |   24
+    Modal bottom sheet Modal side sheet	                        |   16
+    Navigation drawer	                                        |   16
+    Floating action button (FAB - pressed)	                    |   12
+    Standard bottom sheet Standard side sheet	                |   8
+    Bottom navigation bar	                                    |   8
+    Bottom app bar	                                            |   8
+    Menus and sub menus	                                        |   8
+    Card (when picked up)	                                    |   8
+    Contained button (pressed state)	                        |   8
+    Floating action button (FAB - resting elevation) Snackbar	|   6
+    Top app bar (scrolled state)	                            |   4
+    Top app bar (resting elevation)	                            |   0 or 4
+    Refresh indicator Search bar (scrolled state)	            |   3
+    Contained button (resting elevation)	                    |   2
+    Search bar (resting elevation)	                            |   1
+    Card (resting elevation)	                                |   1
+    Switch	                                                    |   1
+    Text button	                                                |   0
+    Standard side sheet	                                        |   0
+*/
+$elevation1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+$elevation2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+$elevation3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+$elevation4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+$elevation5: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+$elevation-login: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+/* 
+    TODO: Implement dark mode overlays
+    https://m2.material.io/design/color/dark-theme.html#properties
+
+    Elevation level	    |   White overlay transparency
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––
+    00dp	            |   0%
+    01dp	            |   5%
+    02dp	            |   7%
+    03dp	            |   8%
+    04dp	            |   9%
+    06dp	            |   11%
+    08dp	            |   12%
+    12dp	            |   14%
+    16dp	            |   15%
+    24dp	            |   16%
+*/
+/* $elevation-dark-mode-overlay-1: ; */
+
+/*? Border Radius ?*/
+/* adminbar popup menu */
+$br-100pc: 100%;
+$br-100px: 100px;
+$br-10px-bottom: 0px 0px 10px 10px;
+$br-10px-right: 0px 10px 10px 0px;
+$br-10px: 10px;
+$br-8px-top: 8px 8px 0px 0px;
+$br-8px: 8px;
+$br-6px: 6px;
+$br-3px-top: 3px 3px 0px 0px;
+$br-3px-bottom: 0px 0px 3px 3px;
+$br-3px: 3px;
+$br-2px: 2px;
+$br-0px: 0px;
+
+/* Media Query Breakpoints */
+$breakpoints: (
+    'small': (max-width: 430px),
+    'medium': (max-width: 782px),
+    'large': (max-width: 960px),
+);

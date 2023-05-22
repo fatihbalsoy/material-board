@@ -1,0 +1,37 @@
+/*
+ *   fonts.scss
+ *   material-design-dashboard
+ * 
+ *   Created by codespace on 5/22/23
+ *   Copyright © 2023 Fatih Balsoy. All rights reserved.
+ */
+
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations.
+// -----------------------------------------------------------------------------
+
+/* @import url(https://fonts.googleapis.com/css?family=Product+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i); */
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+// Post-compilation urls if called from src/styles/
+@import url($mona-sans-path);
+@import url($hubot-sans-path);
+
+@font-face {
+    font-family: 'Mona Sans';
+    src:
+        url($mona-sans-path) format('woff2 supports variations'),
+        url($mona-sans-path) format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+@font-face {
+    font-family: 'Hubot Sans';
+    src:
+        url($hubot-sans-path) format('woff2 supports variations'),
+        url($hubot-sans-path) format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}

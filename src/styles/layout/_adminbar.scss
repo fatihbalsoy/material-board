@@ -1,0 +1,92 @@
+/*
+ *   adminbar.scss
+ *   material-design-dashboard
+ * 
+ *   Created by codespace on 5/22/23
+ *   Copyright © 2023 Fatih Balsoy. All rights reserved.
+ */
+
+@import '../abstracts/mixins';
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the admin bar of the site.
+// Image: docs/images/layout/admin_bar.png
+// -----------------------------------------------------------------------------
+// TODO: Search-bar on wp.scss is reset 
+
+#wpadminbar .ab-empty-item,
+#wpadminbar a.ab-item,
+#wpadminbar>#wp-toolbar span.ab-label,
+#wpadminbar>#wp-toolbar span.noticon {
+    color: var(--primary-color-text);
+    transition: all 0.5s !important;
+    font-family: var(--font-type);
+}
+
+#wpadminbar #wp-admin-bar-new-content .ab-icon:before {
+    top: 2px !important;
+}
+
+#wpadminbar #adminbarsearch:before,
+#wpadminbar .ab-icon:before,
+#wpadminbar .ab-item:before {
+    color: var(--primary-color-text) !important;
+}
+
+#wpadminbar .menupop .ab-sub-wrapper,
+#wpadminbar .shortlink-input {
+    background: #fff !important;
+    border-radius: var(--br-10px-bottom);
+}
+
+#wpadminbar .ab-submenu .ab-item,
+#wpadminbar .quicklinks .menupop ul li a,
+#wpadminbar .quicklinks .menupop ul li a strong,
+#wpadminbar .quicklinks .menupop.hover ul li a,
+#wpadminbar.nojs .quicklinks .menupop:hover ul li a {
+    color: var(--nd-text-color);
+}
+
+#wpadminbar .ab-top-menu>li.hover>.ab-item,
+#wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus,
+#wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item,
+#wpadminbar:not(.mobile) .ab-top-menu>li>.ab-item:focus {
+    background-color: rgba(0, 0, 0, 0.06) !important;
+    color: #fff !important;
+}
+
+#wpadminbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    /* height: 80px; */
+}
+
+#wpadminbar:hover {
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.4);
+}
+
+#wpadminbar .quicklinks .menupop ul.ab-sub-secondary,
+#wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu {
+    background-color: #f9f9f9;
+    border-radius: var(--br-3px-bottom);
+}
+
+#wpadminbar:not(.mobile)>#wp-toolbar a:focus span.ab-label,
+#wpadminbar:not(.mobile)>#wp-toolbar li:hover span.ab-label,
+#wpadminbar>#wp-toolbar li.hover span.ab-label {
+    color: #fff;
+}
+
+#wpadminbar #wp-admin-bar-my-account.with-avatar>.ab-empty-item img,
+#wpadminbar #wp-admin-bar-my-account.with-avatar>a img,
+#wp-admin-bar-user-info .avatar {
+    border-radius: var(--br-100pc);
+}
+
+#wpadminbar #wp-admin-bar-user-info .display-name {
+    @include respond-to('medium') {
+        color: var(--nd-text-color);
+        margin-top: 10px;
+    }
+}

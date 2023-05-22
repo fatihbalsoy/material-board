@@ -1,0 +1,145 @@
+/*
+ *   _adminmenu.scss
+ *   material-design-dashboard
+ * 
+ *   Created by codespace on 5/22/23
+ *   Copyright © 2023 Fatih Balsoy. All rights reserved.
+ */
+
+@import '../abstracts/mixins';
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the admin menu of the site.
+// Image: docs/images/layout/admin_menu.png
+// -----------------------------------------------------------------------------
+
+#adminmenuback {
+    background-color: var(--nd-color);
+    box-shadow: 1px 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+#adminmenu div.wp-menu-name {
+    color: var(--nd-text-color);
+}
+
+#adminmenu,
+#adminmenu .wp-submenu,
+#adminmenuback,
+#adminmenuwrap {
+    background-color: var(--nd-color);
+}
+
+#adminmenu .wp-not-current-submenu .wp-submenu,
+.folded #adminmenu .wp-has-current-submenu .wp-submenu {
+    border-radius: var(--br-10px-right);
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu,
+#adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
+#adminmenu .wp-has-current-submenu.opensub .wp-submenu,
+#adminmenu a.wp-has-current-submenu:focus+.wp-submenu,
+.no-js li.wp-has-current-submenu:hover .wp-submenu {
+    background-color: var(--nd-selected-color);
+}
+
+#adminmenu .opensub .wp-submenu li.current a,
+#adminmenu .wp-submenu li.current,
+#adminmenu .wp-submenu li.current a,
+#adminmenu .wp-submenu li.current a:focus,
+#adminmenu .wp-submenu li.current a:hover,
+#adminmenu a.wp-has-current-submenu:focus+.wp-submenu li.current a {
+    color: var(--nd-text-color);
+    padding-right: 0px;
+}
+
+#adminmenu div.wp-menu-image:before {
+    color: var(--nd-text-color);
+}
+
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
+#adminmenu .wp-menu-arrow,
+#adminmenu .wp-menu-arrow div,
+#adminmenu li.current a.menu-top,
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+.folded #adminmenu li.current.menu-top,
+.folded #adminmenu li.wp-has-current-submenu {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+#adminmenu .current div.wp-menu-image:before,
+#adminmenu .wp-has-current-submenu div.wp-menu-image:before,
+#adminmenu a.current:hover div.wp-menu-image:before,
+#adminmenu a.wp-has-current-submenu:hover div.wp-menu-image:before,
+#adminmenu li.wp-has-current-submenu a:focus div.wp-menu-image:before,
+#adminmenu li.wp-has-current-submenu.opensub div.wp-menu-image:before,
+#adminmenu li.wp-has-current-submenu:hover div.wp-menu-image:before {
+    color: var(--primary-color);
+}
+
+#adminmenu .wp-submenu a,
+#adminmenu .wp-submenu a {
+    color: #777;
+}
+
+/* docs/images/update_badge.png */
+#adminmenu .awaiting-mod,
+#adminmenu .menu-counter,
+#adminmenu .update-plugins {
+    background-color: var(--accent-color) !important;
+}
+
+#adminmenu .wp-submenu a:focus,
+#adminmenu .wp-submenu a:hover {
+    background: transparent;
+}
+
+#adminmenu li:hover {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+#adminmenu div.wp-menu-name:hover {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+
+    @include respond-to('medium') {
+        background-color: transparent !important;
+    }
+}
+
+#adminmenu .awaiting-mod,
+#adminmenu .update-plugins {
+    float: right;
+    margin: 0px;
+    margin-right: 10px !important;
+}
+
+#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after,
+#adminmenu li.wp-has-submenu.wp-not-current-submenu:focus-within:after {
+    border-right-color: transparent !important;
+}
+
+
+#adminmenu .wp-submenu li {
+    border-radius: var(--br-10px-right);
+    margin-right: 5px;
+}
+
+#adminmenu .wp-submenu .wp-submenu-head {
+    color: var(--text-color) !important;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+// TODO: Setting primary color should not be fragmented among different files. 
+//       Might be better to have all elements in one ruleset.
+#collapse-button:hover,
+#collapse-button:focus,
+#adminmenu .wp-submenu a:focus,
+#adminmenu .wp-submenu a:hover,
+#adminmenu a:hover,
+#adminmenu li.menu-top>a:focus,
+#adminmenu li a:focus div.wp-menu-image:before,
+#adminmenu li.opensub div.wp-menu-image:before,
+#adminmenu li:hover div.wp-menu-image:before {
+    color: var(--primary-color) !important;
+}

@@ -7,6 +7,7 @@
  *   Copyright © 2022 Fatih Balsoy. All rights reserved.
  */
 
+@import '../abstracts/mixins';
 
 /* input[type=checkbox] {
     height: 20px;
@@ -20,9 +21,16 @@ input[type=checkbox] {
     background-color: transparent !important;
     -webkit-transition: all 0.5s;
     transition: all 0.5s !important;
+
+    @include respond-to('medium') {
+        margin-top: 3px !important;
+        height: 20px !important;
+        width: 20px !important;
+    }
 }
 
-input[type=checkbox]:before, input[type=checkbox]:checked:before {
+input[type=checkbox]:before,
+input[type=checkbox]:checked:before {
     font-family: 'Material Icons' !important;
     font-weight: normal;
     font-style: normal;
@@ -45,6 +53,12 @@ input[type=checkbox]:before, input[type=checkbox]:checked:before {
 
 input[type=checkbox]:checked:before {
     content: 'done' !important;
+
+    @include respond-to('medium') {
+        font-size: 20px;
+        padding-left: 0px !important;
+        padding-top: 0px !important;
+    }
 }
 
 input[type=checkbox]:before {
@@ -69,7 +83,10 @@ input[type=checkbox]:checked:focus {
     background-color: rgba(198, 40, 40, 0.3);
 }
 
-.widefat tfoot td input[type=checkbox]:before, .widefat th input[type=checkbox]:before, .widefat thead td input[type=checkbox]:before, input[type=checkbox]:checked:before {
+.widefat tfoot td input[type=checkbox]:before,
+.widefat th input[type=checkbox]:before,
+.widefat thead td input[type=checkbox]:before,
+input[type=checkbox]:checked:before {
     font-size: 128%;
 }
 
@@ -78,19 +95,4 @@ input[type=checkbox]:checked:focus {
 */
 .components-checkbox-control__input[type=checkbox]:checked:before {
     content: none !important;
-}
-
-/* Mobile Settings */
-@media screen and (max-width: 782px) {
-    input[type=checkbox] {
-        margin-top: 3px !important;
-        height: 20px !important;
-        width: 20px !important;
-    }
-
-    input[type=checkbox]:checked:before {
-        font-size: 20px;
-        padding-left: 0px !important;
-        padding-top: 0px !important;
-    }
 }

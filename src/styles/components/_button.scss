@@ -1,0 +1,213 @@
+/*
+ *   _button.scss
+ *   material-design-dashboard
+ * 
+ *   Created by codespace on 5/22/23
+ *   Copyright © 2023 Fatih Balsoy. All rights reserved.
+ */
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button(s) component.
+// -----------------------------------------------------------------------------
+
+button {
+    transition: all 0.5s;
+}
+
+button:focus {
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.05) !important;
+}
+
+.wp-core-ui .button-primary {
+    background: var(--primary-color);
+}
+
+.wp-core-ui .button-primary.focus,
+.wp-core-ui .button-primary.hover,
+.wp-core-ui .button-primary:focus,
+.wp-core-ui .button-primary:hover {
+    background: var(--primary-color);
+}
+
+.wp-core-ui .button:focus,
+.wp-color-result:focus {
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.5) !important;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.5) !important;
+}
+
+.wp-core-ui .button:focus:after {
+    background: none;
+}
+
+.wp-core-ui .button:hover,
+.wp-color-result:hover,
+.et_pb_toggle_builder_wrapper #et_pb_toggle_builder:hover,
+#et_pb_fb_cta:hover,
+.jitm-button.is-primary:hover {
+    -webkit-box-shadow: var(--elevation2) !important;
+    box-shadow: var(--elevation2) !important;
+}
+
+.wp-core-ui .button-link :focus {
+    border: none !important;
+    outline: none !important;
+}
+
+/* Ripple effect */
+
+.mdwp-ripple,
+.wp-core-ui .button,
+.color-option,
+.nav-tab,
+.wp-editor-wrap .wp-switch-editor {
+    position: relative;
+    overflow: hidden;
+}
+
+.mdwp-ripple:after,
+.wp-core-ui .button:after,
+.color-option:after,
+.nav-tab:after,
+.wp-editor-wrap .wp-switch-editor:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(0, 0, 0, .25) !important;
+    opacity: 0;
+    border-radius: var(--br-100pc);
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 1;
+    }
+
+    20% {
+        transform: scale(25, 25);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(40, 40);
+    }
+}
+
+.mdwp-ripple:focus:not(:active)::after,
+.wp-core-ui .button:focus:not(:active)::after,
+.color-option:focus:not(:active)::after,
+.nav-tab:focus:not(:active)::after,
+.wp-editor-wrap .wp-switch-editor:focus:not(:active)::after {
+    animation: ripple 1s ease-out !important;
+}
+
+/** END OF RIPPLE EFFECT **/
+
+.wp-core-ui .button-disabled,
+.wp-core-ui .button-secondary.disabled,
+.wp-core-ui .button-secondary:disabled,
+.wp-core-ui .button-secondary[disabled],
+.wp-core-ui .button.disabled,
+.wp-core-ui .button:disabled,
+.wp-core-ui .button[disabled] {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2) !important;
+    box-shadow: none !important;
+    background-color: #eee !important;
+    text-shadow: none !important;
+}
+
+.theme-browser .theme .theme-actions .button {
+    background-color: transparent;
+    box-shadow: none !important;
+    font-weight: bold;
+    min-width: 0px;
+}
+
+.theme-browser .theme .theme-actions .button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+.theme-browser .theme .theme-actions .button-primary {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.theme-browser .theme .theme-actions .button-primary:hover {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+
+.mce-menubtn.mce-fixed-width button {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    transition: all 0.5s;
+}
+
+.mce-menubtn.mce-fixed-width button:hover {
+    transition: all 0.5s;
+}
+
+.mce-menubtn.mce-fixed-width button:focus {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.38) !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.38) !important;
+    border-radius: var(--br-3px);
+}
+
+.wp-core-ui .button:hover {
+    border: none;
+}
+
+.wp-core-ui .button,
+.et_pb_toggle_builder_wrapper #et_pb_toggle_builder,
+#et_pb_fb_cta,
+.wp-core-ui .button,
+.wp-core-ui .button-secondary,
+.jitm-button {
+    border: none !important;
+    transition: all 0.3s ease !important;
+    border-radius: var(--br-6px) !important;
+    box-shadow: var(--elevation1) !important;
+    min-width: 100px;
+}
+
+.wp-core-ui .button.button-small {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.wp-core-ui .quicktags-toolbar input.button.button-small {
+    width: unset !important;
+}
+
+.wp-core-ui .button-primary-disabled,
+.wp-core-ui .button-primary.disabled,
+.wp-core-ui .button-primary:disabled,
+.wp-core-ui .button-primary[disabled] {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.wp-core-ui .button-primary-disabled:hover,
+.wp-core-ui .button-primary.disabled:hover,
+.wp-core-ui .button-primary:disabled:hover,
+.wp-core-ui .button-primary[disabled]:hover {
+    box-shadow: none !important;
+}
+
+a.et-pb-modal-preview-template.button {
+    min-width: 0px;
+}
+
+a.et-pb-modal-preview-template.button,
+a.et-pb-modal-save.button.button-primary,
+a.et-pb-modal-save-template.button {
+    border-radius: var(--br-0px) !important;
+    box-shadow: none !important;
+}
