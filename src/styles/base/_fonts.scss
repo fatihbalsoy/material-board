@@ -10,14 +10,21 @@
 // This file contains all @font-face declarations.
 // -----------------------------------------------------------------------------
 
-/* @import url(https://fonts.googleapis.com/css?family=Product+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i); */
+
+// Google Roboto - Apache License 2.0
+// Image: docs/images/fonts/roboto.png
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+
+// Google Material Icons - Apache License 2.0
+// Image: docs/images/fonts/material_icons.png
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 
 // Post-compilation urls if called from src/styles/
 @import url($mona-sans-path);
 @import url($hubot-sans-path);
 
+// Github Mona Sans - SIL Open Font License 1.1
+// Image: docs/images/fonts/mona_sans.png
 @font-face {
     font-family: 'Mona Sans';
     src:
@@ -27,6 +34,8 @@
     font-stretch: 75% 125%;
 }
 
+// Github Hubot Sans - SIL Open Font License 1.1
+// Image: docs/images/fonts/hubot_sans.png
 @font-face {
     font-family: 'Hubot Sans';
     src:
@@ -35,3 +44,5 @@
     font-weight: 200 900;
     font-stretch: 75% 125%;
 }
+
+/* @import url(https://fonts.googleapis.com/css?family=Product+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i); */

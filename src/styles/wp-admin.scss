@@ -636,7 +636,7 @@ div#message,
     border-right-width: 0px !important;
 }
 
-/* file://components/images/notice_update.png */
+/* file://docs/images/components/notice_update.png */
 #update-nag::before,
 .update-nag::before {
     content: 'update';
@@ -680,13 +680,13 @@ div.updated p:before {
     top: 6px;
 }
 
-/* file://components/images/notice_bell.png */
+/* file://docs/images/components/notice_bell.png */
 .notice p:before,
 .notice-title:before {
     content: 'notifications' !important;
 }
 
-/* file://components/images/notice_error.png */
+/* file://docs/images/components/notice_error.png */
 div.notice.inline.notice-error.notice-alt>p::before {
     content: 'error' !important;
 }
@@ -695,7 +695,7 @@ div.error p:before {
     content: 'error';
 }
 
-/* file://components/images/notice_updated.png */
+/* file://docs/images/components/notice_updated.png */
 div.updated p:before {
     content: 'done';
 }
@@ -963,7 +963,7 @@ div#plugin-information-tabs {
     border: none;
 }
 
-/* file://components/images/plugins_install_button.png */
+/* file://docs/images/plugins_install_button.png */
 a#plugin_install_from_iframe {
     padding-top: 8px;
 }
@@ -1075,7 +1075,7 @@ a:focus {
     outline: none !important;
 }
 
-/* docs/images/text_field_search_plugins.png */
+/* docs/images/components/text_field_search_plugins.png */
 form.search-form.search-plugins {
     border-radius: var(--br-10px-top) !important;
     margin-bottom: 0px;

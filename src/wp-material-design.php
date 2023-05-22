@@ -67,7 +67,7 @@ class MaterialDashboardPlugin
         $wp_ver_major = intval($split_wp_version[0]);
         $wp_ver_minor = intval($split_wp_version[1]);
         if ($wp_ver_major >= 6 || ($wp_ver_major == 5 && $wp_ver_minor >= 9)) {
-            wp_enqueue_style('mdp-admin-theme-5-9', plugins_url('styles/compat/5.9/wp-admin.css', __FILE__));
+            wp_enqueue_style('mdp-admin-theme-5-9', plugins_url('styles/compatibility/5.9/wp-admin.css', __FILE__));
         }
 
         $this->load_plugin_options();
