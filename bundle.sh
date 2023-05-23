@@ -11,9 +11,9 @@
 SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
 #?#   Plugin Name and Version   #?#
-PLUGIN_BUNDLE_LINE=$(cat $SCRIPTPATH/src/index.php | grep "\$fb_mdp_plugin_bundle =")
+PLUGIN_BUNDLE_LINE=$(cat $SCRIPTPATH/src/wp-material-design.php | grep "\$fb_mdp_plugin_bundle =")
 IFS='"'; set $PLUGIN_BUNDLE_LINE; php_var=$1; PLUGIN_BUNDLE=$2
-PLUGIN_VERSION_LINE=$(cat $SCRIPTPATH/src/index.php | grep "\$fb_mdp_plugin_version =")
+PLUGIN_VERSION_LINE=$(cat $SCRIPTPATH/src/wp-material-design.php | grep "\$fb_mdp_plugin_version =")
 IFS='"'; set $PLUGIN_VERSION_LINE; php_var=$1; PLUGIN_VERSION=$2
 
 PLUGIN_ZIP_NAME="$PLUGIN_BUNDLE-$PLUGIN_VERSION"

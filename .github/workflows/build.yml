@@ -43,4 +43,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: wp-material-design-nightly-${{ steps.date.outputs.date }}
-          path: build/_bundle/wp-material-design-*.zip
+          path: build/_bundle/wp-material-design
