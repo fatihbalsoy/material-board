@@ -6,13 +6,11 @@
  *   Copyright © 2022 Fatih Balsoy. All rights reserved.
  */
 
+/* TODO: Completely remove this stylesheet and replace html selectors with wordpress classes and ids */
+
 .mdwp-content-center {
     margin: 0 auto !important;
-    /* width: 70% !important; */
     margin-bottom: 10px;
-    margin-top: 10px;
-    /* padding-left: 10px;
-    padding-right: 10px; */
 }
 
 .mdwp-card-header {
@@ -33,11 +31,6 @@
     border: none !important;
     transition: all 250ms;
     margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-.mdwp-first-card {
-    margin-top: 20px !important;
 }
 
 .mdwp-card-title, h2 {
@@ -279,7 +272,6 @@
     .mdwp-content-center {
         width: 100% !important;
         margin-bottom: 10px;
-        margin-top: 10px;
         padding-left: 0px;
         padding-right: 0px;
     }

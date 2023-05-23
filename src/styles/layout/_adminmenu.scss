@@ -11,15 +11,12 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the admin menu of the site.
 // Image: docs/images/layout/admin_menu.png
+// Guidelines: https://m3.material.io/components/navigation-drawer/overview
 // -----------------------------------------------------------------------------
 
+// * Admin Menu Back * //
 #adminmenuback {
-    background-color: var(--nd-color);
     box-shadow: 1px 0 3px 0 rgba(0, 0, 0, 0.3);
-}
-
-#adminmenu div.wp-menu-name {
-    color: var(--nd-text-color);
 }
 
 #adminmenu,
@@ -29,17 +26,13 @@
     background-color: var(--nd-color);
 }
 
-#adminmenu .wp-not-current-submenu .wp-submenu,
-.folded #adminmenu .wp-has-current-submenu .wp-submenu {
-    border-radius: var(--br-10px-right);
+// * Admin Menu Text & Icons * //
+#adminmenu div.wp-menu-name {
+    color: var(--nd-text-color);
 }
 
-#adminmenu .wp-has-current-submenu .wp-submenu,
-#adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
-#adminmenu .wp-has-current-submenu.opensub .wp-submenu,
-#adminmenu a.wp-has-current-submenu:focus+.wp-submenu,
-.no-js li.wp-has-current-submenu:hover .wp-submenu {
-    background-color: var(--nd-selected-color);
+#adminmenu div.wp-menu-image:before {
+    color: var(--nd-text-color);
 }
 
 #adminmenu .opensub .wp-submenu li.current a,
@@ -52,19 +45,9 @@
     padding-right: 0px;
 }
 
-#adminmenu div.wp-menu-image:before {
-    color: var(--nd-text-color);
-}
-
-#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
-#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
-#adminmenu .wp-menu-arrow,
-#adminmenu .wp-menu-arrow div,
-#adminmenu li.current a.menu-top,
-#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
-.folded #adminmenu li.current.menu-top,
-.folded #adminmenu li.wp-has-current-submenu {
-    background-color: rgba(0, 0, 0, 0.05) !important;
+// Selected Menu Text & Icon //
+a.wp-has-submenu.wp-has-current-submenu.wp-menu-open>.wp-menu-name {
+    color: var(--primary-color) !important;
 }
 
 #adminmenu .current div.wp-menu-image:before,
@@ -74,72 +57,153 @@
 #adminmenu li.wp-has-current-submenu a:focus div.wp-menu-image:before,
 #adminmenu li.wp-has-current-submenu.opensub div.wp-menu-image:before,
 #adminmenu li.wp-has-current-submenu:hover div.wp-menu-image:before {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
 
-#adminmenu .wp-submenu a,
-#adminmenu .wp-submenu a {
-    color: #777;
+.folded #adminmenu>.wp-submenu-head {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
 
-/* docs/images/components/update_badge.png */
-#adminmenu .awaiting-mod,
-#adminmenu .menu-counter,
-#adminmenu .update-plugins {
-    background-color: var(--accent-color) !important;
-}
+// ** ADMIN MENU ** //
+#adminmenu {
 
-#adminmenu .wp-submenu a:focus,
-#adminmenu .wp-submenu a:hover {
-    background: transparent;
-}
+    // * Menu Item * //
+    .wp-submenu-head,
+    a.menu-top,
+    // Selected
+    .wp-has-current-submenu ul>li,
+    .folded li.menu-top .wp-submenu>li>a {
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: var(--br-10px);
+        box-shadow: none !important;
 
-#adminmenu li:hover {
-    background-color: rgba(0, 0, 0, 0.05) !important;
-}
+        @include ripple(var(--nd-text-color))
+    }
 
-#adminmenu div.wp-menu-name:hover {
-    background-color: rgba(0, 0, 0, 0.05) !important;
+    .wp-submenu li {
+        margin-right: 5px;
+    }
 
-    @include respond-to('medium') {
-        background-color: transparent !important;
+    div.wp-menu-name {
+        border-radius: var(--br-10px) !important;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.05) !important;
+            color: var(--primary-color) !important;
+
+            @include respond-to('medium') {
+                background-color: transparent !important;
+            }
+        }
+    }
+
+    a:focus,
+    a:hover,
+    .wp-submenu-head:hover {
+        box-shadow: none !important;
+    }
+
+    li {
+
+        // Hides Right Arrow
+        &.wp-has-submenu.wp-not-current-submenu.opensub:hover:after,
+        &.wp-has-submenu.wp-not-current-submenu:focus-within:after {
+            border-right-color: transparent !important;
+        }
+
+        &:hover {
+            background-color: transparent !important;
+        }
+    }
+
+    // * Submenu * //
+    .wp-submenu {
+        li {
+            border-radius: var(--br-10px);
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.05) !important;
+            }
+        }
+
+        a,
+        a:visited {
+            color: #777 !important;
+        }
+
+        .wp-submenu-head {
+            color: var(--text-color) !important;
+            // margin-right: 5px;
+            margin-top: 2px;
+        }
     }
 }
 
-#adminmenu .awaiting-mod,
-#adminmenu .update-plugins {
-    float: right;
-    margin: 0px;
-    margin-right: 10px !important;
+// * FOLDED ADMIN MENU * //
+.folded #adminmenu {
+    &>li.menu-top>a.menu-top {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    /* .no-js.folded #adminmenu .wp-has-submenu:hover .wp-submenu */
+    .opensub .wp-submenu,
+    .wp-has-current-submenu .wp-submenu.sub-open,
+    .wp-has-current-submenu a.menu-top:focus+.wp-submenu,
+    .wp-has-current-submenu.opensub .wp-submenu,
+    .wp-submenu.sub-open,
+    a.menu-top:focus+.wp-submenu {
+        margin-top: -8px;
+    }
 }
 
-#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after,
-#adminmenu li.wp-has-submenu.wp-not-current-submenu:focus-within:after {
+// * Selected Menu * //
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
+#adminmenu .wp-menu-arrow,
+#adminmenu .wp-menu-arrow div,
+#adminmenu li.current a.menu-top,
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+.folded #adminmenu li.current.menu-top,
+.folded #adminmenu li.wp-has-current-submenu {
+    // background-color: var(--primary-color) !important;
+    background-color: rgba(0, 0, 0, 0.05) !important;
+    color: var(--primary-color) !important;
+}
+
+// Selected Menu Arrow //
+ul#adminmenu a.wp-has-current-submenu:after,
+ul#adminmenu>li.current>a.current:after {
     border-right-color: transparent !important;
 }
 
-
-#adminmenu .wp-submenu li {
-    border-radius: var(--br-10px-right);
-    margin-right: 5px;
-}
-
-#adminmenu .wp-submenu .wp-submenu-head {
-    color: var(--text-color) !important;
-    margin-right: 5px;
-    margin-top: 2px;
-}
-
-// TODO: Setting primary color should not be fragmented among different files. 
-//       Might be better to have all elements in one ruleset.
+// Selected Menu Item Hover //
 #collapse-button:hover,
 #collapse-button:focus,
 #adminmenu .wp-submenu a:focus,
 #adminmenu .wp-submenu a:hover,
-#adminmenu a:hover,
 #adminmenu li.menu-top>a:focus,
 #adminmenu li a:focus div.wp-menu-image:before,
 #adminmenu li.opensub div.wp-menu-image:before,
 #adminmenu li:hover div.wp-menu-image:before {
     color: var(--primary-color) !important;
+}
+
+// * Popover Sub Menu * //
+#adminmenu .wp-not-current-submenu .wp-submenu,
+.folded #adminmenu .wp-has-current-submenu .wp-submenu {
+    border-radius: var(--br-10px-right);
+}
+
+// * Update Badge * //
+/* docs/images/components/update_badge.png */
+#adminmenu .awaiting-mod,
+#adminmenu .menu-counter,
+#adminmenu .update-plugins {
+    background-color: var(--accent-color) !important;
+    float: right;
+    margin: 0px;
+    margin-right: -10px !important;
 }

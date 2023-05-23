@@ -6,6 +6,8 @@
  *   Copyright © 2023 Fatih Balsoy. All rights reserved.
  */
 
+@import '../abstracts/mixins';
+
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button(s) component.
 // -----------------------------------------------------------------------------
@@ -54,60 +56,13 @@ button:focus {
 }
 
 /* Ripple effect */
-
 .mdwp-ripple,
 .wp-core-ui .button,
 .color-option,
 .nav-tab,
 .wp-editor-wrap .wp-switch-editor {
-    position: relative;
-    overflow: hidden;
+    @include ripple();
 }
-
-.mdwp-ripple:after,
-.wp-core-ui .button:after,
-.color-option:after,
-.nav-tab:after,
-.wp-editor-wrap .wp-switch-editor:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 5px;
-    height: 5px;
-    background: rgba(0, 0, 0, .25) !important;
-    opacity: 0;
-    border-radius: var(--br-100pc);
-    transform: scale(1, 1) translate(-50%);
-    transform-origin: 50% 50%;
-}
-
-@keyframes ripple {
-    0% {
-        transform: scale(0, 0);
-        opacity: 1;
-    }
-
-    20% {
-        transform: scale(25, 25);
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        transform: scale(40, 40);
-    }
-}
-
-.mdwp-ripple:focus:not(:active)::after,
-.wp-core-ui .button:focus:not(:active)::after,
-.color-option:focus:not(:active)::after,
-.nav-tab:focus:not(:active)::after,
-.wp-editor-wrap .wp-switch-editor:focus:not(:active)::after {
-    animation: ripple 1s ease-out !important;
-}
-
-/** END OF RIPPLE EFFECT **/
 
 .wp-core-ui .button-disabled,
 .wp-core-ui .button-secondary.disabled,

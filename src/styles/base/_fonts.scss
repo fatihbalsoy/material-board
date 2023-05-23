@@ -10,14 +10,21 @@
 // This file contains all @font-face declarations.
 // -----------------------------------------------------------------------------
 
-
 // Google Roboto - Apache License 2.0
 // Image: docs/images/fonts/roboto.png
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 // Google Material Icons - Apache License 2.0
 // Image: docs/images/fonts/material_icons.png
-@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0');
+
+// Community Material Icons - Apache License 2.0
+// Image: docs/images/fonts/material_icons_community.png
+@import url(https://cdn.materialdesignicons.com/7.2.96/css/materialdesignicons.min.css);
+
+// Colophon Foundry, DM Serif Display - SIL Open Font License 1.1
+// Image: docs/images/fonts/dm_serif_display.png
+@import url(https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap);
 
 // Post-compilation urls if called from src/styles/
 @import url($mona-sans-path);

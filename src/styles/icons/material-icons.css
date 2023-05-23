@@ -12,9 +12,6 @@
   * https://fonts.google.com/icons
   */
 
-@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-@import url(https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css);
-
 @import url(admin-menu.css);
 @import url(image-editing.css);
 @import url(media.css);
@@ -130,16 +127,18 @@ i.mce-i-link:before,
 }
 
 /**MATERIAL DESIGN ICONS COMMUNITY**/
+/* pin */
 .dashicons-admin-post:before,
 .post-format-icon.post-format-standard:before{
     font-family: 'Material Design Icons' !important;
-    content: '\f403 ';
+    content: '\f0403 ';
 }
 
+/* link-off */
 .dashicons-editor-unlink:before,
 i.mce-i-unlink:before{
     font-family: 'Material Design Icons' !important;
-    content: '\f338' !important;
+    content: '\f0338' !important;
     display: block !important;
     font-size: 103% !important;
 }

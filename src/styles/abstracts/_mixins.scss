@@ -31,3 +31,47 @@
         @error 'No value found for `#{$breakpoint}`. Please make sure it is defined in `$breakpoints` map.';
     }
 }
+
+/// Ripple Effect
+/// @access public
+/// @param {String} $color - Splash Color
+@mixin ripple($color: rgba(#fff, .2)) {
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 5px;
+        height: 5px;
+        background: $color;
+        opacity: 0;
+        border-radius: 100%;
+        transform: scale(1, 1) translate(-50%);
+        transform-origin: 50% 50%;
+        transition: .3s;
+    }
+
+    &:focus::after {
+        animation: ripple .7s ease-out;
+    }
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 1;
+    }
+
+    20% {
+        transform: scale(25, 25);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(40, 40);
+    }
+}
