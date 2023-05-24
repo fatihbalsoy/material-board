@@ -236,15 +236,17 @@ ul#adminmenu>li.current>a.current:after {
     border-radius: var(--br-10px-right);
 }
 
+// TODO: Fix submenu pop over icons             //
+// Image: docs/images/fixes/submenu_popover.png //
 .auto-fold #adminmenu .opensub .wp-submenu,
 .auto-fold #adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
 .auto-fold #adminmenu .wp-has-current-submenu a.menu-top:focus+.wp-submenu,
 .auto-fold #adminmenu .wp-has-current-submenu.opensub .wp-submenu,
 .auto-fold #adminmenu .wp-submenu.sub-open,
-// .auto-fold #adminmenu a.menu-top:focus+.wp-submenu,
+.auto-fold #adminmenu a.menu-top:focus+.wp-submenu,
 .folded #adminmenu .opensub .wp-submenu,
 .folded #adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
-// .folded #adminmenu .wp-has-current-submenu a.menu-top:focus+.wp-submenu,
+.folded #adminmenu .wp-has-current-submenu a.menu-top:focus+.wp-submenu,
 .folded #adminmenu .wp-has-current-submenu.opensub .wp-submenu,
 .folded #adminmenu .wp-submenu.sub-open,
 .folded #adminmenu a.menu-top:focus+.wp-submenu,
