@@ -60,7 +60,7 @@ class MaterialDashboardPlugin
     /** Admin Dashboard Theme **/
     function mdp_admin_theme_style()
     {
-        wp_enqueue_script('theme-script', plugins_url('app.js', __FILE__), array('jquery'));
+        // wp_enqueue_script('theme-script', plugins_url('app.js', __FILE__), array('jquery'));
         wp_enqueue_style('mdp-admin-theme', plugins_url('styles/wp-admin.css', __FILE__));
 
         $split_wp_version = explode(".", $GLOBALS['wp_version']);
@@ -166,16 +166,20 @@ class MaterialDashboardPlugin
         }
 
         //? -- LARGE ADMIN BAR -- ?//
-        if (get_option('mdp_large_admin_bar') == 'on') {
+        if (get_option('mdp_large_admin_bar') == 'on' and is_admin()) {
             wp_enqueue_style('large_admin_bar', plugins_url('styles/options/large_app_bar.css', __FILE__));
+            wp_enqueue_script('large_admin_bar_script', plugins_url('styles/options/large_app_bar.js', __FILE__));
             if (get_option('mdp_large_admin_bar_variant') == '1') {
+                // Admin Bar on top
                 wp_enqueue_style('large_admin_bar_variant', plugins_url('styles/options/large_app_bar_1.css', __FILE__));
             } else {
+                // Admin Menu on top
                 wp_enqueue_style('large_admin_bar_variant', plugins_url('styles/options/large_app_bar_2.css', __FILE__));
             }
         } else {
             wp_dequeue_style('large_admin_bar');
             wp_dequeue_style('large_admin_bar_variant');
+            wp_dequeue_script('large_admin_bar_script');
         }
     }
 

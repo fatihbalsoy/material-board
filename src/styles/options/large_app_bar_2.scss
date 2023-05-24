@@ -10,19 +10,14 @@
 
 // ADMIN MENU ON TOP
 
-div#wpadminbar {
-    height: 140px;
-    z-index: 0;
-}
-
 div#adminmenumain {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     top: -40px !important;
 }
 
 div#wp-toolbar {
-    padding-left: 20.5% !important;
+    padding-left: 21% !important;
     padding-right: 9% !important;
 }
 

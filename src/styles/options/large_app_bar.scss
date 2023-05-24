@@ -6,28 +6,45 @@
  *   Copyright © 2023 Fatih Balsoy. All rights reserved.
  */
 
-div#wpadminbar {
+
+// Custom element in <div class="wrap"/>
+// Check large_app_bar.ts for more details
+.large-app-bar {
+    background-color: var(--primary-color);
     height: 140px;
-    z-index: 0;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+#wpadminbar {
+    // height: 140px;
+    z-index: 1;
+    box-shadow: none !important;
 }
 
 .wrap {
-    margin-top: 8px;
+    margin-top: 28px;
+}
+
+.wp-header-end {
+    margin-top: 23px;
 }
 
 .update-nag.notice.notice-warning.inline {
-    right: 0;
-    top: -21px;
+    // right: 0;
+    top: -15px;
     position: absolute;
-}
-
-div#screen-meta {
-    top: 108px;
     z-index: 0;
 }
 
+div#screen-meta {
+    // top: 108px;
+    z-index: 1;
+}
+
 div#screen-meta-links {
-    margin-top: 62px !important;
+    // margin-top: 80px !important;
 }
 
 h1.wp-heading-inline,
@@ -49,7 +66,20 @@ a.page-title-action {
 #screen-meta-links .screen-meta-toggle,
 #screen-meta-links .show-settings {
     border-radius: var(--br-10px) !important;
-    background-color: #ffffff80;
+    background-color: var(--primary-color);
     box-shadow: none !important;
-    color: var(--primary-color);
+    color: var(--primary-color-text);
+
+    &:hover {
+        color: var(--primary-color-text);
+    }
+}
+
+input#wp-filter-search-input {
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+input#wp-filter-search-input::placeholder {
+    color: #ffffff80 !important;
 }

@@ -76,6 +76,8 @@ if (curl_exists()) {
         </h1>
     </div>
 
+    <div class="wp-header-end"></div>
+
     <!-- OPTIONS -->
     <form action="options.php" method="POST">
         <?php

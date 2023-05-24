@@ -15,10 +15,19 @@ a.page-title-action {
     border-color: #fff !important;
 }
 
-div#adminmenumain {
+#adminmenumain {
     z-index: 0;
     position: absolute;
-    top: 110px;
+    top: 150px !important;
+}
+
+#wpcontent {
+    z-index: 2 !important;
+    position: relative !important;
+}
+
+.large-app-bar {
+    z-index: 1;
 }
 
 /* TODO: Replace screen meta options using javascript */
