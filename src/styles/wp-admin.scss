@@ -423,8 +423,11 @@ h1.nav-tab-wrapper,
 
 .filter-count .count,
 .title-count {
-    background-color: #fff;
-    color: var(--accent-color);
+    background-color: var(--accent-color);
+    color: #fff;
+    font-family: var(--font-type);
+    padding: 4px 7px;
+    padding-top: 5px;
 }
 
 // TODO: Separate unrelated components (apply to all rulesets)
@@ -635,8 +638,8 @@ div#message,
 #update-nag::before,
 .update-nag::before {
     content: 'update';
-    font-family: 'Material Icons';
-    margin-left: -48px;
+    font-family: 'Material Symbols Outlined';
+    margin-left: -50px;
     margin-right: 30px !important;
     color: white;
     font-size: 150%;
@@ -666,7 +669,7 @@ h1.wp-heading-inline,
 .notice-title:before,
 div.error p:before,
 div.updated p:before {
-    font-family: 'Material Icons';
+    font-family: 'Material Symbols Outlined';
     margin-left: -48px;
     margin-right: 30px !important;
     color: white;
@@ -711,18 +714,22 @@ div.error {
     border-left-color: #F44336;
 }
 
+button.notice-dismiss {
+    top: 6px;
+}
+
 fieldset {
     border-width: 2px !important;
     border-radius: var(--br-8px);
     border-color: rgba(0, 0, 0, 0.2) !important;
 }
 
-legend {
-    padding-left: 5px !important;
-    padding-right: 5px !important;
-    /* background: white !important; */
-    margin-left: 5px !important;
-}
+// legend {
+//     padding-left: 5px !important;
+//     padding-right: 5px !important;
+//     /* background: white !important; */
+//     margin-left: 5px !important;
+// }
 
 .fixed .column-likes .post-com-count {
     background-color: transparent;
@@ -1058,7 +1065,7 @@ ul.et-pb-options-tabs-links {
 
 span.et-pb-reset-setting:after,
 span.et-pb-reset-settings:after {
-    font-family: 'Material Icons' !important;
+    font-family: 'Material Symbols Outlined' !important;
     content: 'refresh' !important;
     color: var(--nd-text-color) !important;
     position: relative;
@@ -1076,6 +1083,13 @@ form.search-form.search-plugins {
     margin-bottom: 0px;
 }
 
+p.search-box {
+    @include respond-to('medium') {
+        left: 0px;
+        bottom: -30px;
+    }
+}
+
 #wpbody-content>div.wrap>form.search-form>p {
     margin-top: 15px;
     margin-right: 15px;
@@ -1091,12 +1105,12 @@ h3.accordion-section-title {
 
 #customize-outer-theme-controls .accordion-section-title:after,
 #customize-theme-controls .accordion-section-title:after {
-    font-family: 'Material Icons';
+    font-family: 'Material Symbols Outlined';
     content: 'navigate_next' !important;
 }
 
 .customize-controls-close:before {
-    font-family: 'Material Icons';
+    font-family: 'Material Symbols Outlined';
     content: 'close' !important;
     font-size: 150%;
     position: relative;
@@ -1110,7 +1124,7 @@ h3.accordion-section-title {
 }
 
 [data-et-core-modal*="data-et-core-portability"]:before {
-    font-family: 'Material Icons';
+    font-family: 'Material Symbols Outlined';
     content: 'compare_arrows';
     font-size: 150% !important;
     position: relative;
@@ -1121,6 +1135,12 @@ h3.accordion-section-title {
 .folded #wpcontent,
 .folded #wpfooter {
     margin-left: 10%;
+    margin-right: 10% !important;
+
+    @include respond-to('medium') {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
 .theme-browser .theme.add-new-theme a:after {
@@ -1156,15 +1176,6 @@ h3.accordion-section-title {
 
 .media-frame.mode-grid .uploader-inline {
     border-radius: var(--br-10px);
-}
-
-a.page-title-action.aria-button-if-js:before {
-    font-family: 'Material Icons' !important;
-    content: ' add ' !important;
-    font-size: 120%;
-    position: relative;
-    top: 3px;
-    left: -4px;
 }
 
 .button.installed:before,

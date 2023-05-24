@@ -120,7 +120,10 @@
     content: 'link' !important;
 }
 
-/*UNLINK .mce-i-unlink:before*/
+.dashicons-editor-unlink:before,
+i.mce-i-unlink:before {
+    content: 'link_off' !important;
+}
 
 .dashicons-editor-rtl:before{
     content: 'format_textdirection_l_to_r' !important;

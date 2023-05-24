@@ -8,6 +8,16 @@
 
 /* https://developer.wordpress.org/resource/dashicons/#icons-admin-menu */
 
+/* Selected Page Icon */
+.wp-has-current-submenu .dashicons-before:before {
+    font-variation-settings: 'FILL' 1;
+}
+
+.dashicons-admin-post:before,
+.post-format-icon.post-format-standard:before {
+    content: 'push_pin';
+}
+
 #wpadminbar #adminbarsearch:before, 
 .dashicons-search:before,
 .press-this .add-cat-toggle.is-toggled .dashicons:before,

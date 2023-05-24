@@ -12,6 +12,7 @@
 // This file contains all styles related to the admin menu of the site.
 // Image: docs/images/layout/admin_menu.png
 // Guidelines: https://m3.material.io/components/navigation-drawer/overview
+//             https://m3.material.io/components/navigation-rail/overview
 // -----------------------------------------------------------------------------
 
 // * Admin Menu Back * //
@@ -99,6 +100,10 @@ a.wp-has-submenu.wp-has-current-submenu.wp-menu-open>.wp-menu-name {
         }
     }
 
+    div.wp-menu-image:before {
+        padding-top: 6px !important;
+    }
+
     a:focus,
     a:hover,
     .wp-submenu-head:hover {
@@ -142,20 +147,52 @@ a.wp-has-submenu.wp-has-current-submenu.wp-menu-open>.wp-menu-name {
 }
 
 // * FOLDED ADMIN MENU * //
-.folded #adminmenu {
-    &>li.menu-top>a.menu-top {
-        margin-left: 0px !important;
-        margin-right: 0px !important;
+.folded {
+    #adminmenu {
+
+        /* .no-js.folded #adminmenu .wp-has-submenu:hover .wp-submenu */
+        .opensub .wp-submenu,
+        .wp-has-current-submenu .wp-submenu.sub-open,
+        .wp-has-current-submenu a.menu-top:focus+.wp-submenu,
+        .wp-has-current-submenu.opensub .wp-submenu,
+        .wp-submenu.sub-open,
+        a.menu-top:focus+.wp-submenu {
+            margin-top: -8px;
+        }
     }
 
-    /* .no-js.folded #adminmenu .wp-has-submenu:hover .wp-submenu */
-    .opensub .wp-submenu,
-    .wp-has-current-submenu .wp-submenu.sub-open,
-    .wp-has-current-submenu a.menu-top:focus+.wp-submenu,
-    .wp-has-current-submenu.opensub .wp-submenu,
-    .wp-submenu.sub-open,
-    a.menu-top:focus+.wp-submenu {
-        margin-top: -8px;
+    #adminmenu,
+    #adminmenu li.menu-top,
+    #adminmenuback,
+    #adminmenuwrap {
+        width: 36px + 10px !important;
+    }
+}
+
+.auto-fold {
+
+    #adminmenu,
+    #adminmenu li.menu-top,
+    #adminmenuback,
+    #adminmenuwrap {
+        @include respond-to('large') {
+            width: 36px + 10px;
+        }
+
+        @include respond-to('medium') {
+            width: 100%;
+        }
+    }
+}
+
+.auto-fold #wpcontent,
+.auto-fold #wpfooter {
+    @include respond-to('large') {
+        margin-left: 36px + 10px;
+    }
+
+    @include respond-to('medium') {
+        margin-left: 0px;
     }
 }
 
@@ -165,11 +202,13 @@ a.wp-has-submenu.wp-has-current-submenu.wp-menu-open>.wp-menu-name {
 #adminmenu .wp-menu-arrow,
 #adminmenu .wp-menu-arrow div,
 #adminmenu li.current a.menu-top,
-#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
-.folded #adminmenu li.current.menu-top,
-.folded #adminmenu li.wp-has-current-submenu {
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
     // background-color: var(--primary-color) !important;
     background-color: rgba(0, 0, 0, 0.05) !important;
+    color: var(--primary-color) !important;
+}
+
+.current>.wp-menu-name {
     color: var(--primary-color) !important;
 }
 
@@ -197,6 +236,22 @@ ul#adminmenu>li.current>a.current:after {
     border-radius: var(--br-10px-right);
 }
 
+.auto-fold #adminmenu .opensub .wp-submenu,
+.auto-fold #adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
+.auto-fold #adminmenu .wp-has-current-submenu a.menu-top:focus+.wp-submenu,
+.auto-fold #adminmenu .wp-has-current-submenu.opensub .wp-submenu,
+.auto-fold #adminmenu .wp-submenu.sub-open,
+.auto-fold #adminmenu a.menu-top:focus+.wp-submenu,
+.folded #adminmenu .opensub .wp-submenu,
+.folded #adminmenu .wp-has-current-submenu .wp-submenu.sub-open,
+.folded #adminmenu .wp-has-current-submenu a.menu-top:focus+.wp-submenu,
+.folded #adminmenu .wp-has-current-submenu.opensub .wp-submenu,
+.folded #adminmenu .wp-submenu.sub-open,
+.folded #adminmenu a.menu-top:focus+.wp-submenu,
+.no-js.folded #adminmenu .wp-has-submenu:hover .wp-submenu {
+    left: 36px + 10px;
+}
+
 // * Update Badge * //
 /* docs/images/components/update_badge.png */
 #adminmenu .awaiting-mod,
@@ -205,5 +260,15 @@ ul#adminmenu>li.current>a.current:after {
     background-color: var(--accent-color) !important;
     float: right;
     margin: 0px;
-    margin-right: -10px !important;
+    // margin-right: -10px !important;
+}
+
+// * Collapse Button * //
+#collapse-button .collapse-button-icon,
+#collapse-button .collapse-button-label {
+    left: 4px;
+}
+
+#collapse-button .collapse-button-label {
+    top: 10px;
 }

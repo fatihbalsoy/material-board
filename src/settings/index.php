@@ -110,6 +110,11 @@ if (curl_exists()) {
                         // Icons            - Material Icons
                         //                  - Wordpress Dashicons
                         echo get_local_file_contents('options/icons.php');
+                        // Large App Bar    - Checkbox
+                        //                  - Options
+                        //                      - Admin Bar on Top
+                        //                      - Admin Menu on Top
+                        echo get_local_file_contents('options/large_app_bar.php');
                         ?>
                     </tbody>
                 </table>
@@ -119,9 +124,11 @@ if (curl_exists()) {
             submit_button();
             ?>
             <div>
-                Developed by <a href="<?php echo $GLOBALS["fb_mdp_plugin_author_website"] ?>"><?php echo $GLOBALS["fb_mdp_plugin_author"] ?></a>
+                Developed by <a
+                    href="<?php echo $GLOBALS["fb_mdp_plugin_author_website"] ?>"><?php echo $GLOBALS["fb_mdp_plugin_author"] ?></a>
                 | Version
-                <?php echo $GLOBALS["fb_mdp_plugin_version"] ?> | <a href="<?php echo $GLOBALS["fb_mdp_plugin_report_bugs"] ?>">Request
+                <?php echo $GLOBALS["fb_mdp_plugin_version"] ?> | <a
+                    href="<?php echo $GLOBALS["fb_mdp_plugin_report_bugs"] ?>">Request
                     Features &
                     Report Issues</a>
             </div>

@@ -59,11 +59,17 @@ th .comment-grey-bubble:before,
 #dashboard_activity .no-activity .smiley:before,
 #dashboard_right_now li a:before, #dashboard_right_now li span:before, .welcome-panel .welcome-icon:before,
 .theme-browser .theme .notice-success p:before,
-#menu-posts-feedback .wp-menu-image:before{
-    font-family: 'Material Icons' !important;
+#menu-posts-feedback .wp-menu-image:before,
+#wpadminbar .ab-item:before,
+.post-format-icon:before,
+.dashicons-admin-post:before,
+.post-format-icon.post-format-standard:before,
+.dashicons-editor-unlink:before,
+i.mce-i-unlink:before {
+    font-family: 'Material Symbols Outlined' !important;
     font-weight: normal;
     font-style: normal;
-    font-size: 140%;
+    /* font-size: 140%; */
     line-height: 1;
     letter-spacing: normal;
     text-transform: none;
@@ -71,7 +77,7 @@ th .comment-grey-bubble:before,
     white-space: nowrap;
     word-wrap: normal;
     direction: ltr;
-    -webkit-font-feature-settings: 'liga' !important;
+    font-feature-settings: 'liga' !important;
     -webkit-font-smoothing: antialiased;
 }
 .dashicons, .hidden {
@@ -79,35 +85,6 @@ th .comment-grey-bubble:before,
 }
 .customize-panel-back:before, .customize-section-back:before{
     font-size: 170% !important;
-}
-#wpadminbar .ab-item:before{
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 140%;
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: none;
-    display: inline-block;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
-    -webkit-font-feature-settings: 'liga';
-    -webkit-font-smoothing: antialiased;
-}
-.post-format-icon:before{
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 140%;
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: none;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
-    -webkit-font-feature-settings: 'liga';
-    -webkit-font-smoothing: antialiased;    
 }
 .dashicons-editor-link:before,
 i.mce-i-link:before,
@@ -128,20 +105,20 @@ i.mce-i-link:before,
 
 /**MATERIAL DESIGN ICONS COMMUNITY**/
 /* pin */
-.dashicons-admin-post:before,
+/* .dashicons-admin-post:before,
 .post-format-icon.post-format-standard:before{
     font-family: 'Material Design Icons' !important;
     content: '\f0403 ';
-}
+} */
 
 /* link-off */
-.dashicons-editor-unlink:before,
+/* .dashicons-editor-unlink:before,
 i.mce-i-unlink:before{
     font-family: 'Material Design Icons' !important;
     content: '\f0338' !important;
     display: block !important;
     font-size: 103% !important;
-}
+} */
 
 /**NOT SET**/
 .dashicons-filter:before,
@@ -236,14 +213,16 @@ li.toplevel_page_et_divi_options div.wp-menu-image:before,
     font-family: 'ETmodules' !important;
 }
 
+/** ADMIN BAR ICONS **/
 @media screen and (max-width: 782px){
 
 	#wpadminbar #wp-admin-bar-customize>.ab-item:before, #wpadminbar #wp-admin-bar-edit>.ab-item:before, #wpadminbar #wp-admin-bar-my-account>.ab-item:before, #wpadminbar #wp-admin-bar-my-sites>.ab-item:before, #wpadminbar #wp-admin-bar-site-name>.ab-item:before,
 	#wpadminbar #wp-admin-bar-comments .ab-icon:before,
 	#wpadminbar #wp-admin-bar-new-content .ab-icon:before,
 	#wpadminbar #wp-admin-bar-menu-toggle .ab-icon:before{
-        font-family: 'Material Icons' !important;
-        font-weight: normal;
+        font-family: 'Material Symbols Outlined' !important;
+        font-size: 30px;
+        /* font-weight: normal;
         font-style: normal;
         font-size: 30px !important;
         line-height: 1;
@@ -254,7 +233,7 @@ li.toplevel_page_et_divi_options div.wp-menu-image:before,
         word-wrap: normal;
         direction: ltr;
         -webkit-font-feature-settings: 'liga';
-        -webkit-font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased; */
 	}
 	#wpadminbar #wp-admin-bar-menu-toggle .ab-icon:before{
 	    content: 'menu' !important;

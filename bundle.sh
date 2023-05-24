@@ -29,7 +29,7 @@ mkdir -p $SCRIPTPATH/logs/
 echo "Copying files..."
 cp $SCRIPTPATH/README.md build/
 cp $SCRIPTPATH/LICENSE build/
-rsync -avz --prune-empty-dirs --exclude-from=$SCRIPTPATH/.bundleignore $SCRIPTPATH/src/ $SCRIPTPATH/build/ >> $SCRIPTPATH/logs/out.log 2>> $SCRIPTPATH/logs/err.log
+bash $SCRIPTPATH/copy_files.sh
 
 #?#   Compiling Sass and Typescript Files   #?#
 echo "Compiling Sass Files..."

@@ -1,0 +1,55 @@
+/*
+ *   large_app_bar_shared.scss
+ *   material-design-dashboard
+ * 
+ *   Created by codespace on 5/24/23
+ *   Copyright © 2023 Fatih Balsoy. All rights reserved.
+ */
+
+div#wpadminbar {
+    height: 140px;
+    z-index: 0;
+}
+
+.wrap {
+    margin-top: 8px;
+}
+
+.update-nag.notice.notice-warning.inline {
+    right: 0;
+    top: -21px;
+    position: absolute;
+}
+
+div#screen-meta {
+    top: 108px;
+    z-index: 0;
+}
+
+div#screen-meta-links {
+    margin-top: 62px !important;
+}
+
+h1.wp-heading-inline,
+h1.wp-heading-inline,
+.postbox .inside h2,
+.wrap [class$=icon32]+h2,
+.wrap h1,
+.wrap>h2:first-child {
+    color: #fff !important;
+}
+
+a.page-title-action {
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+/* TODO: Replace screen meta options using javascript */
+
+#screen-meta-links .screen-meta-toggle,
+#screen-meta-links .show-settings {
+    border-radius: var(--br-10px) !important;
+    background-color: #ffffff80;
+    box-shadow: none !important;
+    color: var(--primary-color);
+}

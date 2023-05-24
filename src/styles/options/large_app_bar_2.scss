@@ -1,0 +1,32 @@
+/*
+ *   large_app_bar.scss
+ *   material-design-dashboard
+ * 
+ *   Created by codespace on 5/24/23
+ *   Copyright © 2023 Fatih Balsoy. All rights reserved.
+ */
+
+@import url('large_app_bar.css');
+
+// ADMIN MENU ON TOP
+
+div#wpadminbar {
+    height: 140px;
+    z-index: 0;
+}
+
+div#adminmenumain {
+    z-index: 1;
+    position: absolute;
+    top: -40px !important;
+}
+
+div#wp-toolbar {
+    padding-left: 20.5%;
+    padding-right: 9%;
+}
+
+.folded #wpcontent>#wpadminbar>div#wp-toolbar {
+    padding-left: 10.5%;
+    padding-right: 10.9%;
+}

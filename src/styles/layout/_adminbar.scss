@@ -11,6 +11,7 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the admin bar of the site.
 // Image: docs/images/layout/admin_bar.png
+// Guidelines: https://m3.material.io/components/top-app-bar/overview
 // -----------------------------------------------------------------------------
 // TODO: Search-bar on wp.scss is reset 
 
@@ -23,8 +24,52 @@
     font-family: var(--font-type);
 }
 
+// * Wordpress Icon * //
+#wpadminbar #wp-admin-bar-wp-logo>.ab-item .ab-icon:before {
+    @media screen and (max-width: 782px) {
+        top: 7px;
+    }
+}
+
+// * Home Icon * //
+.wp-admin #wpadminbar #wp-admin-bar-site-name>.ab-item:before,
+#wpadminbar #wp-admin-bar-site-name>.ab-item:before {
+    @media screen and (min-width: 782px) {
+        top: 1px;
+    }
+}
+
+// * Updates Icon * //
+#wpadminbar #wp-admin-bar-updates .ab-icon:before {
+    @media screen and (max-width: 782px) {
+        top: 7.5px;
+    }
+}
+
+// * Comments Icon * //
+#wpadminbar #wp-admin-bar-comments .ab-icon {
+    top: -1px;
+
+    @media screen and (max-width: 782px) {
+        top: 4px;
+    }
+
+    &:before {
+        @media screen and (max-width: 782px) {
+            font-size: 27px !important;
+        }
+    }
+}
+
+// * New Icon * //
 #wpadminbar #wp-admin-bar-new-content .ab-icon:before {
-    top: 2px !important;
+    top: 1px !important;
+}
+
+#wpadminbar .ab-icon {
+    @media screen and (max-width: 782px) {
+        font-size: 30px !important;
+    }
 }
 
 #wpadminbar #adminbarsearch:before,
@@ -60,6 +105,11 @@
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
     /* height: 80px; */
+}
+
+#wp-toolbar {
+    padding-left: 5px;
+    padding-right: 7px !important;
 }
 
 #wpadminbar:hover {

@@ -164,6 +164,19 @@ class MaterialDashboardPlugin
         } else {
             wp_dequeue_style('rounded-corners');
         }
+
+        //? -- LARGE ADMIN BAR -- ?//
+        if (get_option('mdp_large_admin_bar') == 'on') {
+            wp_enqueue_style('large_admin_bar', plugins_url('styles/options/large_app_bar.css', __FILE__));
+            if (get_option('mdp_large_admin_bar_variant') == '1') {
+                wp_enqueue_style('large_admin_bar_variant', plugins_url('styles/options/large_app_bar_1.css', __FILE__));
+            } else {
+                wp_enqueue_style('large_admin_bar_variant', plugins_url('styles/options/large_app_bar_2.css', __FILE__));
+            }
+        } else {
+            wp_dequeue_style('large_admin_bar');
+            wp_dequeue_style('large_admin_bar_variant');
+        }
     }
 
     /** Plugin Options **/
@@ -180,6 +193,8 @@ class MaterialDashboardPlugin
         /** Theme **/
         register_setting('material_dashboard_plugin', 'mdp_theme', array('sanitize_callback' => 'sanitize_text_field', 'default' => 'light'));
         register_setting('material_dashboard_plugin', 'mdp_rounded_corners', array('sanitize_callback' => 'sanitize_text_field', 'default' => 'on'));
+        register_setting('material_dashboard_plugin', 'mdp_large_admin_bar', array('sanitize_callback' => 'sanitize_text_field', 'default' => 'off'));
+        register_setting('material_dashboard_plugin', 'mdp_large_admin_bar_variant', array('sanitize_callback' => 'sanitize_text_field', 'default' => '1'));
 
         /** Colors **/
         // - Primary

@@ -53,6 +53,7 @@
 .dashicons-star-filled:before,
 .star-rating .star-full:before{
     content: 'star';
+    font-variation-settings: 'FILL' 1;
 }
 
 .dashicons-star-half:before,
@@ -62,7 +63,7 @@
 
 .dashicons-star-empty:before,
 .star-rating .star-empty:before{
-    content: 'star_border';
+    content: 'star';
 }
 
 .dashicons-flag:before{

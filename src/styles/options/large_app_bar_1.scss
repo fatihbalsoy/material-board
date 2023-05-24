@@ -1,0 +1,32 @@
+/*
+ *   large_app_bar.scss
+ *   material-design-dashboard
+ * 
+ *   Created by codespace on 5/24/23
+ *   Copyright © 2023 Fatih Balsoy. All rights reserved.
+ */
+
+@import url('large_app_bar.css');
+
+// ADMIN BAR ON TOP
+
+a.page-title-action {
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+div#adminmenumain {
+    z-index: 0;
+    position: absolute;
+    top: 110px;
+}
+
+/* TODO: Replace screen meta options using javascript */
+
+#screen-meta-links .screen-meta-toggle,
+#screen-meta-links .show-settings {
+    border-radius: var(--br-10px) !important;
+    background-color: #ffffff80;
+    box-shadow: none !important;
+    color: var(--primary-color);
+}
