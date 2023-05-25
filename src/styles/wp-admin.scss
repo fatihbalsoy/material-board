@@ -27,8 +27,8 @@ table.googlesitekit-table__wrapper.googlesitekit-table__wrapper--2-col {
 
 #wpcontent {
     /*margin-top: 48px;*/
-    margin-left: 20%;
-    margin-right: 8%;
+    margin-left: calc($content-padding + $admin-menu-width);
+    margin-right: $content-padding;
 
     @include respond-to('large') {
         margin-right: inherit !important;
@@ -36,6 +36,17 @@ table.googlesitekit-table__wrapper.googlesitekit-table__wrapper--2-col {
 
     @include respond-to('medium') {
         margin-right: 0px !important;
+    }
+}
+
+.folded #wpcontent,
+.folded #wpfooter {
+    margin-left: calc($content-folded-padding + $admin-menu-folded-width);
+    margin-right: $content-folded-padding !important;
+
+    @include respond-to('medium') {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 
@@ -349,6 +360,30 @@ table.widefat {
     border: none;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
     border-radius: var(--br-10px);
+    margin: 0px !important;
+    margin-right: 15px !important;
+    margin-bottom: 15px !important;
+
+    @media screen and (max-width: 1360px) {
+        width: 100%;
+        margin-right: 0px !important;
+    }
+
+    @media screen and (min-width: 1360px) and (max-width: 2299px) {
+        width: calc(50% - 12px);
+
+        &:nth-child(2n) {
+            margin-right: 0px !important;
+        }
+    }
+
+    @media screen and (min-width: 2300px) {
+        width: calc(33.3% - 13px);
+
+        &:nth-child(3n) {
+            margin-right: 0px !important;
+        }
+    }
 }
 
 .plugin-card-bottom {
@@ -665,6 +700,7 @@ div.updated p:before {
 div.error p,
 div.updated p {
     position: relative;
+    bottom: 5px;
 }
 
 .theme-browser .theme .notice-success p:before {
@@ -1092,17 +1128,6 @@ h3.accordion-section-title {
     position: relative;
     top: 0px !important;
     left: 10px !important;
-}
-
-.folded #wpcontent,
-.folded #wpfooter {
-    margin-left: 10%;
-    margin-right: 10% !important;
-
-    @include respond-to('medium') {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
 }
 
 .theme-browser .theme.add-new-theme a:focus:after,

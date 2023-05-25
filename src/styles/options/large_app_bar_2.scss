@@ -19,11 +19,11 @@ div#adminmenumain {
 }
 
 div#wp-toolbar {
-    padding-left: 21% !important;
-    padding-right: 9% !important;
+    padding-left: calc($content-padding + $admin-menu-width + 20px) !important;
+    padding-right: calc($content-padding + 20px) !important;
 
     @include respond-to('large') {
-        padding-left: 36px + 10px + 20px !important;
+        padding-left: $admin-menu-folded-width + 20px !important;
         padding-right: 20px !important;
     }
 

@@ -35,6 +35,32 @@ if (!defined('ABSPATH'))
 class MaterialDashboardPlugin
 {
     public string $settings_slug;
+    private array $options = array(
+        /** Theme **/
+        // - Light, Dark, System
+        'mdp_theme' => 'light',
+        // - Rounded Corners
+        'mdp_rounded_corners' => 'on',
+        // - Large Admin Bar
+        'mdp_large_admin_bar' => 'off',
+        // - Admin Bar Variant
+        'mdp_large_admin_bar_variant' => '2',
+
+        /** Colors **/
+        // - Primary
+        'mdp_colors_primary' => '#2246CC',
+        // - Accent
+        'mdp_colors_accent' => '#FF0085',
+
+        /** Font **/
+        // - Body
+        'mdp_font' => 'mona-sans',
+        // - Header
+        'mdp_header_serif_font' => 'off',
+
+        /** Icons **/
+        'mdp_icons' => 'md-icons'
+    );
 
     function __construct()
     {
@@ -124,11 +150,11 @@ class MaterialDashboardPlugin
         }
 
         // Explicit Dark Mode
-        if (get_option('mdp_theme') == 'dark') {
+        if ($this->get_option_or_default('mdp_theme') == 'dark') {
             enqueue_dark_theme();
         }
         // Automatic Dark Mode
-        else if (get_option('mdp_theme') == 'auto') {
+        else if ($this->get_option_or_default('mdp_theme') == 'auto') {
             // print_r($_COOKIE);
             if ($_COOKIE['system_theme'] == 'dark') {
                 enqueue_dark_theme();
@@ -136,7 +162,7 @@ class MaterialDashboardPlugin
         }
 
         //? -- FONT -- ?//
-        switch (get_option('mdp_font')) {
+        switch ($this->get_option_or_default('mdp_font')) {
             case 'mona-sans':
                 wp_enqueue_style('mona-sans-font', plugins_url('assets/fonts/mona-sans.css', __FILE__));
                 break;
@@ -152,24 +178,24 @@ class MaterialDashboardPlugin
         }
 
         // Header Serif Font
-        if (get_option('mdp_header_serif_font') == 'on') {
+        if ($this->get_option_or_default('mdp_header_serif_font') == 'on') {
             wp_enqueue_style('header-serif-font', plugins_url('styles/options/header_serif.css', __FILE__));
         } else {
             wp_dequeue_style('header-serif-font');
         }
 
         //? -- ROUNDED CORNERS -- ?//
-        if (get_option('mdp_rounded_corners') != 'on') {
+        if ($this->get_option_or_default('mdp_rounded_corners') != 'on') {
             wp_enqueue_style('rounded-corners', plugins_url('styles/options/no_rounded_corners.css', __FILE__));
         } else {
             wp_dequeue_style('rounded-corners');
         }
 
         //? -- LARGE ADMIN BAR -- ?//
-        if (get_option('mdp_large_admin_bar') == 'on' and is_admin()) {
+        if ($this->get_option_or_default('mdp_large_admin_bar') == 'on' and is_admin()) {
             wp_enqueue_style('large_admin_bar', plugins_url('styles/options/large_app_bar.css', __FILE__));
             wp_enqueue_script('large_admin_bar_script', plugins_url('styles/options/large_app_bar.js', __FILE__));
-            if (get_option('mdp_large_admin_bar_variant') == '1') {
+            if ($this->get_option_or_default('mdp_large_admin_bar_variant') == '1') {
                 // Admin Bar on top
                 wp_enqueue_style('large_admin_bar_variant', plugins_url('styles/options/large_app_bar_1.css', __FILE__));
             } else {
@@ -192,30 +218,17 @@ class MaterialDashboardPlugin
         echo $this->get_local_file_contents('settings/index.php');
     }
 
+    function get_option_or_default($option)
+    {
+        return get_option($option, $this->options[$option]);
+    }
+
     function settings()
     {
-        /** Theme **/
-        register_setting('material_dashboard_plugin', 'mdp_theme', array('sanitize_callback' => 'sanitize_text_field', 'default' => 'light'));
-        register_setting('material_dashboard_plugin', 'mdp_rounded_corners', array('sanitize_callback' => 'sanitize_text_field', 'default' => 'on'));
-        register_setting('material_dashboard_plugin', 'mdp_large_admin_bar', array('sanitize_callback' => 'sanitize_text_field', 'default' => 'off'));
-        register_setting('material_dashboard_plugin', 'mdp_large_admin_bar_variant', array('sanitize_callback' => 'sanitize_text_field', 'default' => '1'));
-
-        /** Colors **/
-        // - Primary
-        register_setting('material_dashboard_plugin', 'mdp_colors_primary', array('sanitize_callback' => 'sanitize_text_field', 'default' => '#2246CC'));
-        // - Accent
-        register_setting('material_dashboard_plugin', 'mdp_colors_accent', array('sanitize_callback' => 'sanitize_text_field', 'default' => '#FF0085'));
-
-        /** Font **/
-        register_setting('material_dashboard_plugin', 'mdp_font', array('sanitize_callback' => 'sanitize_text_field', 'default' => 'mona-sans'));
-        register_setting('material_dashboard_plugin', 'mdp_header_serif_font', array('sanitize_callback' => 'sanitize_text_field', 'default' => 'off'));
-
-        /** Icons **/
-        register_setting('material_dashboard_plugin', 'mdp_icons', array('sanitize_callback' => 'sanitize_text_field', 'default' => 'md-icons'));
-
-        /** Toolbar **/
-        // - Divi Theme Fix
-        register_setting('material_dashboard_plugin', 'mdp_toolbar_divi_fix', array('sanitize_callback' => 'sanitize_text_field', 'default' => 'on'));
+        foreach ($this->options as $key => $value) {
+            add_option($key, $value);
+            register_setting('material_dashboard_plugin', $key, array('sanitize_callback' => 'sanitize_text_field', 'default' => $value));
+        }
     }
 
     function get_local_file_contents($file_path)

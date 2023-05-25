@@ -165,7 +165,7 @@ a.wp-has-submenu.wp-has-current-submenu.wp-menu-open>.wp-menu-name {
     #adminmenu li.menu-top,
     #adminmenuback,
     #adminmenuwrap {
-        width: 36px + 10px !important;
+        width: $admin-menu-folded-width !important;
     }
 }
 
@@ -176,7 +176,7 @@ a.wp-has-submenu.wp-has-current-submenu.wp-menu-open>.wp-menu-name {
     #adminmenuback,
     #adminmenuwrap {
         @include respond-to('large') {
-            width: 36px + 10px;
+            width: $admin-menu-folded-width;
         }
 
         @include respond-to('medium') {
@@ -188,7 +188,7 @@ a.wp-has-submenu.wp-has-current-submenu.wp-menu-open>.wp-menu-name {
 .auto-fold #wpcontent,
 .auto-fold #wpfooter {
     @include respond-to('large') {
-        margin-left: 36px + 10px;
+        margin-left: $admin-menu-folded-width;
     }
 
     @include respond-to('medium') {
@@ -252,7 +252,7 @@ ul#adminmenu>li.current>a.current:after {
 .folded #adminmenu a.menu-top:focus+.wp-submenu,
 .no-js.folded #adminmenu .wp-has-submenu:hover .wp-submenu {
     @include respond-to('large') {
-        left: 36px + 10px;
+        left: $admin-menu-folded-width;
     }
 }
 

@@ -23,12 +23,20 @@
     box-shadow: none !important;
 }
 
-.wrap {
-    margin-top: 28px;
+// h1.wp-heading-inline,
+.postbox .inside h2,
+.wrap [class$=icon32]+h2,
+.wrap h1,
+.wrap>h2:first-child {
+    margin-top: 60px;
+}
+
+h1.wp-heading-inline {
+    margin-top: 50px !important;
 }
 
 .wp-header-end {
-    margin-top: 23px;
+    margin-top: 10px;
 }
 
 .update-nag.notice.notice-warning.inline {

@@ -117,3 +117,11 @@ $breakpoints: (
     'medium': (max-width: 782px),
     'large': (max-width: 960px),
 );
+
+// ADMIN MENU //
+$admin-menu-width: 160px;
+$admin-menu-folded-width: 36px + 10px;
+
+// BODY //
+$content-padding: 8%;
+$content-folded-padding: 10%;
