@@ -251,7 +251,9 @@ ul#adminmenu>li.current>a.current:after {
 .folded #adminmenu .wp-submenu.sub-open,
 .folded #adminmenu a.menu-top:focus+.wp-submenu,
 .no-js.folded #adminmenu .wp-has-submenu:hover .wp-submenu {
-    left: 36px + 10px;
+    @include respond-to('large') {
+        left: 36px + 10px;
+    }
 }
 
 // * Update Badge * //

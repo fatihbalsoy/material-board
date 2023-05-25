@@ -70,20 +70,6 @@ table.googlesitekit-table__wrapper.googlesitekit-table__wrapper--2-col {
     border-bottom: 1px solid #eee;
 }
 
-.wp-core-ui .button,
-.wrap .page-title-action,
-.color-option,
-.wp-color-result,
-.wp-core-ui .button-primary {
-    transition: all 0.3s ease;
-    text-decoration: none !important;
-    text-shadow: none !important;
-    border-width: 2px !important;
-    border-color: var(--primary-color) !important;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 .color-palette,
 .color-palette td {
     border: none !important;
@@ -589,33 +575,6 @@ ul.striped>:nth-child(odd) {
     }
 }
 
-.wrap .add-new-h2,
-.wrap .add-new-h2:active,
-.wrap .page-title-action,
-.wrap .page-title-action:active {
-    margin-left: 10px !important;
-    position: relative;
-    top: -3px;
-    text-decoration: none;
-    background: rgba(255, 255, 255, 0.4);
-    text-shadow: none;
-    font-weight: 600;
-    font-size: 13px;
-    border-radius: var(--br-100px) !important;
-    line-height: normal;
-    color: var(--primary-color);
-    cursor: pointer;
-    outline: 0;
-    padding: 5px 20px;
-}
-
-.wrap .add-new-h2:hover,
-.wrap .page-title-action:hover {
-    border-color: var(--primary-color) !important;
-    background: var(--primary-color) !important;
-    color: white !important;
-}
-
 ul.subsubsub {
     margin: 15px;
 }
@@ -706,7 +665,10 @@ div.updated p:before {
 div.error p,
 div.updated p {
     position: relative;
-    bottom: 6px;
+}
+
+.theme-browser .theme .notice-success p:before {
+    top: 0px;
 }
 
 .notice-error,
@@ -1141,6 +1103,16 @@ h3.accordion-section-title {
         margin-left: 0px;
         margin-right: 0px;
     }
+}
+
+.theme-browser .theme.add-new-theme a:focus:after,
+.theme-browser .theme.add-new-theme a:hover:after {
+    background-color: var(--primary-color);
+}
+
+.theme-browser .theme.add-new-theme a:focus span:after,
+.theme-browser .theme.add-new-theme a:hover span:after {
+    color: var(--primary-color);
 }
 
 .theme-browser .theme.add-new-theme a:after {

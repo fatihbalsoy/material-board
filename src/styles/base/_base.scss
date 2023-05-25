@@ -20,6 +20,13 @@ div {
 
 a {
     transition: all 0.5s;
+    color: var(--primary-color);
+}
+
+// TODO: primary color variants like dark, light, text
+a:active,
+a:hover {
+    color: var(--primary-color);
 }
 
 a:focus {

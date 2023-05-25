@@ -22,6 +22,12 @@ button:focus {
 
 .wp-core-ui .button-primary {
     background: var(--primary-color);
+    color: white !important;
+}
+
+.wp-core-ui .button,
+.wp-core-ui .button-secondary {
+    color: var(--primary-color);
 }
 
 .wp-core-ui .button-primary.focus,
@@ -165,4 +171,45 @@ a.et-pb-modal-save.button.button-primary,
 a.et-pb-modal-save-template.button {
     border-radius: var(--br-0px) !important;
     box-shadow: none !important;
+}
+
+.wp-core-ui .button,
+.wrap .page-title-action,
+.color-option,
+.wp-color-result,
+.wp-core-ui .button-primary {
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+    text-shadow: none !important;
+    border-width: 2px !important;
+    border-color: white !important;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.wrap .add-new-h2,
+.wrap .add-new-h2:active,
+.wrap .page-title-action,
+.wrap .page-title-action:active {
+    margin-left: 10px !important;
+    position: relative;
+    top: -3px;
+    text-decoration: none;
+    background: transparent;
+    text-shadow: none;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: var(--br-100px) !important;
+    line-height: normal;
+    color: white;
+    cursor: pointer;
+    outline: 0;
+    padding: 5px 20px;
+}
+
+.wrap .add-new-h2:hover,
+.wrap .page-title-action:hover {
+    border-color: transparent !important;
+    background: rgba(255, 255, 255, 0.4) !important;
+    color: white !important;
 }

@@ -123,3 +123,7 @@ input#Submit {
 .view-switch a:before {
     color: #eee !important;
 }
+
+.wp-core-ui select:hover {
+    color: var(--primary-color);
+}
