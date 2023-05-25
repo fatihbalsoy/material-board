@@ -73,7 +73,7 @@ Here are some of the available options:
 [![Build Status](https://img.shields.io/github/actions/workflow/status/fatihbalsoy/wp-material-design/build.yml)](https://github.com/fatihbalsoy/wp-material-design/actions/workflows/build.yml)
 
 Download [Node.js](https://nodejs.org/en/download/).
-Run the following commands:
+Run any of the following commands:
 
 ``` bash
 # Install dependencies (only the first time)
@@ -81,7 +81,7 @@ npm install
 
 # Run the local server at localhost:* (WordPress Playground) using WebAssembly and SQLite
 npm i -g @wp-now/wp-now # first time
-npm run dev:wasm
+npm run dev:wasm # creates wp environment at ~/.wp-now
 
 # Run the local server at localhost:8000 (WordPress) and localhost:8080 (phpMyAdmin) using Docker
 npm run dev:docker
@@ -91,12 +91,21 @@ npm run dev
 
 # Build for production in the build/ directory
 npm run build
-
-# More helpful commands:
-# - Run different versions of WordPress and PHP
-    npm i -g @wp-now/wp-now # first time
-    wp-now start --path=build/ --wp=6.3 --php=8.0
 ```
+
+More helpful tips:
+
+```bash
+# Run different versions of WordPress and PHP
+npm i -g @wp-now/wp-now # first time
+wp-now start --path=build/ --wp=6.3 --php=8.0
+```
+
+### Default User Credentials
+
+username: `admin`
+
+password: `password`
 
 ## Contribution
 
