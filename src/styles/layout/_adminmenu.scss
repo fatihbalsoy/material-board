@@ -30,6 +30,11 @@
 // * Admin Menu Text & Icons * //
 #adminmenu div.wp-menu-name {
     color: var(--nd-text-color);
+
+    &:hover,
+    &:focus {
+        color: var(--primary-color);
+    }
 }
 
 #adminmenu div.wp-menu-image:before {
@@ -44,6 +49,10 @@
 #adminmenu a.wp-has-current-submenu:focus+.wp-submenu li.current a {
     color: var(--nd-text-color);
     padding-right: 0px;
+
+    &:hover {
+        color: var(--primary-color) !important;
+    }
 }
 
 // Selected Menu Text & Icon //
@@ -80,7 +89,16 @@ a.wp-has-submenu.wp-has-current-submenu.wp-menu-open>.wp-menu-name {
         border-radius: var(--br-10px);
         box-shadow: none !important;
 
-        @include ripple(var(--nd-text-color))
+        @include ripple(var(--nd-text-color));
+
+        &:hover::before {
+            background: var(--primary-color);
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            filter: opacity(0.08);
+        }
     }
 
     .wp-submenu li {
@@ -144,6 +162,11 @@ a.wp-has-submenu.wp-has-current-submenu.wp-menu-open>.wp-menu-name {
             margin-top: 2px;
         }
     }
+
+    .wp-not-current-submenu:hover>.wp-menu-name,
+    .wp-not-current-submenu:focus>.wp-menu-name {
+        color: var(--primary-color) !important;
+    }
 }
 
 // * FOLDED ADMIN MENU * //
@@ -204,8 +227,29 @@ a.wp-has-submenu.wp-has-current-submenu.wp-menu-open>.wp-menu-name {
 #adminmenu li.current a.menu-top,
 #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
     // background-color: var(--primary-color) !important;
-    background-color: rgba(0, 0, 0, 0.05) !important;
+    // background-color: rgba(0, 0, 0, 0.05) !important;
     color: var(--primary-color) !important;
+
+    &::before {
+        background: var(--primary-color);
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        filter: opacity(0.08);
+    }
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
+#adminmenu .wp-menu-arrow,
+#adminmenu .wp-menu-arrow div,
+#adminmenu li.current a.menu-top,
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
+    background: transparent !important;
+}
+
+#adminmenu .wp-submenu .wp-submenu-head:before {
+    background: transparent;
 }
 
 .current>.wp-menu-name {

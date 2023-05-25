@@ -50,6 +50,7 @@ Here are some of the available options:
 * Font (Mona, Hubot, Roboto, or WordPress)
 * Header Font (Serif or sans serif)
 * Icons (Material or WordPress)
+* Large App Bar (Bar or Menu on top)
 
 ## Features
 
