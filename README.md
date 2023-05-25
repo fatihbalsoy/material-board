@@ -5,7 +5,7 @@ The Material Dashboard plugin for WordPress updates the appearance of your site'
 ![Prerelease](https://img.shields.io/badge/pre--release-red?style=for-the-badge)
 [![Download](https://img.shields.io/badge/-Download-2246CC?style=for-the-badge&logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCA0OCA0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxuczpzZXJpZj0iaHR0cDovL3d3dy5zZXJpZi5jb20vIiBzdHlsZT0iZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjI7Ij48cGF0aCBkPSJNMTEsNDBjLTAuOCwwIC0xLjUsLTAuMyAtMi4xLC0wLjljLTAuNiwtMC42IC0wLjksLTEuMyAtMC45LC0yLjFsMCwtNy4xNWwzLC0wbDAsNy4xNWwyNiwwbDAsLTcuMTVsMywtMGwwLDcuMTVjMCwwLjggLTAuMywxLjUgLTAuOSwyLjFjLTAuNiwwLjYgLTEuMywwLjkgLTIuMSwwLjlsLTI2LDBabTEzLC03LjY1bC05LjY1LC05LjY1bDIuMTUsLTIuMTVsNiw2bDAsLTE4LjU1bDMsLTBsMCwxOC41NWw2LC02bDIuMTUsMi4xNWwtOS42NSw5LjY1WiIgc3R5bGU9ImZpbGw6I2ZmZjtmaWxsLXJ1bGU6bm9uemVybzsiLz48L3N2Zz4=)](https://github.com/fatihbalsoy/wp-material-design/releases/)
 [![Demo](https://img.shields.io/badge/-Demo-446DFF?style=for-the-badge&logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCA0OCA0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxuczpzZXJpZj0iaHR0cDovL3d3dy5zZXJpZi5jb20vIiBzdHlsZT0iZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjI7Ij48cGF0aCBkPSJNMTYsMzcuODVsMCwtMjhsMjIsMTRsLTIyLDE0Wm0zLC01LjQ1bDEzLjQ1LC04LjU1bC0xMy40NSwtOC41NWwwLDE3LjFaIiBzdHlsZT0iZmlsbDojZmZmO2ZpbGwtcnVsZTpub256ZXJvOyIvPjwvc3ZnPg==)](https://fatih.balsoy.com/demo/wp-material-design)
-![WordPress](https://img.shields.io/badge/WordPress-6.2-lightblue?style=for-the-badge&logo=wordpress&logoWidth=20)
+![WordPress](https://img.shields.io/badge/WordPress-6.2.2-lightblue?style=for-the-badge&logo=wordpress&logoWidth=20)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/fatihbalsoy/wp-material-design/build.yml?style=for-the-badge&logo=github)](https://github.com/fatihbalsoy/wp-material-design/actions/workflows/build.yml)
 
 ## Screenshots
@@ -17,56 +17,56 @@ The Material Dashboard plugin for WordPress updates the appearance of your site'
 
 ### Manually
 
-- Download the latest release of Material Dashboard [here](https://github.com/fatihbalsoy/wp-material-design/releases/),
-- On your WordPress dashboard go to `Plugins` > `Add New`,
-- Click the `Upload Plugin` button near the header,
-- Select the downloaded zip archive,
-- Finally, activate the Material Dashboard plugin.
+* Download the latest release of Material Dashboard [here](https://github.com/fatihbalsoy/wp-material-design/releases/),
+* On your WordPress dashboard go to `Plugins` > `Add New`,
+* Click the `Upload Plugin` button near the header,
+* Select the downloaded zip archive,
+* Finally, activate the Material Dashboard plugin.
 
 ### Git Updater (Automatic Updates)
 
-- Download the latest release of Git Updater [here](https://git-updater.com/git-updater/)
-- On your WordPress dashboard go to `Plugins` > `Add New`,
-- Click the `Upload Plugin` button near the header,
-- Select the downloaded zip archive,
-- Activate the Git Updater plugin,
-- Go to `Git Updater Settings` > `Install Plugin`,
-- Input this repository's [link](https://github.com/fatihbalsoy/wp-material-design) into `Plugin URI`,
-- Click `Install Plugin`,
-- Finally, activate the Material Dashboard plugin.
+* Download the latest release of Git Updater [here](https://git-updater.com/git-updater/)
+* On your WordPress dashboard go to `Plugins` > `Add New`,
+* Click the `Upload Plugin` button near the header,
+* Select the downloaded zip archive,
+* Activate the Git Updater plugin,
+* Go to `Git Updater Settings` > `Install Plugin`,
+* Input this repository's [link](https://github.com/fatihbalsoy/wp-material-design) into `Plugin URI`,
+* Click `Install Plugin`,
+* Finally, activate the Material Dashboard plugin.
 
 ### NOTE
 
 This plugin is still in its pre-release phase and is not yet available on the WordPress Plugin Directory.
 
-## Customization 
+## Customization
 
-Head over to `Appearance` > `Material Dashboard` to customize the dashboard colors and looks. 
+Head over to `Appearance` > `Material Dashboard` to customize the dashboard colors and looks.
 Here are some of the available options:
 
-- Theme (Light, Dark, and System)
-- Colors (Primary and Accent colors)
-- Toggle Rounded Corners
-- Font (Mona, Hubot, Roboto, or WordPress)
-- Header Font (Serif or sans serif)
-- Icons (Material or WordPress)
+* Theme (Light, Dark, and System)
+* Colors (Primary and Accent colors)
+* Toggle Rounded Corners
+* Font (Mona, Hubot, Roboto, or WordPress)
+* Header Font (Serif or sans serif)
+* Icons (Material or WordPress)
 
 ## Features
 
-- [x] Dark mode
-- [x] Admin bar
-- [x] Side bar
-- [x] Menus
-- [x] Drop shadows 
-- [x] Buttons (Ripple Effect) 
-- [x] Inputs (Checkbox, Text Field,  Slider)
-- [x] Customization
-- [ ] Third-party plugin and theme support
+* [x] Dark mode
+* [x] Admin bar
+* [x] Side bar
+* [x] Menus
+* [x] Drop shadows
+* [x] Buttons (Ripple Effect)
+* [x] Inputs (Checkbox, Text Field,  Slider)
+* [x] Customization
+* [ ] Third-party plugin and theme support
 
 ## Known Issues
 
-- Automatic system theme setting does not take effect until after two page refreshes.
-- Login screen looks janky because default values are not saved on initialization.
+* Automatic system theme setting does not take effect until after two page refreshes.
+* Login screen looks janky because default values are not saved on initialization.
 
 ## Setup & Build
 
@@ -79,23 +79,32 @@ Run the following commands:
 # Install dependencies (only the first time)
 npm install
 
-# Run the local server at localhost:8000 (WordPress) and localhost:8080 (phpMyAdmin)
+# Run the local server at localhost:* (WordPress Playground) using WebAssembly and SQLite
+npm i -g @wp-now/wp-now # first time
+npm run dev:wasm
+
+# Run the local server at localhost:8000 (WordPress) and localhost:8080 (phpMyAdmin) using Docker
 npm run dev:docker
 
-# Watch & compile source code without server
+# Watch & compile source code without hosting a WordPress server
 npm run dev
 
 # Build for production in the build/ directory
 npm run build
+
+# More helpful commands:
+# - Run different versions of WordPress and PHP
+    npm i -g @wp-now/wp-now # first time
+    wp-now start --path=build/ --wp=6.3 --php=8.0
 ```
 
 ## Contribution
 
 Feel free to submit a pull request for one of the following:
 
-- New features
-- Support third-party plugins or themes
-- Fixing bugs and security vulnurabilities
+* New features
+* Support third-party plugins or themes
+* Fixing bugs and security vulnurabilities
 
 ## Licenses
 
@@ -103,9 +112,9 @@ Material Design Dashboard, [AGPL License 3.0](https://github.com/fatihbalsoy/wp-
 
 This project depends on the following third-parties:
 
-- GitHub's Mona Sans Fonts, [SIL Open Font License 1.1](https://github.com/github/mona-sans/blob/main/LICENSE)
-- GitHub's Hubot Sans Fonts, [SIL Open Font License 1.1](https://github.com/github/hubot-sans/blob/main/LICENSE)
-- Google's Roboto Font, [Apache License 2.0](https://github.com/googlefonts/roboto/blob/master/LICENSE).
-- Google's Material Design Icons, [Apache License 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE).
-- Community Material Design Icons, [SIL Open Font License 1.1](https://github.com/Templarian/MaterialDesign/blob/master/LICENSE).
-- TinyColor, [MIT License](https://github.com/bgrins/TinyColor/blob/master/LICENSE).
+* GitHub's Mona Sans Fonts, [SIL Open Font License 1.1](https://github.com/github/mona-sans/blob/main/LICENSE)
+* GitHub's Hubot Sans Fonts, [SIL Open Font License 1.1](https://github.com/github/hubot-sans/blob/main/LICENSE)
+* Google's Roboto Font, [Apache License 2.0](https://github.com/googlefonts/roboto/blob/master/LICENSE).
+* Google's Material Design Icons, [Apache License 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE).
+* Community Material Design Icons, [SIL Open Font License 1.1](https://github.com/Templarian/MaterialDesign/blob/master/LICENSE).
+* TinyColor, [MIT License](https://github.com/bgrins/TinyColor/blob/master/LICENSE).
