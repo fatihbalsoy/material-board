@@ -72,7 +72,7 @@ if (curl_exists()) {
     <!-------------------------------------------------------------------------------->
     <div>
         <h1 class='wp-heading-inline'>
-            <?php echo $GLOBALS["fb_mdp_plugin_settings_title"] ?>
+            <?php echo _e('Material Dashboard', 'wp-material-design') ?>
         </h1>
     </div>
 
@@ -88,7 +88,7 @@ if (curl_exists()) {
             <div class='mdwp-card mdwp-first-card mdwp-elevation1 mdwp-light-back'>
 
                 <div class='mdwp-card-title'>
-                    Appearance
+                    <?php _e('Appearance', 'wp-material-design') ?>
                 </div>
                 <table class='form-table'>
                     <tbody>
@@ -126,13 +126,12 @@ if (curl_exists()) {
             submit_button();
             ?>
             <div>
-                Developed by <a
-                    href="<?php echo $GLOBALS["fb_mdp_plugin_author_website"] ?>"><?php echo $GLOBALS["fb_mdp_plugin_author"] ?></a>
-                | Version
-                <?php echo $GLOBALS["fb_mdp_plugin_version"] ?> | <a
-                    href="<?php echo $GLOBALS["fb_mdp_plugin_report_bugs"] ?>">Request
-                    Features &
-                    Report Issues</a>
+                <?php _e('Developed by', 'wp-material-design') ?>
+                <a href="<?php echo $GLOBALS["fb_mdp_plugin_author_website"] ?>"><?php echo $GLOBALS["fb_mdp_plugin_author"] ?></a>
+                | <?php _e('Version', 'wp-material-design') ?>
+                <?php echo $GLOBALS["fb_mdp_plugin_version"] ?> | <a href="<?php echo $GLOBALS["fb_mdp_plugin_report_bugs"] ?>">
+                    <?php _e('Request Features & Report Issues', 'wp-material-design') ?>
+                </a>
             </div>
         </div>
 

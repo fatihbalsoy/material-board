@@ -5,15 +5,16 @@
  * Plugin URI:          https://github.com/fatihbalsoy/wp-material-design
  * Description:         The Material Dashboard plugin for WordPress updates the appearance of your site's dashboard to a sleeker, more contemporary design based on Google's Material Design Guidelines. This plugin preserves your existing dashboard layout, avoids making any significant alterations, and doesn't include any branding or promotional content. It's straightforward to use and comes at no cost.
  * Author: 	            Fatih Balsoy
- * Version: 	        0.3.0-alpha
+ * Version: 	        0.3.1-alpha
  * Text Domain:         wp-material-design
+ * Domain Path:         /languages
  * Author URI:          https://fatih.bal.soy
  * GitHub Plugin URI:   https://github.com/fatihbalsoy/wp-material-design
  * License:             AGPL-3.0+
  * License URI:         https://www.gnu.org/licenses/agpl-3.0.txt
  */
 
-$fb_mdp_plugin_version = "0.3.0-alpha";
+$fb_mdp_plugin_version = "0.3.1-alpha";
 $fb_mdp_plugin_author = "Fatih Balsoy";
 $fb_mdp_plugin_author_website = "https://fatih.bal.soy";
 $fb_mdp_plugin_website = "https://fatih.bal.soy/projects/wp-material-design";
@@ -71,8 +72,16 @@ class MaterialDashboardPlugin
         add_action('login_enqueue_scripts', array($this, 'mdp_login_theme_style'));
         add_action('admin_menu', array($this, 'mdp_plugin_menu'));
         add_action('admin_init', array($this, 'settings'));
+        add_action('admin_init', array($this, 'setup_languages'));
         add_action('admin_head', array($this, 'change_theme_color_meta'));
         // add_filter('plugin_action_links_' . plugin_basename(__FILE__), 'mdp_plugin_settings_link');
+    }
+
+    /** Language Support **/
+    function setup_languages()
+    {
+        // Set the theme's text domain
+        load_plugin_textdomain($GLOBALS['fb_mdp_plugin_bundle'], false, dirname(plugin_basename(__FILE__)) . '/languages/');
     }
 
     /** User-facing Admin Theme (Admin Bar) **/

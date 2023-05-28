@@ -1,0 +1,129 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Material Dashboard v0.3.0\n"
+"POT-Creation-Date: 2023-05-28 17:55-0400\n"
+"PO-Revision-Date: 2023-05-28 18:01-0400\n"
+"Last-Translator: \n"
+"Language-Team: Fatih Balsoy\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.3.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;translate\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: settings/index.php:75
+msgid "Material Dashboard"
+msgstr "Material Dashboard"
+
+#: settings/index.php:91
+msgid "Appearance"
+msgstr "Görünüm"
+
+#: settings/index.php:129
+msgid "Developed by"
+msgstr "Geliştirici:"
+
+#: settings/index.php:131
+msgid "Version"
+msgstr "Versiyon"
+
+#: settings/index.php:133
+msgid "Request Features & Report Issues"
+msgstr "Özellikler İsteyin ve Sorunları Bildirin"
+
+#: settings/options/colors.php:15
+msgid "Colors"
+msgstr "Renkler"
+
+#: settings/options/colors.php:18
+msgid "Primary (Toolbars and Navigations)"
+msgstr "Birincil (Araç Çubukları ve Navigasyonlar)"
+
+#: settings/options/colors.php:24
+msgid "Accent (Text Selections and Controls)"
+msgstr "Aksan (Metin Seçimleri ve Kontrolleri)"
+
+#: settings/options/corners.php:6
+msgid "Rounded Corners"
+msgstr "Yuvarlatılmış köşeler"
+
+#: settings/options/corners.php:9
+msgid ""
+"You can choose to turn on or off the rounded corners around cards, buttons, "
+"and text fields."
+msgstr ""
+"Kartların, düğmelerin ve metin alanlarının etrafındaki yuvarlatılmış "
+"köşeleri açmayı veya kapatmayı seçebilirsiniz."
+
+#: settings/options/font.php:6
+msgid "Font"
+msgstr "Yazı tipi"
+
+#: settings/options/font.php:13
+msgid "WordPress Default"
+msgstr "WordPress Varsayılanı"
+
+#: settings/options/header_serif.php:6
+msgid "Serif Header"
+msgstr "Serif Başlığı"
+
+#: settings/options/header_serif.php:9
+msgid "Enhance your headers with an editorial touch by enabling serif fonts."
+msgstr ""
+"Serif yazı tiplerini etkinleştirerek başlıklarınıza editoryal bir hava katın."
+
+#: settings/options/icons.php:6
+msgid "Icons"
+msgstr "Simgeler"
+
+#: settings/options/large_app_bar.php:7
+msgid "Large App Bar"
+msgstr "Büyük Uygulama Çubuğu"
+
+#: settings/options/large_app_bar.php:13
+msgid "Variant"
+msgstr "Varyant"
+
+#: settings/options/large_app_bar.php:17
+msgid "Admin Bar on Top"
+msgstr "Yönetici Çubuğu Üstte"
+
+#: settings/options/large_app_bar.php:20
+msgid "Admin Menu on Top"
+msgstr "Yönetici Menüsü Üstte"
+
+#: settings/options/large_app_bar.php:25
+msgid "Experimental"
+msgstr "Deneysel"
+
+#: settings/options/theme.php:7
+msgid "Theme"
+msgstr "Tema"
+
+#: settings/options/theme.php:12
+msgid "Light"
+msgstr "Açık"
+
+#: settings/options/theme.php:15
+msgid "Dark"
+msgstr "Koyu"
+
+#: settings/options/theme.php:18
+msgid "System"
+msgstr "Sistem"
+
+#: settings/options/theme.php:22
+msgid "Dark mode may not be compatible with third-party plugins."
+msgstr "Koyu tema modu, üçüncü taraf eklentilerle uyumlu olmayabilir."
+
+#: wp-material-design.php:138
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: wp-material-design.php:225
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Bu sayfaya erişmek için yeterli izniniz yok."
