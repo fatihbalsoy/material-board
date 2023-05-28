@@ -122,8 +122,9 @@ Material Design Dashboard, [AGPL License 3.0](https://github.com/fatihbalsoy/wp-
 
 This project depends on the following third-parties:
 
-* GitHub's Mona Sans Fonts, [SIL Open Font License 1.1](https://github.com/github/mona-sans/blob/main/LICENSE)
-* GitHub's Hubot Sans Fonts, [SIL Open Font License 1.1](https://github.com/github/hubot-sans/blob/main/LICENSE)
+* GitHub's Mona Sans Font, [SIL Open Font License 1.1](https://github.com/github/mona-sans/blob/main/LICENSE)
+* GitHub's Hubot Sans Font, [SIL Open Font License 1.1](https://github.com/github/hubot-sans/blob/main/LICENSE)
+* Adobe's DM Serif Display, [SIL Open Font License 1.1](https://github.com/googlefonts/dm-fonts/blob/main/Serif/LICENSE.txt)
 * Google's Roboto Font, [Apache License 2.0](https://github.com/googlefonts/roboto/blob/master/LICENSE).
 * Google's Material Design Icons, [Apache License 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE).
 * Community Material Design Icons, [SIL Open Font License 1.1](https://github.com/Templarian/MaterialDesign/blob/master/LICENSE).
