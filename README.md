@@ -8,6 +8,11 @@ The Material Dashboard plugin for WordPress updates the appearance of your site'
 ![WordPress](https://img.shields.io/badge/WordPress-6.2.2-lightblue?style=for-the-badge&logo=wordpress&logoWidth=20)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/fatihbalsoy/wp-material-design/build.yml?style=for-the-badge&logo=github)](https://github.com/fatihbalsoy/wp-material-design/actions/workflows/build.yml)
 
+Read this document in a different language.
+
+[![English](https://img.shields.io/badge/-English-blue?style=for-the-badge)](https://github.com/fatihbalsoy/wp-material-design/blob/master/README.md)
+[![Turkish](https://img.shields.io/badge/-T%C3%BCrk%C3%A7e-red?style=for-the-badge)](https://github.com/fatihbalsoy/wp-material-design/blob/master/.readme/lang/README.tr.md)
+
 ## Screenshots
 
 ![Alt text](.readme/dashboard-welcome.png?raw=true  "Screenshots")
@@ -35,9 +40,9 @@ The Material Dashboard plugin for WordPress updates the appearance of your site'
 * Click `Install Plugin`,
 * Finally, activate the Material Dashboard plugin.
 
-### NOTE
-
-This plugin is still in its pre-release phase and is not yet available on the WordPress Plugin Directory.
+> ### ⚠️ NOTE
+>
+> This plugin is still in its pre-release phase and is not yet available on the WordPress Plugin Directory.
 
 ## Customization
 
@@ -52,22 +57,17 @@ Here are some of the available options:
 * Icons (Material or WordPress)
 * Large App Bar (Bar or Menu on top)
 
-## Features
+## Languages
 
-* [x] Dark mode
-* [x] Admin bar
-* [x] Side bar
-* [x] Menus
-* [x] Drop shadows
-* [x] Buttons (Ripple Effect)
-* [x] Inputs (Checkbox, Text Field,  Slider)
-* [x] Customization
-* [ ] Third-party plugin and theme support
+* English
+* French (Français)
+* German (Deutsch)
+* Turkish (Türkçe)
 
 ## Known Issues
 
 * Automatic system theme setting does not take effect until after two page refreshes.
-* Login screen looks janky because default values are not saved on initialization.
+* Submenus, under selected top-menus, are not clickable.
 
 ## Setup & Build
 
@@ -113,6 +113,7 @@ password: `password`
 Feel free to submit a pull request for one of the following:
 
 * New features
+* Language translation
 * Support third-party plugins or themes
 * Fixing bugs and security vulnurabilities
 
