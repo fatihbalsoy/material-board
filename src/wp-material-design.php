@@ -5,7 +5,7 @@
  * Plugin URI:          https://github.com/fatihbalsoy/wp-material-design
  * Description:         The Material Dashboard plugin for WordPress updates the appearance of your site's dashboard to a sleeker, more contemporary design based on Google's Material Design Guidelines. This plugin preserves your existing dashboard layout, avoids making any significant alterations, and doesn't include any branding or promotional content. It's straightforward to use and comes at no cost.
  * Author: 	            Fatih Balsoy
- * Version: 	        0.2.3-alpha
+ * Version: 	        0.3.0-alpha
  * Text Domain:         wp-material-design
  * Author URI:          https://fatih.bal.soy
  * GitHub Plugin URI:   https://github.com/fatihbalsoy/wp-material-design
@@ -13,7 +13,7 @@
  * License URI:         https://www.gnu.org/licenses/agpl-3.0.txt
  */
 
-$fb_mdp_plugin_version = "0.2.3-alpha";
+$fb_mdp_plugin_version = "0.3.0-alpha";
 $fb_mdp_plugin_author = "Fatih Balsoy";
 $fb_mdp_plugin_author_website = "https://fatih.bal.soy";
 $fb_mdp_plugin_website = "https://fatih.bal.soy/projects/wp-material-design";
