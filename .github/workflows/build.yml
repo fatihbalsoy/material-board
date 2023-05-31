@@ -32,7 +32,11 @@ jobs:
       - name: Install NPM Dependencies
         run: npm ci
 
+      - name: Install zsh
+        run: sudo apt-get update; sudo apt-get install zsh
+
       - name: Build Project
+        shell: zsh {0}
         run: npm run build
 
       - name: Get Current Date
