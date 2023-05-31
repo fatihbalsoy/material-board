@@ -90,7 +90,10 @@ a.wp-has-submenu.wp-has-current-submenu.wp-menu-open>.wp-menu-name {
         box-shadow: none !important;
 
         @include ripple(var(--nd-text-color));
+    }
 
+    .wp-submenu-head,
+    a.menu-top {
         &:hover::before {
             background: var(--primary-color);
             content: '';

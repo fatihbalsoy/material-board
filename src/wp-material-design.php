@@ -55,7 +55,7 @@ class MaterialDashboardPlugin
 
         /** Font **/
         // - Body
-        'mdp_font' => 'mona-sans',
+        'mdp_font' => 'roboto',
         // - Header
         'mdp_header_serif_font' => 'off',
 
