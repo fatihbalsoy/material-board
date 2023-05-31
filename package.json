@@ -7,9 +7,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "build": "bash bundle.sh",
+    "build": "zsh bundle.sh",
     "watch": "concurrently \"tsc --watch --outDir build/\" \"sass --watch src/:build/\"",
-    "dev": "bash bundle.sh && npm run watch",
+    "dev": "zsh bundle.sh && npm run watch",
     "dev:docker": "npm run build && docker-compose up -d && npm run watch",
     "dev:wasm": "npm run build && concurrently \"wp-now start --path=build/\" \"npm run watch\"",
     "stop": "docker-compose down"
