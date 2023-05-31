@@ -73,7 +73,6 @@ Panonun renklerini ve görünümünü özelleştirmek için `Görünüm` > `Mate
 ## Bilinen Sorunlar
 
 * Otomatik sistem teması ayarı, iki sayfa yenileme işleminden sonra etkili olmaz.
-* Seçilen üst menülerin alt menüleri tıklanamaz durumda.
 
 ## Kurulum ve Derleme
 

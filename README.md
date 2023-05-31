@@ -67,7 +67,6 @@ Here are some of the available options:
 ## Known Issues
 
 * Automatic system theme setting does not take effect until after two page refreshes.
-* Submenus, under selected top-menus, are not clickable.
 
 ## Setup & Build
 
