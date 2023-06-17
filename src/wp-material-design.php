@@ -55,7 +55,7 @@ class MaterialDashboardPlugin
 
         /** Font **/
         // - Body
-        'mdp_font' => 'roboto',
+        'mdp_font' => 'dm-sans',
         // - Header
         'mdp_header_serif_font' => 'off',
 
@@ -172,6 +172,9 @@ class MaterialDashboardPlugin
 
         //? -- FONT -- ?//
         switch ($this->get_option_or_default('mdp_font')) {
+            case 'dm-sans':
+                wp_enqueue_style('dm-sans-font', plugins_url('assets/fonts/dm-sans.css', __FILE__));
+                break;
             case 'mona-sans':
                 wp_enqueue_style('mona-sans-font', plugins_url('assets/fonts/mona-sans.css', __FILE__));
                 break;

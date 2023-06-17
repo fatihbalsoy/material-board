@@ -58,7 +58,7 @@ Panonun renklerini ve görünümünü özelleştirmek için `Görünüm` > `Mate
 * Tema (Açık, Koyu ve Sistem)
 * Renkler (Birincil ve Vurgu renkleri)
 * Yuvarlatılmış Köşeleri (Aç veya Kapat)
-* Yazı Tipi (Mona, Hubot, Roboto veya WordPress)
+* Yazı Tipi (DM Sans, Roboto, Mona, Hubot veya WordPress)
 * Başlık Yazı Tipi (Serif veya serifsiz)
 * Simgeler (Materyal veya WordPress)
 * Büyük Uygulama Çubuğu (Bar veya Menü Üstte)
@@ -128,9 +128,10 @@ Material Design Dashboard, [AGPL License 3.0](https://github.com/fatihbalsoy/wp-
 
 Bu proje aşağıdaki üçüncü taraf kaynaklara bağımlıdır:
 
+* Adobe'nin DM Sans Yazı Tipi, [SIL Open Font License 1.1](https://github.com/googlefonts/dm-fonts/blob/main/Serif/LICENSE.txt)
+* Adobe'nin DM Serif Yazı Tipi, [SIL Open Font License 1.1](https://github.com/googlefonts/dm-fonts/blob/main/Serif/LICENSE.txt)
 * GitHub'ın Mona Sans Yazı Tipi, [SIL Open Font License 1.1](https://github.com/github/mona-sans/blob/main/LICENSE)
 * GitHub'ın Hubot Sans Yazı Tipi, [SIL Open Font License 1.1](https://github.com/github/hubot-sans/blob/main/LICENSE)
-* Adobe'nin DM Serif Display Yazı Tipi, [SIL Open Font License 1.1](https://github.com/googlefonts/dm-fonts/blob/main/Serif/LICENSE.txt)
 * Google'ın Roboto Yazı Tipi, [Apache License 2.0](https://github.com/googlefonts/roboto/blob/master/LICENSE).
 * Google'ın Material Design İkonları, [Apache License 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE).
 * Community Material Design İkonları, [SIL Open Font License 1.1](https://github.com/Templarian/MaterialDesign/blob/master/LICENSE).

@@ -102,9 +102,10 @@ if (curl_exists()) {
                         echo get_local_file_contents('options/colors.php');
                         // Rounded Corners  - Checkbox
                         echo get_local_file_contents('options/corners.php');
-                        // Font             - Mona Sans
-                        //                  - Hubot Sans
+                        // Font             - DM Sans
                         //                  - Roboto
+                        //                  - Mona Sans
+                        //                  - Hubot Sans
                         //                  - Wordpress Default
                         echo get_local_file_contents('options/font.php');
                         // Header Serif     - Checkbox
