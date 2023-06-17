@@ -39,6 +39,10 @@ table.googlesitekit-table__wrapper.googlesitekit-table__wrapper--2-col {
     }
 }
 
+#wpbody {
+    z-index: 0;
+}
+
 .folded #wpcontent,
 .folded #wpfooter {
     margin-left: calc($content-folded-padding + $admin-menu-folded-width);
