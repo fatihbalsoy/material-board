@@ -18,6 +18,7 @@ $options = get_option('mdp_theme');
             <?php _e('System', 'wp-material-design') ?>
             <br>
         </form>
+        <br />
         <div class='mdwp-helper-text'>
             <?php _e('Dark mode may not be compatible with third-party plugins.', 'wp-material-design') ?>
         </div>

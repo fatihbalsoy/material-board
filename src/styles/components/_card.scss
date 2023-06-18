@@ -1,0 +1,45 @@
+/*
+ *   _card.scss
+ *   material-design-dashboard
+ * 
+ *   Created by Fatih Balsoy on 6/18/23
+ *   Copyright © 2023 Fatih Balsoy. All rights reserved.
+ */
+
+.about-wrap,
+.media-frame.mode-grid .uploader-inline,
+#poststuff,
+form#createuser,
+form#your-profile,
+form#bulk-action-form,
+.menu-item-handle,
+#menu-management .menu-edit,
+#menu-settings-column .accordion-container,
+.comment-ays,
+.feature-filter,
+.imgedit-group,
+.manage-menus,
+.popular-tags,
+.stuffbox,
+.widget-inside,
+.widget-top,
+.widgets-holder-wrap,
+p.popular-tags,
+#et_pb_widget_area_create,
+div#widgets-right,
+div#widgets-left,
+.themes.wp-clearfix,
+.form-wrap.edit-term-notes,
+form#comments-form,
+.media-upload-form,
+form#posts-filter,
+div#col-left,
+.mdwp-card,
+.wrap>form>table {
+    border-radius: var(--br-10px) !important;
+    padding: 15px !important;
+    background: var(--light-back-color);
+    box-shadow: var(--elevation1) !important;
+    transition: all 0.3s ease !important;
+    border: none !important;
+}

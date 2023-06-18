@@ -7,7 +7,7 @@
  *   Copyright © 2022 Fatih Balsoy. All rights reserved.
  */
 
-@import '../abstracts/mixins';
+@import '../utilities/mixins';
 
 /* file://docs/images/components/radio_button_off.png */
 input[type=radio] {
@@ -66,8 +66,8 @@ input[type=radio]:checked:before {
     /* content: "\2022"; */
 
     @include respond-to('medium') {
-        height: 12px;
-        width: 12px;
+        height: 11px;
+        width: 11px;
         margin-top: 2.4px;
         margin-left: 2.4px;
     }

@@ -48,7 +48,7 @@ if (curl_exists()) {
 ?>
 
 <!-- Page-specific stylesheet -->
-<link rel="stylesheet" href="<?php echo ($GLOBALS["fb_mdp_plugin_directory"]) ?>/settings/style.css" />
+<link rel="stylesheet" href="<?php echo (plugins_url('style.css', __FILE__)) ?>" />
 
 <!-- TODO: Implement instant preview -->
 <!-- <script defer src="script.js"></script> -->
@@ -68,7 +68,6 @@ if (curl_exists()) {
     <!-- HEADER -->
     <!-------------------------------------------------------------------------------->
     <!-- Material Dashboard                                                         -->
-    <!-- Developed by [Author] | Version | Request Features & Report Issues         -->
     <!-------------------------------------------------------------------------------->
     <div>
         <h1 class='wp-heading-inline'>
@@ -86,10 +85,9 @@ if (curl_exists()) {
 
         <div class='mdwp-content-center'>
             <div class='mdwp-card mdwp-first-card mdwp-elevation1 mdwp-light-back'>
-
-                <div class='mdwp-card-title'>
+                <h3 class='mdwp-card-title'>
                     <?php _e('Appearance', 'wp-material-design') ?>
-                </div>
+                </h3>
                 <table class='form-table'>
                     <tbody>
                         <?php
@@ -126,6 +124,8 @@ if (curl_exists()) {
             <?php
             submit_button();
             ?>
+            <!-- FOOTER -->
+            <!-- Developed by [Author] | Version | Request Features & Report Issues         -->
             <div>
                 <?php _e('Developed by', 'wp-material-design') ?>
                 <a href="<?php echo $GLOBALS["fb_mdp_plugin_author_website"] ?>"><?php echo $GLOBALS["fb_mdp_plugin_author"] ?></a>

@@ -27,7 +27,7 @@ $fb_mdp_plugin_report_bugs = $fb_mdp_plugin_github . "/issues/new";
 $fb_mdp_plugin_name = "Material Dashboard";
 $fb_mdp_plugin_bundle = "wp-material-design";
 $fb_mdp_plugin_settings_title = $fb_mdp_plugin_name;
-$fb_mdp_plugin_directory = plugins_url('', dirname(__FILE__)) . "/" . $fb_mdp_plugin_bundle;
+// $fb_mdp_plugin_directory = plugins_url('', dirname(__FILE__)) . "/" . $fb_mdp_plugin_bundle;
 
 // If this file is called directly, abort.
 if (!defined('ABSPATH'))
@@ -155,7 +155,7 @@ class MaterialDashboardPlugin
         //? -- DARK MODE -- ?//
         function enqueue_dark_theme()
         {
-            wp_enqueue_style('dark-admin-theme', plugins_url('styles/shared.dark.css', __FILE__));
+            wp_enqueue_style('dark-admin-theme', plugins_url('styles/themes/shared.dark.css', __FILE__));
         }
 
         // Explicit Dark Mode

@@ -1,3 +1,4 @@
+@charset 'utf-8';
 /*
  *   wp-admin.scss
  *   material-design-dashboard
@@ -7,14 +8,14 @@
  */
 
 // 1. Configuration and helpers
-@import 'abstracts/variables', 'abstracts/mixins';
+@import 'utilities/variables', 'utilities/mixins';
 // 2. Vendors
 // 3. Base stuff
 @import 'base/base', 'base/fonts';
 // 4. Layout-related sections
 @import 'layout/adminbar', 'layout/adminmenu';
 // 5. Components
-@import 'components/button', 'components/input', 'components/checkbox', 'components/radio';
+@import 'components/card', 'components/button', 'components/input', 'components/checkbox', 'components/radio';
 // 6. Page-specific styles
 // 7. Themes
 
@@ -751,42 +752,6 @@ div#col-left {
 
 form.search-form.wp-clearfix {
     margin-bottom: 10px;
-}
-
-.about-wrap,
-.media-frame.mode-grid .uploader-inline,
-#poststuff,
-form#createuser,
-form#your-profile,
-form#bulk-action-form,
-.menu-item-handle,
-#menu-management .menu-edit,
-#menu-settings-column .accordion-container,
-.comment-ays,
-.feature-filter,
-.imgedit-group,
-.manage-menus,
-.popular-tags,
-.stuffbox,
-.widget-inside,
-.widget-top,
-.widgets-holder-wrap,
-p.popular-tags,
-#et_pb_widget_area_create,
-div#widgets-right,
-div#widgets-left,
-.themes.wp-clearfix,
-.form-wrap.edit-term-notes,
-form#comments-form,
-.media-upload-form,
-form#posts-filter,
-div#col-left {
-    border-radius: var(--br-10px) !important;
-    padding: 15px !important;
-    background: var(--light-back-color);
-    box-shadow: var(--elevation1) !important;
-    transition: all 0.3s ease !important;
-    border: none !important;
 }
 
 .widget-title h3,

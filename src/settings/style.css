@@ -33,15 +33,29 @@
     margin-bottom: 10px;
 }
 
-.mdwp-card-title, h2 {
+.mdwp-card-title {
     font-size: 22px;
     margin-bottom: 10px;
     margin-top: 5px;
     line-height: 1em;
 }
 
+.mdwp-option-table>tbody>tr>td {
+    border: none;
+}
+
 .mdwp-card .form-table th {
     padding-left: 0 !important;
+}
+
+.mdwp-card .form-table td {
+    padding-left: 0 !important;
+}
+
+@media screen and (max-width: 782px) {
+    .mdwp-card .form-table td {
+        padding-left: 0px !important;
+    }
 }
 
 .mdwp-card .form-table {
