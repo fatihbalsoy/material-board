@@ -91,6 +91,9 @@ npm run dev
 
 # Build for production in the build/ directory
 npm run build
+
+# Build for production in each language in the build/ directory
+npm run build:lang
 ```
 
 More helpful tips:

@@ -8,6 +8,7 @@
   },
   "scripts": {
     "build": "zsh scripts/bundle.sh",
+    "build:lang": "zsh scripts/bundle_languages.sh",
     "watch": "concurrently \"npx ts-node watch.ts\" \"tsc --watch --outDir build/\" \"sass --watch src/:build/\"",
     "dev": "npm run build && npm run watch",
     "dev:docker": "npm run build && docker-compose up -d && npm run watch",
