@@ -1,6 +1,6 @@
 ## Material Dashboard – Türkçe
 
-Son Güncelleme: 28 Mayıs 2023
+Son Güncelleme: 19 Haziran 2023
 
 ---
 
@@ -97,6 +97,9 @@ npm run dev
 
 # Üretim için build/ dizininde derleme yapın
 npm run build
+
+# Her dile ayrı üretim için build/ dizininde derleme yapın
+npm run build:lang
 ```
 
 Daha fazla faydalı ipucu:
