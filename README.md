@@ -1,4 +1,6 @@
-![Alt text](.readme/banner.png?raw=true  "Material Design Dashboard")
+<!-- THIS FILE IS AUTO-GENERATED. PLEASE EDIT `.readme/lang/README.base.md` AND RUN `npm run mmg`. -->
+
+# ![Material Design Dashboard](/.readme/banner.png?raw=true  "Material Design Dashboard")
 
 The Material Dashboard plugin for WordPress updates the appearance of your site's dashboard to a sleeker, more contemporary design based on [Google's Material Design Guidelines](https://material.io/design). This plugin preserves your existing dashboard layout, avoids making any significant alterations, and doesn't include any branding or promotional content. It's straightforward to use and comes at no cost.
 
@@ -15,8 +17,8 @@ Read this document in a different language.
 
 ## Screenshots
 
-![Alt text](.readme/dashboard-welcome.png?raw=true  "Screenshots")
-![Alt text](.readme/screenshots.png?raw=true  "Screenshots")
+![Screenshots](/.readme/dashboard-welcome.png?raw=true  "Screenshots")
+![Screenshots](/.readme/screenshots.png?raw=true  "Screenshots")
 
 ## Installation
 
@@ -133,3 +135,4 @@ This project depends on the following third-parties:
 * Google's Material Design Icons, [Apache License 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE).
 * Community Material Design Icons, [SIL Open Font License 1.1](https://github.com/Templarian/MaterialDesign/blob/master/LICENSE).
 * TinyColor, [MIT License](https://github.com/bgrins/TinyColor/blob/master/LICENSE).
+
