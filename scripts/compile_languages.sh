@@ -13,7 +13,7 @@ source $SCRIPTPATH/scripts/plugin_info.sh
 
 #?#   Compiling Language Files   #?#
 if ! command -v msgfmt &> /dev/null || ! [[ -x "$(command -v msgfmt)" ]]; then
-    echo "Language (*.po) compilation skipped: msgfmt command is not installed or not executable."
+    echo "Language (*.po) compilation skipped: msgfmt command is not executable. Install gettext."
 else
     mkdir -p $SCRIPTPATH/build/languages # rsync skips empty directories
     echo "Compiling Language Files..."

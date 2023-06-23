@@ -72,45 +72,7 @@ Panonun renklerini ve görünümünü özelleştirmek için `Görünüm` > `Mate
 
 ## Kurulum ve Derleme
 
-[![Build Durumu](https://img.shields.io/github/actions/workflow/status/fatihbalsoy/wp-material-design/build.yml)](https://github.com/fatihbalsoy/wp-material-design/actions/workflows/build.yml)
-
-[Node.js'i](https://nodejs.org/en/download/) indirin.
-Aşağıdaki komutlardan herhangi birini çalıştırın:
-
-``` bash
-# Bağımlılıkları yükleyin (yalnızca ilk kez)
-npm install
-
-# WebAssembly ve SQLite kullanarak yerel sunucuyu localhost:* (WordPress Playground) üzerinde çalıştırın
-npm i -g @wp-now/wp-now # ilk kez
-npm run dev:wasm # ~/.wp-now altında wp ortamını oluşturur
-
-# Docker kullanarak yerel sunucuyu localhost:8000 (WordPress) ve localhost:8080 (phpMyAdmin) üzerinde çalıştırın
-npm run dev:docker
-
-# WordPress sunucusu barındırmadan kaynak kodunu izle ve derle
-npm run dev
-
-# Üretim için build/ dizininde derleme yapın
-npm run build
-
-# Her dile ayrı üretim için build/ dizininde derleme yapın
-npm run build:lang
-```
-
-Daha fazla faydalı ipucu:
-
-```bash
-# Farklı WordPress ve PHP sürümlerini çalıştırın
-npm i -g @wp-now/wp-now # ilk kez
-wp-now start --path=build/ --wp=6.3 --php=8.0
-```
-
-### Varsayılan Kullanıcı Kimlik Bilgileri
-
-Kullanıcı adı: `admin`
-
-Şifre: `password`
+Geliştirici ortamını kurmaya ve projeyi oluşturmaya başlamak için [SETUP.md](SETUP.tr.md) dosyasına bakın.
 
 ## Katkı
 

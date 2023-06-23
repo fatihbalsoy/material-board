@@ -17,8 +17,10 @@ if ! command -v mmg &> /dev/null || ! [[ -x "$(command -v mmg)" ]]; then
     echo "Download mmg here: https://github.com/ryul1206/multilingual-markdown"
 else
     mmg README.base.md --yes
+    mmg SETUP.base.md --yes
 fi
 
 cd $SCRIPTPATH
 
 mv $SCRIPTPATH/.readme/lang/README.md .
+mv $SCRIPTPATH/.readme/lang/SETUP.md .
