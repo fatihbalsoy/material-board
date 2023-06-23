@@ -13,7 +13,7 @@
 1. Install `gettext` for language translation (optional)
     - **Ubuntu**: `sudo apt install gettext`
     - **macOS**: `brew install gettext`
-1. Install `mmg` to generate multilingual markdown files
+1. Install `mmg` to generate multilingual markdown files (optional)
     - **Ubuntu**: `pip3 install mmg --user`
         - Add local binaries to environment path: `export PATH="$HOME/.local/bin:$PATH"`
     - **macOS**: `sudo pip3 install mmg` or follow Ubuntu instructions, find binary location and add to path.

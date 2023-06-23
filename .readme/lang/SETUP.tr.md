@@ -14,6 +14,10 @@
 1. Dil çevirisi için gettext'i kurun (isteğe bağlı)
      - **Ubuntu**: `sudo apt install gettext`
      - **macOS**: `brew install gettext`
+1. Çok dilli markdown dosyaları oluşturmak için "mmg" yükleyin (isteğe bağlı)
+     - **Ubuntu**: `pip3 install mmg --user`
+         - Ortam yoluna yerel ikili dosyalar ekleyin: `export PATH="$HOME/.local/bin:$PATH"`
+     - **macOS**: `sudo pip3 install mmg` veya Ubuntu talimatlarını takip edin, ikili konumu bulun ve yola ekleyin.
 1. Başlamak için herhangi bir npm betiğini çalıştırın.
      - Tüm betikleri listelemek için `npm run`.
 
@@ -32,6 +36,7 @@
     - `npm run build`
 - Her dile ayrı üretim için build/ dizininde derleme yapın
     - `npm run build:lang`
+- 
 
 ## wp-now
 
