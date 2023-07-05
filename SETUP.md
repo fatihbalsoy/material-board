@@ -3,6 +3,10 @@
 # Setup Developer Environment
 [![Build Status](https://img.shields.io/github/actions/workflow/status/fatihbalsoy/wp-material-design/build.yml)](https://github.com/fatihbalsoy/wp-material-design/actions/workflows/build.yml)
 
+Required Operating System: Linux, macOS, or Windows (WSL) 
+
+Windows users must setup Windows Subsystem for Linux to follow the steps tailored for Ubuntu. Instructions can be found [here](https://learn.microsoft.com/en-us/windows/wsl/install).
+
 1. Download and install [Node.js](https://nodejs.org/en/download/)
 1. Run `npm install` on this directory
 1. Install Zsh for running scripts

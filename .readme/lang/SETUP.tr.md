@@ -4,7 +4,11 @@
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/fatihbalsoy/wp-material-design/build.yml)](https://github.com/fatihbalsoy/wp-material-design/actions/workflows/build.yml)
 
-1. [Node.js](https://nodejs.org/en/download/) indirin ve kurun
+Gerekli İşletim Sistemi: Linux, macOS veya Windows (WSL)
+
+Windows kullanıcıları, Ubuntu için uyarlanmış adımları takip etme üzere Linux için Windows Alt Sistemini kurmalıdır. Talimatlar [burada](https://learn.microsoft.com/tr-tr/windows/wsl/install) bulunabilir.
+
+1. [Node.js](https://nodejs.org/tr/download) indirin ve kurun
 1. Bu dizinde `npm install` komutunu çalıştırın
 1. Komut dosyalarını çalıştırmak için Zsh'yi yükleyin
      - **Ubuntu**: `sudo apt install zsh`
@@ -35,8 +39,7 @@
 - Üretim için build/ dizininde derleme yapın
     - `npm run build`
 - Her dile ayrı üretim için build/ dizininde derleme yapın
-    - `npm run build:lang`
-- 
+    - `npm run build:lang` 
 
 ## wp-now
 

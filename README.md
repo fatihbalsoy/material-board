@@ -12,8 +12,8 @@ The Material Dashboard plugin for WordPress updates the appearance of your site'
 
 Read this document in a different language.
 
-[![English](https://img.shields.io/badge/-English-blue?style=for-the-badge)](https://github.com/fatihbalsoy/wp-material-design/blob/master/README.md)
-[![Turkish](https://img.shields.io/badge/-T%C3%BCrk%C3%A7e-red?style=for-the-badge)](https://github.com/fatihbalsoy/wp-material-design/blob/master/.readme/lang/README.tr.md)
+[![English](https://img.shields.io/badge/-English-blue?style=for-the-badge)](/README.md)
+[![Turkish](https://img.shields.io/badge/-T%C3%BCrk%C3%A7e-red?style=for-the-badge)](/.readme/lang/README.tr.md)
 
 ## Screenshots
 

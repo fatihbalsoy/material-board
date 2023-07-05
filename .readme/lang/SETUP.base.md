@@ -18,6 +18,16 @@
 [![Build Status](https://img.shields.io/github/actions/workflow/status/fatihbalsoy/wp-material-design/build.yml)](https://github.com/fatihbalsoy/wp-material-design/actions/workflows/build.yml)
 
 <!-- [en] -->
+Required Operating System: Linux, macOS, or Windows (WSL) 
+
+Windows users must setup Windows Subsystem for Linux to follow the steps tailored for Ubuntu. Instructions can be found [here](https://learn.microsoft.com/en-us/windows/wsl/install).
+
+<!-- [tr] -->
+Gerekli İşletim Sistemi: Linux, macOS veya Windows (WSL)
+
+Windows kullanıcıları, Ubuntu için uyarlanmış adımları takip etme üzere Linux için Windows Alt Sistemini kurmalıdır. Talimatlar [burada](https://learn.microsoft.com/tr-tr/windows/wsl/install) bulunabilir.
+
+<!-- [en] -->
 1. Download and install [Node.js](https://nodejs.org/en/download/)
 1. Run `npm install` on this directory
 1. Install Zsh for running scripts
@@ -36,7 +46,7 @@
     - `npm run` to list all scripts.
 
 <!-- [tr] -->
-1. [Node.js](https://nodejs.org/en/download/) indirin ve kurun
+1. [Node.js](https://nodejs.org/tr/download) indirin ve kurun
 1. Bu dizinde `npm install` komutunu çalıştırın
 1. Komut dosyalarını çalıştırmak için Zsh'yi yükleyin
      - **Ubuntu**: `sudo apt install zsh`
