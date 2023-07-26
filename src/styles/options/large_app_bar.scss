@@ -64,6 +64,21 @@ h1.wp-heading-inline,
     color: #fff !important;
 }
 
+.wp-core-ui .button,
+.wrap .page-title-action,
+.color-option,
+.wp-color-result,
+.wp-core-ui .button-primary {
+    border-color: white !important;
+}
+
+.wrap .add-new-h2,
+.wrap .add-new-h2:active,
+.wrap .page-title-action,
+.wrap .page-title-action:active {
+    color: white;
+}
+
 a.page-title-action {
     color: #fff !important;
     border-color: #fff !important;

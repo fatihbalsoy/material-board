@@ -182,7 +182,7 @@ a.et-pb-modal-save-template.button {
     text-decoration: none !important;
     text-shadow: none !important;
     border-width: 2px !important;
-    border-color: white !important;
+    border-color: var(--primary-color) !important;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -201,7 +201,7 @@ a.et-pb-modal-save-template.button {
     font-size: 13px;
     border-radius: var(--br-100px) !important;
     line-height: normal;
-    color: white;
+    color: var(--primary-color);
     cursor: pointer;
     outline: 0;
     padding: 5px 20px;
