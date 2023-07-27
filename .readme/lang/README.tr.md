@@ -30,21 +30,24 @@ Bu belgeyi farklı bir dilde okuyun.
 * İndirilen zip arşivini seçin,
 * Son olarak, Material Dashboard eklentisini etkinleştirin.
 
-### Git Updater (Otomatik Güncellemeler)
+### WP Pusher (Otomatik Güncellemeler)
 
-* Git Updater'ın en son sürümünü [buradan](https://git-updater.com/git-updater/) indirin,
+* WP Pusher'ın en son sürümünü [buradan](https://wppusher.com/) indirin,
 * WordPress panonuzda `Eklentiler` > `Yeni Ekle` bölümüne gidin,
 * Başlık yakınındaki `Eklenti Yükle` düğmesine tıklayın,
 * İndirilen zip arşivini seçin,
-* Git Updater eklentisini etkinleştirin,
-* `Git Updater Settings` > `Install Plugin` bölümüne gidin,
-* Bu depo için [link](https://github.com/fatihbalsoy/wp-material-design) adresini `Plugin URI` alanına girin,
+* WP Pusher eklentisini etkinleştirin,
+* `WP Pusher` > `Install Plugin` bölümüne gidin,
+* Github'ı Repository Host olarak seçin,
+* Bu depo için [link](fatihbalsoy/wp-material-design) adresini `Plugin Repository` alanına girin,
+* `Repository Branch`'e release-deployed girin,
 * `Install Plugin` düğmesine tıklayın,
 * Son olarak, Material Dashboard eklentisini etkinleştirin.
 
 > ### ⚠️ NOT
 >
 > Bu eklenti hala ön yayın aşamasında olup, henüz WordPress Eklenti Dizini'nde mevcut değildir.
+> WordPress'in varsayılan güncelleme mekanizmasını eklentiyi güncellemek için kullanmayın. Eklentiler sayfasında Otomatik Güncellemeler'i devre dışı bırakın.
 
 ## Özelleştirme
 

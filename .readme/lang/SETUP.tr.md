@@ -28,18 +28,18 @@ Windows kullanıcıları, Ubuntu için uyarlanmış adımları takip etme üzere
 ## NPM Betikleri
 
 - Bağımlılıkları yükleyin
-    - `npm install`
+  - `npm install`
 - WebAssembly ve SQLite kullanarak yerel sunucuyu localhost:* (WordPress Playground) üzerinde çalıştırın
-    - `npm run dev:wasm`
-    - (~/.wp-now altında wp ortamını oluşturur)
+  - `npm run dev:wasm`
+  - (~/.wp-now altında wp ortamını oluşturur)
 - Docker kullanarak yerel sunucuyu localhost:8000 (WordPress) ve localhost:8080 (phpMyAdmin) üzerinde çalıştırın
-    - `npm run dev:docker`
+  - `npm run dev:docker`
 - WordPress sunucusu barındırmadan kaynak kodunu izle ve derle
-    - `npm run dev`
+  - `npm run dev`
 - Üretim için build/ dizininde derleme yapın
-    - `npm run build`
+  - `npm run build`
 - Her dile ayrı üretim için build/ dizininde derleme yapın
-    - `npm run build:lang` 
+  - `npm run build:lang`
 
 ## wp-now
 

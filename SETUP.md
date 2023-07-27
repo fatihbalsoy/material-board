@@ -1,7 +1,6 @@
 <!-- THIS FILE IS AUTO-GENERATED. PLEASE EDIT `.readme/lang/SETUP.base.md` AND RUN `npm run mmg`. -->
 
 # Setup Developer Environment
-
 [![Build Status](https://img.shields.io/github/actions/workflow/status/fatihbalsoy/wp-material-design/build.yml)](https://github.com/fatihbalsoy/wp-material-design/actions/workflows/build.yml)
 
 Required Operating System: Linux, macOS, or Windows (WSL)
@@ -13,9 +12,6 @@ Windows users must setup Windows Subsystem for Linux to follow the steps tailore
 1. Install Zsh for running scripts
     - **Ubuntu**: `sudo apt install zsh`
     - **macOS**: Default shell for macOS 10.15+
-1. Install Zip to archive builds
-    - **Ubuntu***: `sudo apt install zip`
-    - **macOS**: System ships with `zip` command
 1. Install `wp-now` globally to run Wordpress with WebAssembly
     - `npm i -g @wp-now/wp-now`
 1. Install `gettext` for language translation (optional)
@@ -29,7 +25,6 @@ Windows users must setup Windows Subsystem for Linux to follow the steps tailore
     - `npm run` to list all scripts.
 
 ## NPM Scripts
-
 - Install dependencies
   - `npm install`
 - Run the local server at localhost:* (WordPress Playground) using WebAssembly and SQLite
@@ -57,3 +52,4 @@ wp-now start --path=build/ --wp=6.3 --php=8.0
 Username: `admin`
 
 Password: `password`
+
