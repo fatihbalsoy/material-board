@@ -3,6 +3,9 @@
 
 name: Build & Deploy Release
 
+env:
+  CI: false
+
 on:
   push:
     branches: ["release"]
@@ -39,9 +42,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
           cache-dependency-path: package-lock.json
+        
+      - run: unset CI
 
       - name: Install NPM Dependencies
-        run: npm ci
+        run: npm i
 
       - name: Build Project
         shell: zsh {0}
