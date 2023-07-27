@@ -1,0 +1,67 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: Build
+
+on:
+  push:
+    branches: ["release"]
+  pull_request:
+    branches: ["release"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Install Unix Packages
+      - name: Update Ubuntu Package Lists
+        run: sudo apt-get update;
+
+      - name: Install zsh
+        run: sudo apt-get install zsh
+
+      - name: Install gettext
+        run: sudo apt-get install gettext
+
+      # Setup & Build Node.js Project
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+          cache-dependency-path: package-lock.json
+
+      - name: Install NPM Dependencies
+        run: npm ci
+
+      - name: Build Project
+        shell: zsh {0}
+        run: npm run build
+
+      - name: Get Current Date
+        id: date
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Upload Release Build
+        uses: actions/upload-artifact@v3
+        with:
+          name: wp-material-design-release-${{ steps.date.outputs.date }}
+          path: build/_bundle/wp-material-design
+      
+      - name: Deploy Release Build
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: release-deployed
+          FOLDER: build/_bundle/wp-material-design
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
