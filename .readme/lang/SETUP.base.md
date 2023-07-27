@@ -18,7 +18,7 @@
 [![Build Status](https://img.shields.io/github/actions/workflow/status/fatihbalsoy/wp-material-design/build.yml)](https://github.com/fatihbalsoy/wp-material-design/actions/workflows/build.yml)
 
 <!-- [en] -->
-Required Operating System: Linux, macOS, or Windows (WSL) 
+Required Operating System: Linux, macOS, or Windows (WSL)
 
 Windows users must setup Windows Subsystem for Linux to follow the steps tailored for Ubuntu. Instructions can be found [here](https://learn.microsoft.com/en-us/windows/wsl/install).
 
@@ -70,33 +70,33 @@ Windows kullanıcıları, Ubuntu için uyarlanmış adımları takip etme üzere
 
 <!-- [en] -->
 - Install dependencies
-    - `npm install`
+  - `npm install`
 - Run the local server at localhost:* (WordPress Playground) using WebAssembly and SQLite
-    - `npm run dev:wasm`
-    - (creates wp environment at ~/.wp-now)
+  - `npm run dev:wasm`
+  - (creates wp environment at ~/.wp-now)
 - Run the local server at localhost:8000 (WordPress) and localhost:8080 (phpMyAdmin) using Docker
-    - `npm run dev:docker`
+  - `npm run dev:docker`
 - Watch & compile source code without hosting a WordPress server
-    - `npm run dev`
+  - `npm run dev`
 - Build for production in the build/ directory
-    - `npm run build`
+  - `npm run build`
 - Build for production in each language in the build/ directory
-    - `npm run build:lang`
+  - `npm run build:lang`
 
 <!-- [tr] -->
 - Bağımlılıkları yükleyin
-    - `npm install`
+  - `npm install`
 - WebAssembly ve SQLite kullanarak yerel sunucuyu localhost:* (WordPress Playground) üzerinde çalıştırın
-    - `npm run dev:wasm`
-    - (~/.wp-now altında wp ortamını oluşturur)
+  - `npm run dev:wasm`
+  - (~/.wp-now altında wp ortamını oluşturur)
 - Docker kullanarak yerel sunucuyu localhost:8000 (WordPress) ve localhost:8080 (phpMyAdmin) üzerinde çalıştırın
-    - `npm run dev:docker`
+  - `npm run dev:docker`
 - WordPress sunucusu barındırmadan kaynak kodunu izle ve derle
-    - `npm run dev`
+  - `npm run dev`
 - Üretim için build/ dizininde derleme yapın
-    - `npm run build`
+  - `npm run build`
 - Her dile ayrı üretim için build/ dizininde derleme yapın
-    - `npm run build:lang` 
+  - `npm run build:lang`
 
 <!-- [common] -->
 ## wp-now
