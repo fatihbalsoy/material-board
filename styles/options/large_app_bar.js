@@ -1,0 +1,1 @@
+window.onload=function(){var a=document.getElementById("wpwrap"),n=document.createElement("div");n.className="large-app-bar",a.insertBefore(n,a.childNodes[1])};
