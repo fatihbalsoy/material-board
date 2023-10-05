@@ -1,10 +1,10 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Material Dashboard v0.3.0\n"
-"POT-Creation-Date: 2023-05-28 17:55-0400\n"
-"PO-Revision-Date: 2023-05-28 18:41-0400\n"
+"Project-Id-Version: material-dashboard\n"
+"POT-Creation-Date: 2023-05-28 16:52-0400\n"
+"PO-Revision-Date: 2023-10-05 19:36\n"
 "Last-Translator: \n"
-"Language-Team: Fatih Balsoy\n"
+"Language-Team: German\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -12,8 +12,13 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.3.1\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __;_e;translate\n"
+"X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Crowdin-Project: material-dashboard\n"
+"X-Crowdin-Project-ID: 598877\n"
+"X-Crowdin-Language: de\n"
+"X-Crowdin-File: /master/src/languages/source.po\n"
+"X-Crowdin-File-ID: 22\n"
 
 #: settings/index.php:75
 msgid "Material Dashboard"
@@ -29,7 +34,7 @@ msgstr "Entwickelt von"
 
 #: settings/index.php:131
 msgid "Version"
-msgstr "Version"
+msgstr ""
 
 #: settings/index.php:133
 msgid "Request Features & Report Issues"
@@ -97,7 +102,7 @@ msgstr "Experimentell"
 
 #: settings/options/theme.php:7
 msgid "Theme"
-msgstr "Theme"
+msgstr ""
 
 #: settings/options/theme.php:12
 msgid "Light"
@@ -109,7 +114,7 @@ msgstr "Dunkel"
 
 #: settings/options/theme.php:18
 msgid "System"
-msgstr "System"
+msgstr ""
 
 #: settings/options/theme.php:22
 msgid "Dark mode may not be compatible with third-party plugins."
@@ -122,3 +127,4 @@ msgstr "Einstellungen"
 #: wp-material-design.php:225
 msgid "You do not have sufficient permissions to access this page."
 msgstr "Sie haben nicht ausreichende Berechtigungen, um auf diese Seite zuzugreifen."
+
