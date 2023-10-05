@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: material-dashboard\n"
 "POT-Creation-Date: 2023-10-05 16:20-0400\n"
-"PO-Revision-Date: 2023-10-05 21:33\n"
+"PO-Revision-Date: 2023-10-05 22:36\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: settings/index.php:74
 msgid "Material Dashboard"
-msgstr ""
+msgstr "Material Dashboard"
 
 #: settings/index.php:89
 msgid "Appearance"
@@ -34,7 +34,7 @@ msgstr ""
 
 #: settings/index.php:132
 msgid "Version"
-msgstr ""
+msgstr "Versión"
 
 #: settings/index.php:134
 msgid "Request Features & Report Issues"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: settings/options/colors.php:15
 msgid "Colors"
-msgstr ""
+msgstr "Colores"
 
 #: settings/options/colors.php:18
 msgid "Primary (Toolbars and Navigations)"
@@ -78,7 +78,7 @@ msgstr ""
 
 #: settings/options/icons.php:6
 msgid "Icons"
-msgstr ""
+msgstr "Iconos"
 
 #: settings/options/large_app_bar.php:7
 msgid "Large App Bar"
@@ -94,11 +94,11 @@ msgstr ""
 
 #: settings/options/large_app_bar.php:21
 msgid "Experimental"
-msgstr ""
+msgstr "Experimental"
 
 #: settings/options/theme.php:7
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: settings/options/theme.php:12
 msgid "Light"
@@ -110,7 +110,7 @@ msgstr ""
 
 #: settings/options/theme.php:18
 msgid "System"
-msgstr ""
+msgstr "Sistema"
 
 #: settings/options/theme.php:23
 msgid "Dark mode may not be compatible with third-party plugins."
@@ -118,7 +118,7 @@ msgstr ""
 
 #: wp-material-design.php:138
 msgid "Settings"
-msgstr ""
+msgstr "Configuración"
 
 #: wp-material-design.php:228
 msgid "You do not have sufficient permissions to access this page."
