@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: material-dashboard\n"
 "POT-Creation-Date: 2023-05-28 16:52-0400\n"
-"PO-Revision-Date: 2023-10-05 19:36\n"
+"PO-Revision-Date: 2023-10-05 20:06\n"
 "Last-Translator: \n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -34,7 +34,7 @@ msgstr "Entwickelt von"
 
 #: settings/index.php:131
 msgid "Version"
-msgstr ""
+msgstr "Version"
 
 #: settings/index.php:133
 msgid "Request Features & Report Issues"
@@ -66,7 +66,7 @@ msgstr "Schriftart"
 
 #: settings/options/font.php:13
 msgid "WordPress Default"
-msgstr "WordPress Standard"
+msgstr "WordPress-Standard"
 
 #: settings/options/header_serif.php:6
 msgid "Serif Header"
@@ -102,7 +102,7 @@ msgstr "Experimentell"
 
 #: settings/options/theme.php:7
 msgid "Theme"
-msgstr ""
+msgstr "Thema"
 
 #: settings/options/theme.php:12
 msgid "Light"
@@ -114,7 +114,7 @@ msgstr "Dunkel"
 
 #: settings/options/theme.php:18
 msgid "System"
-msgstr ""
+msgstr "System"
 
 #: settings/options/theme.php:22
 msgid "Dark mode may not be compatible with third-party plugins."
