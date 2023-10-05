@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: material-dashboard\n"
-"POT-Creation-Date: 2023-05-28 16:52-0400\n"
-"PO-Revision-Date: 2023-10-05 19:46\n"
+"POT-Creation-Date: 2023-10-05 16:20-0400\n"
+"PO-Revision-Date: 2023-10-05 20:26\n"
 "Last-Translator: \n"
 "Language-Team: Turkish\n"
 "Language: tr\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -20,23 +20,23 @@ msgstr ""
 "X-Crowdin-File: /master/src/languages/source.po\n"
 "X-Crowdin-File-ID: 22\n"
 
-#: settings/index.php:75
+#: settings/index.php:74
 msgid "Material Dashboard"
 msgstr "Material Dashboard"
 
-#: settings/index.php:91
+#: settings/index.php:89
 msgid "Appearance"
 msgstr "Görünüm"
 
-#: settings/index.php:129
+#: settings/index.php:130
 msgid "Developed by"
 msgstr "Geliştirici:"
 
-#: settings/index.php:131
+#: settings/index.php:132
 msgid "Version"
 msgstr "Versiyon"
 
-#: settings/index.php:133
+#: settings/index.php:134
 msgid "Request Features & Report Issues"
 msgstr "Özellikler İsteyin ve Sorunları Bildirin"
 
@@ -56,7 +56,7 @@ msgstr "Vurgu (Metin Seçimleri ve Kontrolleri)"
 msgid "Rounded Corners"
 msgstr "Yuvarlatılmış köşeler"
 
-#: settings/options/corners.php:9
+#: settings/options/corners.php:10
 msgid "You can choose to turn on or off the rounded corners around cards, buttons, and text fields."
 msgstr "Kartların, düğmelerin ve metin alanlarının etrafındaki yuvarlatılmış köşeleri açmayı veya kapatmayı seçebilirsiniz."
 
@@ -64,7 +64,7 @@ msgstr "Kartların, düğmelerin ve metin alanlarının etrafındaki yuvarlatıl
 msgid "Font"
 msgstr "Yazı tipi"
 
-#: settings/options/font.php:13
+#: settings/options/font.php:14
 msgid "WordPress Default"
 msgstr "WordPress Varsayılanı"
 
@@ -72,7 +72,7 @@ msgstr "WordPress Varsayılanı"
 msgid "Serif Header"
 msgstr "Serif Başlığı"
 
-#: settings/options/header_serif.php:9
+#: settings/options/header_serif.php:10
 msgid "Enhance your headers with an editorial touch by enabling serif fonts."
 msgstr "Serif yazı tiplerini etkinleştirerek başlıklarınıza editoryal bir hava katın."
 
@@ -85,18 +85,14 @@ msgid "Large App Bar"
 msgstr "Büyük Uygulama Çubuğu"
 
 #: settings/options/large_app_bar.php:13
-msgid "Variant"
-msgstr "Varyant"
-
-#: settings/options/large_app_bar.php:17
 msgid "Admin Bar on Top"
 msgstr "Yönetici Çubuğu Üstte"
 
-#: settings/options/large_app_bar.php:20
+#: settings/options/large_app_bar.php:16
 msgid "Admin Menu on Top"
 msgstr "Yönetici Menüsü Üstte"
 
-#: settings/options/large_app_bar.php:25
+#: settings/options/large_app_bar.php:21
 msgid "Experimental"
 msgstr "Deneysel"
 
@@ -116,7 +112,7 @@ msgstr "Koyu"
 msgid "System"
 msgstr "Sistem"
 
-#: settings/options/theme.php:22
+#: settings/options/theme.php:23
 msgid "Dark mode may not be compatible with third-party plugins."
 msgstr "Koyu tema modu, üçüncü taraf eklentilerle uyumlu olmayabilir."
 
@@ -124,7 +120,7 @@ msgstr "Koyu tema modu, üçüncü taraf eklentilerle uyumlu olmayabilir."
 msgid "Settings"
 msgstr "Ayarlar"
 
-#: wp-material-design.php:225
+#: wp-material-design.php:228
 msgid "You do not have sufficient permissions to access this page."
 msgstr "Bu sayfaya erişmek için yeterli izniniz yok."
 
