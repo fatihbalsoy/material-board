@@ -42,6 +42,8 @@ Bu belgeyi farklı bir dilde okuyun.
 [![English](https://img.shields.io/badge/-English-blue?style=for-the-badge)](/README.md)
 [![Turkish](https://img.shields.io/badge/-T%C3%BCrk%C3%A7e-red?style=for-the-badge)](/.readme/lang/README.tr.md)
 
+[![Crowdin](https://badges.crowdin.net/material-dashboard/localized.svg)](https://crowdin.com/project/material-dashboard)
+
 <!-- [en] -->
 ## Screenshots
 
@@ -188,7 +190,7 @@ Geliştirici ortamını kurmaya ve projeyi oluşturmaya başlamak için [SETUP.m
 Feel free to submit a pull request for one of the following:
 
 * New features
-* Language translation
+* Language translation [(Crowdin Page)](https://crowdin.com/project/material-dashboard)
 * Support third-party plugins or themes
 * Fixing bugs and security vulnurabilities
 
@@ -198,7 +200,7 @@ Feel free to submit a pull request for one of the following:
 Aşağıdakilerden biri için bir "pull request" (çekme isteği) göndermekten çekinmeyin:
 
 * Yeni özellikler
-* Dil çevirisi
+* Dil çevirisi [(Crowdin Sayfası)](https://crowdin.com/project/material-dashboard)
 * Üçüncü taraf eklentileri veya temaları destekleme
 * Hataları ve güvenlik açıklarını düzeltme
 

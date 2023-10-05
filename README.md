@@ -15,6 +15,8 @@ Read this document in a different language.
 [![English](https://img.shields.io/badge/-English-blue?style=for-the-badge)](/README.md)
 [![Turkish](https://img.shields.io/badge/-T%C3%BCrk%C3%A7e-red?style=for-the-badge)](/.readme/lang/README.tr.md)
 
+[![Crowdin](https://badges.crowdin.net/material-dashboard/localized.svg)](https://crowdin.com/project/material-dashboard)
+
 ## Screenshots
 
 ![Screenshots](/.readme/dashboard-welcome.png?raw=true  "Screenshots")
@@ -82,7 +84,7 @@ Check out the [SETUP.md](SETUP.md) file to get started on setting up the develop
 Feel free to submit a pull request for one of the following:
 
 * New features
-* Language translation
+* Language translation [(Crowdin Page)](https://crowdin.com/project/material-dashboard)
 * Support third-party plugins or themes
 * Fixing bugs and security vulnurabilities
 
