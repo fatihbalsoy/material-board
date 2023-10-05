@@ -26,6 +26,9 @@ else
 
     # Loop through all .po files in the src/languages directory
     for po_file in $SCRIPTPATH/src/languages/*.po; do
+        if [[ $(basename $po_file) == "source.po" ]]; then
+            continue # Skip source file
+        fi
         # Extract the language code from the filename
         filename=$(basename "$po_file")
         lang_code=${filename#$PLUGIN_BUNDLE-}
