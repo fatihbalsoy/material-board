@@ -1,0 +1,126 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: material-dashboard\n"
+"POT-Creation-Date: 2023-10-05 16:20-0400\n"
+"PO-Revision-Date: 2023-10-05 22:37\n"
+"Last-Translator: \n"
+"Language-Team: Urdu (India)\n"
+"Language: ur\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Crowdin-Project: material-dashboard\n"
+"X-Crowdin-Project-ID: 598877\n"
+"X-Crowdin-Language: ur-IN\n"
+"X-Crowdin-File: /master/src/languages/source.po\n"
+"X-Crowdin-File-ID: 22\n"
+
+#: settings/index.php:74
+msgid "Material Dashboard"
+msgstr ""
+
+#: settings/index.php:89
+msgid "Appearance"
+msgstr ""
+
+#: settings/index.php:130
+msgid "Developed by"
+msgstr ""
+
+#: settings/index.php:132
+msgid "Version"
+msgstr ""
+
+#: settings/index.php:134
+msgid "Request Features & Report Issues"
+msgstr ""
+
+#: settings/options/colors.php:15
+msgid "Colors"
+msgstr ""
+
+#: settings/options/colors.php:18
+msgid "Primary (Toolbars and Navigations)"
+msgstr ""
+
+#: settings/options/colors.php:24
+msgid "Accent (Text Selections and Controls)"
+msgstr ""
+
+#: settings/options/corners.php:6
+msgid "Rounded Corners"
+msgstr ""
+
+#: settings/options/corners.php:10
+msgid "You can choose to turn on or off the rounded corners around cards, buttons, and text fields."
+msgstr ""
+
+#: settings/options/font.php:6
+msgid "Font"
+msgstr ""
+
+#: settings/options/font.php:14
+msgid "WordPress Default"
+msgstr ""
+
+#: settings/options/header_serif.php:6
+msgid "Serif Header"
+msgstr ""
+
+#: settings/options/header_serif.php:10
+msgid "Enhance your headers with an editorial touch by enabling serif fonts."
+msgstr ""
+
+#: settings/options/icons.php:6
+msgid "Icons"
+msgstr ""
+
+#: settings/options/large_app_bar.php:7
+msgid "Large App Bar"
+msgstr ""
+
+#: settings/options/large_app_bar.php:13
+msgid "Admin Bar on Top"
+msgstr ""
+
+#: settings/options/large_app_bar.php:16
+msgid "Admin Menu on Top"
+msgstr ""
+
+#: settings/options/large_app_bar.php:21
+msgid "Experimental"
+msgstr ""
+
+#: settings/options/theme.php:7
+msgid "Theme"
+msgstr ""
+
+#: settings/options/theme.php:12
+msgid "Light"
+msgstr ""
+
+#: settings/options/theme.php:15
+msgid "Dark"
+msgstr ""
+
+#: settings/options/theme.php:18
+msgid "System"
+msgstr ""
+
+#: settings/options/theme.php:23
+msgid "Dark mode may not be compatible with third-party plugins."
+msgstr ""
+
+#: wp-material-design.php:138
+msgid "Settings"
+msgstr ""
+
+#: wp-material-design.php:228
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
