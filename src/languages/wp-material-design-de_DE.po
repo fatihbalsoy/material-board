@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: material-dashboard\n"
 "POT-Creation-Date: 2023-10-05 16:20-0400\n"
-"PO-Revision-Date: 2023-10-05 23:11\n"
+"PO-Revision-Date: 2023-10-06 07:44\n"
 "Last-Translator: \n"
 "Language-Team: German\n"
 "Language: de_DE\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: settings/index.php:74
 msgid "Material Dashboard"
-msgstr "Material-Dashboard"
+msgstr ""
 
 #: settings/index.php:89
 msgid "Appearance"
