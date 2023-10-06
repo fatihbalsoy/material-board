@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: material-dashboard\n"
 "POT-Creation-Date: 2023-10-05 16:20-0400\n"
-"PO-Revision-Date: 2023-10-06 18:06\n"
+"PO-Revision-Date: 2023-10-06 19:52\n"
 "Last-Translator: \n"
 "Language-Team: English, India\n"
 "Language: en_IN\n"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: settings/options/colors.php:15
 msgid "Colors"
-msgstr ""
+msgstr "Colours"
 
 #: settings/options/colors.php:18
 msgid "Primary (Toolbars and Navigations)"
