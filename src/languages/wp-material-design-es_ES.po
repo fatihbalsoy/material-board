@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: material-dashboard\n"
 "POT-Creation-Date: 2023-10-05 16:20-0400\n"
-"PO-Revision-Date: 2023-10-05 23:11\n"
+"PO-Revision-Date: 2023-10-06 19:52\n"
 "Last-Translator: \n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
@@ -22,27 +22,27 @@ msgstr ""
 
 #: settings/index.php:74
 msgid "Material Dashboard"
-msgstr ""
+msgstr "Material Dashboard"
 
 #: settings/index.php:89
 msgid "Appearance"
-msgstr ""
+msgstr "Apariencia"
 
 #: settings/index.php:130
 msgid "Developed by"
-msgstr ""
+msgstr "Desarrollado por"
 
 #: settings/index.php:132
 msgid "Version"
-msgstr ""
+msgstr "Versión"
 
 #: settings/index.php:134
 msgid "Request Features & Report Issues"
-msgstr ""
+msgstr "Características de Solicitud & Reportar Problemas"
 
 #: settings/options/colors.php:15
 msgid "Colors"
-msgstr ""
+msgstr "Colores"
 
 #: settings/options/colors.php:18
 msgid "Primary (Toolbars and Navigations)"
@@ -54,7 +54,7 @@ msgstr ""
 
 #: settings/options/corners.php:6
 msgid "Rounded Corners"
-msgstr ""
+msgstr "Esquinas Redondeadas"
 
 #: settings/options/corners.php:10
 msgid "You can choose to turn on or off the rounded corners around cards, buttons, and text fields."
@@ -78,7 +78,7 @@ msgstr ""
 
 #: settings/options/icons.php:6
 msgid "Icons"
-msgstr ""
+msgstr "Iconos"
 
 #: settings/options/large_app_bar.php:7
 msgid "Large App Bar"
@@ -94,23 +94,23 @@ msgstr ""
 
 #: settings/options/large_app_bar.php:21
 msgid "Experimental"
-msgstr ""
+msgstr "Experimental"
 
 #: settings/options/theme.php:7
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: settings/options/theme.php:12
 msgid "Light"
-msgstr ""
+msgstr "Claro"
 
 #: settings/options/theme.php:15
 msgid "Dark"
-msgstr ""
+msgstr "Oscuro"
 
 #: settings/options/theme.php:18
 msgid "System"
-msgstr ""
+msgstr "Sistema"
 
 #: settings/options/theme.php:23
 msgid "Dark mode may not be compatible with third-party plugins."
@@ -118,7 +118,7 @@ msgstr ""
 
 #: wp-material-design.php:138
 msgid "Settings"
-msgstr ""
+msgstr "Configuración"
 
 #: wp-material-design.php:228
 msgid "You do not have sufficient permissions to access this page."
