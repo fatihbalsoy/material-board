@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: material-dashboard\n"
 "POT-Creation-Date: 2023-10-05 16:20-0400\n"
-"PO-Revision-Date: 2023-10-05 23:11\n"
+"PO-Revision-Date: 2023-10-07 05:45\n"
 "Last-Translator: \n"
 "Language-Team: Arabic\n"
 "Language: ar_SA\n"
@@ -26,15 +26,15 @@ msgstr ""
 
 #: settings/index.php:89
 msgid "Appearance"
-msgstr ""
+msgstr "مظهر"
 
 #: settings/index.php:130
 msgid "Developed by"
-msgstr ""
+msgstr "تم تطويره بواسطة"
 
 #: settings/index.php:132
 msgid "Version"
-msgstr ""
+msgstr "الإصدار"
 
 #: settings/index.php:134
 msgid "Request Features & Report Issues"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: settings/options/colors.php:15
 msgid "Colors"
-msgstr ""
+msgstr "الألوان"
 
 #: settings/options/colors.php:18
 msgid "Primary (Toolbars and Navigations)"
@@ -62,7 +62,7 @@ msgstr ""
 
 #: settings/options/font.php:6
 msgid "Font"
-msgstr ""
+msgstr "الخط"
 
 #: settings/options/font.php:14
 msgid "WordPress Default"
