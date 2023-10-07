@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: material-dashboard\n"
 "POT-Creation-Date: 2023-10-05 16:20-0400\n"
-"PO-Revision-Date: 2023-10-06 18:06\n"
+"PO-Revision-Date: 2023-10-07 05:45\n"
 "Last-Translator: \n"
 "Language-Team: Finnish\n"
 "Language: fi_FI\n"
@@ -26,15 +26,15 @@ msgstr ""
 
 #: settings/index.php:89
 msgid "Appearance"
-msgstr ""
+msgstr "Ulkonäkö"
 
 #: settings/index.php:130
 msgid "Developed by"
-msgstr ""
+msgstr "Kehittäjä"
 
 #: settings/index.php:132
 msgid "Version"
-msgstr ""
+msgstr "Versio"
 
 #: settings/index.php:134
 msgid "Request Features & Report Issues"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: settings/options/colors.php:15
 msgid "Colors"
-msgstr ""
+msgstr "Värit"
 
 #: settings/options/colors.php:18
 msgid "Primary (Toolbars and Navigations)"
@@ -62,7 +62,7 @@ msgstr ""
 
 #: settings/options/font.php:6
 msgid "Font"
-msgstr ""
+msgstr "Fontti"
 
 #: settings/options/font.php:14
 msgid "WordPress Default"
@@ -78,7 +78,7 @@ msgstr ""
 
 #: settings/options/icons.php:6
 msgid "Icons"
-msgstr ""
+msgstr "Kuvakkeet"
 
 #: settings/options/large_app_bar.php:7
 msgid "Large App Bar"
@@ -98,19 +98,19 @@ msgstr ""
 
 #: settings/options/theme.php:7
 msgid "Theme"
-msgstr ""
+msgstr "Teema"
 
 #: settings/options/theme.php:12
 msgid "Light"
-msgstr ""
+msgstr "Kevyt"
 
 #: settings/options/theme.php:15
 msgid "Dark"
-msgstr ""
+msgstr "Tumma"
 
 #: settings/options/theme.php:18
 msgid "System"
-msgstr ""
+msgstr "Järjestelmä"
 
 #: settings/options/theme.php:23
 msgid "Dark mode may not be compatible with third-party plugins."
@@ -118,7 +118,7 @@ msgstr ""
 
 #: wp-material-design.php:138
 msgid "Settings"
-msgstr ""
+msgstr "Asetukset"
 
 #: wp-material-design.php:228
 msgid "You do not have sufficient permissions to access this page."
