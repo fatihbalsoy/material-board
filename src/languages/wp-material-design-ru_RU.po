@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: material-dashboard\n"
 "POT-Creation-Date: 2023-10-05 16:20-0400\n"
-"PO-Revision-Date: 2023-10-05 23:11\n"
+"PO-Revision-Date: 2023-10-07 05:45\n"
 "Last-Translator: \n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
@@ -30,11 +30,11 @@ msgstr ""
 
 #: settings/index.php:130
 msgid "Developed by"
-msgstr ""
+msgstr "Разработан"
 
 #: settings/index.php:132
 msgid "Version"
-msgstr ""
+msgstr "Версия"
 
 #: settings/index.php:134
 msgid "Request Features & Report Issues"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: settings/options/colors.php:15
 msgid "Colors"
-msgstr ""
+msgstr "Цвета"
 
 #: settings/options/colors.php:18
 msgid "Primary (Toolbars and Navigations)"
@@ -62,7 +62,7 @@ msgstr ""
 
 #: settings/options/font.php:6
 msgid "Font"
-msgstr ""
+msgstr "Шрифт"
 
 #: settings/options/font.php:14
 msgid "WordPress Default"
@@ -78,7 +78,7 @@ msgstr ""
 
 #: settings/options/icons.php:6
 msgid "Icons"
-msgstr ""
+msgstr "Значки"
 
 #: settings/options/large_app_bar.php:7
 msgid "Large App Bar"
@@ -94,23 +94,23 @@ msgstr ""
 
 #: settings/options/large_app_bar.php:21
 msgid "Experimental"
-msgstr ""
+msgstr "Экспериментальный"
 
 #: settings/options/theme.php:7
 msgid "Theme"
-msgstr ""
+msgstr "Тема"
 
 #: settings/options/theme.php:12
 msgid "Light"
-msgstr ""
+msgstr "Светлая"
 
 #: settings/options/theme.php:15
 msgid "Dark"
-msgstr ""
+msgstr "Темная"
 
 #: settings/options/theme.php:18
 msgid "System"
-msgstr ""
+msgstr "Системная"
 
 #: settings/options/theme.php:23
 msgid "Dark mode may not be compatible with third-party plugins."
@@ -118,7 +118,7 @@ msgstr ""
 
 #: wp-material-design.php:138
 msgid "Settings"
-msgstr ""
+msgstr "Настройки"
 
 #: wp-material-design.php:228
 msgid "You do not have sufficient permissions to access this page."
