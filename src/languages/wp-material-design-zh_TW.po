@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: material-dashboard\n"
 "POT-Creation-Date: 2023-10-05 16:20-0400\n"
-"PO-Revision-Date: 2023-10-05 23:11\n"
+"PO-Revision-Date: 2023-10-09 05:11\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Traditional\n"
 "Language: zh_TW\n"
@@ -38,6 +38,10 @@ msgstr ""
 
 #: settings/index.php:134
 msgid "Request Features & Report Issues"
+msgstr ""
+
+#: settings/index.php:135
+msgid "Help Translate Material Dashboard"
 msgstr ""
 
 #: settings/options/colors.php:15
