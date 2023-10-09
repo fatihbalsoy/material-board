@@ -57,8 +57,8 @@ jobs:
           name: wp-material-design-nightly-${{ steps.date.outputs.date }}
           path: build/_bundle/wp-material-design
       
-      - name: Upload Nightly Build w/o Date
-        uses: actions/upload-artifact@v3
-        with:
-          name: wp-material-design-nightly
-          path: build/_bundle/wp-material-design
+      # - name: Upload Nightly Build w/o Date
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: wp-material-design-nightly
+      #     path: build/_bundle/wp-material-design

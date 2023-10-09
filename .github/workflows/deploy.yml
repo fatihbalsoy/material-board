@@ -62,11 +62,11 @@ jobs:
           name: wp-material-design-release-${{ steps.date.outputs.date }}
           path: build/_bundle/wp-material-design
 
-      - name: Upload Release Build w/o Date
-        uses: actions/upload-artifact@v3
-        with:
-          name: wp-material-design-release
-          path: build/_bundle/wp-material-design
+      # - name: Upload Release Build w/o Date
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: wp-material-design-release
+      #     path: build/_bundle/wp-material-design
       
       - name: Deploy Release Build
         uses: s0/git-publish-subdir-action@develop

@@ -23,6 +23,7 @@ else
     typeset -A dictionary=()
     dictionary["fr_FR"]="fr_CA"
     dictionary["de_DE"]="de_AT de_CH de_DE_formal de_DE_informal"
+    dictionary["en_GB"]="en_CA en_NZ en_AU en_ZA"
 
     # Loop through all .po files in the src/languages directory
     for po_file in $SCRIPTPATH/src/languages/*.po; do

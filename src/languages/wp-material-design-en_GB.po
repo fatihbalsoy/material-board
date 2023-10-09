@@ -40,6 +40,10 @@ msgstr "Version"
 msgid "Request Features & Report Issues"
 msgstr "Request Features & Report Issues"
 
+#: settings/index.php:135
+msgid "Help Translate Material Dashboard"
+msgstr "Help Translate Material Dashboard"
+
 #: settings/options/colors.php:15
 msgid "Colors"
 msgstr "Colours"
