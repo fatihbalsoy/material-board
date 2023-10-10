@@ -125,14 +125,14 @@ if (curl_exists()) {
             submit_button();
             ?>
             <!-- FOOTER -->
-            <!-- Developed by [Author] | Version | Request Features & Report Issues | Help Translate Material Dashboard         -->
+            <!-- Developed by [Author] | Version | Request Features & Report Issues | Help translate this page         -->
             <div>
                 <?php _e('Developed by', 'wp-material-design') ?>
                 <a href="<?php echo $GLOBALS["fb_mdp_plugin_author_website"] ?>"><?php echo $GLOBALS["fb_mdp_plugin_author"] ?></a>
                 | <?php _e('Version', 'wp-material-design') ?>
                 <?php echo $GLOBALS["fb_mdp_plugin_version"] ?> | <a href="<?php echo $GLOBALS["fb_mdp_plugin_report_bugs"] ?>">
                     <?php _e('Request Features & Report Issues', 'wp-material-design') ?></a> | 
-                    <a href="<?php echo $GLOBALS["fb_mdp_plugin_crowdin"] ?>"><?php _e('Help Translate Material Dashboard', 'wp-material-design') ?></a>
+                    <a href="<?php echo $GLOBALS["fb_mdp_plugin_crowdin"] ?>"><?php _e('Help translate this page', 'wp-material-design') ?></a>
             </div>
         </div>
 

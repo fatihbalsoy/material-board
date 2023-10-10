@@ -41,8 +41,8 @@ msgid "Request Features & Report Issues"
 msgstr "Características de Solicitud & Reportar Problemas"
 
 #: settings/index.php:135
-msgid "Help Translate Material Dashboard"
-msgstr "Ayuda a traducir Material Dashboard"
+msgid "Help translate this page"
+msgstr "Ayuda a traducir esta página"
 
 #: settings/options/colors.php:15
 msgid "Colors"
