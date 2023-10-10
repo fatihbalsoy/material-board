@@ -78,9 +78,10 @@ input[type=checkbox]:focus {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+// TODO: focus color when checked should be the accent color with 30% opacity
 input[type=checkbox]:checked:focus {
-    box-shadow: 0px 0px 0px 5px rgba(198, 40, 40, 0.3) !important;
-    background-color: rgba(198, 40, 40, 0.3);
+    // box-shadow: 0px 0px 0px 5px rgba(var(--accent-color), 0.3) !important;
+    // background-color: rgba(var(--accent-color), 0.3);
 }
 
 .widefat tfoot td input[type=checkbox]:before,

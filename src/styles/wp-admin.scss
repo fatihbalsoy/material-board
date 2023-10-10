@@ -19,7 +19,6 @@
 // 6. Page-specific styles
 // 7. Themes
 
-@import url("icons/material-icons.css");
 @import url('shared.css');
 
 table.googlesitekit-table__wrapper.googlesitekit-table__wrapper--2-col {
@@ -124,9 +123,8 @@ table.googlesitekit-table__wrapper.googlesitekit-table__wrapper--2-col {
 
 .theme-browser .theme {
     border: none;
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.38) !important;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.38) !important;
     border-radius: var(--br-10px);
+    overflow: hidden;
     transition: all 0.3s ease;
 }
 

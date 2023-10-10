@@ -19,7 +19,7 @@
 // 7. Themes
 
 @import url('shared.css');
-/* @import url('icons/material-icons.css'); */
+// @import url('icons/material-icons.css');
 
 body {
     overflow: hidden !important;
@@ -151,6 +151,13 @@ p.forgetmenot {
 
 .login #login_error:before {
     content: 'error';
+}
+
+span.dashicons.dashicons-visibility,
+span.dashicons.dashicons-hidden {
+    top: 0 !important;
+    display: block !important;
+    color: var(--primary-color);
 }
 
 .dashicons-visibility:before {

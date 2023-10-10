@@ -221,6 +221,14 @@ class MaterialDashboardPlugin
             wp_dequeue_style('large_admin_bar_variant');
             wp_dequeue_script('large_admin_bar_script');
         }
+
+        //? -- ICONS -- ?//
+        // TODO: be able to disable material icons on login page
+        if ($this->get_option_or_default('mdp_icons') == 'md-icons' && !is_login()) {
+            wp_enqueue_style('material-icons', plugins_url('styles/icons/material-icons.css', __FILE__));
+        } else {
+            wp_dequeue_style('material-icons');
+        }
     }
 
     /** Plugin Options **/

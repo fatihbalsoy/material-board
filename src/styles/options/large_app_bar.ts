@@ -6,7 +6,7 @@
  *   Copyright © 2023 Fatih Balsoy. All rights reserved.
  */
 
-// TODO: Do this in PHP instead
+// TODO: Do this in PHP instead. Also wrap header elements into this large app bar.
 window.onload = function () {
     var wrap = document.getElementById("wpwrap")
     var largeAppBar = document.createElement("div")
