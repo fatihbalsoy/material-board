@@ -45,7 +45,9 @@ form#comments-form,
 .media-upload-form,
 form#posts-filter,
 div#col-left,
-.mdwp-card {
+.mdwp-card,
+.upload-plugin .wp-upload-form,
+.upload-theme .wp-upload-form {
     border-radius: var(--br-10px) !important;
     padding: 15px !important;
     background: var(--light-back-color);
