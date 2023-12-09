@@ -17,11 +17,11 @@ msgstr ""
 "X-Crowdin-Project: material-dashboard\n"
 "X-Crowdin-Project-ID: 598877\n"
 "X-Crowdin-Language: ar\n"
-"X-Crowdin-File: /master/src/languages/wp-material-design-en_US.po\n"
+"X-Crowdin-File: /master/src/languages/material-board-en_US.po\n"
 "X-Crowdin-File-ID: 24\n"
 
 #: settings/index.php:74
-msgid "Material Dashboard"
+msgid "Material Board"
 msgstr ""
 
 #: settings/index.php:89
@@ -120,11 +120,11 @@ msgstr ""
 msgid "Dark mode may not be compatible with third-party plugins."
 msgstr ""
 
-#: wp-material-design.php:138
+#: material-board.php:138
 msgid "Settings"
 msgstr ""
 
-#: wp-material-design.php:228
+#: material-board.php:228
 msgid "You do not have sufficient permissions to access this page."
 msgstr ""
 

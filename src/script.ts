@@ -1,6 +1,6 @@
 /*
  *   script.js
- *   wp-material-design
+ *   material-board
  * 
  *   Created by codespace on 3/21/23
  *   Copyright © 2023 Fatih Balsoy. All rights reserved.

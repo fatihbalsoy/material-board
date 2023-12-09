@@ -2,14 +2,14 @@
 
 # ![Material Design Dashboard](/.readme/banner.png?raw=true  "Material Design Dashboard")
 
-WordPress için Material Dashboard eklentisi, sitenizin gösterge panelinin görünümünü [Google'ın Material Design Kılavuzlarına](https://material.io/design) dayalı daha modern bir tasarıma dönüştürür. Bu eklenti mevcut gösterge paneli düzeninizi korur, önemli değişiklikler yapmaz ve herhangi bir markalama veya tanıtım içeriği içermez. Kullanımı kolaydır ve ücretsizdir.
+WordPress için Material Board eklentisi, sitenizin gösterge panelinin görünümünü [Google'ın Material Design Kılavuzlarına](https://material.io/design) dayalı daha modern bir tasarıma dönüştürür. Bu eklenti mevcut gösterge paneli düzeninizi korur, önemli değişiklikler yapmaz ve herhangi bir markalama veya tanıtım içeriği içermez. Kullanımı kolaydır ve ücretsizdir.
 
 ![Ön-sürüm](https://img.shields.io/badge/ön--sürüm-red?style=for-the-badge)
-[![İndir](https://img.shields.io/badge/-İndir-2246CC?style=for-the-badge&logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCA0OCA0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxuczpzZXJpZj0iaHR0cDovL3d3dy5zZXJpZi5jb20vIiBzdHlsZT0iZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjI7Ij48cGF0aCBkPSJNMTEsNDBjLTAuOCwwIC0xLjUsLTAuMyAtMi4xLC0wLjljLTAuNiwtMC42IC0wLjksLTEuMyAtMC45LC0yLjFsMCwtNy4xNWwzLC0wbDAsNy4xNWwyNiwwbDAsLTcuMTVsMywtMGwwLDcuMTVjMCwwLjggLTAuMywxLjUgLTAuOSwyLjFjLTAuNiwwLjYgLTEuMywwLjkgLTIuMSwwLjlsLTI2LDBabTEzLC03LjY1bC05LjY1LC05LjY1bDIuMTUsLTIuMTVsNiw2bDAsLTE4LjU1bDMsLTBsMCwxOC41NWw2LC02bDIuMTUsMi4xNWwtOS42NSw5LjY1WiIgc3R5bGU9ImZpbGw6I2ZmZjtmaWxsLXJ1bGU6bm9uemVybzsiLz48L3N2Zz4=)](https://github.com/fatihbalsoy/wp-material-design/releases/)
+[![İndir](https://img.shields.io/badge/-İndir-2246CC?style=for-the-badge&logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCA0OCA0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxuczpzZXJpZj0iaHR0cDovL3d3dy5zZXJpZi5jb20vIiBzdHlsZT0iZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjI7Ij48cGF0aCBkPSJNMTEsNDBjLTAuOCwwIC0xLjUsLTAuMyAtMi4xLC0wLjljLTAuNiwtMC42IC0wLjksLTEuMyAtMC45LC0yLjFsMCwtNy4xNWwzLC0wbDAsNy4xNWwyNiwwbDAsLTcuMTVsMywtMGwwLDcuMTVjMCwwLjggLTAuMywxLjUgLTAuOSwyLjFjLTAuNiwwLjYgLTEuMywwLjkgLTIuMSwwLjlsLTI2LDBabTEzLC03LjY1bC05LjY1LC05LjY1bDIuMTUsLTIuMTVsNiw2bDAsLTE4LjU1bDMsLTBsMCwxOC41NWw2LC02bDIuMTUsMi4xNWwtOS42NSw5LjY1WiIgc3R5bGU9ImZpbGw6I2ZmZjtmaWxsLXJ1bGU6bm9uemVybzsiLz48L3N2Zz4=)](https://github.com/fatihbalsoy/material-board/releases/)
 [![Demo](https://img.shields.io/badge/-Demo-446DFF?style=for-the-badge&logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCA0OCA0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxuczpzZXJpZj0iaHR0cDovL3d3dy5zZXJpZi5jb20vIiBzdHlsZT0iZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjI7Ij48cGF0aCBkPSJNMTYsMzcuODVsMCwtMjhsMjIsMTRsLTIyLDE0Wm0zLC01LjQ1bDEzLjQ1LC04LjU1bC0xMy40NSwtOC41NWwwLDE3LjFaIiBzdHlsZT0iZmlsbDojZmZmO2ZpbGwtcnVsZTpub256ZXJvOyIvPjwvc3ZnPg==)](https://material-dashboard-demo.bal.soy/)
 
 ![WordPress](https://img.shields.io/badge/WordPress-6.3.1-lightblue?style=for-the-badge&logo=wordpress&logoWidth=20)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/fatihbalsoy/wp-material-design/build.yml?style=for-the-badge&logo=github)](https://github.com/fatihbalsoy/wp-material-design/actions/workflows/build.yml)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/fatihbalsoy/material-board/build.yml?style=for-the-badge&logo=github)](https://github.com/fatihbalsoy/material-board/actions/workflows/build.yml)
 
 Bu belgeyi farklı bir dilde okuyun.
 
@@ -27,11 +27,11 @@ Bu belgeyi farklı bir dilde okuyun.
 
 ### El ile
 
-* Material Dashboard'ın en son sürümünü [buradan](https://github.com/fatihbalsoy/wp-material-design/releases/) indirin,
+* Material Board'ın en son sürümünü [buradan](https://github.com/fatihbalsoy/material-board/releases/) indirin,
 * WordPress panonuzda `Eklentiler` > `Yeni Ekle` bölümüne gidin,
 * Başlık yakınındaki `Eklenti Yükle` düğmesine tıklayın,
 * İndirilen zip arşivini seçin,
-* Son olarak, Material Dashboard eklentisini etkinleştirin.
+* Son olarak, Material Board eklentisini etkinleştirin.
 
 ### WP Pusher (Otomatik Güncellemeler)
 
@@ -42,10 +42,10 @@ Bu belgeyi farklı bir dilde okuyun.
 * WP Pusher eklentisini etkinleştirin,
 * `WP Pusher` > `Install Plugin` bölümüne gidin,
 * Github'ı Repository Host olarak seçin,
-* Bu depo için [link](fatihbalsoy/wp-material-design) adresini `Plugin Repository` alanına girin,
+* Bu depo için [link](fatihbalsoy/material-board) adresini `Plugin Repository` alanına girin,
 * `Repository Branch`'e release-deployed girin,
 * `Install Plugin` düğmesine tıklayın,
-* Son olarak, Material Dashboard eklentisini etkinleştirin.
+* Son olarak, Material Board eklentisini etkinleştirin.
 
 > ### ⚠️ NOT
 >
@@ -54,7 +54,7 @@ Bu belgeyi farklı bir dilde okuyun.
 
 ## Özelleştirme
 
-Panonun renklerini ve görünümünü özelleştirmek için `Görünüm` > `Material Dashboard` bölümüne gidin.
+Panonun renklerini ve görünümünü özelleştirmek için `Görünüm` > `Material Board` bölümüne gidin.
 İşte mevcut seçeneklerden bazıları:
 
 * Tema (Açık, Koyu ve Sistem)
@@ -91,7 +91,7 @@ Aşağıdakilerden biri için bir "pull request" (çekme isteği) göndermekten 
 
 ## Lisanslar
 
-Material Design Dashboard, [AGPL License 3.0](https://github.com/fatihbalsoy/wp-material-design/blob/master/LICENSE).
+Material Design Dashboard, [AGPL License 3.0](https://github.com/fatihbalsoy/material-board/blob/master/LICENSE).
 
 Bu proje aşağıdaki üçüncü taraf kaynaklara bağımlıdır:
 
