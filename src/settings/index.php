@@ -22,34 +22,6 @@ function fbwpmdp_get_local_file_contents($file_path)
     return $contents;
 }
 
-// Check whether instance has curl installed and enabled.
-// For instance, the expiremental Wordpress Playground project running on WebAssembly does not have curl enabled.
-function curl_exists()
-{
-    return function_exists('curl_version');
-}
-
-/** CHECK FOR UPDATES (GITHUB) **/
-if (curl_exists()) {
-    // create curl resource
-    $ch = curl_init();
-
-    // set url
-    curl_setopt($ch, CURLOPT_URL, $GLOBALS["fbwpmdp_github_releases"]);
-
-    //return the transfer as a string
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13');
-
-    // $output contains the output string
-    $output = curl_exec($ch);
-    $github_json_obj = json_decode($output);
-    $github_latest_release = $github_json_obj[0]->tag_name;
-
-    // close curl resource to free up system resources
-    curl_close($ch);
-}
-
 ?>
 
 <!-- Page-specific stylesheet -->
@@ -59,15 +31,6 @@ wp_enqueue_style('mdp-plugin-settings-page-stylesheet', plugins_url('style.css',
 
 <!-- TODO: Implement instant preview -->
 <div class='wrap'>
-    <!-- Update Banner -->
-    <?php
-    if (curl_exists() and $github_latest_release != "v" . $GLOBALS["fbwpmdp_version"]) {
-        echo '
-        <div class="update-nag notice notice-warning inline"><a href="' . $GLOBALS["fbwpmdp_github"] . '/releases/tag/' . $github_latest_release . '">' . $GLOBALS["fbwpmdp_settings_title"] . ' ' . $github_latest_release . '</a> is available! <a href="' . $GLOBALS["fbwpmdp_github"] . '/releases" aria-label="Please update Material Board now">Please update now</a>.</div>
-        ';
-    }
-    ?>
-
     <!-- HEADER -->
     <!-------------------------------------------------------------------------------->
     <!-- Material Board                                                         -->
