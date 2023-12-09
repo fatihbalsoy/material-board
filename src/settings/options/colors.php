@@ -1,6 +1,6 @@
 <!--
 * colors.php
-* material-design-dashboard
+* material-board
 *
 * Created by Fatih Balsoy on 5/21/23
 * Copyright © 2023 Fatih Balsoy. All rights reserved.

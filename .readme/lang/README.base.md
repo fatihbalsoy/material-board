@@ -10,7 +10,7 @@
 <!-- BU DOSYA OTOMATİK OLARAK OLUŞTURULMUŞTUR. LÜTFEN `.readme/lang/README.base.md` DOSYASINI DÜZENLEYİN VE `npm run mmg` KOMUTUNU ÇALIŞTIRIN. -->
 
 <!-- [common] -->
-# ![Material Design Dashboard](/.readme/banner.png?raw=true  "Material Design Dashboard")
+# ![Material Board](/.readme/banner.png?raw=true  "Material Board")
 
 <!-- [en] -->
 The Material Board plugin for WordPress updates the appearance of your site's dashboard to a sleeker, more contemporary design based on [Google's Material Design Guidelines](https://material.io/design). This plugin preserves your existing dashboard layout, avoids making any significant alterations, and doesn't include any branding or promotional content. It's straightforward to use and comes at no cost.
@@ -207,7 +207,7 @@ Aşağıdakilerden biri için bir "pull request" (çekme isteği) göndermekten 
 <!-- [en] -->
 ## Licenses
 
-Material Design Dashboard, [AGPL License 3.0](https://github.com/fatihbalsoy/material-board/blob/master/LICENSE).
+Material Board, [AGPL License 3.0](https://github.com/fatihbalsoy/material-board/blob/master/LICENSE).
 
 This project depends on the following third-parties:
 
@@ -223,7 +223,7 @@ This project depends on the following third-parties:
 <!-- [tr] -->
 ## Lisanslar
 
-Material Design Dashboard, [AGPL License 3.0](https://github.com/fatihbalsoy/material-board/blob/master/LICENSE).
+Material Board, [AGPL License 3.0](https://github.com/fatihbalsoy/material-board/blob/master/LICENSE).
 
 Bu proje aşağıdaki üçüncü taraf kaynaklara bağımlıdır:
 

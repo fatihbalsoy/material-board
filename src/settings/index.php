@@ -63,7 +63,7 @@ wp_enqueue_style('mdp-plugin-settings-page-stylesheet', plugins_url('style.css',
     <?php
     if (curl_exists() and $github_latest_release != "v" . $GLOBALS["fbwpmdp_version"]) {
         echo '
-        <div class="update-nag notice notice-warning inline"><a href="' . $GLOBALS["fbwpmdp_github"] . '/releases/tag/' . $github_latest_release . '">' . $GLOBALS["fbwpmdp_settings_title"] . ' ' . $github_latest_release . '</a> is available! <a href="' . $GLOBALS["fbwpmdp_github"] . '/releases" aria-label="Please update Material Design Dashboard now">Please update now</a>.</div>
+        <div class="update-nag notice notice-warning inline"><a href="' . $GLOBALS["fbwpmdp_github"] . '/releases/tag/' . $github_latest_release . '">' . $GLOBALS["fbwpmdp_settings_title"] . ' ' . $github_latest_release . '</a> is available! <a href="' . $GLOBALS["fbwpmdp_github"] . '/releases" aria-label="Please update Material Board now">Please update now</a>.</div>
         ';
     }
     ?>

@@ -1,6 +1,6 @@
 <!-- THIS FILE IS AUTO-GENERATED. PLEASE EDIT `.readme/lang/README.base.md` AND RUN `npm run mmg`. -->
 
-# ![Material Design Dashboard](/.readme/banner.png?raw=true  "Material Design Dashboard")
+# ![Material Board](/.readme/banner.png?raw=true  "Material Board")
 
 The Material Board plugin for WordPress updates the appearance of your site's dashboard to a sleeker, more contemporary design based on [Google's Material Design Guidelines](https://material.io/design). This plugin preserves your existing dashboard layout, avoids making any significant alterations, and doesn't include any branding or promotional content. It's straightforward to use and comes at no cost.
 
@@ -91,7 +91,7 @@ Feel free to submit a pull request for one of the following:
 
 ## Licenses
 
-Material Design Dashboard, [AGPL License 3.0](https://github.com/fatihbalsoy/material-board/blob/master/LICENSE).
+Material Board, [AGPL License 3.0](https://github.com/fatihbalsoy/material-board/blob/master/LICENSE).
 
 This project depends on the following third-parties:
 

@@ -2,7 +2,7 @@
 
 #
 #  bundle_languages.sh
-#  material-design-dashboard
+#  material-board
 #
 #  Created by Fatih Balsoy on 6/18/23
 #  Copyright © 2023 Fatih Balsoy. All rights reserved.

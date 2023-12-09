@@ -1,6 +1,6 @@
 /*
  *   large_app_bar.ts
- *   material-design-dashboard
+ *   material-board
  * 
  *   Created by codespace on 5/24/23
  *   Copyright © 2023 Fatih Balsoy. All rights reserved.

@@ -1,6 +1,6 @@
 <!-- BU DOSYA OTOMATİK OLARAK OLUŞTURULMUŞTUR. LÜTFEN `.readme/lang/README.base.md` DOSYASINI DÜZENLEYİN VE `npm run mmg` KOMUTUNU ÇALIŞTIRIN. -->
 
-# ![Material Design Dashboard](/.readme/banner.png?raw=true  "Material Design Dashboard")
+# ![Material Board](/.readme/banner.png?raw=true  "Material Board")
 
 WordPress için Material Board eklentisi, sitenizin gösterge panelinin görünümünü [Google'ın Material Design Kılavuzlarına](https://material.io/design) dayalı daha modern bir tasarıma dönüştürür. Bu eklenti mevcut gösterge paneli düzeninizi korur, önemli değişiklikler yapmaz ve herhangi bir markalama veya tanıtım içeriği içermez. Kullanımı kolaydır ve ücretsizdir.
 
@@ -91,7 +91,7 @@ Aşağıdakilerden biri için bir "pull request" (çekme isteği) göndermekten 
 
 ## Lisanslar
 
-Material Design Dashboard, [AGPL License 3.0](https://github.com/fatihbalsoy/material-board/blob/master/LICENSE).
+Material Board, [AGPL License 3.0](https://github.com/fatihbalsoy/material-board/blob/master/LICENSE).
 
 Bu proje aşağıdaki üçüncü taraf kaynaklara bağımlıdır:
 
