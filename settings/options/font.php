@@ -1,9 +1,14 @@
 <?php
-$option = get_option('mdp_font')
+
+// If this file is called directly, abort.
+if (!defined('ABSPATH'))
+    exit;
+
+$option = get_option('fbwpmdp_font')
 ?>
 
 <tr>
-    <th scope='row'><?php _e('Font', 'wp-material-design') ?></th>
+    <th scope='row'><?php esc_html_e('Font', 'material-board') ?></th>
     <td>
         <select name="mdp_font" id="font-face" onchange="changeFontType()">
             <option value="dm-sans" <?php selected($option, 'dm-sans') ?>>DM Sans</option>
@@ -11,7 +16,7 @@ $option = get_option('mdp_font')
             <option value="mona-sans" <?php selected($option, 'mona-sans') ?>>Mona Sans</option>
             <option value="hubot-sans" <?php selected($option, 'hubot-sans') ?>>Hubot Sans</option>
             <option value="wordpress" <?php selected($option, 'wordpress') ?>>
-                <?php _e('WordPress Default', 'wp-material-design') ?></option>
+                <?php esc_html_e('WordPress Default', 'material-board') ?></option>
         </select>
     </td>
 </tr>
