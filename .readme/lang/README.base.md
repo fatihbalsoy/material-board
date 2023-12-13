@@ -29,7 +29,7 @@ WordPress için Material Board eklentisi, sitenizin gösterge panelinin görün�
 [![Demo](https://img.shields.io/badge/-Demo-446DFF?style=for-the-badge&logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCA0OCA0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxuczpzZXJpZj0iaHR0cDovL3d3dy5zZXJpZi5jb20vIiBzdHlsZT0iZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjI7Ij48cGF0aCBkPSJNMTYsMzcuODVsMCwtMjhsMjIsMTRsLTIyLDE0Wm0zLC01LjQ1bDEzLjQ1LC04LjU1bC0xMy40NSwtOC41NWwwLDE3LjFaIiBzdHlsZT0iZmlsbDojZmZmO2ZpbGwtcnVsZTpub256ZXJvOyIvPjwvc3ZnPg==)](https://material-dashboard-demo.bal.soy/)
 
 <!-- [common] -->
-![WordPress](https://img.shields.io/badge/WordPress-6.3.1-lightblue?style=for-the-badge&logo=wordpress&logoWidth=20)
+[![WordPress](https://img.shields.io/badge/WordPress-6.3.1-lightblue?style=for-the-badge&logo=wordpress&logoWidth=20)](https://wordpress.org/plugins/material-board/)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/fatihbalsoy/material-board/build.yml?style=for-the-badge&logo=github)](https://github.com/fatihbalsoy/material-board/actions/workflows/build.yml)
 
 <!-- [en] -->
@@ -61,6 +61,12 @@ Bu belgeyi farklı bir dilde okuyun.
 ## Kurulum
 
 <!-- [en] -->
+Material Board is available on the WordPress Plugin Directory [(link)](https://wordpress.org/plugins/material-board/) and can be installed from the plugins page in your admin dashboard.
+
+<!-- [tr] -->
+Material Board, WordPress Eklenti Dizini'nde mevcuttur [(link)](https://wordpress.org/plugins/material-board/) ve yönetici panonuzdaki eklentiler sayfasından yüklenebilir.
+
+<!-- [en] -->
 ### Manually
 
 * Download the latest release of Material Board [here](https://github.com/fatihbalsoy/material-board/releases/),
@@ -77,48 +83,6 @@ Bu belgeyi farklı bir dilde okuyun.
 * Başlık yakınındaki `Eklenti Yükle` düğmesine tıklayın,
 * İndirilen zip arşivini seçin,
 * Son olarak, Material Board eklentisini etkinleştirin.
-
-<!-- [en] -->
-### WP Pusher (Automatic Updates)
-
-* Download the latest release of WP Pusher [here](https://wppusher.com/)
-* On your WordPress dashboard go to `Plugins` > `Add New`,
-* Click the `Upload Plugin` button near the header,
-* Select the downloaded zip archive,
-* Activate the WP Pusher plugin,
-* Go to `WP Pusher` > `Install Plugin`,
-* Choose Github as the Repository Host,
-* Input this repository's [link](fatihbalsoy/material-board) into `Plugin Repository`,
-* Input the deployment branch, release-deployed, into `Repository Branch`,
-* Click `Install Plugin`,
-* Finally, activate the Material Board plugin.
-
-<!-- [tr] -->
-### WP Pusher (Otomatik Güncellemeler)
-
-* WP Pusher'ın en son sürümünü [buradan](https://wppusher.com/) indirin,
-* WordPress panonuzda `Eklentiler` > `Yeni Ekle` bölümüne gidin,
-* Başlık yakınındaki `Eklenti Yükle` düğmesine tıklayın,
-* İndirilen zip arşivini seçin,
-* WP Pusher eklentisini etkinleştirin,
-* `WP Pusher` > `Install Plugin` bölümüne gidin,
-* Github'ı Repository Host olarak seçin,
-* Bu depo için [link](fatihbalsoy/material-board) adresini `Plugin Repository` alanına girin,
-* `Repository Branch`'e release-deployed girin,
-* `Install Plugin` düğmesine tıklayın,
-* Son olarak, Material Board eklentisini etkinleştirin.
-
-<!-- [en] -->
-> ### ⚠️ NOTE
->
-> This plugin is still in its pre-release phase and is not yet available on the WordPress Plugin Directory.
-> Do not use WordPress' default updater to update the plugin. Disable Auto-Updates at the Plugins page.
-
-<!-- [tr] -->
-> ### ⚠️ NOT
->
-> Bu eklenti hala ön yayın aşamasında olup, henüz WordPress Eklenti Dizini'nde mevcut değildir.
-> WordPress'in varsayılan güncelleme mekanizmasını eklentiyi güncellemek için kullanmayın. Eklentiler sayfasında Otomatik Güncellemeler'i devre dışı bırakın.
 
 <!-- [en] -->
 ## Customization
