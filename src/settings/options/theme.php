@@ -12,14 +12,14 @@ $options = get_option('fbwpmdp_theme');
         <?php esc_html_e('Theme', 'material-board') ?>
     </th>
     <td>
-        <form name="mdp_theme">
-            <input type="radio" name="mdp_theme" value="light" <?php checked('light' == $options) ?>>
+        <form name="fbwpmdp_theme">
+            <input type="radio" name="fbwpmdp_theme" value="light" <?php checked('light' == $options) ?>>
             <?php esc_html_e('Light', 'material-board') ?>
             <br>
-            <input type="radio" name="mdp_theme" value="dark" <?php checked('dark' == $options) ?>>
+            <input type="radio" name="fbwpmdp_theme" value="dark" <?php checked('dark' == $options) ?>>
             <?php esc_html_e('Dark', 'material-board') ?>
             <br>
-            <input type="radio" name="mdp_theme" value="auto" <?php checked('auto' == $options) ?>>
+            <input type="radio" name="fbwpmdp_theme" value="auto" <?php checked('auto' == $options) ?>>
             <?php esc_html_e('System', 'material-board') ?>
             <br>
         </form>

@@ -11,9 +11,9 @@ $large_app_bar_variant = get_option('fbwpmdp_large_admin_bar_variant');
 <tr>
     <th scope='row'><?php esc_html_e('Large App Bar', 'material-board') ?></th>
     <td>
-        <input name="mdp_large_admin_bar" type="checkbox" <?php checked($large_app_bar, 'on') ?>>
+        <input name="fbwpmdp_large_admin_bar" type="checkbox" <?php checked($large_app_bar, 'on') ?>>
         </input>
-        <select name="mdp_large_admin_bar_variant">
+        <select name="fbwpmdp_large_admin_bar_variant">
             <option value="1" <?php selected($large_app_bar_variant, '1') ?>>
                 <?php esc_html_e('Admin Bar on Top', 'material-board') ?>
             </option>
