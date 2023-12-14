@@ -3,7 +3,7 @@ Contributors: fatihbalsoy
 Donate link: https://paypal.me/fatihbalsoy
 Tags: material, design, dashboard
 Tested up to: 6.3.1
-Stable tag: 0.3.4
+Stable tag: 0.3.5
 Requires at least: 5.8
 Requires PHP: 7.0.0
 License: AGPLv3 or later
@@ -33,6 +33,9 @@ Feel free to submit a pull request on [GitHub](https://github.com/fatihbalsoy/ma
 - Fixing bugs and security vulnurabilities
 
 == Changelog ==
+0.3.5:
+- Hotfix: Setting preferences caused plugin to crash.
+
 0.3.4:
 - Initial alpha release on WordPress Plugin directory.
 
