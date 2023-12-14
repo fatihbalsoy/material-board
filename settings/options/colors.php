@@ -21,13 +21,13 @@ $accent_option = get_option('fbwpmdp_colors_accent');
     <td>
         <div>
             <p> <?php esc_html_e('Primary (Toolbars and Navigations)', 'material-board') ?> </p>
-            <input type="color" id="primary-color" name="mdp_colors_primary" value="<?php echo esc_attr($primary_option) ?>"
+            <input type="color" id="primary-color" name="fbwpmdp_colors_primary" value="<?php echo esc_attr($primary_option) ?>"
                 onchange="changePrimaryColor()">
         </div>
         <br>
         <div>
             <p> <?php esc_html_e('Accent (Text Selections and Controls)', 'material-board') ?> </p>
-            <input type="color" id="accent-color" name="mdp_colors_accent" value="<?php echo esc_attr($accent_option) ?>"
+            <input type="color" id="accent-color" name="fbwpmdp_colors_accent" value="<?php echo esc_attr($accent_option) ?>"
                 onchange="changeAccentColor()">
         </div>
     </td>
