@@ -13,6 +13,8 @@
     "dev:docker": "npm run build && docker-compose up -d && npm run watch",
     "dev:wasm": "npm run build && concurrently \"wp-now start --path=build/\" \"npm run watch\"",
     "mmg": "bash scripts/multilingual_markdown.sh",
+    "svn:tag": "zsh scripts/svn_create_tag.sh",
+    "svn:reset": "cd svn/ && svn revert --recursive . && svn cleanup . --remove-unversioned --remove-ignored && cd ..",
     "start": "npm run dev:docker",
     "stop": "docker-compose down"
   },
