@@ -1142,6 +1142,16 @@ h3.accordion-section-title {
     border-radius: var(--br-10px);
 }
 
+span.sorting-indicators {
+    margin-top: -1px;
+    margin-left: 4px;
+}
+
+.fixed .column-comments .vers {
+    padding-left: 3px;
+    padding-bottom: 3px;
+}
+
 .button.installed:before,
 .button.installing:before,
 .button.updated-message:before,

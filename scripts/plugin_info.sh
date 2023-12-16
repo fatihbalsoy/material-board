@@ -10,5 +10,5 @@
 
 PLUGIN_BUNDLE_LINE=$(cat $SCRIPTPATH/src/material-board.php | grep "\$fbwpmdp_bundle =")
 PLUGIN_BUNDLE=${${PLUGIN_BUNDLE_LINE%\"*}#*\"}
-PLUGIN_VERSION_LINE=$(cat $SCRIPTPATH/src/material-board.php | grep "\$fbwpmdp_version =")
-PLUGIN_VERSION=${${PLUGIN_VERSION_LINE%\"*}#*\"}
+PLUGIN_VERSION_LINE=$(cat $SCRIPTPATH/src/readme.txt | grep "Stable tag: ")
+PLUGIN_VERSION=$(echo $PLUGIN_VERSION_LINE | sed 's/.*Stable tag: //')

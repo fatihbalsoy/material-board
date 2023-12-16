@@ -13,19 +13,25 @@
 }
 
 .dashicons-arrow-up:before,
-.bulk-action-notice .toggle-indicator:before, .js .meta-box-sortables .postbox .toggle-indicator:before, .js .sidebar-name .sidebar-name-arrow:before,
-th.desc a:focus span.sorting-indicator:before, th.desc:hover span.sorting-indicator:before, th.sorted.asc .sorting-indicator:before{
+.bulk-action-notice .toggle-indicator:before, 
+.js .meta-box-sortables .postbox .toggle-indicator:before, 
+.js .sidebar-name .sidebar-name-arrow:before,
+span.sorting-indicator.asc::before
+{
     content: 'expand_less';
 }
 
 .dashicons-arrow-down:before,
-.bulk-action-notice .bulk-action-errors-collapsed .toggle-indicator:before, .js .meta-box-sortables .postbox.closed .handlediv .toggle-indicator:before, .js .widgets-holder-wrap.closed .sidebar-name-arrow:before,
-th.asc a:focus span.sorting-indicator:before, th.asc:hover span.sorting-indicator:before, th.sorted.desc .sorting-indicator:before{
+.bulk-action-notice .bulk-action-errors-collapsed .toggle-indicator:before, 
+.js .meta-box-sortables .postbox.closed .handlediv .toggle-indicator:before, 
+.js .widgets-holder-wrap.closed .sidebar-name-arrow:before,
+span.sorting-indicator.desc::before
+{
     content: 'expand_more';
 }
-th.asc a:focus span.sorting-indicator:before, th.asc:hover span.sorting-indicator:before, th.sorted.desc .sorting-indicator:before,
-th.desc a:focus span.sorting-indicator:before, th.desc:hover span.sorting-indicator:before, th.sorted.asc .sorting-indicator:before{
-    font-size: 120%;
+span.sorting-indicator:before,
+span.sorting-indicator:before {
+    font-size: 120% !important;
 }
 
 .dashicons-arrow-right:before,
