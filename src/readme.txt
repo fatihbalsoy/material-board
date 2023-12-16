@@ -32,13 +32,6 @@ Feel free to submit a pull request on [GitHub](https://github.com/fatihbalsoy/ma
 - Support third-party plugins or themes
 - Fixing bugs and security vulnurabilities
 
-== Changelog ==
-0.3.5:
-- Hotfix: Setting preferences caused plugin to crash.
-
-0.3.4:
-- Initial alpha release on WordPress Plugin directory.
-
 == Screenshots == 
 1. Dashboard (Light/Dark)
 2. Pages (Light)

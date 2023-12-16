@@ -1,0 +1,8 @@
+0.3.6:
+- Hotfix: Sort icons were not rendering properly.
+
+0.3.5:
+- Hotfix: Setting preferences caused plugin to crash.
+
+0.3.4:
+- Initial alpha release on WordPress Plugin directory.
