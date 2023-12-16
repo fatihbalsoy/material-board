@@ -5,7 +5,7 @@
  * Plugin URI:          https://github.com/fatihbalsoy/material-board
  * Description:         The Material Board plugin for WordPress updates the appearance of your site's dashboard to a sleeker, more contemporary design based on Google's Material Design Guidelines. This plugin preserves your existing dashboard layout, avoids making any significant alterations, and doesn't include any branding or promotional content. It's straightforward to use and comes at no cost.
  * Author: 	            Fatih Balsoy
- * Version: 	        0.3.5
+ * Version: 	        0.3.6
  * Text Domain:         material-board
  * Domain Path:         /languages
  * Author URI:          https://fatih.bal.soy
@@ -18,7 +18,6 @@
 if (!defined('ABSPATH'))
     exit;
 
-$fbwpmdp_version = "0.3.5";
 $fbwpmdp_author = "Fatih Balsoy";
 $fbwpmdp_author_website = "https://fatih.bal.soy";
 $fbwpmdp_website = "https://fatih.bal.soy/projects/material-board";
@@ -33,7 +32,6 @@ $fbwpmdp_crowdin = "https://crowdin.com/project/material-dashboard";
 $fbwpmdp_name = "Material Board";
 $fbwpmdp_bundle = "material-board";
 $fbwpmdp_settings_title = $fbwpmdp_name;
-// $fbwpmdp_directory = plugins_url('', dirname(__FILE__)) . "/" . $fbwpmdp_bundle;
 
 class MaterialBoardPlugin
 {
@@ -68,6 +66,13 @@ class MaterialBoardPlugin
     function __construct()
     {
         $this->settings_slug = 'material-board-settings';
+        if (is_admin()) {
+            if(!function_exists('get_plugin_data')){
+                require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+            }
+            $plugin_data = get_plugin_data( __FILE__ );
+            $GLOBALS["fbwpmdp_version"] = $plugin_data["Version"];
+        }
 
         add_action('wp_enqueue_scripts', array($this, 'fbwpmdp_admin_user_theme_style'));
         add_action('admin_enqueue_scripts', array($this, 'fbwpmdp_admin_theme_style'));
