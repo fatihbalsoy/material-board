@@ -1,26 +1,31 @@
 <?php
-$options = get_option('mdp_theme');
+
+// If this file is called directly, abort.
+if (!defined('ABSPATH'))
+    exit;
+
+$options = get_option('fbwpmdp_theme');
 ?>
 
 <tr>
     <th scope='row'>
-        <?php _e('Theme', 'wp-material-design') ?>
+        <?php esc_html_e('Theme', 'material-board') ?>
     </th>
     <td>
-        <form name="mdp_theme">
-            <input type="radio" name="mdp_theme" value="light" <?php checked('light' == $options) ?>>
-            <?php _e('Light', 'wp-material-design') ?>
+        <form name="fbwpmdp_theme">
+            <input type="radio" name="fbwpmdp_theme" value="light" <?php checked('light' == $options) ?>>
+            <?php esc_html_e('Light', 'material-board') ?>
             <br>
-            <input type="radio" name="mdp_theme" value="dark" <?php checked('dark' == $options) ?>>
-            <?php _e('Dark', 'wp-material-design') ?>
+            <input type="radio" name="fbwpmdp_theme" value="dark" <?php checked('dark' == $options) ?>>
+            <?php esc_html_e('Dark', 'material-board') ?>
             <br>
-            <input type="radio" name="mdp_theme" value="auto" <?php checked('auto' == $options) ?>>
-            <?php _e('System', 'wp-material-design') ?>
+            <input type="radio" name="fbwpmdp_theme" value="auto" <?php checked('auto' == $options) ?>>
+            <?php esc_html_e('System', 'material-board') ?>
             <br>
         </form>
         <br />
         <div class='mdwp-helper-text'>
-            <?php _e('Dark mode may not be compatible with third-party plugins.', 'wp-material-design') ?>
+            <?php esc_html_e('Dark mode may not be compatible with third-party plugins.', 'material-board') ?>
         </div>
     </td>
 </tr>

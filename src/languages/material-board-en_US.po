@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: material-dashboard\n"
 "POT-Creation-Date: 2023-10-05 16:20-0400\n"
-"PO-Revision-Date: 2023-10-09 18:00\n"
+"PO-Revision-Date: 2023-10-05 20:26\n"
 "Last-Translator: \n"
-"Language-Team: Spanish\n"
-"Language: es_ES\n"
+"Language-Team: English, United States\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,85 +16,85 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Crowdin-Project: material-dashboard\n"
 "X-Crowdin-Project-ID: 598877\n"
-"X-Crowdin-Language: es-ES\n"
-"X-Crowdin-File: /master/src/languages/wp-material-design-en_US.po\n"
-"X-Crowdin-File-ID: 24\n"
+"X-Crowdin-Language: en-US\n"
+"X-Crowdin-File: /master/src/languages/source.po\n"
+"X-Crowdin-File-ID: 22\n"
 
 #: settings/index.php:74
-msgid "Material Dashboard"
-msgstr "Material Dashboard"
+msgid "Material Board"
+msgstr "Material Board"
 
 #: settings/index.php:89
 msgid "Appearance"
-msgstr "Apariencia"
+msgstr "Appearance"
 
 #: settings/index.php:130
 msgid "Developed by"
-msgstr "Desarrollado por"
+msgstr "Developed by"
 
 #: settings/index.php:132
 msgid "Version"
-msgstr "Versión"
+msgstr "Version"
 
 #: settings/index.php:134
 msgid "Request Features & Report Issues"
-msgstr "Características de Solicitud & Reportar Problemas"
+msgstr "Request Features & Report Issues"
 
 #: settings/index.php:135
 msgid "Help translate this page"
-msgstr "Ayuda a traducir esta página"
+msgstr "Help translate this page"
 
 #: settings/options/colors.php:15
 msgid "Colors"
-msgstr "Colores"
+msgstr "Colors"
 
 #: settings/options/colors.php:18
 msgid "Primary (Toolbars and Navigations)"
-msgstr ""
+msgstr "Primary (Toolbars and Navigations)"
 
 #: settings/options/colors.php:24
 msgid "Accent (Text Selections and Controls)"
-msgstr ""
+msgstr "Accent (Text Selections and Controls)"
 
 #: settings/options/corners.php:6
 msgid "Rounded Corners"
-msgstr "Esquinas Redondeadas"
+msgstr "Rounded Corners"
 
 #: settings/options/corners.php:10
 msgid "You can choose to turn on or off the rounded corners around cards, buttons, and text fields."
-msgstr ""
+msgstr "You can choose to turn on or off the rounded corners around cards, buttons, and text fields."
 
 #: settings/options/font.php:6
 msgid "Font"
-msgstr ""
+msgstr "Font"
 
 #: settings/options/font.php:14
 msgid "WordPress Default"
-msgstr ""
+msgstr "WordPress Default"
 
 #: settings/options/header_serif.php:6
 msgid "Serif Header"
-msgstr ""
+msgstr "Serif Header"
 
 #: settings/options/header_serif.php:10
 msgid "Enhance your headers with an editorial touch by enabling serif fonts."
-msgstr ""
+msgstr "Enhance your headers with an editorial touch by enabling serif fonts."
 
 #: settings/options/icons.php:6
 msgid "Icons"
-msgstr "Iconos"
+msgstr "Icons"
 
 #: settings/options/large_app_bar.php:7
 msgid "Large App Bar"
-msgstr ""
+msgstr "Large App Bar"
 
 #: settings/options/large_app_bar.php:13
 msgid "Admin Bar on Top"
-msgstr ""
+msgstr "Admin Bar on Top"
 
 #: settings/options/large_app_bar.php:16
 msgid "Admin Menu on Top"
-msgstr ""
+msgstr "Admin Menu on Top"
 
 #: settings/options/large_app_bar.php:21
 msgid "Experimental"
@@ -102,29 +102,29 @@ msgstr "Experimental"
 
 #: settings/options/theme.php:7
 msgid "Theme"
-msgstr "Tema"
+msgstr "Theme"
 
 #: settings/options/theme.php:12
 msgid "Light"
-msgstr "Claro"
+msgstr "Light"
 
 #: settings/options/theme.php:15
 msgid "Dark"
-msgstr "Oscuro"
+msgstr "Dark"
 
 #: settings/options/theme.php:18
 msgid "System"
-msgstr "Sistema"
+msgstr "System"
 
 #: settings/options/theme.php:23
 msgid "Dark mode may not be compatible with third-party plugins."
-msgstr ""
+msgstr "Dark mode may not be compatible with third-party plugins."
 
-#: wp-material-design.php:138
+#: material-board.php:138
 msgid "Settings"
-msgstr "Configuración"
+msgstr "Settings"
 
-#: wp-material-design.php:228
+#: material-board.php:228
 msgid "You do not have sufficient permissions to access this page."
-msgstr ""
+msgstr "You do not have sufficient permissions to access this page."
 

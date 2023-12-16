@@ -2,7 +2,7 @@
 
 # Geliştirici Ortamını Kur
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/fatihbalsoy/wp-material-design/build.yml)](https://github.com/fatihbalsoy/wp-material-design/actions/workflows/build.yml)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/fatihbalsoy/material-board/build.yml)](https://github.com/fatihbalsoy/material-board/actions/workflows/build.yml)
 
 Gerekli İşletim Sistemi: Linux, macOS veya Windows (WSL)
 

@@ -1,3 +1,3 @@
 files:
-  - source: /src/languages/wp-material-design-en_US.po
-    translation: /src/languages/wp-material-design-%locale_with_underscore%.po
+  - source: /src/languages/material-board-en_US.po
+    translation: /src/languages/material-board-%locale_with_underscore%.po

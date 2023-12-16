@@ -1,7 +1,7 @@
 @charset 'utf-8';
 /*
  *   wp-login.scss
- *   material-design-dashboard
+ *   material-board
  * 
  *   Created by Fatih Balsoy on 1/30/20
  *   Copyright © 2020 Fatih Balsoy. All rights reserved.
@@ -19,7 +19,7 @@
 // 7. Themes
 
 @import url('shared.css');
-/* @import url('icons/material-icons.css'); */
+// @import url('icons/material-icons.css');
 
 body {
     overflow: hidden !important;
@@ -151,6 +151,13 @@ p.forgetmenot {
 
 .login #login_error:before {
     content: 'error';
+}
+
+span.dashicons.dashicons-visibility,
+span.dashicons.dashicons-hidden {
+    top: 0 !important;
+    display: block !important;
+    color: var(--primary-color);
 }
 
 .dashicons-visibility:before {

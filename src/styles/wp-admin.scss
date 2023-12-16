@@ -1,7 +1,7 @@
 @charset 'utf-8';
 /*
  *   wp-admin.scss
- *   material-design-dashboard
+ *   material-board
  * 
  *   Created by Fatih Balsoy on 2/2/20
  *   Copyright © 2020 Fatih Balsoy. All rights reserved.
@@ -19,7 +19,6 @@
 // 6. Page-specific styles
 // 7. Themes
 
-@import url("icons/material-icons.css");
 @import url('shared.css');
 
 table.googlesitekit-table__wrapper.googlesitekit-table__wrapper--2-col {
@@ -124,9 +123,8 @@ table.googlesitekit-table__wrapper.googlesitekit-table__wrapper--2-col {
 
 .theme-browser .theme {
     border: none;
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.38) !important;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.38) !important;
     border-radius: var(--br-10px);
+    overflow: hidden;
     transition: all 0.3s ease;
 }
 
@@ -1142,6 +1140,16 @@ h3.accordion-section-title {
 
 .media-frame.mode-grid .uploader-inline {
     border-radius: var(--br-10px);
+}
+
+span.sorting-indicators {
+    margin-top: -1px;
+    margin-left: 4px;
+}
+
+.fixed .column-comments .vers {
+    padding-left: 3px;
+    padding-bottom: 3px;
 }
 
 .button.installed:before,

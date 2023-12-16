@@ -1,6 +1,6 @@
 /*
  *   shared.dark.css
- *   material-design-dashboard
+ *   material-board
  * 
  *   Created by Fatih Balsoy on 4/21/19
  *   Copyright © 2020 Fatih Balsoy. All rights reserved.
@@ -27,7 +27,7 @@ body.wp-autoresize, body, #wpcontent, ul.cat-checklist, .wp-tab-active, ul.add-m
     background: var(--dark-back-color-paper) !important;
 }
 
-legend, .theme-browser .theme .theme-name, .about-wrap, .theme-overlay .theme-actions, .media-frame.mode-grid .uploader-inline, #poststuff, form#createuser, form#your-profile, form#bulk-action-form, .menu-item-handle, #menu-management .menu-edit, #menu-settings-column .accordion-container, .comment-ays, .feature-filter, .imgedit-group, .manage-menus, .popular-tags, .stuffbox, .widget-inside, .widget-top, .widgets-holder-wrap, p.popular-tags, #et_pb_widget_area_create, div#widgets-right, div#widgets-left, .themes.wp-clearfix, .form-wrap.edit-term-notes, form#comments-form, .media-upload-form, form#posts-filter, div#col-left, #adminmenu, #adminmenu .wp-submenu, #adminmenuback, .notice, div.error, div.updated, #screen-meta-links .screen-meta-toggle, #screen-meta-links .show-settings, #screen-meta, #contextual-help-wrap, .welcome-panel, .jitm-card, .theme-overlay .theme-wrap, #adminmenuwrap, table, .plugin-card, .plugin-card-bottom, .wp-filter {
+legend, .theme-browser .theme .theme-name, .about-wrap, .theme-overlay .theme-actions, .media-frame.mode-grid .uploader-inline, #poststuff, form#createuser, form#your-profile, form#bulk-action-form, .menu-item-handle, #menu-management .menu-edit, #menu-settings-column .accordion-container, .comment-ays, .feature-filter, .imgedit-group, .manage-menus, .popular-tags, .stuffbox, .widget-inside, .widget-top, .widgets-holder-wrap, p.popular-tags, #et_pb_widget_area_create, div#widgets-right, div#widgets-left, .themes.wp-clearfix, .form-wrap.edit-term-notes, form#comments-form, .media-upload-form, form#posts-filter, div#col-left, #adminmenu, #adminmenu .wp-submenu, #adminmenuback, .notice, div.error, div.updated, #screen-meta-links .screen-meta-toggle, #screen-meta-links .show-settings, #screen-meta, #contextual-help-wrap, .welcome-panel, .jitm-card, .theme-overlay .theme-wrap, #adminmenuwrap, table, .plugin-card, .plugin-card-bottom, .wp-filter, .upload-plugin .wp-upload-form, .upload-theme .wp-upload-form {
     background: var(--dark-back-color) !important;
 }
 
@@ -268,4 +268,11 @@ div#plugin-information-footer {
 
 #activity-widget #the-comment-list .comment-item {
     background-color: transparent !important;
+}
+
+#future-posts, #published-posts {
+    background-color: rgba(255, 255, 255, 0);
+}
+#future-posts li:nth-child(odd), #published-posts li:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
 }

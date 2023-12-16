@@ -2,7 +2,7 @@
 
 #
 #  multilingual_markdown.sh
-#  material-design-dashboard
+#  material-board
 #
 #  Created by Fatih Balsoy on 6/19/23
 #  Copyright © 2023 Fatih Balsoy. All rights reserved.

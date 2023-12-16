@@ -1,6 +1,6 @@
 /*
  *   _button.scss
- *   material-design-dashboard
+ *   material-board
  * 
  *   Created by codespace on 5/22/23
  *   Copyright © 2023 Fatih Balsoy. All rights reserved.
@@ -209,7 +209,7 @@ a.et-pb-modal-save-template.button {
 
 .wrap .add-new-h2:hover,
 .wrap .page-title-action:hover {
-    border-color: transparent !important;
+    border-color: var(--primary-color) !important;
     background: rgba(255, 255, 255, 0.4) !important;
-    color: white !important;
+    color: var(--primary-color) !important;
 }

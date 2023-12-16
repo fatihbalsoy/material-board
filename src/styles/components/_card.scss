@@ -1,11 +1,22 @@
 /*
  *   _card.scss
- *   material-design-dashboard
+ *   material-board
  * 
  *   Created by Fatih Balsoy on 6/18/23
  *   Copyright © 2023 Fatih Balsoy. All rights reserved.
  */
 
+/**
+ *  TODO: 
+ *  Remove css for #wpbody-content>div.wrap>form
+ *  when empty. Examples of when this element is 
+ *  empty can be found on these pages:
+ *  - Posts
+ *  - Pages
+ *  - Plugins
+ *  
+ *  Also look at: .wrap>form>table
+ */
 .about-wrap,
 .media-frame.mode-grid .uploader-inline,
 #poststuff,
@@ -35,7 +46,8 @@ form#comments-form,
 form#posts-filter,
 div#col-left,
 .mdwp-card,
-.wrap>form>table {
+.upload-plugin .wp-upload-form,
+.upload-theme .wp-upload-form {
     border-radius: var(--br-10px) !important;
     padding: 15px !important;
     background: var(--light-back-color);
