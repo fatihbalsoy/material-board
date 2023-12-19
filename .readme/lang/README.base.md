@@ -175,12 +175,12 @@ Material Board, [AGPL License 3.0](https://github.com/fatihbalsoy/material-board
 
 This project depends on the following third-parties:
 
-* Adobe's DM Sans Font, [SIL Open Font License 1.1](https://github.com/googlefonts/dm-fonts/blob/main/Serif/LICENSE.txt)
-* Adobe's DM Serif Font, [SIL Open Font License 1.1](https://github.com/googlefonts/dm-fonts/blob/main/Serif/LICENSE.txt)
-* GitHub's Mona Sans Font, [SIL Open Font License 1.1](https://github.com/github/mona-sans/blob/main/LICENSE)
-* GitHub's Hubot Sans Font, [SIL Open Font License 1.1](https://github.com/github/hubot-sans/blob/main/LICENSE)
-* Google's Roboto Font, [Apache License 2.0](https://github.com/googlefonts/roboto/blob/master/LICENSE).
-* Google's Material Design Icons, [Apache License 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE).
+* DM Sans Font, [SIL Open Font License 1.1](https://github.com/googlefonts/dm-fonts/blob/main/Serif/LICENSE.txt)
+* DM Serif Font, [SIL Open Font License 1.1](https://github.com/googlefonts/dm-fonts/blob/main/Serif/LICENSE.txt)
+* Mona Sans Font, [SIL Open Font License 1.1](https://github.com/github/mona-sans/blob/main/LICENSE)
+* Hubot Sans Font, [SIL Open Font License 1.1](https://github.com/github/hubot-sans/blob/main/LICENSE)
+* Roboto Font, [Apache License 2.0](https://github.com/googlefonts/roboto/blob/master/LICENSE).
+* Official Material Design Icons, [Apache License 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE).
 * Community Material Design Icons, [SIL Open Font License 1.1](https://github.com/Templarian/MaterialDesign/blob/master/LICENSE).
 * TinyColor, [MIT License](https://github.com/bgrins/TinyColor/blob/master/LICENSE).
 
@@ -191,11 +191,11 @@ Material Board, [AGPL License 3.0](https://github.com/fatihbalsoy/material-board
 
 Bu proje aşağıdaki üçüncü taraf kaynaklara bağımlıdır:
 
-* Adobe'nin DM Sans Yazı Tipi, [SIL Open Font License 1.1](https://github.com/googlefonts/dm-fonts/blob/main/Serif/LICENSE.txt)
-* Adobe'nin DM Serif Yazı Tipi, [SIL Open Font License 1.1](https://github.com/googlefonts/dm-fonts/blob/main/Serif/LICENSE.txt)
-* GitHub'ın Mona Sans Yazı Tipi, [SIL Open Font License 1.1](https://github.com/github/mona-sans/blob/main/LICENSE)
-* GitHub'ın Hubot Sans Yazı Tipi, [SIL Open Font License 1.1](https://github.com/github/hubot-sans/blob/main/LICENSE)
-* Google'ın Roboto Yazı Tipi, [Apache License 2.0](https://github.com/googlefonts/roboto/blob/master/LICENSE).
-* Google'ın Material Design İkonları, [Apache License 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE).
-* Community Material Design İkonları, [SIL Open Font License 1.1](https://github.com/Templarian/MaterialDesign/blob/master/LICENSE).
+* DM Sans Yazı Tipi, [SIL Open Font License 1.1](https://github.com/googlefonts/dm-fonts/blob/main/Serif/LICENSE.txt)
+* DM Serif Yazı Tipi, [SIL Open Font License 1.1](https://github.com/googlefonts/dm-fonts/blob/main/Serif/LICENSE.txt)
+* Mona Sans Yazı Tipi, [SIL Open Font License 1.1](https://github.com/github/mona-sans/blob/main/LICENSE)
+* Hubot Sans Yazı Tipi, [SIL Open Font License 1.1](https://github.com/github/hubot-sans/blob/main/LICENSE)
+* Roboto Yazı Tipi, [Apache License 2.0](https://github.com/googlefonts/roboto/blob/master/LICENSE).
+* Resmi Material Design İkonları, [Apache License 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE).
+* Topluluk Material Design İkonları, [SIL Open Font License 1.1](https://github.com/Templarian/MaterialDesign/blob/master/LICENSE).
 * TinyColor, [MIT License](https://github.com/bgrins/TinyColor/blob/master/LICENSE).

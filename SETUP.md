@@ -1,7 +1,7 @@
+
 <!-- THIS FILE IS AUTO-GENERATED. PLEASE EDIT `.readme/lang/SETUP.base.md` AND RUN `npm run mmg`. -->
 
 # Setup Developer Environment
-
 [![Build Status](https://img.shields.io/github/actions/workflow/status/fatihbalsoy/material-board/build.yml)](https://github.com/fatihbalsoy/material-board/actions/workflows/build.yml)
 
 Required Operating System: Linux, macOS, or Windows (WSL)
@@ -26,7 +26,6 @@ Windows users must setup Windows Subsystem for Linux to follow the steps tailore
     - `npm run` to list all scripts.
 
 ## NPM Scripts
-
 - Install dependencies
   - `npm install`
 - Run the local server at localhost:* (WordPress Playground) using WebAssembly and SQLite

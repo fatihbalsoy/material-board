@@ -1,3 +1,4 @@
+
 <!-- THIS FILE IS AUTO-GENERATED. PLEASE EDIT `.readme/lang/README.base.md` AND RUN `npm run mmg`. -->
 
 # ![Material Board](/.readme/banner.png?raw=true  "Material Board")
@@ -78,12 +79,11 @@ Material Board, [AGPL License 3.0](https://github.com/fatihbalsoy/material-board
 
 This project depends on the following third-parties:
 
-* Adobe's DM Sans Font, [SIL Open Font License 1.1](https://github.com/googlefonts/dm-fonts/blob/main/Serif/LICENSE.txt)
-* Adobe's DM Serif Font, [SIL Open Font License 1.1](https://github.com/googlefonts/dm-fonts/blob/main/Serif/LICENSE.txt)
-* GitHub's Mona Sans Font, [SIL Open Font License 1.1](https://github.com/github/mona-sans/blob/main/LICENSE)
-* GitHub's Hubot Sans Font, [SIL Open Font License 1.1](https://github.com/github/hubot-sans/blob/main/LICENSE)
-* Google's Roboto Font, [Apache License 2.0](https://github.com/googlefonts/roboto/blob/master/LICENSE).
-* Google's Material Design Icons, [Apache License 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE).
+* DM Sans Font, [SIL Open Font License 1.1](https://github.com/googlefonts/dm-fonts/blob/main/Serif/LICENSE.txt)
+* DM Serif Font, [SIL Open Font License 1.1](https://github.com/googlefonts/dm-fonts/blob/main/Serif/LICENSE.txt)
+* Mona Sans Font, [SIL Open Font License 1.1](https://github.com/github/mona-sans/blob/main/LICENSE)
+* Hubot Sans Font, [SIL Open Font License 1.1](https://github.com/github/hubot-sans/blob/main/LICENSE)
+* Roboto Font, [Apache License 2.0](https://github.com/googlefonts/roboto/blob/master/LICENSE).
+* Official Material Design Icons, [Apache License 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE).
 * Community Material Design Icons, [SIL Open Font License 1.1](https://github.com/Templarian/MaterialDesign/blob/master/LICENSE).
 * TinyColor, [MIT License](https://github.com/bgrins/TinyColor/blob/master/LICENSE).
-
