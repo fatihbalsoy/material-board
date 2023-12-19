@@ -80,8 +80,12 @@ Windows kullanıcıları, Ubuntu için uyarlanmış adımları takip etme üzere
   - `npm run dev`
 - Build for production in the build/ directory
   - `npm run build`
-- Build for production in each language in the build/ directory
-  - `npm run build:lang`
+- Build with development flag in the build/ directory
+  - `npm run build:dev`
+- Create a tag in the SVN repo for the current build
+  - `npm run svn:tag`
+- Reset SVN repo
+  - `npm run svn:reset`
 
 <!-- [tr] -->
 - Bağımlılıkları yükleyin
@@ -95,8 +99,12 @@ Windows kullanıcıları, Ubuntu için uyarlanmış adımları takip etme üzere
   - `npm run dev`
 - Üretim için build/ dizininde derleme yapın
   - `npm run build`
-- Her dile ayrı üretim için build/ dizininde derleme yapın
-  - `npm run build:lang`
+- Geliştirme bayrağıyla build işlemi build/ dizininde oluştur
+  - `npm run build:dev`
+- Mevcut yapı için SVN deposunda bir etiket oluştur
+  - `npm run svn:tag`
+- SVN deposunu sıfırla
+  - `npm run svn:reset`
 
 <!-- [common] -->
 ## wp-now

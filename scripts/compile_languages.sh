@@ -15,7 +15,7 @@ source $SCRIPTPATH/scripts/plugin_info.sh
 if ! command -v msgfmt &> /dev/null || ! [[ -x "$(command -v msgfmt)" ]]; then
     echo "Language (*.po) compilation skipped: msgfmt command is not executable. Install gettext."
 else
-    mkdir -p $SCRIPTPATH/build/languages # rsync skips empty directories
+    mkdir -p $SCRIPTPATH/build/$PLUGIN_BUNDLE/languages # rsync skips empty directories
     echo "Compiling Language Files..."
     echo "Duplicating Language Files..."
 
@@ -38,8 +38,8 @@ else
         filename=${filename%.po}
 
         # Compile the .po file using msgfmt
-        echo "Compiling src/lang/${filename}.po -> build/lang/${filename}.mo" >> $SCRIPTPATH/logs/out.log 2>> $SCRIPTPATH/logs/err.log
-        msgfmt "$po_file" -o "$SCRIPTPATH/build/languages/${filename}.mo"
+        echo "Compiling src/lang/${filename}.po -> build/${PLUGIN_BUNDLE}/lang/${filename}.mo" >> $SCRIPTPATH/logs/out.log 2>> $SCRIPTPATH/logs/err.log
+        msgfmt "$po_file" -o "$SCRIPTPATH/build/${PLUGIN_BUNDLE}/languages/${filename}.mo"
 
         # Check if the language code exists in the dictionary
         variant_list=${dictionary["$lang_code"]}
@@ -49,8 +49,8 @@ else
 
             # Duplicate and rename the .mo file for each variant
             for variant_code in $variant_codes; do
-                variant_parent_file="$SCRIPTPATH/build/languages/${PLUGIN_BUNDLE}-${lang_code}.mo"
-                variant_mo_file="$SCRIPTPATH/build/languages/${PLUGIN_BUNDLE}-${variant_code}.mo"
+                variant_parent_file="$SCRIPTPATH/build/${PLUGIN_BUNDLE}/languages/${PLUGIN_BUNDLE}-${lang_code}.mo"
+                variant_mo_file="$SCRIPTPATH/build/${PLUGIN_BUNDLE}/languages/${PLUGIN_BUNDLE}-${variant_code}.mo"
                 echo "Duplicating $lang_code -> $variant_code" >> $SCRIPTPATH/logs/out.log 2>> $SCRIPTPATH/logs/err.log
                 cp "$variant_parent_file" "$variant_mo_file"
             done

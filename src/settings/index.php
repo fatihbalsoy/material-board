@@ -26,7 +26,7 @@ function fbwpmdp_get_local_file_contents($file_path)
 
 <!-- Page-specific stylesheet -->
 <?php
-wp_enqueue_style('mdp-plugin-settings-page-stylesheet', plugins_url('style.css', __FILE__));
+wp_enqueue_style('fbwpmdp-plugin-settings-page-stylesheet', plugins_url('style.css', __FILE__));
 ?>
 
 <!-- TODO: Implement instant preview -->

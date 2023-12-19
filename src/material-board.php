@@ -18,6 +18,7 @@
 if (!defined('ABSPATH'))
     exit;
 
+$fbwpmdp_is_dev = 0;
 $fbwpmdp_author = "Fatih Balsoy";
 $fbwpmdp_author_website = "https://fatih.bal.soy";
 $fbwpmdp_website = "https://fatih.bal.soy/projects/material-board";
@@ -33,8 +34,8 @@ $fbwpmdp_name = "Material Board";
 $fbwpmdp_bundle = "material-board";
 $fbwpmdp_settings_title = $fbwpmdp_name;
 
-class MaterialBoardPlugin
-{
+class MaterialBoardPlugin {
+
     public string $settings_slug;
     private array $options = array(
         /** Theme **/
@@ -63,8 +64,7 @@ class MaterialBoardPlugin
         'fbwpmdp_icons' => 'md-icons'
     );
 
-    function __construct()
-    {
+    function __construct() {
         $this->settings_slug = 'material-board-settings';
         if (is_admin()) {
             if(!function_exists('get_plugin_data')){
@@ -74,8 +74,11 @@ class MaterialBoardPlugin
             $GLOBALS["fbwpmdp_version"] = $plugin_data["Version"];
         }
 
+        $GLOBALS['fbwpmdp_is_dev'] = file_exists(WP_PLUGIN_DIR . '/' . $GLOBALS['fbwpmdp_bundle'] . '/.dev');
+
         add_action('wp_enqueue_scripts', array($this, 'fbwpmdp_admin_user_theme_style'));
         add_action('admin_enqueue_scripts', array($this, 'fbwpmdp_admin_theme_style'));
+        add_action('admin_enqueue_scripts', array($this, 'fbwpmdp_gutenburg_style'));
         add_action('login_enqueue_scripts', array($this, 'fbwpmdp_login_theme_style'));
         add_action('admin_menu', array($this, 'fbwpmdp_plugin_menu'));
         add_action('admin_init', array($this, 'settings'));
@@ -85,39 +88,42 @@ class MaterialBoardPlugin
     }
 
     /** Language Support **/
-    function setup_languages()
-    {
+    function setup_languages() {
         // Set the theme's text domain
         load_plugin_textdomain($GLOBALS['fbwpmdp_bundle'], false, dirname(plugin_basename(__FILE__)) . '/languages/');
     }
 
     /** User-facing Admin Theme (Admin Bar) **/
-    function fbwpmdp_admin_user_theme_style()
-    {
-        wp_enqueue_style('mdp-user-theme', plugins_url('styles/wp.css', __FILE__));
+    function fbwpmdp_admin_user_theme_style() {
+        wp_enqueue_style('fbwpmdp-user-theme', plugins_url('styles/wp.css', __FILE__));
 
         $this->load_plugin_options();
     }
 
     /** Admin Dashboard Theme **/
-    function fbwpmdp_admin_theme_style()
-    {
+    function fbwpmdp_admin_theme_style() {
         // wp_enqueue_script('theme-script', plugins_url('app.js', __FILE__), array('jquery'));
-        wp_enqueue_style('mdp-admin-theme', plugins_url('styles/wp-admin.css', __FILE__));
+        wp_enqueue_style('fbwpmdp-admin-theme', plugins_url('styles/wp-admin.css', __FILE__));
 
         $split_wp_version = explode(".", $GLOBALS['wp_version']);
         $wp_ver_major = intval($split_wp_version[0]);
         $wp_ver_minor = intval($split_wp_version[1]);
         if ($wp_ver_major >= 6 || ($wp_ver_major == 5 && $wp_ver_minor >= 9)) {
-            wp_enqueue_style('mdp-admin-theme-5-9', plugins_url('styles/compatibility/5.9/wp-admin.css', __FILE__));
+            wp_enqueue_style('fbwpmdp-admin-theme-5-9', plugins_url('styles/compatibility/5.9/wp-admin.css', __FILE__));
         }
 
         $this->load_plugin_options();
     }
 
+    /** Gutenburg Block Editor Theme **/
+    function fbwpmdp_gutenburg_style() {
+        if($this->fbwpmdp_is_gutenberg_editor() && !$GLOBALS['fbwpmdp_is_dev']) {
+            wp_dequeue_style('fbwpmdp-admin-theme');
+        }
+    }
+
     /** Safari and Chrome Browser Theme Color **/
-    function change_theme_color_meta()
-    {
+    function change_theme_color_meta() {
         if (is_admin()) {
             $primary_color = get_option('fbwpmdp_colors_primary');
             echo '<meta name="theme-color" content="' . esc_attr($primary_color) . '">';
@@ -125,22 +131,18 @@ class MaterialBoardPlugin
     }
 
     /** Login Theme **/
-    function fbwpmdp_login_theme_style()
-    {
-        wp_enqueue_style('mdp-login-theme', plugins_url('styles/wp-login.css', __FILE__));
-
+    function fbwpmdp_login_theme_style() {
+        wp_enqueue_style('fbwpmdp-login-theme', plugins_url('styles/wp-login.css', __FILE__));
         $this->load_plugin_options();
     }
 
     /** Plugin Menu **/
-    function fbwpmdp_plugin_menu()
-    {
+    function fbwpmdp_plugin_menu() {
         add_theme_page($GLOBALS["fbwpmdp_name"], $GLOBALS["fbwpmdp_name"], 'manage_options', $this->settings_slug, array($this, 'fbwpmdp_plugin_options'));
     }
 
     /** Plugin Settings Menu **/
-    function fbwpmdp_plugin_settings_link($links)
-    {
+    function fbwpmdp_plugin_settings_link($links) {
         $url = get_admin_url() . "themes.php?page=material-board-settings";
         $settings_link = '<a href="' . $url . '">' . esc_html_e('Settings', 'material-board') . '</a>';
         $links[] = $settings_link;
@@ -148,20 +150,17 @@ class MaterialBoardPlugin
     }
 
     /** Load Plugin Options **/
-    function load_plugin_options()
-    {
-
+    function load_plugin_options() {
         //? -- COLORS -- ?//
         $color_stylesheet = $this->fbwpmdp_get_local_file_contents("styles/shared.dynamic.css");
         $color_stylesheet_with_primary = str_replace("\"primary-color\"", get_option('fbwpmdp_colors_primary'), $color_stylesheet);
         $color_stylesheet_with_primary_and_accent = str_replace("\"accent-color\"", get_option('fbwpmdp_colors_accent'), $color_stylesheet_with_primary);
-        wp_add_inline_style('mdp-admin-theme', $color_stylesheet_with_primary_and_accent);
-        wp_add_inline_style('mdp-user-theme', $color_stylesheet_with_primary_and_accent);
-        wp_add_inline_style('mdp-login-theme', $color_stylesheet_with_primary_and_accent);
+        wp_add_inline_style('fbwpmdp-admin-theme', $color_stylesheet_with_primary_and_accent);
+        wp_add_inline_style('fbwpmdp-user-theme', $color_stylesheet_with_primary_and_accent);
+        wp_add_inline_style('fbwpmdp-login-theme', $color_stylesheet_with_primary_and_accent);
 
         //? -- DARK MODE -- ?//
-        function fbwpmdp_enqueue_dark_theme()
-        {
+        function fbwpmdp_enqueue_dark_theme() {
             wp_enqueue_style('dark-admin-theme', plugins_url('styles/themes/shared.dark.css', __FILE__));
         }
 
@@ -237,35 +236,42 @@ class MaterialBoardPlugin
     }
 
     /** Plugin Options **/
-    function fbwpmdp_plugin_options()
-    {
+    function fbwpmdp_plugin_options() {
         if (!current_user_can('manage_options')) {
             wp_die(esc_html_e('You do not have sufficient permissions to access this page.'));
         }
         echo $this->fbwpmdp_get_local_file_contents('settings/index.php');
     }
 
-    function get_option_or_default($option)
-    {
+    function get_option_or_default($option) {
         return get_option($option, $this->options[$option]);
     }
 
-    function settings()
-    {
+    function settings() {
         foreach ($this->options as $key => $value) {
             add_option($key, $value);
             register_setting('material_dashboard_plugin', $key, array('sanitize_callback' => 'sanitize_text_field', 'default' => $value));
         }
     }
 
-    // TODO: Replace this function
-    function fbwpmdp_get_local_file_contents($file_path)
-    {
+    function fbwpmdp_get_local_file_contents($file_path) {
         ob_start();
         include $file_path;
         $contents = ob_get_clean();
 
         return $contents;
+    }
+
+    function fbwpmdp_is_gutenberg_editor() {
+        if( function_exists( 'is_gutenberg_page' ) && is_gutenberg_page() ) { 
+            return true;
+        }   
+        
+        $current_screen = get_current_screen();
+        if ( method_exists( $current_screen, 'is_block_editor' ) && $current_screen->is_block_editor() ) {
+            return true;
+        }
+        return false;
     }
 }
 

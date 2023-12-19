@@ -26,7 +26,7 @@ for (const i in directories) {
         if (directory == 'src/languages/') {
             exec('zsh scripts/compile_languages.sh')
         } else {
-            exec('bash scripts/copy_files.sh') // , (err, stdout, stderr) => { }
+            exec('zsh scripts/copy_files.sh') // , (err, stdout, stderr) => { }
         }
     })
 }

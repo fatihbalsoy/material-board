@@ -30,39 +30,47 @@ echo "$PLUGIN_ZIP_NAME"
 #?#   Setup Build Directory   #?#
 echo "Setting up build directory..."
 rm -rf $SCRIPTPATH/build/
-mkdir -p $SCRIPTPATH/build/
+mkdir -p $SCRIPTPATH/build/$PLUGIN_BUNDLE
 mkdir -p $SCRIPTPATH/logs/
+
+#?#   Create .dev File   #?#
+if [[ "$*" == *"--dev"* ]]; then
+    touch $SCRIPTPATH/build/$PLUGIN_BUNDLE/.dev
+    echo "Bundling for development. Created .dev file."
+else
+    echo "Bundling for release."
+fi
 
 #?#   Copy Files   #?#
 echo "Copying files..."
-cp $SCRIPTPATH/README.md build/
-cp $SCRIPTPATH/LICENSE build/
-bash $SCRIPTPATH/scripts/copy_files.sh
+cp $SCRIPTPATH/README.md $SCRIPTPATH/build/$PLUGIN_BUNDLE/
+cp $SCRIPTPATH/LICENSE $SCRIPTPATH/build/$PLUGIN_BUNDLE/
+zsh $SCRIPTPATH/scripts/copy_files.sh
 
 #?#   Compiling Language Files   #?#
 zsh $SCRIPTPATH/scripts/compile_languages.sh
 
 #?#   Compiling Sass and Typescript Files   #?#
 echo "Compiling Sass Files..."
-sass $SCRIPTPATH/src/:$SCRIPTPATH/build/ --no-source-map --style compressed
+sass $SCRIPTPATH/src/:$SCRIPTPATH/build/$PLUGIN_BUNDLE --no-source-map --style compressed
 echo "Compiling Typescript Files..."
 tsc --declaration false
 echo "Compressing Javascript Files..."
 # Find all JavaScript files recursively and loop over them
-find $SCRIPTPATH/build/ -type f -name "*.js" -print0 | while IFS= read -r -d '' file; do
+find $SCRIPTPATH/build/$PLUGIN_BUNDLE -type f -name "*.js" -print0 | while IFS= read -r -d '' file; do
     # Compress each file
     uglifyjs --compress --mangle --mangle-props -o $file -- $file
 done
 
 #?#   Zip Files   #?#
 echo "Archiving..."
-mkdir -p $SCRIPTPATH/build/_bundle/$PLUGIN_BUNDLE
-rsync -avz --prune-empty-dirs $SCRIPTPATH/build/. $SCRIPTPATH/build/_bundle/$PLUGIN_BUNDLE >> $SCRIPTPATH/logs/out.log 2>> $SCRIPTPATH/logs/err.log
-cd $SCRIPTPATH/build/_bundle
+# mkdir -p $SCRIPTPATH/build/_bundle/$PLUGIN_BUNDLE
+# rsync -avz --prune-empty-dirs $SCRIPTPATH/build/. $SCRIPTPATH/build/_bundle/$PLUGIN_BUNDLE >> $SCRIPTPATH/logs/out.log 2>> $SCRIPTPATH/logs/err.log
+cd $SCRIPTPATH/build/
 zip -r ./$PLUGIN_ZIP_NAME.zip $PLUGIN_BUNDLE >> $SCRIPTPATH/logs/out.log 2>> $SCRIPTPATH/logs/err.log
 cd - >> $SCRIPTPATH/logs/out.log 2>> $SCRIPTPATH/logs/err.log
 
 #?#   Unzip files to verify match   #?#
-unzip $SCRIPTPATH/build/_bundle/$PLUGIN_ZIP_NAME.zip -d $SCRIPTPATH/build/_bundle/$PLUGIN_ZIP_NAME/ >> $SCRIPTPATH/logs/out.log 2>> $SCRIPTPATH/logs/err.log
+unzip $SCRIPTPATH/build/$PLUGIN_ZIP_NAME.zip -d $SCRIPTPATH/build/$PLUGIN_ZIP_NAME/ >> $SCRIPTPATH/logs/out.log 2>> $SCRIPTPATH/logs/err.log
 
 echo "Done."
