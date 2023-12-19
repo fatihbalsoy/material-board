@@ -1,3 +1,4 @@
+
 <!-- BU DOSYA OTOMATİK OLARAK OLUŞTURULMUŞTUR. LÜTFEN `.readme/lang/SETUP.base.md` DOSYASINI DÜZENLEYİN VE `npm run mmg` KOMUTUNU ÇALIŞTIRIN. -->
 
 # Geliştirici Ortamını Kur
