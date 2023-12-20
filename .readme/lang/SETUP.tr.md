@@ -39,8 +39,12 @@ Windows kullanıcıları, Ubuntu için uyarlanmış adımları takip etme üzere
   - `npm run dev`
 - Üretim için build/ dizininde derleme yapın
   - `npm run build`
-- Her dile ayrı üretim için build/ dizininde derleme yapın
-  - `npm run build:lang`
+- Geliştirme bayrağıyla build işlemi build/ dizininde oluştur
+  - `npm run build:dev`
+- Mevcut yapı için SVN deposunda bir etiket oluştur
+  - `npm run svn:tag`
+- SVN deposunu sıfırla
+  - `npm run svn:reset`
 
 ## wp-now
 
