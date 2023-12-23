@@ -13,6 +13,7 @@
   */
 
 @import url(admin-menu.css);
+@import url(buddicons.css);
 @import url(image-editing.css);
 @import url(media.css);
 @import url(miscellaneous.css);
@@ -30,6 +31,8 @@
 
 .dashicons,
 .dashicons-before:before,
+/* .dashicons-before:before[style*="font-family: dashicons"], */
+/* .dashicons-before:before font[face="dashicons"], */
 .mce-ico, .wp-media-buttons .add_media span.wp-media-buttons-icon:before,
 #post-body #visibility:before,
 #post-body .misc-pub-post-status:before,

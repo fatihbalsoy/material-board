@@ -1,0 +1,29 @@
+/*
+ *   buddicons.css
+ *   material-board
+ * 
+ *   Created by Fatih Balsoy on 23 Dec 2023
+ *   Copyright © 2023 Fatih Balsoy. All rights reserved.
+ */
+
+/* forums */
+#adminmenu #menu-posts-forum .wp-menu-image::before, 
+#dashboard_right_now a.bbp-glance-forums::before, 
+th .bbp_forums_column::before {
+    content: 'hive' !important;
+}
+
+/* topics */
+/* TODO: create custom icon for honey dipper */
+#adminmenu #menu-posts-topic .wp-menu-image::before, 
+#dashboard_right_now a.bbp-glance-topics::before, 
+th .bbp_topics_column::before {
+    content: 'topic' !important;
+}
+
+/* replies */
+#adminmenu #menu-posts-reply .wp-menu-image::before, 
+#dashboard_right_now a.bbp-glance-replies::before, 
+th .bbp_replies_column::before {
+    content: 'emoji_nature' !important;
+}
