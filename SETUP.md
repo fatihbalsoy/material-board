@@ -37,8 +37,12 @@ Windows users must setup Windows Subsystem for Linux to follow the steps tailore
   - `npm run dev`
 - Build for production in the build/ directory
   - `npm run build`
-- Build for production in each language in the build/ directory
-  - `npm run build:lang`
+- Build with development flag in the build/ directory
+  - `npm run build:dev`
+- Create a tag in the SVN repo for the current build
+  - `npm run svn:tag`
+- Reset SVN repo
+  - `npm run svn:reset`
 
 ## wp-now
 
