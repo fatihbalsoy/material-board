@@ -74,7 +74,7 @@ Windows kullanıcıları, Ubuntu için uyarlanmış adımları takip etme üzere
 - Run the local server at localhost:* (WordPress Playground) using WebAssembly and SQLite
   - `npm run dev:wasm`
   - (creates wp environment at ~/.wp-now)
-- Run the local server at localhost:8000 (WordPress) and localhost:8080 (phpMyAdmin) using Docker
+- Run the local server at localhost:8080 (WordPress) and localhost:8081 (phpMyAdmin) using Docker
   - `npm run dev:docker`
 - Watch & compile source code without hosting a WordPress server
   - `npm run dev`
@@ -93,7 +93,7 @@ Windows kullanıcıları, Ubuntu için uyarlanmış adımları takip etme üzere
 - WebAssembly ve SQLite kullanarak yerel sunucuyu localhost:* (WordPress Playground) üzerinde çalıştırın
   - `npm run dev:wasm`
   - (~/.wp-now altında wp ortamını oluşturur)
-- Docker kullanarak yerel sunucuyu localhost:8000 (WordPress) ve localhost:8080 (phpMyAdmin) üzerinde çalıştırın
+- Docker kullanarak yerel sunucuyu localhost:8080 (WordPress) ve localhost:8081 (phpMyAdmin) üzerinde çalıştırın
   - `npm run dev:docker`
 - WordPress sunucusu barındırmadan kaynak kodunu izle ve derle
   - `npm run dev`
@@ -133,3 +133,20 @@ Password: `password`
 Kullanıcı adı: `admin`
 
 Şifre: `password`
+
+<!-- [common] -->
+## phpMyAdmin (Docker)
+
+<!-- [en] -->
+### Default Credentials
+
+Username: `wp_user`
+
+Password: `wp_password`
+
+<!-- [tr] -->
+### Varsayılan Kimlik Bilgileri
+
+Kullanıcı adı: `wp_user`
+
+Şifre: `wp_password`

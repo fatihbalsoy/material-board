@@ -28,9 +28,12 @@
 @import url(welcome-screen.css);
 @import url(widgets.css);
 @import url(wordpress-org.css);
+@import url(third-party.css);
 
+/* TODO: Should only affect elements that use the dashicons font */
 .dashicons,
 .dashicons-before:before,
+/* .dashicons-before:before[font-family="dashicons"], */
 /* .dashicons-before:before[style*="font-family: dashicons"], */
 /* .dashicons-before:before font[face="dashicons"], */
 .mce-ico, .wp-media-buttons .add_media span.wp-media-buttons-icon:before,
@@ -247,4 +250,13 @@ li.toplevel_page_et_divi_options div.wp-menu-image:before,
 	#et_search_icon:before{
 	    top: 6px !important;
 	}
+}
+
+/* WordPress 6.4.2 Welcome Panel - Pencil Icon */
+/* path[d="M32.0668 17.0854L28.8221 13.9454L18.2008 24.671L16.8983 29.0827L21.4257 27.8309L32.0668 17.0854ZM16 32.75H24V31.25H16V32.75Z"] {
+    d: path("M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z");
+} */
+
+.welcome-panel .welcome-panel-close:before {
+    font-size: 20px;
 }

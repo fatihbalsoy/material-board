@@ -1,4 +1,3 @@
-
 <!-- THIS FILE IS AUTO-GENERATED. PLEASE EDIT `.readme/lang/SETUP.base.md` AND RUN `npm run mmg`. -->
 
 # Setup Developer Environment
@@ -31,7 +30,7 @@ Windows users must setup Windows Subsystem for Linux to follow the steps tailore
 - Run the local server at localhost:* (WordPress Playground) using WebAssembly and SQLite
   - `npm run dev:wasm`
   - (creates wp environment at ~/.wp-now)
-- Run the local server at localhost:8000 (WordPress) and localhost:8080 (phpMyAdmin) using Docker
+- Run the local server at localhost:8080 (WordPress) and localhost:8081 (phpMyAdmin) using Docker
   - `npm run dev:docker`
 - Watch & compile source code without hosting a WordPress server
   - `npm run dev`
@@ -57,3 +56,12 @@ wp-now start --path=build/ --wp=6.3 --php=8.0
 Username: `admin`
 
 Password: `password`
+
+## phpMyAdmin (Docker)
+
+### Default Credentials
+
+Username: `wp_user`
+
+Password: `wp_password`
+

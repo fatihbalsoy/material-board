@@ -1,0 +1,21 @@
+/*
+ *   third-party.css
+ *   material-board
+ * 
+ *   Created by Fatih Balsoy on 24 Dec 2023
+ *   Copyright © 2023 Fatih Balsoy. All rights reserved.
+ */
+
+/* TODO: Should only affect elements that use the dashicons font */
+
+/*? ELEMENTOR ?*/
+
+/* Elementor Icon */
+#adminmenu #toplevel_page_elementor div.wp-menu-image:before {
+    font-family: eicons !important;
+}
+
+/* Folder */
+#adminmenu #menu-posts-elementor_library .wp-menu-image:before {
+    content: 'folder' !important;
+}

@@ -1,4 +1,3 @@
-
 <!-- THIS FILE IS AUTO-GENERATED. PLEASE EDIT `.readme/lang/README.base.md` AND RUN `npm run mmg`. -->
 
 # ![Material Board](/.readme/banner.png?raw=true  "Material Board")
@@ -87,3 +86,4 @@ This project depends on the following third-parties:
 * Official Material Design Icons, [Apache License 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE).
 * Community Material Design Icons, [SIL Open Font License 1.1](https://github.com/Templarian/MaterialDesign/blob/master/LICENSE).
 * TinyColor, [MIT License](https://github.com/bgrins/TinyColor/blob/master/LICENSE).
+

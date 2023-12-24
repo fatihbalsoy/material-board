@@ -284,11 +284,17 @@ table.widefat {
 }
 
 .wp-editor-wrap .wp-editor-tools {
-    margin-top: 10px;
     background-color: var(--primary-color) !important;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-bottom: 1.5px;
     border-radius: var(--br-10px-top);
+}
+
+.wp-media-buttons {
+    padding-left: 10px;
+}
+
+.wp-editor-tabs {
+    padding-right: 10px;
 }
 
 .wp-editor-wrap .wp-switch-editor {

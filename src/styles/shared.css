@@ -84,6 +84,7 @@
     /* adminbar popup menu */
     --br-100pc: 100%;
     --br-100px: 100px;
+    --br-10px-top: 10px 10px 0px 0px;
     --br-10px-bottom: 0px 0px 10px 10px;
     --br-10px-right: 0px 10px 10px 0px;
     --br-10px: 10px;

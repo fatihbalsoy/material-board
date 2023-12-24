@@ -1,4 +1,3 @@
-
 <!-- BU DOSYA OTOMATİK OLARAK OLUŞTURULMUŞTUR. LÜTFEN `.readme/lang/README.base.md` DOSYASINI DÜZENLEYİN VE `npm run mmg` KOMUTUNU ÇALIŞTIRIN. -->
 
 # ![Material Board](/.readme/banner.png?raw=true  "Material Board")

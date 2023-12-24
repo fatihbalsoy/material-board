@@ -11,64 +11,73 @@
 # STOP: docker-compose down
 # DELETE: docker-compose down --volumes
 
-version: '3'
-
-networks:
-  wpsite:
-
-    # persistent volumes
-volumes:
-  db_data:
-
+# https://gist.github.com/erikyuzwa/7411752ddcb95b09434aa88f38d91630
+version: "3.8"
 
 services:
-  # Database
-  db:
-    image: mysql:latest
+
+  database:
+    # We use a mariadb image which supports both amd64 & arm64 architecture
+    image: mariadb:10.6.4-focal
+    restart: unless-stopped
+    ports:
+      - 3306:3306
+    env_file: .env
+    environment:
+      MYSQL_ROOT_PASSWORD: '${MYSQL_ROOT_PASSWORD}'
+      MYSQL_DATABASE: '${MYSQL_DATABASE}'
+      MYSQL_USER: '${MYSQL_USER}'
+      MYSQL_PASSWORD: '${MYSQL_PASSWORD}'
     volumes:
       - ./volumes/db_data:/var/lib/mysql
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: wordpress
-      MYSQL_USER: wordpress
-      MYSQL_PASSWORD: wordpress
     networks:
-      - wpsite
-  # phpmyadmin
+      - wordpress-network
+    deploy:
+      resources:
+        limits:
+          memory: 2048m
+
   phpmyadmin:
     depends_on:
-      - db
-    image: phpmyadmin:latest
-    restart: always
+      - database
+    image: phpmyadmin/phpmyadmin
+    restart: unless-stopped
     ports:
-      - '8080:80'
+      - 8081:80
+    env_file: .env
     environment:
-      PMA_HOST: db
-      MYSQL_ROOT_PASSWORD: password
+      PMA_HOST: database
+      MYSQL_ROOT_PASSWORD: '${MYSQL_ROOT_PASSWORD}'
     networks:
-      - wpsite
-  # Wordpress
+      - wordpress-network
+
   wordpress:
     depends_on:
-      - db
-    image: wordpress:latest
+      - database
+    image: wordpress:6.4.2-apache
+    restart: unless-stopped
     ports:
-      - '8000:80'
-    restart: always
+      - 8080:80
+    env_file: .env
+    environment:
+      WORDPRESS_DB_HOST: database:3306 # use the same name as database service
+      WORDPRESS_DB_NAME: '${MYSQL_DATABASE}'
+      WORDPRESS_DB_USER: '${MYSQL_USER}'
+      WORDPRESS_DB_PASSWORD: '${MYSQL_PASSWORD}'
     volumes:
+      # - ./wp-content:/var/www/html/wp-content
+      #       - '8000:80'
       # persistent local data
-      - ./build/.:/var/www/html/wp-content/plugins/material-board:cached
+      - ./build/material-board/.:/var/www/html/wp-content/plugins/material-board:cached
       # other data
       - ./volumes/wordpress:/var/www/html
       - ./volumes/plugins:/var/www/html/wp-content/plugins
-    environment:
-      # local dev environment
-      WORDPRESS_DEBUG: 1
-      DEVELOPMENT: 1
-      # docker wp config settings
-      WORDPRESS_DB_HOST: db:3306
-      WORDPRESS_DB_USER: admin
-      WORDPRESS_DB_PASSWORD: password
     networks:
-      - wpsite
+      - wordpress-network
+
+volumes:
+  db-data:
+
+networks:
+  wordpress-network:
+    driver: bridge  

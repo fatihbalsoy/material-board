@@ -1,4 +1,3 @@
-
 <!-- BU DOSYA OTOMATİK OLARAK OLUŞTURULMUŞTUR. LÜTFEN `.readme/lang/SETUP.base.md` DOSYASINI DÜZENLEYİN VE `npm run mmg` KOMUTUNU ÇALIŞTIRIN. -->
 
 # Geliştirici Ortamını Kur
@@ -33,7 +32,7 @@ Windows kullanıcıları, Ubuntu için uyarlanmış adımları takip etme üzere
 - WebAssembly ve SQLite kullanarak yerel sunucuyu localhost:* (WordPress Playground) üzerinde çalıştırın
   - `npm run dev:wasm`
   - (~/.wp-now altında wp ortamını oluşturur)
-- Docker kullanarak yerel sunucuyu localhost:8000 (WordPress) ve localhost:8080 (phpMyAdmin) üzerinde çalıştırın
+- Docker kullanarak yerel sunucuyu localhost:8080 (WordPress) ve localhost:8081 (phpMyAdmin) üzerinde çalıştırın
   - `npm run dev:docker`
 - WordPress sunucusu barındırmadan kaynak kodunu izle ve derle
   - `npm run dev`
@@ -59,3 +58,11 @@ wp-now start --path=build/ --wp=6.3 --php=8.0
 Kullanıcı adı: `admin`
 
 Şifre: `password`
+
+## phpMyAdmin (Docker)
+
+### Varsayılan Kimlik Bilgileri
+
+Kullanıcı adı: `wp_user`
+
+Şifre: `wp_password`

@@ -6,6 +6,11 @@
  *   Copyright © 2023 Fatih Balsoy. All rights reserved.
  */
 
+/* buddpress logo */
+.dashicons-buddicons-buddypress-logo:before {
+    font-family: 'dashicons' !important;
+}
+
 /* forums */
 #adminmenu #menu-posts-forum .wp-menu-image::before, 
 #dashboard_right_now a.bbp-glance-forums::before, 
@@ -26,4 +31,17 @@ th .bbp_topics_column::before {
 #dashboard_right_now a.bbp-glance-replies::before, 
 th .bbp_replies_column::before {
     content: 'emoji_nature' !important;
+}
+
+/* users */
+#dashboard_right_now a.bbp-glance-users::before {
+    content: 'person' !important;
+}
+
+/* activity */
+#adminmenu #toplevel_page_bp-activity .wp-menu-image:before, 
+#adminmenu #toplevel_page_bp-activity_network .wp-menu-image:before, 
+#adminmenu #toplevel_page_bp-activity_user .wp-menu-image:before {
+    font-family: 'Community Material Icons' !important;
+    content: '\F07C2' !important;
 }
