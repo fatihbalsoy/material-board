@@ -66,6 +66,8 @@ wp_enqueue_style('fbwpmdp-plugin-settings-page-stylesheet', plugins_url('style.c
                         echo fbwpmdp_get_local_file_contents('options/colors.php');
                         // Rounded Corners  - Checkbox
                         echo fbwpmdp_get_local_file_contents('options/corners.php');
+                        // Content Padding  - Checkbox
+                        echo fbwpmdp_get_local_file_contents('options/negative_space.php');
                         // Font             - DM Sans
                         //                  - Roboto
                         //                  - Mona Sans

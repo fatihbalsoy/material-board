@@ -1,0 +1,69 @@
+/*
+ *   large_app_bar_2_no_negative_space.scss
+ *   material-board
+ * 
+ *   Created by Fatih Balsoy on 25 Dec 2023
+ *   Copyright © 2023 Fatih Balsoy. All rights reserved.
+ */
+
+@import url('large_app_bar.css');
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+// ADMIN MENU ON TOP
+
+div#adminmenumain {
+    z-index: 2;
+    position: absolute;
+    top: -40px !important;
+}
+
+div#wp-toolbar {
+    padding-left: calc($admin-menu-width + 15px) !important;
+    padding-right: 15px !important;
+
+    @include respond-to('large') {
+        padding-left: $admin-menu-folded-width + 20px !important;
+        padding-right: 20px !important;
+    }
+
+    @include respond-to('medium') {
+        padding-left: inherit !important;
+        padding-right: inherit !important;
+    }
+}
+
+.folded #wpcontent>#wpadminbar>div#wp-toolbar {
+    padding-left: $admin-menu-folded-width + 15px !important;
+    padding-right: 15px !important;
+
+    @include respond-to('large') {
+        padding-left: inherit !important;
+        padding-right: inherit !important;
+    }
+}
+
+// #wpadminbar {
+
+// }
+
+.folded #wpadminbar {
+    @include respond-to('large') {
+        padding-left: $admin-menu-folded-width - 15px;
+    }
+
+    @include respond-to('medium') {
+        padding-left: 0px;
+    }
+}
+
+.folded #wpcontent,
+.folded #wpfooter {
+    // TODO: resets when screen size is less than 960px
+    margin-left: $admin-menu-folded-width;
+
+    @include respond-to('medium') {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

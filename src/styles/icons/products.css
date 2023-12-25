@@ -16,6 +16,10 @@
     content: 'update';
 }
 
+.plugin-card .update-now:before, .plugin-card .updating-message:before {
+    content: 'autorenew';
+}
+
 .dashicons-screenoptions:before{
     content: 'apps';
 }

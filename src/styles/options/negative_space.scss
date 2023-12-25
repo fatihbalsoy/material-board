@@ -1,0 +1,34 @@
+/*
+ *   negative_space.scss
+ *   material-board
+ * 
+ *   Created by Fatih Balsoy on 25 Dec 2023
+ *   Copyright © 2023 Fatih Balsoy. All rights reserved.
+ */
+
+@import '../utilities/variables', '../utilities/mixins';
+
+#wpcontent {
+    /*margin-top: 48px;*/
+    margin-left: calc($content-padding + $admin-menu-width);
+    margin-right: $content-padding;
+
+    @include respond-to('large') {
+        margin-right: inherit !important;
+    }
+
+    @include respond-to('medium') {
+        margin-right: 0px !important;
+    }
+}
+
+.folded #wpcontent,
+.folded #wpfooter {
+    margin-left: calc($content-folded-padding + $admin-menu-folded-width);
+    margin-right: $content-folded-padding !important;
+
+    @include respond-to('medium') {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

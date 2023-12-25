@@ -71,7 +71,9 @@ th .comment-grey-bubble:before,
 .dashicons-admin-post:before,
 .post-format-icon.post-format-standard:before,
 .dashicons-editor-unlink:before,
-i.mce-i-unlink:before {
+i.mce-i-unlink:before,
+.plugin-card .update-now:before,
+.plugin-card .updating-message:before {
     font-family: 'Material Symbols Outlined' !important;
     font-weight: normal;
     font-style: normal;

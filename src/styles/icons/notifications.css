@@ -15,7 +15,9 @@
 .theme-browser .theme .notice-success p:before{
     content: 'done' !important;
 }
-.button.updated-message:before, .installed p:before, .updated-message p:before{
+/* .button.updated-message:before,  */
+.installed p:before, 
+.updated-message p:before{
     margin-top: -2px !important;
 }
 

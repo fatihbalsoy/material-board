@@ -17,6 +17,7 @@
 // 5. Components
 @import 'components/card', 'components/button', 'components/input', 'components/checkbox', 'components/radio';
 // 6. Page-specific styles
+@import 'pages/plugins/add_new.scss', 'pages/users/profile.scss';
 // 7. Themes
 
 @import url('shared.css');
@@ -25,33 +26,8 @@ table.googlesitekit-table__wrapper.googlesitekit-table__wrapper--2-col {
     box-shadow: none !important;
 }
 
-#wpcontent {
-    /*margin-top: 48px;*/
-    margin-left: calc($content-padding + $admin-menu-width);
-    margin-right: $content-padding;
-
-    @include respond-to('large') {
-        margin-right: inherit !important;
-    }
-
-    @include respond-to('medium') {
-        margin-right: 0px !important;
-    }
-}
-
 #wpbody {
     z-index: 0;
-}
-
-.folded #wpcontent,
-.folded #wpfooter {
-    margin-left: calc($content-folded-padding + $admin-menu-folded-width);
-    margin-right: $content-folded-padding !important;
-
-    @include respond-to('medium') {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
 }
 
 .spinner {
@@ -581,8 +557,6 @@ ul.striped>:nth-child(odd) {
     .wrap .page-title-action,
     .color-option,
     .wp-color-result {
-        width: 100% !important;
-        height: 40px;
         text-align: center !important;
         line-height: 25px;
     }
@@ -751,7 +725,11 @@ acronym[title] {
 }
 
 div#col-left {
-    width: 31%;
+    width: 30%;
+
+    @include respond-to('medium') {
+        width: auto;
+    }
 }
 
 form.search-form.wp-clearfix {

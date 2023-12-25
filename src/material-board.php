@@ -61,11 +61,14 @@ class MaterialBoardPlugin {
         'fbwpmdp_header_serif_font' => 'off',
 
         /** Icons **/
-        'fbwpmdp_icons' => 'md-icons'
+        'fbwpmdp_icons' => 'md-icons',
+
+        /** Padding **/
+        'fbwpmdp_negative_space' => 'on'
     );
 
     function __construct() {
-        $this->settings_slug = 'material-board-settings';
+        $this->settings_slug = $GLOBALS['fbwpmdp_bundle'];
         if (is_admin()) {
             if(!function_exists('get_plugin_data')){
                 require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
@@ -84,7 +87,7 @@ class MaterialBoardPlugin {
         add_action('admin_init', array($this, 'settings'));
         add_action('admin_init', array($this, 'setup_languages'));
         add_action('admin_head', array($this, 'change_theme_color_meta'));
-        // add_filter('plugin_action_links_' . plugin_basename(__FILE__), 'fbwpmdp_plugin_settings_link');
+        // add_filter('plugin_action_links_' . plugin_basename(__FILE__), 'fbwpmdp_settings_link');
     }
 
     /** Language Support **/
@@ -141,9 +144,9 @@ class MaterialBoardPlugin {
         add_theme_page($GLOBALS["fbwpmdp_name"], $GLOBALS["fbwpmdp_name"], 'manage_options', $this->settings_slug, array($this, 'fbwpmdp_plugin_options'));
     }
 
-    /** Plugin Settings Menu **/
-    function fbwpmdp_plugin_settings_link($links) {
-        $url = get_admin_url() . "themes.php?page=material-board-settings";
+    /** Plugin Settings Link **/
+    function fbwpmdp_settings_link($links) {
+        $url = admin_url("themes.php?page=" . $this->settings_slug);
         $settings_link = '<a href="' . $url . '">' . esc_html_e('Settings', 'material-board') . '</a>';
         $links[] = $settings_link;
         return $links;
@@ -209,6 +212,13 @@ class MaterialBoardPlugin {
             wp_dequeue_style('rounded-corners');
         }
 
+        //? -- CONTENT PADDING -- ?//
+        if ($this->get_option_or_default('fbwpmdp_negative_space') == 'on') {
+            wp_enqueue_style('negative-space', plugins_url('styles/options/negative_space.css', __FILE__));
+        } else {
+            wp_dequeue_style('negative-space');
+        }
+
         //? -- LARGE ADMIN BAR -- ?//
         if ($this->get_option_or_default('fbwpmdp_large_admin_bar') == 'on' and is_admin()) {
             wp_enqueue_style('large_admin_bar', plugins_url('styles/options/large_app_bar.css', __FILE__));
@@ -219,11 +229,16 @@ class MaterialBoardPlugin {
             } else {
                 // Admin Menu on top
                 wp_enqueue_style('large_admin_bar_variant', plugins_url('styles/options/large_app_bar_2.css', __FILE__));
+                // Remove negative space if needed
+                if ($this->get_option_or_default('fbwpmdp_negative_space') != 'on') {
+                    wp_enqueue_style('large_admin_bar_no_negative_space', plugins_url('styles/options/large_app_bar_2_no_negative_space.css', __FILE__ ));
+                }
             }
         } else {
             wp_dequeue_style('large_admin_bar');
             wp_dequeue_style('large_admin_bar_variant');
             wp_dequeue_script('large_admin_bar_script');
+            wp_dequeue_style('large_admin_bar_no_negative_space');
         }
 
         //? -- ICONS -- ?//
