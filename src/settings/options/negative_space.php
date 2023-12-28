@@ -20,6 +20,6 @@ $negative_space = get_option('fbwpmdp_negative_space');
     <td>
         <input name="fbwpmdp_negative_space" type="checkbox" <?php checked($negative_space, 'on') ?> />
         <br /><br />
-        <?php esc_html_e('Negative space can be beneficial for enhancing readability and improving overall visual appeal. Turning it off may ease the use of third-party plugins.', 'material-board') ?>
+        <?php esc_html_e('Content padding can be beneficial for enhancing readability and improving overall visual appeal. Turning it off may ease the use of third-party plugins.', 'material-board') ?>
     </td>
 </tr>

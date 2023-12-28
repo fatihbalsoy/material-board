@@ -128,3 +128,10 @@ msgstr "Paramètres"
 msgid "You do not have sufficient permissions to access this page."
 msgstr "Vous ne disposez pas des autorisations suffisantes pour accéder à cette page."
 
+#: negative_space.php:19
+msgid "Content Padding"
+msgstr "Remplissage du contenu"
+
+#: negative_space.php:23
+msgid "Content padding can be beneficial for enhancing readability and improving overall visual appeal. Turning it off may ease the use of third-party plugins."
+msgstr "Le remplissage du contenu peut être bénéfique pour améliorer la lisibilité et l’attrait visuel global. Le désactiver peut faciliter l’utilisation de plugins tiers."

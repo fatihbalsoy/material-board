@@ -128,3 +128,10 @@ msgstr "Inställningar"
 msgid "You do not have sufficient permissions to access this page."
 msgstr ""
 
+#: negative_space.php:19
+msgid "Content Padding"
+msgstr ""
+
+#: negative_space.php:23
+msgid "Content padding can be beneficial for enhancing readability and improving overall visual appeal. Turning it off may ease the use of third-party plugins."
+msgstr ""

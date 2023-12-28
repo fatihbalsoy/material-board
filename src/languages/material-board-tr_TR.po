@@ -128,3 +128,10 @@ msgstr "Ayarlar"
 msgid "You do not have sufficient permissions to access this page."
 msgstr "Bu sayfaya erişmek için yeterli izniniz yok."
 
+#: negative_space.php:19
+msgid "Content Padding"
+msgstr "İçerik Dolgusu"
+
+#: negative_space.php:23
+msgid "Content padding can be beneficial for enhancing readability and improving overall visual appeal. Turning it off may ease the use of third-party plugins."
+msgstr "İçerik dolgusu, okunabilirliği artırmak ve genel görsel çekiciliği artırmak için faydalı olabilir. Bunu kapatmak üçüncü taraf eklentilerin kullanımını kolaylaştırabilir."
