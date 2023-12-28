@@ -1,6 +1,6 @@
 0.3.7:
 - Added a new option to disable content padding
-- Material Icons for BuddIcons (bbPres)
+- Material Icons for BuddIcons (bbPress)
 - More languages
 - Fixed classic editor
 - Fixed icons for Elementor plugin
