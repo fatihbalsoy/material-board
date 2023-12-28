@@ -5,7 +5,7 @@
  * Plugin URI:          https://github.com/fatihbalsoy/material-board
  * Description:         The Material Board plugin for WordPress updates the appearance of your site's dashboard to a sleeker, more contemporary design based on Google's Material Design Guidelines. This plugin preserves your existing dashboard layout, avoids making any significant alterations, and doesn't include any branding or promotional content. It's straightforward to use and comes at no cost.
  * Author: 	            Fatih Balsoy
- * Version: 	        0.3.6
+ * Version: 	        0.3.7
  * Text Domain:         material-board
  * Domain Path:         /languages
  * Author URI:          https://fatih.bal.soy

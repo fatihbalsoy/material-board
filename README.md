@@ -43,6 +43,7 @@ Here are some of the available options:
 * Theme (Light, Dark, and System)
 * Colors (Primary and Accent colors)
 * Toggle Rounded Corners
+* Toggle Content Padding
 * Font (DM Sans, Roboto, Mona, Hubot, or WordPress)
 * Header Font (Serif or sans serif)
 * Icons (Material or WordPress)

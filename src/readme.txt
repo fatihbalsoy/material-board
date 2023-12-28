@@ -3,7 +3,7 @@ Contributors: fatihbalsoy
 Donate link: https://paypal.me/fatihbalsoy
 Tags: material, design, dashboard
 Tested up to: 6.4.2
-Stable tag: 0.3.6
+Stable tag: 0.3.7
 Requires at least: 5.8
 Requires PHP: 7.0.0
 License: AGPLv3 or later
@@ -19,6 +19,7 @@ Head over to Appearance → Material Board to customize the dashboard colors and
 - Theme (Light, Dark, and System)
 - Colors (Primary and Accent colors)
 - Toggle Rounded Corners
+- Content Padding
 - Font (DM Sans, Roboto, Mona, Hubot, or WordPress)
 - Header Font (Serif or sans serif)
 - Icons (Material or WordPress)

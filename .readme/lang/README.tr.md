@@ -43,6 +43,7 @@ Panonun renklerini ve görünümünü özelleştirmek için `Görünüm` > `Mate
 * Tema (Açık, Koyu ve Sistem)
 * Renkler (Birincil ve Vurgu renkleri)
 * Yuvarlatılmış Köşeleri (Aç veya Kapat)
+* İçerik Dolgusu (Aç veya Kapat)
 * Yazı Tipi (DM Sans, Roboto, Mona, Hubot veya WordPress)
 * Başlık Yazı Tipi (Serif veya serifsiz)
 * Simgeler (Materyal veya WordPress)
