@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: material-dashboard\n"
 "POT-Creation-Date: 2023-10-05 16:20-0400\n"
-"PO-Revision-Date: 2023-12-09 09:16\n"
+"PO-Revision-Date: 2023-12-28 06:12\n"
 "Last-Translator: \n"
 "Language-Team: Italian\n"
 "Language: it_IT\n"
@@ -38,7 +38,7 @@ msgstr "Versione"
 
 #: settings/index.php:134
 msgid "Request Features & Report Issues"
-msgstr ""
+msgstr "Richiedi funzionalità e segnala problemi"
 
 #: settings/index.php:135
 msgid "Help translate this page"
@@ -50,11 +50,11 @@ msgstr "Colori"
 
 #: settings/options/colors.php:18
 msgid "Primary (Toolbars and Navigations)"
-msgstr ""
+msgstr "Principale (barre degli strumenti e navigazione)"
 
 #: settings/options/colors.php:24
 msgid "Accent (Text Selections and Controls)"
-msgstr ""
+msgstr "Accento (selezioni e controlli del testo)"
 
 #: settings/options/corners.php:6
 msgid "Rounded Corners"
@@ -62,7 +62,7 @@ msgstr "Angoli Arrotondati"
 
 #: settings/options/corners.php:10
 msgid "You can choose to turn on or off the rounded corners around cards, buttons, and text fields."
-msgstr ""
+msgstr "Puoi scegliere di attivare o disattivare gli angoli arrotondati attorno a schede, pulsanti e campi di testo."
 
 #: settings/options/font.php:6
 msgid "Font"
@@ -70,15 +70,15 @@ msgstr ""
 
 #: settings/options/font.php:14
 msgid "WordPress Default"
-msgstr ""
+msgstr "WordPress predefinito"
 
 #: settings/options/header_serif.php:6
 msgid "Serif Header"
-msgstr ""
+msgstr "Intestazione serif"
 
 #: settings/options/header_serif.php:10
 msgid "Enhance your headers with an editorial touch by enabling serif fonts."
-msgstr ""
+msgstr "Migliora le tue intestazioni con un tocco editoriale abilitando i caratteri serif."
 
 #: settings/options/icons.php:6
 msgid "Icons"
@@ -86,15 +86,15 @@ msgstr "Icone"
 
 #: settings/options/large_app_bar.php:7
 msgid "Large App Bar"
-msgstr ""
+msgstr "Barra App Grande"
 
 #: settings/options/large_app_bar.php:13
 msgid "Admin Bar on Top"
-msgstr ""
+msgstr "Barra di amministrazione in alto"
 
 #: settings/options/large_app_bar.php:16
 msgid "Admin Menu on Top"
-msgstr ""
+msgstr "Menu di amministrazione in alto"
 
 #: settings/options/large_app_bar.php:21
 msgid "Experimental"
@@ -118,7 +118,7 @@ msgstr "Sistema"
 
 #: settings/options/theme.php:23
 msgid "Dark mode may not be compatible with third-party plugins."
-msgstr ""
+msgstr "La modalità oscura potrebbe non essere compatibile con plug-in di terze parti."
 
 #: material-board.php:138
 msgid "Settings"
@@ -126,7 +126,7 @@ msgstr "Impostazioni"
 
 #: material-board.php:228
 msgid "You do not have sufficient permissions to access this page."
-msgstr ""
+msgstr "Non disponi di permessi sufficienti per accedere a questa pagina."
 
 #: negative_space.php:19
 msgid "Content Padding"
@@ -134,4 +134,5 @@ msgstr "Imbottitura dei contenuti"
 
 #: negative_space.php:23
 msgid "Content padding can be beneficial for enhancing readability and improving overall visual appeal. Turning it off may ease the use of third-party plugins."
-msgstr ""
+msgstr "Il riempimento del contenuto può essere utile per migliorare la leggibilità e migliorare l'attrattiva visiva complessiva. Disattivarlo potrebbe facilitare l'uso di plugin di terze parti."
+

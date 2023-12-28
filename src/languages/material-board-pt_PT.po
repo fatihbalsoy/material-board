@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: material-dashboard\n"
 "POT-Creation-Date: 2023-10-05 16:20-0400\n"
-"PO-Revision-Date: 2023-12-09 09:16\n"
+"PO-Revision-Date: 2023-12-28 06:12\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese\n"
 "Language: pt_PT\n"
@@ -26,19 +26,19 @@ msgstr ""
 
 #: settings/index.php:89
 msgid "Appearance"
-msgstr ""
+msgstr "Aparência"
 
 #: settings/index.php:130
 msgid "Developed by"
-msgstr ""
+msgstr "Desenvolvido por"
 
 #: settings/index.php:132
 msgid "Version"
-msgstr ""
+msgstr "Versão"
 
 #: settings/index.php:134
 msgid "Request Features & Report Issues"
-msgstr ""
+msgstr "Solicitar Recursos & Reportar Problemas"
 
 #: settings/index.php:135
 msgid "Help translate this page"
@@ -46,55 +46,55 @@ msgstr "Ajude a traduzir esta página"
 
 #: settings/options/colors.php:15
 msgid "Colors"
-msgstr ""
+msgstr "Cores"
 
 #: settings/options/colors.php:18
 msgid "Primary (Toolbars and Navigations)"
-msgstr ""
+msgstr "Primário (barras de ferramentas e navegações)"
 
 #: settings/options/colors.php:24
 msgid "Accent (Text Selections and Controls)"
-msgstr ""
+msgstr "Destaque (Seleção e Controles de Texto)"
 
 #: settings/options/corners.php:6
 msgid "Rounded Corners"
-msgstr ""
+msgstr "Cantos arredondados"
 
 #: settings/options/corners.php:10
 msgid "You can choose to turn on or off the rounded corners around cards, buttons, and text fields."
-msgstr ""
+msgstr "Você pode optar por ativar ou desativar os cantos arredondados em torno de cartões, botões e campos de texto."
 
 #: settings/options/font.php:6
 msgid "Font"
-msgstr ""
+msgstr "Fonte"
 
 #: settings/options/font.php:14
 msgid "WordPress Default"
-msgstr ""
+msgstr "Padrão do WordPress"
 
 #: settings/options/header_serif.php:6
 msgid "Serif Header"
-msgstr ""
+msgstr "Cabeçalho Serif"
 
 #: settings/options/header_serif.php:10
 msgid "Enhance your headers with an editorial touch by enabling serif fonts."
-msgstr ""
+msgstr "Aprimore seus cabeçalhos com um toque editorial ativando fontes serifadas."
 
 #: settings/options/icons.php:6
 msgid "Icons"
-msgstr ""
+msgstr "Ícones"
 
 #: settings/options/large_app_bar.php:7
 msgid "Large App Bar"
-msgstr ""
+msgstr "Grande barra de aplicativos"
 
 #: settings/options/large_app_bar.php:13
 msgid "Admin Bar on Top"
-msgstr ""
+msgstr "Barra de administração no topo"
 
 #: settings/options/large_app_bar.php:16
 msgid "Admin Menu on Top"
-msgstr ""
+msgstr "Menu Admin no topo"
 
 #: settings/options/large_app_bar.php:21
 msgid "Experimental"
@@ -102,36 +102,37 @@ msgstr ""
 
 #: settings/options/theme.php:7
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: settings/options/theme.php:12
 msgid "Light"
-msgstr ""
+msgstr "Claro"
 
 #: settings/options/theme.php:15
 msgid "Dark"
-msgstr ""
+msgstr "Escuro"
 
 #: settings/options/theme.php:18
 msgid "System"
-msgstr ""
+msgstr "Sistema"
 
 #: settings/options/theme.php:23
 msgid "Dark mode may not be compatible with third-party plugins."
-msgstr ""
+msgstr "O modo escuro pode não ser compatível com plug-ins de terceiros."
 
 #: material-board.php:138
 msgid "Settings"
-msgstr ""
+msgstr "Configurações"
 
 #: material-board.php:228
 msgid "You do not have sufficient permissions to access this page."
-msgstr ""
+msgstr "Você não tem permissões suficientes para acessar esta página."
 
 #: negative_space.php:19
 msgid "Content Padding"
-msgstr ""
+msgstr "Preenchimento de conteúdo"
 
 #: negative_space.php:23
 msgid "Content padding can be beneficial for enhancing readability and improving overall visual appeal. Turning it off may ease the use of third-party plugins."
-msgstr ""
+msgstr "O preenchimento de conteúdo pode ser benéfico para melhorar a legibilidade e melhorar o apelo visual geral. Desligá-lo pode facilitar o uso de plug-ins de terceiros."
+

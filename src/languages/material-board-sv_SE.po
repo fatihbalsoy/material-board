@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: material-dashboard\n"
 "POT-Creation-Date: 2023-10-05 16:20-0400\n"
-"PO-Revision-Date: 2023-12-09 09:16\n"
+"PO-Revision-Date: 2023-12-28 06:12\n"
 "Last-Translator: \n"
 "Language-Team: Swedish\n"
 "Language: sv_SE\n"
@@ -38,7 +38,7 @@ msgstr ""
 
 #: settings/index.php:134
 msgid "Request Features & Report Issues"
-msgstr ""
+msgstr "Begär funktioner och rapportproblem"
 
 #: settings/index.php:135
 msgid "Help translate this page"
@@ -50,19 +50,19 @@ msgstr "Färger"
 
 #: settings/options/colors.php:18
 msgid "Primary (Toolbars and Navigations)"
-msgstr ""
+msgstr "Primär (verktygsfält och navigationer)"
 
 #: settings/options/colors.php:24
 msgid "Accent (Text Selections and Controls)"
-msgstr ""
+msgstr "Accent (Text val och kontroller)"
 
 #: settings/options/corners.php:6
 msgid "Rounded Corners"
-msgstr ""
+msgstr "Rundade Hörn"
 
 #: settings/options/corners.php:10
 msgid "You can choose to turn on or off the rounded corners around cards, buttons, and text fields."
-msgstr ""
+msgstr "Du kan välja att slå på eller av de rundade hörnen runt kort, knappar och textfält."
 
 #: settings/options/font.php:6
 msgid "Font"
@@ -70,7 +70,7 @@ msgstr ""
 
 #: settings/options/font.php:14
 msgid "WordPress Default"
-msgstr ""
+msgstr "WordPress Standard"
 
 #: settings/options/header_serif.php:6
 msgid "Serif Header"
@@ -78,7 +78,7 @@ msgstr ""
 
 #: settings/options/header_serif.php:10
 msgid "Enhance your headers with an editorial touch by enabling serif fonts."
-msgstr ""
+msgstr "Förbättra dina rubriker med en redaktionell touch genom att aktivera serif-teckensnitt."
 
 #: settings/options/icons.php:6
 msgid "Icons"
@@ -86,15 +86,15 @@ msgstr "Ikoner"
 
 #: settings/options/large_app_bar.php:7
 msgid "Large App Bar"
-msgstr ""
+msgstr "Stor App Bar"
 
 #: settings/options/large_app_bar.php:13
 msgid "Admin Bar on Top"
-msgstr ""
+msgstr "Admin Bar högst upp"
 
 #: settings/options/large_app_bar.php:16
 msgid "Admin Menu on Top"
-msgstr ""
+msgstr "Admin-menyn högst upp"
 
 #: settings/options/large_app_bar.php:21
 msgid "Experimental"
@@ -118,7 +118,7 @@ msgstr ""
 
 #: settings/options/theme.php:23
 msgid "Dark mode may not be compatible with third-party plugins."
-msgstr ""
+msgstr "Mörkt läge kanske inte är kompatibelt med plugins från tredje part."
 
 #: material-board.php:138
 msgid "Settings"
@@ -126,12 +126,13 @@ msgstr "Inställningar"
 
 #: material-board.php:228
 msgid "You do not have sufficient permissions to access this page."
-msgstr ""
+msgstr "Du har inte tillräckliga behörigheter för att komma åt den här sidan."
 
 #: negative_space.php:19
 msgid "Content Padding"
-msgstr ""
+msgstr "Innehållsutfyllnad"
 
 #: negative_space.php:23
 msgid "Content padding can be beneficial for enhancing readability and improving overall visual appeal. Turning it off may ease the use of third-party plugins."
-msgstr ""
+msgstr "Innehållsutfyllning kan vara fördelaktigt för att förbättra läsbarheten och förbättra den övergripande visuella dragningen. Om du stänger av den kan det underlätta användningen av plugins från tredje part."
+
