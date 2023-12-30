@@ -60,7 +60,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: material-board-release-${{ steps.date.outputs.date }}
-          path: build/_bundle/material-board
+          path: build/material-board
 
       # - name: Upload Release Build w/o Date
       #   uses: actions/upload-artifact@v3
@@ -73,6 +73,6 @@ jobs:
         env:
           REPO: self
           BRANCH: release-deployed
-          FOLDER: build/_bundle/material-board
+          FOLDER: build/material-board
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           

@@ -5,7 +5,7 @@
  * Plugin URI:          https://github.com/fatihbalsoy/material-board
  * Description:         The Material Board plugin for WordPress updates the appearance of your site's dashboard to a sleeker, more contemporary design based on Google's Material Design Guidelines. This plugin preserves your existing dashboard layout, avoids making any significant alterations, and doesn't include any branding or promotional content. It's straightforward to use and comes at no cost.
  * Author: 	            Fatih Balsoy
- * Version: 	        0.3.7
+ * Version: 	        0.3.8
  * Text Domain:         material-board
  * Domain Path:         /languages
  * Author URI:          https://fatih.bal.soy
@@ -34,7 +34,8 @@ $fbwpmdp_name = "Material Board";
 $fbwpmdp_bundle = "material-board";
 $fbwpmdp_settings_title = $fbwpmdp_name;
 
-class MaterialBoardPlugin {
+class MaterialBoardPlugin
+{
 
     public string $settings_slug;
     private array $options = array(
@@ -67,13 +68,15 @@ class MaterialBoardPlugin {
         'fbwpmdp_negative_space' => 'on'
     );
 
-    function __construct() {
-        $this->settings_slug = $GLOBALS['fbwpmdp_bundle'];
+    function __construct()
+    {
+        // TODO: setting this to $GLOBALS['fbwpmdp_bundle'] causes a fatal crash
+        $this->settings_slug = 'material-board';
         if (is_admin()) {
-            if(!function_exists('get_plugin_data')){
-                require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+            if (!function_exists('get_plugin_data')) {
+                require_once(ABSPATH . 'wp-admin/includes/plugin.php');
             }
-            $plugin_data = get_plugin_data( __FILE__ );
+            $plugin_data = get_plugin_data(__FILE__);
             $GLOBALS["fbwpmdp_version"] = $plugin_data["Version"];
         }
 
@@ -91,20 +94,23 @@ class MaterialBoardPlugin {
     }
 
     /** Language Support **/
-    function setup_languages() {
+    function setup_languages()
+    {
         // Set the theme's text domain
         load_plugin_textdomain($GLOBALS['fbwpmdp_bundle'], false, dirname(plugin_basename(__FILE__)) . '/languages/');
     }
 
     /** User-facing Admin Theme (Admin Bar) **/
-    function fbwpmdp_admin_user_theme_style() {
+    function fbwpmdp_admin_user_theme_style()
+    {
         wp_enqueue_style('fbwpmdp-user-theme', plugins_url('styles/wp.css', __FILE__));
 
         $this->load_plugin_options();
     }
 
     /** Admin Dashboard Theme **/
-    function fbwpmdp_admin_theme_style() {
+    function fbwpmdp_admin_theme_style()
+    {
         // wp_enqueue_script('theme-script', plugins_url('app.js', __FILE__), array('jquery'));
         wp_enqueue_style('fbwpmdp-admin-theme', plugins_url('styles/wp-admin.css', __FILE__));
 
@@ -119,14 +125,16 @@ class MaterialBoardPlugin {
     }
 
     /** Gutenburg Block Editor Theme **/
-    function fbwpmdp_gutenburg_style() {
-        if($this->fbwpmdp_is_gutenberg_editor() && !$GLOBALS['fbwpmdp_is_dev']) {
+    function fbwpmdp_gutenburg_style()
+    {
+        if ($this->fbwpmdp_is_gutenberg_editor() && !$GLOBALS['fbwpmdp_is_dev']) {
             wp_dequeue_style('fbwpmdp-admin-theme');
         }
     }
 
     /** Safari and Chrome Browser Theme Color **/
-    function change_theme_color_meta() {
+    function change_theme_color_meta()
+    {
         if (is_admin()) {
             $primary_color = get_option('fbwpmdp_colors_primary');
             echo '<meta name="theme-color" content="' . esc_attr($primary_color) . '">';
@@ -134,18 +142,21 @@ class MaterialBoardPlugin {
     }
 
     /** Login Theme **/
-    function fbwpmdp_login_theme_style() {
+    function fbwpmdp_login_theme_style()
+    {
         wp_enqueue_style('fbwpmdp-login-theme', plugins_url('styles/wp-login.css', __FILE__));
         $this->load_plugin_options();
     }
 
     /** Plugin Menu **/
-    function fbwpmdp_plugin_menu() {
+    function fbwpmdp_plugin_menu()
+    {
         add_theme_page($GLOBALS["fbwpmdp_name"], $GLOBALS["fbwpmdp_name"], 'manage_options', $this->settings_slug, array($this, 'fbwpmdp_plugin_options'));
     }
 
     /** Plugin Settings Link **/
-    function fbwpmdp_settings_link($links) {
+    function fbwpmdp_settings_link($links)
+    {
         $url = admin_url("themes.php?page=" . $this->settings_slug);
         $settings_link = '<a href="' . $url . '">' . esc_html_e('Settings', 'material-board') . '</a>';
         $links[] = $settings_link;
@@ -153,7 +164,8 @@ class MaterialBoardPlugin {
     }
 
     /** Load Plugin Options **/
-    function load_plugin_options() {
+    function load_plugin_options()
+    {
         //? -- COLORS -- ?//
         $color_stylesheet = $this->fbwpmdp_get_local_file_contents("styles/shared.dynamic.css");
         $color_stylesheet_with_primary = str_replace("\"primary-color\"", get_option('fbwpmdp_colors_primary'), $color_stylesheet);
@@ -163,7 +175,8 @@ class MaterialBoardPlugin {
         wp_add_inline_style('fbwpmdp-login-theme', $color_stylesheet_with_primary_and_accent);
 
         //? -- DARK MODE -- ?//
-        function fbwpmdp_enqueue_dark_theme() {
+        function fbwpmdp_enqueue_dark_theme()
+        {
             wp_enqueue_style('dark-admin-theme', plugins_url('styles/themes/shared.dark.css', __FILE__));
         }
 
@@ -231,7 +244,7 @@ class MaterialBoardPlugin {
                 wp_enqueue_style('large_admin_bar_variant', plugins_url('styles/options/large_app_bar_2.css', __FILE__));
                 // Remove negative space if needed
                 if ($this->get_option_or_default('fbwpmdp_negative_space') != 'on') {
-                    wp_enqueue_style('large_admin_bar_no_negative_space', plugins_url('styles/options/large_app_bar_2_no_negative_space.css', __FILE__ ));
+                    wp_enqueue_style('large_admin_bar_no_negative_space', plugins_url('styles/options/large_app_bar_2_no_negative_space.css', __FILE__));
                 }
             }
         } else {
@@ -251,25 +264,29 @@ class MaterialBoardPlugin {
     }
 
     /** Plugin Options **/
-    function fbwpmdp_plugin_options() {
+    function fbwpmdp_plugin_options()
+    {
         if (!current_user_can('manage_options')) {
             wp_die(esc_html_e('You do not have sufficient permissions to access this page.'));
         }
         echo $this->fbwpmdp_get_local_file_contents('settings/index.php');
     }
 
-    function get_option_or_default($option) {
+    function get_option_or_default($option)
+    {
         return get_option($option, $this->options[$option]);
     }
 
-    function settings() {
+    function settings()
+    {
         foreach ($this->options as $key => $value) {
             add_option($key, $value);
             register_setting('material_dashboard_plugin', $key, array('sanitize_callback' => 'sanitize_text_field', 'default' => $value));
         }
     }
 
-    function fbwpmdp_get_local_file_contents($file_path) {
+    function fbwpmdp_get_local_file_contents($file_path)
+    {
         ob_start();
         include $file_path;
         $contents = ob_get_clean();
@@ -277,13 +294,14 @@ class MaterialBoardPlugin {
         return $contents;
     }
 
-    function fbwpmdp_is_gutenberg_editor() {
-        if( function_exists( 'is_gutenberg_page' ) && is_gutenberg_page() ) { 
+    function fbwpmdp_is_gutenberg_editor()
+    {
+        if (function_exists('is_gutenberg_page') && is_gutenberg_page()) {
             return true;
-        }   
-        
+        }
+
         $current_screen = get_current_screen();
-        if ( method_exists( $current_screen, 'is_block_editor' ) && $current_screen->is_block_editor() ) {
+        if (method_exists($current_screen, 'is_block_editor') && $current_screen->is_block_editor()) {
             return true;
         }
         return false;

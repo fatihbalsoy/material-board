@@ -1,3 +1,6 @@
+0.3.8:
+- Hotfix: There was a fatal crash on plugin activation.
+
 0.3.7:
 - Added a new option to disable content padding
 - Material Icons for BuddIcons (bbPress)

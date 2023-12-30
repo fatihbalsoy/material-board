@@ -55,7 +55,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: material-board-nightly-${{ steps.date.outputs.date }}
-          path: build/_bundle/material-board
+          path: build/material-board
       
       # - name: Upload Nightly Build w/o Date
       #   uses: actions/upload-artifact@v3
