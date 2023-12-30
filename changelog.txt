@@ -1,0 +1,22 @@
+0.3.8:
+- Hotfix: There was a fatal crash on plugin activation.
+
+0.3.7:
+- Added a new option to disable content padding
+- Material Icons for BuddIcons (bbPress)
+- More languages
+- Fixed classic editor
+- Fixed icons for Elementor plugin
+- Fixed icons in plugin installation page
+- Fixed columns in certain pages
+- Reverted to default button sizes on mobile
+- Temporarily removed plugin from Gutenburg editor
+
+0.3.6:
+- Hotfix: Sort icons were not rendering properly.
+
+0.3.5:
+- Hotfix: Setting preferences caused plugin to crash.
+
+0.3.4:
+- Initial alpha release on WordPress Plugin directory.

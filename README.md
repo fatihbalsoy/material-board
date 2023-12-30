@@ -8,7 +8,7 @@ The Material Board plugin for WordPress updates the appearance of your site's da
 [![Download](https://img.shields.io/badge/-Download-2246CC?style=for-the-badge&logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCA0OCA0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxuczpzZXJpZj0iaHR0cDovL3d3dy5zZXJpZi5jb20vIiBzdHlsZT0iZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjI7Ij48cGF0aCBkPSJNMTEsNDBjLTAuOCwwIC0xLjUsLTAuMyAtMi4xLC0wLjljLTAuNiwtMC42IC0wLjksLTEuMyAtMC45LC0yLjFsMCwtNy4xNWwzLC0wbDAsNy4xNWwyNiwwbDAsLTcuMTVsMywtMGwwLDcuMTVjMCwwLjggLTAuMywxLjUgLTAuOSwyLjFjLTAuNiwwLjYgLTEuMywwLjkgLTIuMSwwLjlsLTI2LDBabTEzLC03LjY1bC05LjY1LC05LjY1bDIuMTUsLTIuMTVsNiw2bDAsLTE4LjU1bDMsLTBsMCwxOC41NWw2LC02bDIuMTUsMi4xNWwtOS42NSw5LjY1WiIgc3R5bGU9ImZpbGw6I2ZmZjtmaWxsLXJ1bGU6bm9uemVybzsiLz48L3N2Zz4=)](https://github.com/fatihbalsoy/material-board/releases/)
 [![Demo](https://img.shields.io/badge/-Demo-446DFF?style=for-the-badge&logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCA0OCA0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxuczpzZXJpZj0iaHR0cDovL3d3dy5zZXJpZi5jb20vIiBzdHlsZT0iZmlsbC1ydWxlOmV2ZW5vZGQ7Y2xpcC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjI7Ij48cGF0aCBkPSJNMTYsMzcuODVsMCwtMjhsMjIsMTRsLTIyLDE0Wm0zLC01LjQ1bDEzLjQ1LC04LjU1bC0xMy40NSwtOC41NWwwLDE3LjFaIiBzdHlsZT0iZmlsbDojZmZmO2ZpbGwtcnVsZTpub256ZXJvOyIvPjwvc3ZnPg==)](https://material-dashboard-demo.bal.soy/)
 
-[![WordPress](https://img.shields.io/badge/WordPress-6.3.1-lightblue?style=for-the-badge&logo=wordpress&logoWidth=20)](https://wordpress.org/plugins/material-board/)
+[![WordPress](https://img.shields.io/badge/WordPress-6.4.2-lightblue?style=for-the-badge&logo=wordpress&logoWidth=20)](https://wordpress.org/plugins/material-board/)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/fatihbalsoy/material-board/build.yml?style=for-the-badge&logo=github)](https://github.com/fatihbalsoy/material-board/actions/workflows/build.yml)
 
 Read this document in a different language.
@@ -43,6 +43,7 @@ Here are some of the available options:
 * Theme (Light, Dark, and System)
 * Colors (Primary and Accent colors)
 * Toggle Rounded Corners
+* Toggle Content Padding
 * Font (DM Sans, Roboto, Mona, Hubot, or WordPress)
 * Header Font (Serif or sans serif)
 * Icons (Material or WordPress)
@@ -78,11 +79,12 @@ Material Board, [AGPL License 3.0](https://github.com/fatihbalsoy/material-board
 
 This project depends on the following third-parties:
 
-* Adobe's DM Sans Font, [SIL Open Font License 1.1](https://github.com/googlefonts/dm-fonts/blob/main/Serif/LICENSE.txt)
-* Adobe's DM Serif Font, [SIL Open Font License 1.1](https://github.com/googlefonts/dm-fonts/blob/main/Serif/LICENSE.txt)
-* GitHub's Mona Sans Font, [SIL Open Font License 1.1](https://github.com/github/mona-sans/blob/main/LICENSE)
-* GitHub's Hubot Sans Font, [SIL Open Font License 1.1](https://github.com/github/hubot-sans/blob/main/LICENSE)
-* Google's Roboto Font, [Apache License 2.0](https://github.com/googlefonts/roboto/blob/master/LICENSE).
-* Google's Material Design Icons, [Apache License 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE).
+* DM Sans Font, [SIL Open Font License 1.1](https://github.com/googlefonts/dm-fonts/blob/main/Serif/LICENSE.txt)
+* DM Serif Font, [SIL Open Font License 1.1](https://github.com/googlefonts/dm-fonts/blob/main/Serif/LICENSE.txt)
+* Mona Sans Font, [SIL Open Font License 1.1](https://github.com/github/mona-sans/blob/main/LICENSE)
+* Hubot Sans Font, [SIL Open Font License 1.1](https://github.com/github/hubot-sans/blob/main/LICENSE)
+* Roboto Font, [Apache License 2.0](https://github.com/googlefonts/roboto/blob/master/LICENSE).
+* Official Material Design Icons, [Apache License 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE).
 * Community Material Design Icons, [SIL Open Font License 1.1](https://github.com/Templarian/MaterialDesign/blob/master/LICENSE).
 * TinyColor, [MIT License](https://github.com/bgrins/TinyColor/blob/master/LICENSE).
+
