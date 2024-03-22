@@ -2,8 +2,8 @@
 Contributors: fatihbalsoy
 Donate link: https://paypal.me/fatihbalsoy
 Tags: material, design, dashboard
-Tested up to: 6.4.2
-Stable tag: 0.3.8
+Tested up to: 6.5
+Stable tag: 0.3.9
 Requires at least: 5.8
 Requires PHP: 7.0.0
 License: AGPLv3 or later

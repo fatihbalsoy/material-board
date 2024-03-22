@@ -1155,6 +1155,7 @@ span.sorting-indicators {
 
 .plugins .notice p:before {
     top: 18px !important;
+    pointer-events: none;
 }
 
 .theme-wrap.wp-clearfix {
