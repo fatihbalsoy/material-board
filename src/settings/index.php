@@ -8,6 +8,13 @@
 
 <?php
 
+global $fbwpmdp_website;
+global $fbwpmdp_author;
+global $fbwpmdp_author_website;
+global $fbwpmdp_version;
+global $fbwpmdp_report_bugs;
+global $fbwpmdp_crowdin;
+
 // If this file is called directly, abort.
 if (!defined('ABSPATH'))
     exit;
@@ -96,11 +103,12 @@ wp_enqueue_style('fbwpmdp-plugin-settings-page-stylesheet', plugins_url('style.c
             <!-- Developed by [Author] | Version | Request Features & Report Issues | Help translate this page         -->
             <div>
                 <?php esc_html_e('Developed by', 'material-board') ?>
-                <a href="<?php echo esc_attr($GLOBALS["fbwpmdp_author_website"]) ?>"><?php echo esc_attr($GLOBALS["fbwpmdp_author"]) ?></a>
+                <a href="<?php echo esc_attr($fbwpmdp_author_website) ?>"><?php echo esc_attr($fbwpmdp_author) ?></a>
                 | <?php esc_html_e('Version', 'material-board') ?>
-                <?php echo esc_attr($GLOBALS["fbwpmdp_version"]) ?> | <a href="<?php echo esc_attr($GLOBALS["fbwpmdp_report_bugs"]) ?>">
-                    <?php esc_html_e('Request Features & Report Issues', 'material-board') ?></a> | 
-                    <a href="<?php echo esc_attr($GLOBALS["fbwpmdp_crowdin"]) ?>"><?php esc_html_e('Help translate this page', 'material-board') ?></a>
+                <?php echo esc_attr($fbwpmdp_version) ?> | <a href="<?php echo esc_attr($fbwpmdp_report_bugs) ?>">
+                    <?php esc_html_e('Request Features & Report Issues', 'material-board') ?></a> |
+                <a
+                    href="<?php echo esc_attr($fbwpmdp_crowdin) ?>"><?php esc_html_e('Help translate this page', 'material-board') ?></a>
             </div>
         </div>
 
