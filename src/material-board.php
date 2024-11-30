@@ -18,20 +18,32 @@
 if (!defined('ABSPATH'))
     exit;
 
+global $fbwpmdp_is_dev;
 $fbwpmdp_is_dev = 0;
+global $fbwpmdp_author;
 $fbwpmdp_author = "Fatih Balsoy";
+global $fbwpmdp_author_website;
 $fbwpmdp_author_website = "https://fatih.bal.soy";
+global $fbwpmdp_website;
 $fbwpmdp_website = "https://fatih.bal.soy/projects/material-board";
 
+global $fbwpmdp_github_slug;
 $fbwpmdp_github_slug = "fatihbalsoy/material-board";
+global $fbwpmdp_github;
 $fbwpmdp_github = "https://github.com/" . $fbwpmdp_github_slug;
+global $fbwpmdp_github_releases;
 $fbwpmdp_github_releases = "https://api.github.com/repos/" . $fbwpmdp_github_slug . "/releases";
+global $fbwpmdp_report_bugs;
 $fbwpmdp_report_bugs = $fbwpmdp_github . "/issues/new";
 
+global $fbwpmdp_crowdin;
 $fbwpmdp_crowdin = "https://crowdin.com/project/material-dashboard";
 
+global $fbwpmdp_name;
 $fbwpmdp_name = "Material Board";
+global $fbwpmdp_bundle;
 $fbwpmdp_bundle = "material-board";
+global $fbwpmdp_settings_title;
 $fbwpmdp_settings_title = $fbwpmdp_name;
 
 class MaterialBoardPlugin
@@ -70,17 +82,20 @@ class MaterialBoardPlugin
 
     function __construct()
     {
-        // TODO: setting this to $GLOBALS['fbwpmdp_bundle'] causes a fatal crash
-        $this->settings_slug = 'material-board';
+        global $fbwpmdp_bundle;
+        global $fbwpmdp_is_dev;
+        global $fbwpmdp_version;
+
+        $this->settings_slug = $fbwpmdp_bundle;
         if (is_admin()) {
             if (!function_exists('get_plugin_data')) {
                 require_once (ABSPATH . 'wp-admin/includes/plugin.php');
             }
             $plugin_data = get_plugin_data(__FILE__);
-            $GLOBALS["fbwpmdp_version"] = $plugin_data["Version"];
+            $fbwpmdp_version = $plugin_data["Version"];
         }
 
-        $GLOBALS['fbwpmdp_is_dev'] = file_exists(WP_PLUGIN_DIR . '/' . $GLOBALS['fbwpmdp_bundle'] . '/.dev');
+        $fbwpmdp_is_dev = file_exists(WP_PLUGIN_DIR . '/' . $fbwpmdp_bundle . '/.dev');
 
         add_action('wp_enqueue_scripts', array($this, 'fbwpmdp_admin_user_theme_style'));
         add_action('admin_enqueue_scripts', array($this, 'fbwpmdp_admin_theme_style'));
@@ -97,7 +112,8 @@ class MaterialBoardPlugin
     function setup_languages()
     {
         // Set the theme's text domain
-        load_plugin_textdomain($GLOBALS['fbwpmdp_bundle'], false, dirname(plugin_basename(__FILE__)) . '/languages/');
+        global $fbwpmdp_bundle;
+        load_plugin_textdomain($fbwpmdp_bundle, false, dirname(plugin_basename(__FILE__)) . '/languages/');
     }
 
     /** User-facing Admin Theme (Admin Bar) **/
@@ -114,7 +130,8 @@ class MaterialBoardPlugin
         // wp_enqueue_script('theme-script', plugins_url('app.js', __FILE__), array('jquery'));
         wp_enqueue_style('fbwpmdp-admin-theme', plugins_url('styles/wp-admin.css', __FILE__));
 
-        $split_wp_version = explode(".", $GLOBALS['wp_version']);
+        global $wp_version;
+        $split_wp_version = explode(".", $wp_version);
         $wp_ver_major = intval($split_wp_version[0]);
         $wp_ver_minor = intval($split_wp_version[1]);
         if ($wp_ver_major >= 6 || ($wp_ver_major == 5 && $wp_ver_minor >= 9)) {
@@ -127,7 +144,8 @@ class MaterialBoardPlugin
     /** Gutenburg Block Editor Theme **/
     function fbwpmdp_gutenburg_style()
     {
-        if ($this->fbwpmdp_is_gutenberg_editor() && !$GLOBALS['fbwpmdp_is_dev']) {
+        global $fbwpmdp_is_dev;
+        if ($this->fbwpmdp_is_gutenberg_editor() && !$fbwpmdp_is_dev) {
             wp_dequeue_style('fbwpmdp-admin-theme');
         }
     }
@@ -151,7 +169,8 @@ class MaterialBoardPlugin
     /** Plugin Menu **/
     function fbwpmdp_plugin_menu()
     {
-        add_theme_page($GLOBALS["fbwpmdp_name"], $GLOBALS["fbwpmdp_name"], 'manage_options', $this->settings_slug, array($this, 'fbwpmdp_plugin_options'));
+        global $fbwpmdp_name;
+        add_theme_page($fbwpmdp_name, $fbwpmdp_name, 'manage_options', $this->settings_slug, array($this, 'fbwpmdp_plugin_options'));
     }
 
     /** Plugin Settings Link **/
