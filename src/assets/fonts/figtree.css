@@ -1,0 +1,11 @@
+/*
+ *   figtree.css
+ *   material-board
+ * 
+ *   Created by Fatih Balsoy on 11/30/24
+ *   Copyright © 2024 Fatih Balsoy. All rights reserved.
+ */
+
+ :root {
+    --font-type: 'Figtree' !important;
+}

@@ -89,7 +89,7 @@ class MaterialBoardPlugin
         $this->settings_slug = $fbwpmdp_bundle;
         if (is_admin()) {
             if (!function_exists('get_plugin_data')) {
-                require_once (ABSPATH . 'wp-admin/includes/plugin.php');
+                require_once(ABSPATH . 'wp-admin/includes/plugin.php');
             }
             $plugin_data = get_plugin_data(__FILE__);
             $fbwpmdp_version = $plugin_data["Version"];
@@ -215,6 +215,12 @@ class MaterialBoardPlugin
         switch ($this->get_option_or_default('fbwpmdp_font')) {
             case 'dm-sans':
                 wp_enqueue_style('dm-sans-font', plugins_url('assets/fonts/dm-sans.css', __FILE__));
+                break;
+            case 'figtree':
+                wp_enqueue_style('figtree-font', plugins_url('assets/fonts/figtree.css', __FILE__));
+                break;
+            case 'outfit':
+                wp_enqueue_style('outfit-font', plugins_url('assets/fonts/outfit.css', __FILE__));
                 break;
             case 'mona-sans':
                 wp_enqueue_style('mona-sans-font', plugins_url('assets/fonts/mona-sans.css', __FILE__));

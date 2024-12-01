@@ -12,6 +12,8 @@ $option = get_option('fbwpmdp_font')
     <td>
         <select name="fbwpmdp_font" id="font-face" onchange="changeFontType()">
             <option value="dm-sans" <?php selected($option, 'dm-sans') ?>>DM Sans</option>
+            <option value="figtree" <?php selected($option, 'figtree') ?>>Figtree</option>
+            <option value="outfit" <?php selected($option, 'outfit') ?>>Outfit</option>
             <option value="roboto" <?php selected($option, 'roboto') ?>>Roboto</option>
             <option value="mona-sans" <?php selected($option, 'mona-sans') ?>>Mona Sans</option>
             <option value="hubot-sans" <?php selected($option, 'hubot-sans') ?>>Hubot Sans</option>
